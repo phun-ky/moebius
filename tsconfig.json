@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "lib": ["ES2021", "dom"],
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "./dts",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "baseUrl": "src/",
+    "typeRoots": ["./node_modules/@types"],
+    "resolveJsonModule": true,
+    "types": ["jest", "node", "./node_modules/network-information-types"]
+  },
+  "exclude": [
+    "jest.config.ts",
+    "node_modules",
+    "build",
+    "dist",
+    "./moebius.js",
+    "./moebius.d.ts",
+    "scripts",
+    "tests",
+    "__tests__",
+    "src/__tests__",
+    "src/utils/__tests__",
+    "src/features/__tests__",
+    "dts"
+  ]
+}
