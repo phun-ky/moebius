@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/phun-ky/moebius#readme",
   "devDependencies": {
-    "@release-it/conventional-changelog": "^7.0.1",
+    "@release-it/conventional-changelog": "^8.0.1",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
@@ -51,7 +51,7 @@
     "network-information-types": "^0.1.1",
     "prettier": "^2.4.1",
     "prettier-eslint": "^13.0.0",
-    "release-it": "^16.1.5",
+    "release-it": "^17.0.0",
     "rollup": "^2.39.0",
     "rollup-plugin-dts": "^4.0.1",
     "@rollup/plugin-terser": "^0.4.4",
