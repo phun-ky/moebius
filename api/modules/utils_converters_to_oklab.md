@@ -31,4 +31,4 @@ console.log(oklabColor); // Output: { l: 52.42, a: -9.93, b: -39.49 }
 
 #### Defined in
 
-utils/converters/to-oklab.ts:17
+[utils/converters/to-oklab.ts:17](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-oklab.ts#L17)

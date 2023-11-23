@@ -31,4 +31,4 @@ console.log(hsvObject); // Output: { h: 207.76, s: 0.86, v: 0.85 }
 
 #### Defined in
 
-utils/converters/to-hsv.ts:17
+[utils/converters/to-hsv.ts:17](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-hsv.ts#L17)

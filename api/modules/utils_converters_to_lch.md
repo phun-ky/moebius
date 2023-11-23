@@ -31,4 +31,4 @@ console.log(lchObject); // Output: { l: 54.66, c: 76.91, h: 217.76 }
 
 #### Defined in
 
-utils/converters/to-lch.ts:17
+[utils/converters/to-lch.ts:17](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-lch.ts#L17)

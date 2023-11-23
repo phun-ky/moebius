@@ -33,4 +33,4 @@ console.log(splitPalette); // ['#3498db', '#99db34', '#dbd134', '#db3434', '#8f3
 
 #### Defined in
 
-features/split.ts:27
+[features/split.ts:27](https://github.com/phun-ky/moebius/blob/main/src/features/split.ts#L27)

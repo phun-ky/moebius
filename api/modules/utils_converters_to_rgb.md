@@ -31,4 +31,4 @@ console.log(rgbColor); // Output: 'rgb(52, 152, 219)'
 
 #### Defined in
 
-utils/converters/to-rgb.ts:19
+[utils/converters/to-rgb.ts:19](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-rgb.ts#L19)

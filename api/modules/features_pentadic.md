@@ -33,4 +33,4 @@ console.log(pentadicPalette); // ['#3498db', '#dbd134', '#db3434', '#34db99', '#
 
 #### Defined in
 
-features/pentadic.ts:26
+[features/pentadic.ts:26](https://github.com/phun-ky/moebius/blob/main/src/features/pentadic.ts#L26)

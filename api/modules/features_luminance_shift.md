@@ -35,4 +35,4 @@ console.log(luminanceShiftPalette); // ['#3498db', '#99db34', '#dbd134', '#db343
 
 #### Defined in
 
-features/luminance-shift.ts:120
+[features/luminance-shift.ts:120](https://github.com/phun-ky/moebius/blob/main/src/features/luminance-shift.ts#L120)

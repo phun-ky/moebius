@@ -31,4 +31,4 @@ console.log(hsiObject); // Output: { h: 207.76, s: 0.52, i: 0.4 }
 
 #### Defined in
 
-utils/converters/to-hsi.ts:17
+[utils/converters/to-hsi.ts:17](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-hsi.ts#L17)

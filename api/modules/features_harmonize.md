@@ -36,4 +36,4 @@ console.log(harmonizedPalette); // ['#3498db', '#75db34', '#dbd134', '#db7434', 
 
 #### Defined in
 
-features/harmonize.ts:27
+[features/harmonize.ts:27](https://github.com/phun-ky/moebius/blob/main/src/features/harmonize.ts#L27)

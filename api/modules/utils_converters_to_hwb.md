@@ -31,4 +31,4 @@ console.log(hwbObject); // Output: { h: 207.76, w: 0.5, b: 0.14 }
 
 #### Defined in
 
-utils/converters/to-hwb.ts:17
+[utils/converters/to-hwb.ts:17](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-hwb.ts#L17)

@@ -1,6 +1,6 @@
 {
   "name": "@phun-ky/moebius",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "asd",
   "main": "moebius.js",
   "types": "moebius.d.ts",

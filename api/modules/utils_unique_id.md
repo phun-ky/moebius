@@ -25,4 +25,4 @@ console.log(id); // "_abc123"
 
 #### Defined in
 
-utils/unique-id.ts:10
+[utils/unique-id.ts:10](https://github.com/phun-ky/moebius/blob/main/src/utils/unique-id.ts#L10)

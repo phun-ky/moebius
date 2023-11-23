@@ -27,4 +27,4 @@ Calculates accessible text color based on background color and specified contras
 
 #### Defined in
 
-utils/a11y.ts:13
+[utils/a11y.ts:13](https://github.com/phun-ky/moebius/blob/main/src/utils/a11y.ts#L13)

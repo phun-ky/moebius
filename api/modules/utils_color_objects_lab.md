@@ -23,4 +23,4 @@ Represents an LAB (CIELAB) color unit.
 
 #### Defined in
 
-utils/color-objects/lab.ts:11
+[utils/color-objects/lab.ts:11](https://github.com/phun-ky/moebius/blob/main/src/utils/color-objects/lab.ts#L11)

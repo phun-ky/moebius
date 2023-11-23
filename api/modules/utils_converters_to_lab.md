@@ -31,4 +31,4 @@ console.log(labObject); // Output: { l: 54.24, a: -12.56, b: -43.81 }
 
 #### Defined in
 
-utils/converters/to-lab.ts:17
+[utils/converters/to-lab.ts:17](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-lab.ts#L17)
