@@ -2,7 +2,7 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 import ts from 'rollup-plugin-typescript2';
 import dts from 'rollup-plugin-dts';
 import typescript from 'typescript';
-import { terser } from 'rollup-plugin-terser';
+import terser from '@rollup/plugin-terser';
 import commonjs from '@rollup/plugin-commonjs';
 
 export default [

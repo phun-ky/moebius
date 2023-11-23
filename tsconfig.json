@@ -16,10 +16,9 @@
     "baseUrl": "src/",
     "typeRoots": ["./node_modules/@types"],
     "resolveJsonModule": true,
-    "types": ["jest", "node", "./node_modules/network-information-types"]
+    "types": ["node", "./node_modules/network-information-types"]
   },
   "exclude": [
-    "jest.config.ts",
     "node_modules",
     "build",
     "dist",
