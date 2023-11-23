@@ -24,4 +24,4 @@ Converts a color from RGB to CIE 1931 XYZ color space.
 
 #### Defined in
 
-utils/converters/to-xyz.ts:13
+[utils/converters/to-xyz.ts:13](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-xyz.ts#L13)

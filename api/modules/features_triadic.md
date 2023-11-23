@@ -33,4 +33,4 @@ console.log(triadicPalette);
 
 #### Defined in
 
-features/triadic.ts:27
+[features/triadic.ts:27](https://github.com/phun-ky/moebius/blob/main/src/features/triadic.ts#L27)

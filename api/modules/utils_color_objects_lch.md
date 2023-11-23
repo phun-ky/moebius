@@ -23,4 +23,4 @@ Represents an LCH (CIELCH) color unit.
 
 #### Defined in
 
-utils/color-objects/lch.ts:11
+[utils/color-objects/lch.ts:11](https://github.com/phun-ky/moebius/blob/main/src/utils/color-objects/lch.ts#L11)

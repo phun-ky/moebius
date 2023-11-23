@@ -14,7 +14,7 @@ Represents a color specification for nearest color matching.
 
 #### Defined in
 
-types/index.ts:177
+[types/index.ts:177](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L177)
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 #### Defined in
 
-types/index.ts:179
+[types/index.ts:179](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L179)
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 #### Defined in
 
-types/index.ts:178
+[types/index.ts:178](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L178)

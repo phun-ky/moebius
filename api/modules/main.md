@@ -10,7 +10,7 @@
 
 #### Defined in
 
-main.ts:14
+[main.ts:14](https://github.com/phun-ky/moebius/blob/main/src/main.ts#L14)
 
 ## Functions
 
@@ -30,4 +30,4 @@ An object with Moebius classes
 
 #### Defined in
 
-main.ts:43
+[main.ts:43](https://github.com/phun-ky/moebius/blob/main/src/main.ts#L43)

@@ -35,4 +35,4 @@ console.log(hslObject); // Output: { h: 207, s: 79, l: 57 }
 
 #### Defined in
 
-utils/converters/to-object.ts:24
+[utils/converters/to-object.ts:24](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-object.ts#L24)

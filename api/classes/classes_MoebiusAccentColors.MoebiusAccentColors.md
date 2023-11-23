@@ -42,7 +42,7 @@ const accentColors = new MoebiusAccentColors(colors, options);
 
 #### Defined in
 
-classes/MoebiusAccentColors.ts:40
+[classes/MoebiusAccentColors.ts:40](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusAccentColors.ts#L40)
 
 ## Properties
 
@@ -56,7 +56,7 @@ classes/MoebiusAccentColors.ts:40
 
 #### Defined in
 
-classes/MoebiusAccentColors.ts:24
+[classes/MoebiusAccentColors.ts:24](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusAccentColors.ts#L24)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusAccentColors.ts:18
+[classes/MoebiusAccentColors.ts:18](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusAccentColors.ts#L18)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusAccentColors.ts:23
+[classes/MoebiusAccentColors.ts:23](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusAccentColors.ts#L23)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusAccentColors.ts:15
+[classes/MoebiusAccentColors.ts:15](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusAccentColors.ts#L15)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusAccentColors.ts:16
+[classes/MoebiusAccentColors.ts:16](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusAccentColors.ts#L16)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusAccentColors.ts:17
+[classes/MoebiusAccentColors.ts:17](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusAccentColors.ts#L17)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusAccentColors.ts:22
+[classes/MoebiusAccentColors.ts:22](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusAccentColors.ts#L22)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusAccentColors.ts:19
+[classes/MoebiusAccentColors.ts:19](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusAccentColors.ts#L19)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusAccentColors.ts:21
+[classes/MoebiusAccentColors.ts:21](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusAccentColors.ts#L21)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusAccentColors.ts:20
+[classes/MoebiusAccentColors.ts:20](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusAccentColors.ts#L20)
 
 ## Methods
 
@@ -208,4 +208,4 @@ console.log(flatArray); // ['#ff0000', '#00ff00', ...]
 
 #### Defined in
 
-classes/MoebiusAccentColors.ts:60
+[classes/MoebiusAccentColors.ts:60](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusAccentColors.ts#L60)

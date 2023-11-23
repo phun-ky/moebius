@@ -27,4 +27,4 @@ console.log(MOEBIUS_PALETTE_DEFAULT_OPTIONS);
 
 #### Defined in
 
-constants/index.ts:23
+[constants/index.ts:23](https://github.com/phun-ky/moebius/blob/main/src/constants/index.ts#L23)

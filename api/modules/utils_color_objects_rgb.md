@@ -26,4 +26,4 @@ Represents an RGB float color unit.
 
 #### Defined in
 
-utils/color-objects/rgb.ts:11
+[utils/color-objects/rgb.ts:11](https://github.com/phun-ky/moebius/blob/main/src/utils/color-objects/rgb.ts#L11)

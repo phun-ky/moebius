@@ -24,4 +24,4 @@ Shuffles the elements of an array.
 
 #### Defined in
 
-utils/array-shuffle.ts:6
+[utils/array-shuffle.ts:6](https://github.com/phun-ky/moebius/blob/main/src/utils/array-shuffle.ts#L6)

@@ -23,7 +23,7 @@ Represents an HSL (Hue, Saturation, Lightness) color unit.
 
 #### Defined in
 
-utils/color-objects/hsl.ts:11
+[utils/color-objects/hsl.ts:11](https://github.com/phun-ky/moebius/blob/main/src/utils/color-objects/hsl.ts#L11)
 
 ___
 
@@ -46,4 +46,4 @@ Represents an HSL (Hue, Saturation, Lightness) color unit with floating-point va
 
 #### Defined in
 
-utils/color-objects/hsl.ts:42
+[utils/color-objects/hsl.ts:42](https://github.com/phun-ky/moebius/blob/main/src/utils/color-objects/hsl.ts#L42)

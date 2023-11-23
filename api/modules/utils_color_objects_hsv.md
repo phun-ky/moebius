@@ -23,4 +23,4 @@ Represents an HSV (Hue, Saturation, Value) color unit.
 
 #### Defined in
 
-utils/color-objects/hsv.ts:11
+[utils/color-objects/hsv.ts:11](https://github.com/phun-ky/moebius/blob/main/src/utils/color-objects/hsv.ts#L11)

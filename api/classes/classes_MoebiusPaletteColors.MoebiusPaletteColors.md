@@ -40,7 +40,7 @@ const palette = new MoebiusPaletteColors(colors);
 
 #### Defined in
 
-classes/MoebiusPaletteColors.ts:33
+[classes/MoebiusPaletteColors.ts:33](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L33)
 
 ## Properties
 
@@ -54,7 +54,7 @@ classes/MoebiusPaletteColors.ts:33
 
 #### Defined in
 
-classes/MoebiusPaletteColors.ts:19
+[classes/MoebiusPaletteColors.ts:19](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L19)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusPaletteColors.ts:13
+[classes/MoebiusPaletteColors.ts:13](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L13)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusPaletteColors.ts:18
+[classes/MoebiusPaletteColors.ts:18](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L18)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusPaletteColors.ts:10
+[classes/MoebiusPaletteColors.ts:10](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L10)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusPaletteColors.ts:11
+[classes/MoebiusPaletteColors.ts:11](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L11)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusPaletteColors.ts:12
+[classes/MoebiusPaletteColors.ts:12](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L12)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusPaletteColors.ts:17
+[classes/MoebiusPaletteColors.ts:17](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L17)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusPaletteColors.ts:14
+[classes/MoebiusPaletteColors.ts:14](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L14)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusPaletteColors.ts:16
+[classes/MoebiusPaletteColors.ts:16](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L16)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-classes/MoebiusPaletteColors.ts:15
+[classes/MoebiusPaletteColors.ts:15](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L15)
 
 ## Methods
 
@@ -206,4 +206,4 @@ console.log(flatArray); // ['#ff0000', '#00ff00']
 
 #### Defined in
 
-classes/MoebiusPaletteColors.ts:49
+[classes/MoebiusPaletteColors.ts:49](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L49)

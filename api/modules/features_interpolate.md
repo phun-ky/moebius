@@ -35,4 +35,4 @@ console.log(interpolatedPalette); // ['#3498db', '#5d6d7e', '#8473a9', '#ad7a95'
 
 #### Defined in
 
-features/interpolate.ts:29
+[features/interpolate.ts:29](https://github.com/phun-ky/moebius/blob/main/src/features/interpolate.ts#L29)

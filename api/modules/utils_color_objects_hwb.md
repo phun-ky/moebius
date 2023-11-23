@@ -26,4 +26,4 @@ Represents an HWB (Hue, Whiteness, Blackness) color unit.
 
 #### Defined in
 
-utils/color-objects/hwb.ts:11
+[utils/color-objects/hwb.ts:11](https://github.com/phun-ky/moebius/blob/main/src/utils/color-objects/hwb.ts#L11)

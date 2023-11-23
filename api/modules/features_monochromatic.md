@@ -43,4 +43,4 @@ console.log(monochromaticPalette);
 
 #### Defined in
 
-features/monochromatic.ts:34
+[features/monochromatic.ts:34](https://github.com/phun-ky/moebius/blob/main/src/features/monochromatic.ts#L34)

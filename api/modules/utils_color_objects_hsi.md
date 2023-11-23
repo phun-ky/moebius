@@ -23,4 +23,4 @@ Represents an HSI (Hue, Saturation, Intensity) color unit.
 
 #### Defined in
 
-utils/color-objects/hsi.ts:11
+[utils/color-objects/hsi.ts:11](https://github.com/phun-ky/moebius/blob/main/src/utils/color-objects/hsi.ts#L11)

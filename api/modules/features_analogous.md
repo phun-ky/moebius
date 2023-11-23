@@ -33,4 +33,4 @@ console.log(analogousPalette); // ['#3498db', '#75db34', '#dbd134', '#db7434', '
 
 #### Defined in
 
-features/analogous.ts:27
+[features/analogous.ts:27](https://github.com/phun-ky/moebius/blob/main/src/features/analogous.ts#L27)
