@@ -1,0 +1,78 @@
+{
+  "name": "@phun-ky/moebius",
+  "version": "0.0.0",
+  "description": "asd",
+  "main": "moebius.js",
+  "types": "moebius.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "rollup": "rollup -c",
+    "prerollup:dev": "npm run clean",
+    "rollup:dev": "rollup -c -w",
+    "clean": "rm -rf dist/ dts/ ./moebius.js",
+    "build": "npm run clean && npm run rollup",
+    "dev": "npx browser-sync start --server --files \"dev/*.html\" \"*.css\" --index \"dev/index.html\" --serveStatic \"/dev/*.html\"",
+    "docs:gen": "node ./node_modules/.bin/typedoc --entryPoints src --entryPointStrategy expand --gitRevision main --githubPages false --plugin typedoc-plugin-markdown --tsconfig tsconfig.json --hideInPageTOC --out api --readme none",
+    "commit": "npx git-cz",
+    "release": "release-it"
+  },
+  "files": [
+    "/moebius.js",
+    "/moebius.js.map",
+    "/moebius.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/phun-ky/moebius.git"
+  },
+  "author": "Alexander Vassbotn Røyne-Helgesen <alexander+github.com@phun-ky.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phun-ky/moebius/issues"
+  },
+  "homepage": "https://github.com/phun-ky/moebius#readme",
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^7.0.1",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-compat": "^3.13.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "git-cz": "^4.9.0",
+    "network-information-types": "^0.1.1",
+    "prettier": "^2.4.1",
+    "prettier-eslint": "^13.0.0",
+    "release-it": "^16.1.5",
+    "rollup": "^2.39.0",
+    "rollup-plugin-dts": "^4.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.3.1",
+    "typedoc": "^0.25.2",
+    "typedoc-plugin-frontmatter": "^0.0.2",
+    "typedoc-plugin-markdown": "^3.15.3",
+    "typedoc-plugin-mdn-links": "^3.0.3",
+    "typedoc-plugin-no-inherit": "^1.4.0",
+    "typedoc-plugin-rename-defaults": "^0.6.5",
+    "typescript": "^4.5.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/git-cz"
+    }
+  },
+  "dependencies": {
+    "chroma-js": "^2.4.2",
+    "nearest-color": "^0.4.4"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "classes": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "amd": true,
+    "es2021": true,
+    "node": true
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "comma-dangle": 1,
+    "quotes": [1, "single"],
+    "no-undef": 2,
+    "prefer-const": "error",
+    "one-var": ["error", "never"],
+    "padded-blocks": ["error", "never"],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" },
+      { "blankLine": "always", "prev": "*", "next": "export" },
+      { "blankLine": "always", "prev": "export", "next": "export" },
+      { "blankLine": "always", "prev": "export", "next": "*" },
+      { "blankLine": "always", "prev": "*", "next": "if" },
+      { "blankLine": "always", "prev": "if", "next": "*" },
+      { "blankLine": "always", "prev": "const", "next": "*" },
+      { "blankLine": "always", "prev": "*", "next": "const" },
+      { "blankLine": "always", "prev": "let", "next": "*" },
+      { "blankLine": "always", "prev": "*", "next": "let" },
+      { "blankLine": "always", "prev": "var", "next": "*" },
+      { "blankLine": "always", "prev": "*", "next": "var" },
+      {
+        "blankLine": "always",
+        "prev": "const",
+        "next": "let"
+      },
+      {
+        "blankLine": "never",
+        "prev": "const",
+        "next": "const"
+      },
+      {
+        "blankLine": "never",
+        "prev": "let",
+        "next": "let"
+      },
+      {
+        "blankLine": "never",
+        "prev": "var",
+        "next": "var"
+      },
+      {
+        "blankLine": "always",
+        "prev": "const",
+        "next": "let"
+      },
+      {
+        "blankLine": "always",
+        "prev": "const",
+        "next": "var"
+      },
+      {
+        "blankLine": "always",
+        "prev": "let",
+        "next": "var"
+      }
+    ],
+    "global-strict": 0,
+    "indent": [1, 2, { "SwitchCase": 1 }],
+    "no-extra-semi": 1,
+    "no-underscore-dangle": 0,
+    "no-console": 1,
+    "no-unused-vars": 1,
+    "no-trailing-spaces": [1, { "skipBlankLines": true }],
+    "no-unreachable": 1,
+    "no-alert": 0,
+    "semi": 1
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "plugin:compat/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ]
+}
