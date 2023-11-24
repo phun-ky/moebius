@@ -1,7 +1,7 @@
 {
   "name": "@phun-ky/moebius",
   "version": "0.1.0",
-  "description": "asd",
+  "description": "Automatically generate color palettes!",
   "main": "moebius.js",
   "types": "moebius.d.ts",
   "publishConfig": {
