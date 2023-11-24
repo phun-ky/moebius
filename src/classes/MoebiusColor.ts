@@ -10,7 +10,8 @@ import {
   MoebiusLCHObjectType,
   MoebiusColorInterface,
   MoebiusRGBObjectType,
-  MoebiusXYZObjectType
+  MoebiusXYZObjectType,
+  MoebiusChromaColorInputType
 } from '../types';
 
 import * as CONVERTERS from '../utils/converters';
@@ -24,7 +25,7 @@ import * as CONVERTERS from '../utils/converters';
  * ```
  */
 export class MoebiusColor implements MoebiusColorInterface {
-  color: MoebiusColorValueHexType;
+  color: MoebiusChromaColorInputType;
   name: string;
   hex: MoebiusColorValueHexType;
   rgb: MoebiusColorValueRgbType;
@@ -41,12 +42,12 @@ export class MoebiusColor implements MoebiusColorInterface {
 
   /**
    * Creates an instance of MoebiusColor.
-   * @param {MoebiusColorValueHexType} value - The hex value of the color.
+   * @param {MoebiusChromaColorInputType} value - The hex value of the color.
    * @param {string} name - The name of the color
    * @constructor
    * @throws Will throw an error if init has not been run before creating an instance.
    */
-  constructor(color: MoebiusColorValueHexType, name: string) {
+  constructor(color: MoebiusChromaColorInputType, name: string) {
     this.color = color;
     this.name = name;
 

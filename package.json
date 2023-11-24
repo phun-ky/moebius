@@ -1,7 +1,7 @@
 {
   "name": "@phun-ky/moebius",
   "version": "0.1.0",
-  "description": "asd",
+  "description": "Automatically generate color palettes!",
   "main": "moebius.js",
   "types": "moebius.d.ts",
   "publishConfig": {
@@ -48,7 +48,6 @@
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "git-cz": "^4.9.0",
-    "network-information-types": "^0.1.1",
     "prettier": "^2.4.1",
     "prettier-eslint": "^13.0.0",
     "release-it": "^17.0.0",
