@@ -28,7 +28,7 @@
       - [toObject](#toobject)
       - [toFloat](#tofloat)
     - [Types](#types)
-  - [Sponsor me!](#sponsor-me)
+  - [Sponsor me](#sponsor-me)
 
 ## About
 
@@ -393,7 +393,7 @@ console.log(color.toObject(); // "0, 63, 92"
 
 #### toFloat
 
-The color object exposes a `toFloat` method, that allows to objectify to float valus, as in `0-1` instead of `0-255`/`0-100` from any color unit given to either a color object for the hsl units, or default rgb:
+The color object exposes a `toFloat` method, that allows to objectify to float values, as in `0-1` instead of `0-255`/`0-100` from any color unit given to either a color object for the hsl units, or default rgb:
 
 ```ts
 const color = new MoebiusColor('#003f5c');
