@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.2](https://github.com/phun-ky/moebius/compare/0.1.1...0.1.2) (2023-11-24)
+
+
+### Documentation
+
+* ✏️ Fix typo ([f7df087](https://github.com/phun-ky/moebius/commit/f7df087ba38fe74c89ae937245ff71b24fcde034))
+* ✏️ Update keywords ([e947bf0](https://github.com/phun-ky/moebius/commit/e947bf00d1f9da4046426da753d2e0869bd6d424))
+
 ## [0.1.1](https://github.com/phun-ky/moebius/compare/0.1.0...0.1.1) (2023-11-24)
 
 
