@@ -40,7 +40,7 @@ const initializeColorNames = async (): Promise<
  * @returns {MoebiusReturnType} An object with Moebius classes
  *
  */
-export async function Moebius(): MoebiusReturnType {
+async function Moebius(): MoebiusReturnType {
   const colorNames = await initializeColorNames();
 
   class MoebiusColorAbstract extends MoebiusColor {
@@ -61,3 +61,5 @@ export async function Moebius(): MoebiusReturnType {
     MoebiusAccentColors
   };
 }
+
+export default Moebius;
