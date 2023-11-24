@@ -6,17 +6,17 @@
 
 ### MoebiusReturnType
 
-Ƭ **MoebiusReturnType**: `Promise`<{ `MoebiusAccentColors`: typeof [`MoebiusAccentColors`](../classes/classes_MoebiusAccentColors.MoebiusAccentColors.md) ; `MoebiusColor`: typeof [`MoebiusColor`](../classes/classes_MoebiusColor.MoebiusColor.md) ; `MoebiusPalettes`: typeof [`MoebiusPalettes`](../classes/classes_MoebiusPalettes.MoebiusPalettes.md) ; `MoebiusSVGHelper`: typeof [`MoebiusSVGHelper`](../classes/classes_MoebiusSVGHelper.MoebiusSVGHelper.md)  }\>
+Ƭ **MoebiusReturnType**: `Promise`<{ `MoebiusColor`: typeof [`MoebiusColor`](../classes/classes_MoebiusColor.MoebiusColor.md) ; `MoebiusPalettes`: typeof [`MoebiusPalettes`](../classes/classes_MoebiusPalettes.MoebiusPalettes.md) ; `MoebiusSVGHelper`: typeof [`MoebiusSVGHelper`](../classes/classes_MoebiusSVGHelper.MoebiusSVGHelper.md)  }\>
 
 #### Defined in
 
-[main.ts:14](https://github.com/phun-ky/moebius/blob/main/src/main.ts#L14)
+[main.ts:13](https://github.com/phun-ky/moebius/blob/main/src/main.ts#L13)
 
 ## Functions
 
-### Moebius
+### default
 
-▸ **Moebius**(): [`MoebiusReturnType`](main.md#moebiusreturntype)
+▸ **default**(): [`MoebiusReturnType`](main.md#moebiusreturntype)
 
 Asynchronous function to initialize Moebius with required data
 
@@ -30,4 +30,4 @@ An object with Moebius classes
 
 #### Defined in
 
-[main.ts:43](https://github.com/phun-ky/moebius/blob/main/src/main.ts#L43)
+[main.ts:41](https://github.com/phun-ky/moebius/blob/main/src/main.ts#L41)

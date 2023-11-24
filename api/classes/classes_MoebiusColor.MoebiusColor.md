@@ -28,7 +28,7 @@ Creates an instance of MoebiusColor.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `color` | \`#${string}\` | - |
+| `color` | [`MoebiusChromaColorInputType`](../modules/types.md#moebiuschromacolorinputtype) | - |
 | `name` | `string` | The name of the color |
 
 #### Returns
@@ -41,7 +41,7 @@ Will throw an error if init has not been run before creating an instance.
 
 #### Defined in
 
-[classes/MoebiusColor.ts:49](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L49)
+[classes/MoebiusColor.ts:50](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L50)
 
 ## Properties
 
@@ -55,13 +55,13 @@ Will throw an error if init has not been run before creating an instance.
 
 #### Defined in
 
-[classes/MoebiusColor.ts:40](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L40)
+[classes/MoebiusColor.ts:41](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L41)
 
 ___
 
 ### color
 
-• **color**: \`#${string}\`
+• **color**: [`MoebiusChromaColorInputType`](../modules/types.md#moebiuschromacolorinputtype)
 
 #### Implementation of
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusColor.ts:27](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L27)
+[classes/MoebiusColor.ts:28](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L28)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusColor.ts:29](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L29)
+[classes/MoebiusColor.ts:30](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L30)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusColor.ts:38](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L38)
+[classes/MoebiusColor.ts:39](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L39)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusColor.ts:31](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L31)
+[classes/MoebiusColor.ts:32](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L32)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusColor.ts:33](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L33)
+[classes/MoebiusColor.ts:34](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L34)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusColor.ts:32](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L32)
+[classes/MoebiusColor.ts:33](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L33)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusColor.ts:34](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L34)
+[classes/MoebiusColor.ts:35](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L35)
 
 ___
 
@@ -167,7 +167,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusColor.ts:36](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L36)
+[classes/MoebiusColor.ts:37](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L37)
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusColor.ts:28](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L28)
+[classes/MoebiusColor.ts:29](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L29)
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusColor.ts:39](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L39)
+[classes/MoebiusColor.ts:40](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L40)
 
 ___
 
@@ -209,7 +209,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusColor.ts:37](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L37)
+[classes/MoebiusColor.ts:38](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L38)
 
 ___
 
@@ -223,7 +223,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusColor.ts:30](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L30)
+[classes/MoebiusColor.ts:31](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L31)
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusColor.ts:35](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L35)
+[classes/MoebiusColor.ts:36](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L36)
 
 ## Methods
 
@@ -261,7 +261,7 @@ The floating-point representation of the color in the specified color space.
 
 #### Defined in
 
-[classes/MoebiusColor.ts:79](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L79)
+[classes/MoebiusColor.ts:80](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L80)
 
 ___
 
@@ -285,4 +285,4 @@ The color object in the specified color space.
 
 #### Defined in
 
-[classes/MoebiusColor.ts:71](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L71)
+[classes/MoebiusColor.ts:72](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L72)
