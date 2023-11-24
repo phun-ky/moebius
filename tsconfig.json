@@ -15,8 +15,7 @@
     "esModuleInterop": true,
     "baseUrl": "src/",
     "typeRoots": ["./node_modules/@types"],
-    "resolveJsonModule": true,
-    "types": ["node", "./node_modules/network-information-types"]
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules",
