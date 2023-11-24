@@ -9,13 +9,11 @@ import {
 import { MoebiusSVGHelper } from './classes/MoebiusSVGHelper';
 import { MoebiusPalettes } from './classes/MoebiusPalettes';
 import { MoebiusColor } from './classes/MoebiusColor';
-import { MoebiusAccentColors } from './classes/MoebiusAccentColors';
 
 export type MoebiusReturnType = Promise<{
   MoebiusColor: typeof MoebiusColor;
   MoebiusPalettes: typeof MoebiusPalettes;
   MoebiusSVGHelper: typeof MoebiusSVGHelper;
-  MoebiusAccentColors: typeof MoebiusAccentColors;
 }>;
 
 const initializeColorNames = async (): Promise<
@@ -57,8 +55,7 @@ async function Moebius(): MoebiusReturnType {
   return {
     MoebiusColor: MoebiusColorAbstract as typeof MoebiusColor,
     MoebiusPalettes,
-    MoebiusSVGHelper,
-    MoebiusAccentColors
+    MoebiusSVGHelper
   };
 }
 
