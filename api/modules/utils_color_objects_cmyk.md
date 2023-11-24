@@ -27,4 +27,4 @@ Represents a CMYK color unit.
 
 #### Defined in
 
-utils/color-objects/cmyk.ts:12
+[utils/color-objects/cmyk.ts:12](https://github.com/phun-ky/moebius/blob/main/src/utils/color-objects/cmyk.ts#L12)

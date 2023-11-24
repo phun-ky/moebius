@@ -24,7 +24,7 @@ Helper class for generating SVG paths for colored pie slices.
 
 #### Defined in
 
-classes/MoebiusSVGHelper.ts:10
+[classes/MoebiusSVGHelper.ts:10](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusSVGHelper.ts#L10)
 
 ## Methods
 
@@ -58,4 +58,4 @@ document.body.appendChild(svgFragment);
 
 #### Defined in
 
-classes/MoebiusSVGHelper.ts:25
+[classes/MoebiusSVGHelper.ts:25](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusSVGHelper.ts#L25)

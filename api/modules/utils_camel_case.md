@@ -24,4 +24,4 @@ Converts a string to camel case.
 
 #### Defined in
 
-utils/camel-case.ts:6
+[utils/camel-case.ts:6](https://github.com/phun-ky/moebius/blob/main/src/utils/camel-case.ts#L6)

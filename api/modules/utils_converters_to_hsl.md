@@ -31,4 +31,4 @@ console.log(hslObject); // Output: { h: 207.76, s: 0.86, l: 0.56 }
 
 #### Defined in
 
-utils/converters/to-hsl.ts:18
+[utils/converters/to-hsl.ts:18](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-hsl.ts#L18)

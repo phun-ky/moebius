@@ -33,4 +33,4 @@ console.log(tetradicPalette); // ['#3498db', '#db3434', '#34db99', '#dbd134', '#
 
 #### Defined in
 
-features/tetradic.ts:26
+[features/tetradic.ts:26](https://github.com/phun-ky/moebius/blob/main/src/features/tetradic.ts#L26)

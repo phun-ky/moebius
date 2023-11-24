@@ -33,4 +33,4 @@ console.log(randomNumber); // Example output: 5
 
 #### Defined in
 
-utils/random.ts:15
+[utils/random.ts:15](https://github.com/phun-ky/moebius/blob/main/src/utils/random.ts#L15)

@@ -33,4 +33,4 @@ console.log(result); // [1, 3, 5, 7, 9]
 
 #### Defined in
 
-utils/range.ts:13
+[utils/range.ts:13](https://github.com/phun-ky/moebius/blob/main/src/utils/range.ts#L13)

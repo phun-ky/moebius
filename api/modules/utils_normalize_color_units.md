@@ -24,7 +24,7 @@ Normalizes a LAB input value.
 
 #### Defined in
 
-utils/normalize-color-units.ts:17
+[utils/normalize-color-units.ts:17](https://github.com/phun-ky/moebius/blob/main/src/utils/normalize-color-units.ts#L17)
 
 ___
 
@@ -48,4 +48,4 @@ Normalizes an RGB input value.
 
 #### Defined in
 
-utils/normalize-color-units.ts:6
+[utils/normalize-color-units.ts:6](https://github.com/phun-ky/moebius/blob/main/src/utils/normalize-color-units.ts#L6)

@@ -18,4 +18,4 @@ Generates a random hexadecimal color.
 
 #### Defined in
 
-utils/get-random-color-hex.ts:7
+[utils/get-random-color-hex.ts:7](https://github.com/phun-ky/moebius/blob/main/src/utils/get-random-color-hex.ts#L7)

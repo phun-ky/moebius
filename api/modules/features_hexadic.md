@@ -33,4 +33,4 @@ console.log(hexadicPalette); // ['#3498db', '#5d7f33', '#8473a9', '#ad7a95', '#d
 
 #### Defined in
 
-features/hexadic.ts:27
+[features/hexadic.ts:27](https://github.com/phun-ky/moebius/blob/main/src/features/hexadic.ts#L27)

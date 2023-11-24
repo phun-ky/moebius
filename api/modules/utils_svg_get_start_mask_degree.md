@@ -25,4 +25,4 @@ Calculates the starting mask degree based on the number of elements in a color g
 
 #### Defined in
 
-utils/svg/get-start-mask-degree.ts:8
+[utils/svg/get-start-mask-degree.ts:8](https://github.com/phun-ky/moebius/blob/main/src/utils/svg/get-start-mask-degree.ts#L8)

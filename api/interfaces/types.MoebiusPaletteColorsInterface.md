@@ -18,7 +18,7 @@ Represents a palette of colors with different schemes.
 
 #### Defined in
 
-types/index.ts:44
+[types/index.ts:44](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L44)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-types/index.ts:38
+[types/index.ts:38](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L38)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-types/index.ts:43
+[types/index.ts:43](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L43)
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-types/index.ts:35
+[types/index.ts:35](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L35)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-types/index.ts:36
+[types/index.ts:36](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L36)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-types/index.ts:37
+[types/index.ts:37](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L37)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-types/index.ts:42
+[types/index.ts:42](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L42)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-types/index.ts:39
+[types/index.ts:39](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L39)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-types/index.ts:41
+[types/index.ts:41](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L41)
 
 ___
 
@@ -108,4 +108,4 @@ ___
 
 #### Defined in
 
-types/index.ts:40
+[types/index.ts:40](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L40)

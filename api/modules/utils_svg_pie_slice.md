@@ -27,4 +27,4 @@ Generates an SVG path representing a pie slice.
 
 #### Defined in
 
-utils/svg/pie-slice.ts:10
+[utils/svg/pie-slice.ts:10](https://github.com/phun-ky/moebius/blob/main/src/utils/svg/pie-slice.ts#L10)
