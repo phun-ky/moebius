@@ -41,7 +41,7 @@ Will throw an error if init has not been run before creating an instance.
 
 #### Defined in
 
-[classes/MoebiusColor.ts:50](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L50)
+[classes/MoebiusColor.ts:52](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L52)
 
 ## Properties
 
@@ -112,6 +112,20 @@ ___
 #### Defined in
 
 [classes/MoebiusColor.ts:32](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L32)
+
+___
+
+### hslFloat
+
+• **hslFloat**: [`MoebiusHSLObjectType`](../modules/types.md#moebiushslobjecttype)
+
+#### Implementation of
+
+[MoebiusColorInterface](../interfaces/types.MoebiusColorInterface.md).[hslFloat](../interfaces/types.MoebiusColorInterface.md#hslfloat)
+
+#### Defined in
+
+[classes/MoebiusColor.ts:43](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L43)
 
 ___
 
@@ -227,6 +241,20 @@ ___
 
 ___
 
+### rgbFloat
+
+• **rgbFloat**: [`MoebiusRGBObjectType`](../modules/types.md#moebiusrgbobjecttype)
+
+#### Implementation of
+
+[MoebiusColorInterface](../interfaces/types.MoebiusColorInterface.md).[rgbFloat](../interfaces/types.MoebiusColorInterface.md#rgbfloat)
+
+#### Defined in
+
+[classes/MoebiusColor.ts:42](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L42)
+
+___
+
 ### xyz
 
 • **xyz**: [`MoebiusXYZObjectType`](../modules/types.md#moebiusxyzobjecttype)
@@ -261,7 +289,7 @@ The floating-point representation of the color in the specified color space.
 
 #### Defined in
 
-[classes/MoebiusColor.ts:80](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L80)
+[classes/MoebiusColor.ts:87](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L87)
 
 ___
 
@@ -285,4 +313,4 @@ The color object in the specified color space.
 
 #### Defined in
 
-[classes/MoebiusColor.ts:72](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L72)
+[classes/MoebiusColor.ts:79](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusColor.ts#L79)

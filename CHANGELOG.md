@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.4](https://github.com/phun-ky/moebius/compare/0.1.3...0.1.4) (2023-12-05)
+
+
+### Bug
+
+* 🐛 Add missing `rgbFloat` and `hslFloat` ([127a407](https://github.com/phun-ky/moebius/commit/127a407ac17e4dc5b95472b6f527e4eeb78e8b29))
+* 🐛 Guard against `NaN` ([c0cf948](https://github.com/phun-ky/moebius/commit/c0cf948c8446e6d07cbf8cb790b176ebb196e8bc))
+* 🐛 Unique ([5b90bd4](https://github.com/phun-ky/moebius/commit/5b90bd4e4c9c951dfabe5a8ea08e28203c490ec7))
+
 ## [0.1.3](https://github.com/phun-ky/moebius/compare/0.1.2...0.1.3) (2023-11-27)
 
 

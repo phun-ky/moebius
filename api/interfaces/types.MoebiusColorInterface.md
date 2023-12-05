@@ -18,7 +18,7 @@ Represents a color object with various color representations.
 
 #### Defined in
 
-[types/index.ts:18](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L18)
+[types/index.ts:20](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L20)
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:16](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L16)
+[types/index.ts:18](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L18)
 
 ___
 
@@ -62,13 +62,23 @@ ___
 
 ___
 
+### hslFloat
+
+• **hslFloat**: [`MoebiusHSLObjectType`](../modules/types.md#moebiushslobjecttype)
+
+#### Defined in
+
+[types/index.ts:10](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L10)
+
+___
+
 ### hsv
 
 • **hsv**: [`MoebiusHSVObjectType`](../modules/types.md#moebiushsvobjecttype)
 
 #### Defined in
 
-[types/index.ts:11](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L11)
+[types/index.ts:13](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L13)
 
 ___
 
@@ -78,7 +88,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:10](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L10)
+[types/index.ts:12](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L12)
 
 ___
 
@@ -88,7 +98,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:12](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L12)
+[types/index.ts:14](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L14)
 
 ___
 
@@ -98,7 +108,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:14](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L14)
+[types/index.ts:16](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L16)
 
 ___
 
@@ -118,7 +128,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:17](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L17)
+[types/index.ts:19](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L19)
 
 ___
 
@@ -128,7 +138,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:15](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L15)
+[types/index.ts:17](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L17)
 
 ___
 
@@ -142,10 +152,20 @@ ___
 
 ___
 
+### rgbFloat
+
+• **rgbFloat**: [`MoebiusRGBObjectType`](../modules/types.md#moebiusrgbobjecttype)
+
+#### Defined in
+
+[types/index.ts:11](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L11)
+
+___
+
 ### xyz
 
 • **xyz**: [`MoebiusXYZObjectType`](../modules/types.md#moebiusxyzobjecttype)
 
 #### Defined in
 
-[types/index.ts:13](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L13)
+[types/index.ts:15](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L15)
