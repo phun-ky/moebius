@@ -10,6 +10,8 @@ import { MoebiusSVGHelper } from './classes/MoebiusSVGHelper';
 import { MoebiusPalettes } from './classes/MoebiusPalettes';
 import { MoebiusColor } from './classes/MoebiusColor';
 
+export * from './types';
+
 export type MoebiusReturnType = Promise<{
   MoebiusColor: typeof MoebiusColor;
   MoebiusPalettes: typeof MoebiusPalettes;
