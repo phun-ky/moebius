@@ -39,6 +39,8 @@ export class MoebiusColor implements MoebiusColorInterface {
   hsi: MoebiusHSIObjectType;
   oklab: MoebiusLABObjectType;
   cmyk: MoebiusCMYKObjectType;
+  rgbFloat: MoebiusRGBObjectType;
+  hslFloat: MoebiusHSLObjectType;
 
   /**
    * Creates an instance of MoebiusColor.
@@ -63,6 +65,11 @@ export class MoebiusColor implements MoebiusColorInterface {
     this.oklch = CONVERTERS.toOKLCH(this.color);
     this.hsi = CONVERTERS.toHSI(this.color);
     this.rgb = CONVERTERS.toRGB(this.color);
+    this.rgbFloat = CONVERTERS.toFloat(this.color) as MoebiusRGBObjectType;
+    this.hslFloat = CONVERTERS.toFloat(
+      this.color,
+      'hsl'
+    ) as MoebiusHSLObjectType;
   }
   /**
    * Converts the color to an object in the specified color space.

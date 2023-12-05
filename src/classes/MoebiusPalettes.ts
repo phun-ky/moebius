@@ -62,11 +62,15 @@ export class MoebiusPalettes implements MoebiusPaletteInterface {
     this.accents = new MoebiusAccentColors(this.colors, this.options);
 
     this.all = [
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      ...(this.accents as any).toArray(),
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      ...(this.colors as any).toArray()
-    ].flat();
+      ...new Set(
+        [
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          ...(this.accents as any).toArray(),
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          ...(this.colors as any).toArray()
+        ].flat()
+      )
+    ];
   }
 
   /**

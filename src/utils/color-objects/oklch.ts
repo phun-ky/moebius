@@ -11,7 +11,7 @@ import { MoebiusLCHObjectType } from '../../types';
 export const UnitOKLCH = function (this: MoebiusLCHObjectType, [l, c, h]) {
   this.l = Number(l.toFixed(2));
   this.c = Number(c.toFixed(2));
-  this.h = Number(h.toFixed(2));
+  this.h = Number(!isNaN(h) ? h.toFixed(2) : 0);
 };
 
 /**
