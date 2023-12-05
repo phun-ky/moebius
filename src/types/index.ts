@@ -7,6 +7,8 @@ export interface MoebiusColorInterface {
   hex: MoebiusColorValueHexType;
   rgb: MoebiusColorValueRgbType;
   hsl: MoebiusHSLObjectType;
+  hslFloat: MoebiusHSLObjectType;
+  rgbFloat: MoebiusRGBObjectType;
   hwb: MoebiusHWBObjectType;
   hsv: MoebiusHSVObjectType;
   lab: MoebiusLABObjectType;
