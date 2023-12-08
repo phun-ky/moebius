@@ -42,11 +42,10 @@ export class MoebiusPalettes implements MoebiusPaletteInterface {
     this.baseColor = this.options.baseColor;
     this.secondaryColor = this.options.secondaryColor;
     this.themes = new MoebiusThemeColors({
-      darkmode: this.darkmode(
-        this.baseColor.hex,
-        this.secondaryColor.hex,
-        this.options
-      )
+      darkmode: this.darkmode(this.baseColor.hex, this.secondaryColor.hex, {
+        ...this.options,
+        reverseDirection: !this.options.reverseDirection
+      })
     });
     this.colors = new MoebiusPaletteColors({
       interpolate: this.interpolate(
