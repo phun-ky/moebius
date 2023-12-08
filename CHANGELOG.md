@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.2](https://github.com/phun-ky/moebius/compare/0.2.1...0.2.2) (2023-12-08)
+
+
+### Documentation
+
+* ✏️ Generate docs ([934615a](https://github.com/phun-ky/moebius/commit/934615a8723506f1e747480d73422443c5f97a56))
+
+
+### Bug
+
+* 🐛 Remove paths check ([c5b9c57](https://github.com/phun-ky/moebius/commit/c5b9c578d7168598673ecb5cdc0a7d23c47380c0))
+* 🐛 Use a separate `themes` property ([e37842f](https://github.com/phun-ky/moebius/commit/e37842f0e4a7fc63bd43bfb71fea1dc7aa916692))
+
 ## [0.2.1](https://github.com/phun-ky/moebius/compare/0.2.0...0.2.1) (2023-12-08)
 
 
