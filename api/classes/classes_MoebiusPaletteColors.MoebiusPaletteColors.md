@@ -76,10 +76,6 @@ ___
 
 • **darkmode**: `Record`<`string`, \`#${string}\`[]\>
 
-#### Implementation of
-
-[MoebiusPaletteColorsInterface](../interfaces/types.MoebiusPaletteColorsInterface.md).[darkmode](../interfaces/types.MoebiusPaletteColorsInterface.md#darkmode)
-
 #### Defined in
 
 [classes/MoebiusPaletteColors.ts:20](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L20)
