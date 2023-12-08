@@ -18,7 +18,7 @@ Represents a palette of accent colors with different schemes.
 
 #### Defined in
 
-[types/index.ts:62](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L62)
+[types/index.ts:63](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L63)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:56](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L56)
+[types/index.ts:57](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L57)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:61](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L61)
+[types/index.ts:62](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L62)
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:53](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L53)
+[types/index.ts:54](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L54)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:54](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L54)
+[types/index.ts:55](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L55)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:55](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L55)
+[types/index.ts:56](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L56)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:60](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L60)
+[types/index.ts:61](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L61)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:57](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L57)
+[types/index.ts:58](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L58)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:59](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L59)
+[types/index.ts:60](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L60)
 
 ___
 
@@ -108,4 +108,4 @@ ___
 
 #### Defined in
 
-[types/index.ts:58](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L58)
+[types/index.ts:59](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L59)

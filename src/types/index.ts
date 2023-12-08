@@ -44,6 +44,7 @@ export interface MoebiusPaletteColorsInterface {
   pentadic: MoebiusColorValueHexType[];
   hexadic: MoebiusColorValueHexType[];
   analogous: MoebiusColorValueHexType[];
+  darkmode: Record<string, MoebiusColorValueHexType[]>;
 }
 
 /**

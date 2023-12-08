@@ -19,3 +19,5 @@ export * from './triadic';
 export * from './split';
 
 export * from './complement';
+
+export * from './darkmode';
