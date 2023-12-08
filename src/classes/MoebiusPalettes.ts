@@ -6,7 +6,8 @@ import {
   MoebiusPaletteColorsInterface,
   MoebiusPaletteDefaultOptionsType,
   MoebiusPaletteOptionsType,
-  MoebiusPaletteInterface
+  MoebiusPaletteInterface,
+  MoebiusChromaColorInputType
 } from '../types';
 
 import { MoebiusPaletteColors } from './MoebiusPaletteColors';
@@ -56,7 +57,12 @@ export class MoebiusPalettes implements MoebiusPaletteInterface {
       tetradic: this.tetradic(this.baseColor.hex),
       pentadic: this.pentadic(this.baseColor.hex),
       hexadic: this.hexadic(this.baseColor.hex),
-      analogous: this.analogous(this.baseColor.hex)
+      analogous: this.analogous(this.baseColor.hex),
+      darkmode: this.darkmode(
+        this.baseColor.hex,
+        this.secondaryColor.hex,
+        this.options
+      )
     });
 
     this.accents = new MoebiusAccentColors(this.colors, this.options);
@@ -97,6 +103,34 @@ export class MoebiusPalettes implements MoebiusPaletteInterface {
     const currentOptions = { ...this.options, ...options };
 
     return FEATURES.complement(color, currentOptions);
+  }
+
+  /**
+   * Generates a dark mode color palette based on the provided base and secondary colors.
+   * @param {MoebiusChromaColorInputType} baseColor - The base color for the palette.
+   * @param {MoebiusChromaColorInputType} secondaryColor - The secondary color for the palette.
+   * @param {Record<string, unknown> | MoebiusPaletteOptionsType} [options={}] - Palette options.
+   * @param {boolean} [options.bezier=false] - Whether to use bezier interpolation for color scales.
+   * @param {string} [options.colorScaleMode] - The color scale mode for chroma.mix.
+   * @param {boolean} [options.noDuplicates=true] - Whether to remove duplicate colors from the palette.
+   * @returns {Record<string, MoebiusColorValueHexType[]>} - The generated dark mode color palette.
+   * @example
+   * ```ts
+   * const baseColor = '#3498db';
+   * const secondaryColor = '#2ecc71';
+   * const options = { bezier: true, colorScaleMode: 'lch' };
+   * const palette = darkmode(baseColor, secondaryColor, options);
+   * console.log(palette);
+   * ```
+   */
+  darkmode(
+    baseColor: MoebiusChromaColorInputType,
+    secondaryColor: MoebiusChromaColorInputType,
+    options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+  ): Record<string, MoebiusColorValueHexType[]> {
+    const currentOptions = { ...this.options, ...options };
+
+    return FEATURES.darkmode(baseColor, secondaryColor, currentOptions);
   }
 
   /**
