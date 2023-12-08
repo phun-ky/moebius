@@ -30,7 +30,7 @@ Creates an instance of MoebiusPalettes.
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:36](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L36)
+[classes/MoebiusPalettes.ts:37](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L37)
 
 ## Properties
 
@@ -44,7 +44,7 @@ Creates an instance of MoebiusPalettes.
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:30](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L30)
+[classes/MoebiusPalettes.ts:31](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L31)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:29](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L29)
+[classes/MoebiusPalettes.ts:30](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L30)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:21](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L21)
+[classes/MoebiusPalettes.ts:22](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L22)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:23](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L23)
+[classes/MoebiusPalettes.ts:24](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L24)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:24](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L24)
+[classes/MoebiusPalettes.ts:25](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L25)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:28](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L28)
+[classes/MoebiusPalettes.ts:29](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L29)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:22](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L22)
+[classes/MoebiusPalettes.ts:23](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L23)
 
 ## Methods
 
@@ -161,7 +161,7 @@ console.log(analogousPalette); // ['#3498db', '#75db34', '#dbd134', '#db7434', '
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:249](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L249)
+[classes/MoebiusPalettes.ts:283](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L283)
 
 ___
 
@@ -194,7 +194,43 @@ console.log(complementPalette); // ['#3498db', '#db3434', '#75db34', '#dbd134', 
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:93](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L93)
+[classes/MoebiusPalettes.ts:99](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L99)
+
+___
+
+### darkmode
+
+▸ **darkmode**(`baseColor`, `secondaryColor`, `options?`): `Record`<`string`, \`#${string}\`[]\>
+
+Generates a dark mode color palette based on the provided base and secondary colors.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `baseColor` | [`MoebiusChromaColorInputType`](../modules/types.md#moebiuschromacolorinputtype) | The base color for the palette. |
+| `secondaryColor` | [`MoebiusChromaColorInputType`](../modules/types.md#moebiuschromacolorinputtype) | The secondary color for the palette. |
+| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Palette options. |
+
+#### Returns
+
+`Record`<`string`, \`#${string}\`[]\>
+
+- The generated dark mode color palette.
+
+**`Example`**
+
+```ts
+const baseColor = '#3498db';
+const secondaryColor = '#2ecc71';
+const options = { bezier: true, colorScaleMode: 'lch' };
+const palette = darkmode(baseColor, secondaryColor, options);
+console.log(palette);
+```
+
+#### Defined in
+
+[classes/MoebiusPalettes.ts:126](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L126)
 
 ___
 
@@ -230,7 +266,7 @@ console.log(harmonizedPalette); // ['#3498db', '#75db34', '#dbd134', '#db7434', 
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:368](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L368)
+[classes/MoebiusPalettes.ts:402](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L402)
 
 ___
 
@@ -263,7 +299,7 @@ console.log(hexadicPalette); // ['#3498db', '#5d7f33', '#8473a9', '#ad7a95', '#d
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:223](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L223)
+[classes/MoebiusPalettes.ts:257](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L257)
 
 ___
 
@@ -298,7 +334,7 @@ console.log(interpolatedPalette); // ['#3498db', '#5d6d7e', '#8473a9', '#ad7a95'
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:278](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L278)
+[classes/MoebiusPalettes.ts:312](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L312)
 
 ___
 
@@ -333,7 +369,7 @@ console.log(luminanceShiftPalette); // ['#3498db', '#99db34', '#dbd134', '#db343
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:309](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L309)
+[classes/MoebiusPalettes.ts:343](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L343)
 
 ___
 
@@ -376,7 +412,7 @@ console.log(monochromaticPalette);
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:342](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L342)
+[classes/MoebiusPalettes.ts:376](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L376)
 
 ___
 
@@ -409,7 +445,7 @@ console.log(pentadicPalette); // ['#3498db', '#dbd134', '#db3434', '#34db99', '#
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:197](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L197)
+[classes/MoebiusPalettes.ts:231](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L231)
 
 ___
 
@@ -442,7 +478,7 @@ console.log(splitPalette); // ['#3498db', '#99db34', '#dbd134', '#db3434', '#8f3
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:119](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L119)
+[classes/MoebiusPalettes.ts:153](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L153)
 
 ___
 
@@ -475,7 +511,7 @@ console.log(tetradicPalette); // ['#3498db', '#db3434', '#34db99', '#dbd134', '#
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:171](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L171)
+[classes/MoebiusPalettes.ts:205](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L205)
 
 ___
 
@@ -508,4 +544,4 @@ console.log(triadicPalette);
 
 #### Defined in
 
-[classes/MoebiusPalettes.ts:145](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L145)
+[classes/MoebiusPalettes.ts:179](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L179)

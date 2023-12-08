@@ -30,7 +30,7 @@ Represents a CMYK color object.
 
 #### Defined in
 
-[types/index.ts:168](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L168)
+[types/index.ts:169](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L169)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:193](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L193)
+[types/index.ts:194](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L194)
 
 ___
 
@@ -52,7 +52,7 @@ Represents a color value in hexadecimal format.
 
 #### Defined in
 
-[types/index.ts:101](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L101)
+[types/index.ts:102](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L102)
 
 ___
 
@@ -64,7 +64,7 @@ Represents a color value in HSL format.
 
 #### Defined in
 
-[types/index.ts:106](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L106)
+[types/index.ts:107](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L107)
 
 ___
 
@@ -76,7 +76,7 @@ Represents a color value in HSLA format.
 
 #### Defined in
 
-[types/index.ts:111](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L111)
+[types/index.ts:112](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L112)
 
 ___
 
@@ -88,7 +88,7 @@ Represents a color value in RGB format.
 
 #### Defined in
 
-[types/index.ts:117](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L117)
+[types/index.ts:118](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L118)
 
 ___
 
@@ -100,7 +100,7 @@ Represents a color value in RGBA format.
 
 #### Defined in
 
-[types/index.ts:122](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L122)
+[types/index.ts:123](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L123)
 
 ___
 
@@ -120,7 +120,7 @@ Represents an HSI color object.
 
 #### Defined in
 
-[types/index.ts:148](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L148)
+[types/index.ts:149](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L149)
 
 ___
 
@@ -140,7 +140,7 @@ Represents an HSL color object.
 
 #### Defined in
 
-[types/index.ts:133](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L133)
+[types/index.ts:134](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L134)
 
 ___
 
@@ -160,7 +160,7 @@ Represents an HSV color object.
 
 #### Defined in
 
-[types/index.ts:138](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L138)
+[types/index.ts:139](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L139)
 
 ___
 
@@ -180,7 +180,7 @@ Represents an HWB color object.
 
 #### Defined in
 
-[types/index.ts:158](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L158)
+[types/index.ts:159](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L159)
 
 ___
 
@@ -200,7 +200,7 @@ Represents a LAB color object.
 
 #### Defined in
 
-[types/index.ts:163](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L163)
+[types/index.ts:164](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L164)
 
 ___
 
@@ -220,7 +220,7 @@ Represents an LCH color object.
 
 #### Defined in
 
-[types/index.ts:143](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L143)
+[types/index.ts:144](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L144)
 
 ___
 
@@ -246,7 +246,7 @@ Represents default options for generating a color palette.
 
 #### Defined in
 
-[types/index.ts:86](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L86)
+[types/index.ts:87](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L87)
 
 ___
 
@@ -275,7 +275,7 @@ Represents options for generating a color palette.
 
 #### Defined in
 
-[types/index.ts:68](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L68)
+[types/index.ts:69](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L69)
 
 ___
 
@@ -295,7 +295,7 @@ Represents an RGB color object.
 
 #### Defined in
 
-[types/index.ts:128](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L128)
+[types/index.ts:129](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L129)
 
 ___
 
@@ -315,4 +315,4 @@ Represents an XYZ color object.
 
 #### Defined in
 
-[types/index.ts:153](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L153)
+[types/index.ts:154](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L154)

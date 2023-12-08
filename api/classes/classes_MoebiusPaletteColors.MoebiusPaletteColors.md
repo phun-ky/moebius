@@ -40,7 +40,7 @@ const palette = new MoebiusPaletteColors(colors);
 
 #### Defined in
 
-[classes/MoebiusPaletteColors.ts:33](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L33)
+[classes/MoebiusPaletteColors.ts:34](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L34)
 
 ## Properties
 
@@ -69,6 +69,20 @@ ___
 #### Defined in
 
 [classes/MoebiusPaletteColors.ts:13](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L13)
+
+___
+
+### darkmode
+
+• **darkmode**: `Record`<`string`, \`#${string}\`[]\>
+
+#### Implementation of
+
+[MoebiusPaletteColorsInterface](../interfaces/types.MoebiusPaletteColorsInterface.md).[darkmode](../interfaces/types.MoebiusPaletteColorsInterface.md#darkmode)
+
+#### Defined in
+
+[classes/MoebiusPaletteColors.ts:20](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L20)
 
 ___
 
@@ -206,4 +220,4 @@ console.log(flatArray); // ['#ff0000', '#00ff00']
 
 #### Defined in
 
-[classes/MoebiusPaletteColors.ts:49](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L49)
+[classes/MoebiusPaletteColors.ts:50](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPaletteColors.ts#L50)

@@ -16,6 +16,12 @@ Re-exports [complement](features_complement.md#complement)
 
 ___
 
+### darkmode
+
+Re-exports [darkmode](features_darkmode.md#darkmode)
+
+___
+
 ### harmonize
 
 Re-exports [harmonize](features_harmonize.md#harmonize)

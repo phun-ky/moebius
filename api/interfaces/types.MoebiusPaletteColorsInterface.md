@@ -32,6 +32,16 @@ ___
 
 ___
 
+### darkmode
+
+• **darkmode**: `Record`<`string`, \`#${string}\`[]\>
+
+#### Defined in
+
+[types/index.ts:47](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L47)
+
+___
+
 ### hexadic
 
 • **hexadic**: \`#${string}\`[]
