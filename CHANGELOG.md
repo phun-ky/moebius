@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.1](https://github.com/phun-ky/moebius/compare/0.2.0...0.2.1) (2023-12-08)
+
+
+### Documentation
+
+* ✏️ Add missing docs ([8fd35ee](https://github.com/phun-ky/moebius/commit/8fd35ee7d50144ba5301b9e9b06d85eaab6514f0))
+* ✏️ Generate documentation ([9d9bb1f](https://github.com/phun-ky/moebius/commit/9d9bb1f300a8f302c6346512e688d2fd131473dc))
+
+
+### Bug
+
+* 🐛 Forgot to hook darkmode palette up to `MoebiusPalettes` ([d1059dd](https://github.com/phun-ky/moebius/commit/d1059dd5feccacd093429fd242e747a77b3b2c36))
+
 ## [0.2.0](https://github.com/phun-ky/moebius/compare/0.1.4...0.2.0) (2023-12-08)
 
 
