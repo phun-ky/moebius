@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.3](https://github.com/phun-ky/moebius/compare/0.2.2...0.2.3) (2023-12-08)
+
+
+### Documentation
+
+* ✏️ Generate docs ([a9308f5](https://github.com/phun-ky/moebius/commit/a9308f5998159a3d627b66c33bf310cffd3e0a97))
+
+
+### Bug
+
+* 🐛 Remove darkmode from palettes ([53f6e56](https://github.com/phun-ky/moebius/commit/53f6e569a5d9680580ec6a7722dd02eee86b7eb5))
+
 ## [0.2.2](https://github.com/phun-ky/moebius/compare/0.2.1...0.2.2) (2023-12-08)
 
 
