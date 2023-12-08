@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/phun-ky/moebius/compare/0.2.3...0.2.4) (2023-12-08)
+
+
+### Bug
+
+* 🐛 Direction of monochrome is opposite of palettes ([f103fb8](https://github.com/phun-ky/moebius/commit/f103fb8c8d2f49b6e75cc449d79fe1a40686f305))
+
 ## [0.2.3](https://github.com/phun-ky/moebius/compare/0.2.2...0.2.3) (2023-12-08)
 
 
