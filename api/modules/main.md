@@ -124,6 +124,12 @@ Re-exports [MoebiusRGBObjectType](types.md#moebiusrgbobjecttype)
 
 ___
 
+### MoebiusThemeColorsInterface
+
+Re-exports [MoebiusThemeColorsInterface](../interfaces/types.MoebiusThemeColorsInterface.md)
+
+___
+
 ### MoebiusXYZObjectType
 
 Re-exports [MoebiusXYZObjectType](types.md#moebiusxyzobjecttype)

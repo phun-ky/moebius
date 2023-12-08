@@ -9,6 +9,7 @@
 - [classes/MoebiusPaletteColors](modules/classes_MoebiusPaletteColors.md)
 - [classes/MoebiusPalettes](modules/classes_MoebiusPalettes.md)
 - [classes/MoebiusSVGHelper](modules/classes_MoebiusSVGHelper.md)
+- [classes/MoebiusThemeColors](modules/classes_MoebiusThemeColors.md)
 - [constants](modules/constants.md)
 - [features](modules/features.md)
 - [features/analogous](modules/features_analogous.md)

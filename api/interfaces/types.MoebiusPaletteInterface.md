@@ -16,7 +16,7 @@
 
 #### Defined in
 
-[types/index.ts:30](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L30)
+[types/index.ts:31](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L31)
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:29](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L29)
+[types/index.ts:30](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L30)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:27](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L27)
+[types/index.ts:28](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L28)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[types/index.ts:28](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L28)
+[types/index.ts:29](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L29)
 
 ___
 
@@ -77,3 +77,13 @@ ___
 #### Defined in
 
 [types/index.ts:25](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L25)
+
+___
+
+### themes
+
+• **themes**: `Record`<`string`, `unknown`\> \| [`MoebiusThemeColorsInterface`](types.MoebiusThemeColorsInterface.md)
+
+#### Defined in
+
+[types/index.ts:27](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L27)
