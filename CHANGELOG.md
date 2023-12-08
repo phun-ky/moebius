@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/phun-ky/moebius/compare/0.1.4...0.2.0) (2023-12-08)
+
+
+### Feature
+
+* 🎸 Add new feature: `darkmode`-palette ([7b744c5](https://github.com/phun-ky/moebius/commit/7b744c5470875656b3dbc9b9cd9461b0fba23e97))
+
 ## [0.1.4](https://github.com/phun-ky/moebius/compare/0.1.3...0.1.4) (2023-12-05)
 
 
