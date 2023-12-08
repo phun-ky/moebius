@@ -17,7 +17,6 @@ export class MoebiusPaletteColors implements MoebiusPaletteColorsInterface {
   pentadic: MoebiusColorValueHexType[];
   hexadic: MoebiusColorValueHexType[];
   analogous: MoebiusColorValueHexType[];
-  darkmode: Record<string, MoebiusColorValueHexType[]>;
 
   /**
    * Creates an instance of MoebiusPaletteColors.
