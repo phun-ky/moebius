@@ -24,6 +24,7 @@ export interface MoebiusPaletteInterface {
   baseColor: MoebiusColorInterface;
   secondaryColor: MoebiusColorInterface;
   colors: Record<string, unknown> | MoebiusPaletteColorsInterface;
+  themes: Record<string, unknown> | MoebiusThemeColorsInterface;
   defaultOptions: MoebiusPaletteDefaultOptionsType;
   options: MoebiusPaletteOptionsType;
   all: MoebiusColorValueHexType[];
@@ -44,6 +45,12 @@ export interface MoebiusPaletteColorsInterface {
   pentadic: MoebiusColorValueHexType[];
   hexadic: MoebiusColorValueHexType[];
   analogous: MoebiusColorValueHexType[];
+}
+
+/**
+ * Represents a palette of colors with different themes.
+ */
+export interface MoebiusThemeColorsInterface {
   darkmode: Record<string, MoebiusColorValueHexType[]>;
 }
 

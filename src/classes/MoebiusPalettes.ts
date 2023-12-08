@@ -7,12 +7,14 @@ import {
   MoebiusPaletteDefaultOptionsType,
   MoebiusPaletteOptionsType,
   MoebiusPaletteInterface,
-  MoebiusChromaColorInputType
+  MoebiusChromaColorInputType,
+  MoebiusThemeColorsInterface
 } from '../types';
 
 import { MoebiusPaletteColors } from './MoebiusPaletteColors';
 import { MoebiusAccentColors } from './MoebiusAccentColors';
 import * as FEATURES from '../features';
+import { MoebiusThemeColors } from './MoebiusThemeColors';
 
 /**
  * MoebiusPalettes class representing a set of color palettes and their variations.
@@ -22,6 +24,7 @@ export class MoebiusPalettes implements MoebiusPaletteInterface {
   baseColor: MoebiusColorInterface;
   secondaryColor: MoebiusColorInterface;
   colors: Record<string, unknown> | MoebiusPaletteColorsInterface = {};
+  themes: Record<string, unknown> | MoebiusThemeColorsInterface = {};
   defaultOptions: MoebiusPaletteDefaultOptionsType = {
     ...MOEBIUS_PALETTE_DEFAULT_OPTIONS,
     divergentColor: '#f5f5f5'
@@ -38,7 +41,13 @@ export class MoebiusPalettes implements MoebiusPaletteInterface {
     this.options = { ...this.defaultOptions, ...options };
     this.baseColor = this.options.baseColor;
     this.secondaryColor = this.options.secondaryColor;
-
+    this.themes = new MoebiusThemeColors({
+      darkmode: this.darkmode(
+        this.baseColor.hex,
+        this.secondaryColor.hex,
+        this.options
+      )
+    });
     this.colors = new MoebiusPaletteColors({
       interpolate: this.interpolate(
         this.baseColor.hex,
@@ -57,12 +66,7 @@ export class MoebiusPalettes implements MoebiusPaletteInterface {
       tetradic: this.tetradic(this.baseColor.hex),
       pentadic: this.pentadic(this.baseColor.hex),
       hexadic: this.hexadic(this.baseColor.hex),
-      analogous: this.analogous(this.baseColor.hex),
-      darkmode: this.darkmode(
-        this.baseColor.hex,
-        this.secondaryColor.hex,
-        this.options
-      )
+      analogous: this.analogous(this.baseColor.hex)
     });
 
     this.accents = new MoebiusAccentColors(this.colors, this.options);
