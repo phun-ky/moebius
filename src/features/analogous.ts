@@ -5,6 +5,7 @@ import {
   MoebiusColorValueHexType,
   MoebiusPaletteOptionsType
 } from '../types';
+
 import { harmonize } from './harmonize';
 
 /**

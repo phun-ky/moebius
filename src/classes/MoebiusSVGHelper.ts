@@ -1,7 +1,7 @@
 import { MoebiusColorValueHexType } from '../types';
+import { getStartMaskDegree } from '../utils/svg/get-start-mask-degree';
 import { pieSlice } from '../utils/svg/pie-slice';
 import { uniqueID } from '../utils/unique-id';
-import { getStartMaskDegree } from '../utils/svg/get-start-mask-degree';
 
 /**
  * Helper class for generating SVG paths for colored pie slices.

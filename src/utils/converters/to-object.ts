@@ -1,9 +1,10 @@
 import chroma from 'chroma-js';
+
 import {
   MoebiusChromaColorInputType,
   MoebiusHSLObjectType,
   MoebiusRGBObjectType
-} from 'types';
+} from '../../types';
 
 /**
  * Converts a color to its corresponding object representation.

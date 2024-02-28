@@ -1,5 +1,6 @@
 import chroma from 'chroma-js';
-import { MoebiusColorValueHexType, MoebiusPaletteOptionsType } from 'types';
+
+import { MoebiusColorValueHexType, MoebiusPaletteOptionsType } from '../types';
 
 /**
  * Generates a color scale using Chroma.js's bezier interpolation.

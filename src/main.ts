@@ -1,14 +1,15 @@
+/* eslint-disable import/no-unused-modules */
 import chroma from 'chroma-js';
 import nearestColor from 'nearest-color';
 
+import { MoebiusColor } from './classes/MoebiusColor';
+import { MoebiusPalettes } from './classes/MoebiusPalettes';
+import { MoebiusSVGHelper } from './classes/MoebiusSVGHelper';
 import {
   MoebiusColorValueHexType,
   NearestColorColorMatchInterface
 } from './types';
 
-import { MoebiusSVGHelper } from './classes/MoebiusSVGHelper';
-import { MoebiusPalettes } from './classes/MoebiusPalettes';
-import { MoebiusColor } from './classes/MoebiusColor';
 
 export * from './types';
 

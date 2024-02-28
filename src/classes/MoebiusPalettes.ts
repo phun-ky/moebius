@@ -1,4 +1,5 @@
 import { MOEBIUS_PALETTE_DEFAULT_OPTIONS } from '../constants';
+import * as FEATURES from '../features';
 import {
   MoebiusColorValueHexType,
   MoebiusColorInterface,
@@ -11,9 +12,8 @@ import {
   MoebiusThemeColorsInterface
 } from '../types';
 
-import { MoebiusPaletteColors } from './MoebiusPaletteColors';
 import { MoebiusAccentColors } from './MoebiusAccentColors';
-import * as FEATURES from '../features';
+import { MoebiusPaletteColors } from './MoebiusPaletteColors';
 import { MoebiusThemeColors } from './MoebiusThemeColors';
 
 /**

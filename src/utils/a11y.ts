@@ -1,5 +1,6 @@
 import chroma from 'chroma-js';
-import { MoebiusColorValueHexType } from 'types';
+
+import { MoebiusColorValueHexType } from '../types';
 
 /**
  * Calculates accessible text color based on background color and specified contrast ratio.

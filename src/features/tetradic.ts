@@ -1,9 +1,11 @@
 import chroma from 'chroma-js';
+
 import {
   MoebiusChromaColorInputType,
   MoebiusColorValueHexType,
   MoebiusPaletteOptionsType
 } from '../types';
+
 import { harmonize } from './harmonize';
 
 /**

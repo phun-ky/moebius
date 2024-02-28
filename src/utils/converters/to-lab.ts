@@ -1,4 +1,5 @@
 import chroma from 'chroma-js';
+
 import { MoebiusChromaColorInputType, MoebiusLABObjectType } from '../../types';
 import { UnitLAB } from '../color-objects';
 
