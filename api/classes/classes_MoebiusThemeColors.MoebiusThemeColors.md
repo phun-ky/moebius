@@ -46,7 +46,7 @@ const theme = new MoebiusThemeColors(colors);
 
 ### darkmode
 
-• **darkmode**: `Record`<`string`, \`#${string}\`[]\>
+• **darkmode**: `Record`\<`string`, \`#$\{string}\`[]\>
 
 #### Implementation of
 

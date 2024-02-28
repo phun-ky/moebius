@@ -50,7 +50,7 @@ ___
 
 ### all
 
-• **all**: \`#${string}\`[] = `[]`
+• **all**: \`#$\{string}\`[] = `[]`
 
 #### Implementation of
 
@@ -78,7 +78,7 @@ ___
 
 ### colors
 
-• **colors**: `Record`<`string`, `unknown`\> \| [`MoebiusPaletteColorsInterface`](../interfaces/types.MoebiusPaletteColorsInterface.md) = `{}`
+• **colors**: `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteColorsInterface`](../interfaces/types.MoebiusPaletteColorsInterface.md) = `{}`
 
 #### Implementation of
 
@@ -134,7 +134,7 @@ ___
 
 ### themes
 
-• **themes**: `Record`<`string`, `unknown`\> \| [`MoebiusThemeColorsInterface`](../interfaces/types.MoebiusThemeColorsInterface.md) = `{}`
+• **themes**: `Record`\<`string`, `unknown`\> \| [`MoebiusThemeColorsInterface`](../interfaces/types.MoebiusThemeColorsInterface.md) = `{}`
 
 #### Implementation of
 
@@ -148,7 +148,7 @@ ___
 
 ### analogous
 
-▸ **analogous**(`color`, `options?`): \`#${string}\`[]
+▸ **analogous**(`color`, `options?`): \`#$\{string}\`[]
 
 Generate an analogous color palette based on the input color.
 
@@ -156,12 +156,12 @@ Generate an analogous color palette based on the input color.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `color` | \`#${string}\` | The base color for generating the analogous palette. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `color` | \`#$\{string}\` | The base color for generating the analogous palette. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the analogous palette.
 
@@ -181,7 +181,7 @@ ___
 
 ### complement
 
-▸ **complement**(`color`, `options?`): \`#${string}\`[]
+▸ **complement**(`color`, `options?`): \`#$\{string}\`[]
 
 Generate a complement color palette based on the input color.
 
@@ -189,12 +189,12 @@ Generate a complement color palette based on the input color.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `color` | \`#${string}\` | The base color for generating the complement palette. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `color` | \`#$\{string}\` | The base color for generating the complement palette. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette.< |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the complement palette.
 
@@ -214,7 +214,7 @@ ___
 
 ### darkmode
 
-▸ **darkmode**(`baseColor`, `secondaryColor`, `options?`): `Record`<`string`, \`#${string}\`[]\>
+▸ **darkmode**(`baseColor`, `secondaryColor`, `options?`): `Record`\<`string`, \`#$\{string}\`[]\>
 
 Generates a dark mode color palette based on the provided base and secondary colors.
 
@@ -224,11 +224,11 @@ Generates a dark mode color palette based on the provided base and secondary col
 | :------ | :------ | :------ |
 | `baseColor` | [`MoebiusChromaColorInputType`](../modules/types.md#moebiuschromacolorinputtype) | The base color for the palette. |
 | `secondaryColor` | [`MoebiusChromaColorInputType`](../modules/types.md#moebiuschromacolorinputtype) | The secondary color for the palette. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Palette options. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Palette options. |
 
 #### Returns
 
-`Record`<`string`, \`#${string}\`[]\>
+`Record`\<`string`, \`#$\{string}\`[]\>
 
 - The generated dark mode color palette.
 
@@ -250,7 +250,7 @@ ___
 
 ### harmonize
 
-▸ **harmonize**(`color`, `start`, `end`, `interval`, `options?`): \`#${string}\`[]
+▸ **harmonize**(`color`, `start`, `end`, `interval`, `options?`): \`#$\{string}\`[]
 
 Generate a harmonized color palette based on the input color.
 
@@ -258,15 +258,15 @@ Generate a harmonized color palette based on the input color.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `color` | \`#${string}\` | The base color for generating the harmonized palette. |
+| `color` | \`#$\{string}\` | The base color for generating the harmonized palette. |
 | `start` | `number` | The starting angle for generating harmonized colors (degrees). |
 | `end` | `number` | The ending angle for generating harmonized colors (degrees). |
 | `interval` | `number` | The interval between harmonized colors (degrees). |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the harmonized palette.
 
@@ -286,7 +286,7 @@ ___
 
 ### hexadic
 
-▸ **hexadic**(`color`, `options?`): \`#${string}\`[]
+▸ **hexadic**(`color`, `options?`): \`#$\{string}\`[]
 
 Generate a hexadic color palette based on the input color.
 
@@ -294,12 +294,12 @@ Generate a hexadic color palette based on the input color.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `color` | \`#${string}\` | The base color for generating the hexadic palette. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `color` | \`#$\{string}\` | The base color for generating the hexadic palette. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the hexadic palette.
 
@@ -319,7 +319,7 @@ ___
 
 ### interpolate
 
-▸ **interpolate**(`primaryColor`, `secondaryColor`, `options?`): \`#${string}\`[]
+▸ **interpolate**(`primaryColor`, `secondaryColor`, `options?`): \`#$\{string}\`[]
 
 Interpolate between two colors and generate a color palette.
 
@@ -327,13 +327,13 @@ Interpolate between two colors and generate a color palette.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `primaryColor` | \`#${string}\` | The starting color for interpolation. |
-| `secondaryColor` | \`#${string}\` | The ending color for interpolation. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `primaryColor` | \`#$\{string}\` | The starting color for interpolation. |
+| `secondaryColor` | \`#$\{string}\` | The ending color for interpolation. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the interpolated palette.
 
@@ -354,7 +354,7 @@ ___
 
 ### luminanceShift
 
-▸ **luminanceShift**(`colors`, `divergingColors?`, `options?`): \`#${string}\`[]
+▸ **luminanceShift**(`colors`, `divergingColors?`, `options?`): \`#$\{string}\`[]
 
 Generate a luminance shift palette based on an array of colors, with optional diverging colors.
 
@@ -362,13 +362,13 @@ Generate a luminance shift palette based on an array of colors, with optional di
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `colors` | \`#${string}\`[] | `undefined` | Array of base colors for generating the luminance shift palette. |
-| `divergingColors?` | \`#${string}\`[] | `[]` | Array of diverging colors. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | `{}` | Options for generating the palette. |
+| `colors` | \`#$\{string}\`[] | `undefined` | Array of base colors for generating the luminance shift palette. |
+| `divergingColors?` | \`#$\{string}\`[] | `[]` | Array of diverging colors. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | `{}` | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the luminance shift palette.
 
@@ -389,7 +389,7 @@ ___
 
 ### monochromatic
 
-▸ **monochromatic**(`color`, `options?`): \`#${string}\`[]
+▸ **monochromatic**(`color`, `options?`): \`#$\{string}\`[]
 
 Generates a monochromatic color palette based on the given color.
 
@@ -397,12 +397,12 @@ Generates a monochromatic color palette based on the given color.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `color` | \`#${string}\` | The base color for the palette. |
-| `options` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `color` | \`#$\{string}\` | The base color for the palette. |
+| `options` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - An array of hex color values in the palette.
 
@@ -432,7 +432,7 @@ ___
 
 ### pentadic
 
-▸ **pentadic**(`color`, `options?`): \`#${string}\`[]
+▸ **pentadic**(`color`, `options?`): \`#$\{string}\`[]
 
 Generate a pentadic color palette based on the input color.
 
@@ -440,12 +440,12 @@ Generate a pentadic color palette based on the input color.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `color` | \`#${string}\` | The base color for generating the pentadic palette. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `color` | \`#$\{string}\` | The base color for generating the pentadic palette. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the pentadic palette.
 
@@ -465,7 +465,7 @@ ___
 
 ### split
 
-▸ **split**(`color`, `options?`): \`#${string}\`[]
+▸ **split**(`color`, `options?`): \`#$\{string}\`[]
 
 Generate a split color palette based on the input color.
 
@@ -473,12 +473,12 @@ Generate a split color palette based on the input color.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `color` | \`#${string}\` | The base color for generating the split palette. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `color` | \`#$\{string}\` | The base color for generating the split palette. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the split palette.
 
@@ -498,7 +498,7 @@ ___
 
 ### tetradic
 
-▸ **tetradic**(`color`, `options?`): \`#${string}\`[]
+▸ **tetradic**(`color`, `options?`): \`#$\{string}\`[]
 
 Generate a tetradic color palette based on the input color.
 
@@ -506,12 +506,12 @@ Generate a tetradic color palette based on the input color.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `color` | \`#${string}\` | The base color for generating the tetradic palette. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `color` | \`#$\{string}\` | The base color for generating the tetradic palette. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the tetradic palette.
 
@@ -531,7 +531,7 @@ ___
 
 ### triadic
 
-▸ **triadic**(`color`, `options?`): \`#${string}\`[]
+▸ **triadic**(`color`, `options?`): \`#$\{string}\`[]
 
 Generates a triadic color palette based on the input color.
 
@@ -539,12 +539,12 @@ Generates a triadic color palette based on the input color.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `color` | \`#${string}\` | The input color in various formats (HEX, RGB, HSL, etc.). |
-| `options` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Additional options for palette generation. |
+| `color` | \`#$\{string}\` | The input color in various formats (HEX, RGB, HSL, etc.). |
+| `options` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](../modules/types.md#moebiuspaletteoptionstype) | Additional options for palette generation. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 An array of HEX values representing the triadic color palette.
 

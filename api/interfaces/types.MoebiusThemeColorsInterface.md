@@ -14,7 +14,7 @@ Represents a palette of colors with different themes.
 
 ### darkmode
 
-• **darkmode**: `Record`<`string`, \`#${string}\`[]\>
+• **darkmode**: `Record`\<`string`, \`#$\{string}\`[]\>
 
 #### Defined in
 

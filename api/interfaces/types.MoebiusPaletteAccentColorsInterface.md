@@ -14,7 +14,7 @@ Represents a palette of accent colors with different schemes.
 
 ### analogous
 
-• **analogous**: \`#${string}\`[][]
+• **analogous**: \`#$\{string}\`[][]
 
 #### Defined in
 
@@ -24,7 +24,7 @@ ___
 
 ### complement
 
-• **complement**: \`#${string}\`[][]
+• **complement**: \`#$\{string}\`[][]
 
 #### Defined in
 
@@ -34,7 +34,7 @@ ___
 
 ### hexadic
 
-• **hexadic**: \`#${string}\`[][]
+• **hexadic**: \`#$\{string}\`[][]
 
 #### Defined in
 
@@ -44,7 +44,7 @@ ___
 
 ### interpolate
 
-• **interpolate**: \`#${string}\`[][]
+• **interpolate**: \`#$\{string}\`[][]
 
 #### Defined in
 
@@ -54,7 +54,7 @@ ___
 
 ### luminanceShift
 
-• **luminanceShift**: \`#${string}\`[][]
+• **luminanceShift**: \`#$\{string}\`[][]
 
 #### Defined in
 
@@ -64,7 +64,7 @@ ___
 
 ### monochromatic
 
-• **monochromatic**: \`#${string}\`[][]
+• **monochromatic**: \`#$\{string}\`[][]
 
 #### Defined in
 
@@ -74,7 +74,7 @@ ___
 
 ### pentadic
 
-• **pentadic**: \`#${string}\`[][]
+• **pentadic**: \`#$\{string}\`[][]
 
 #### Defined in
 
@@ -84,7 +84,7 @@ ___
 
 ### split
 
-• **split**: \`#${string}\`[][]
+• **split**: \`#$\{string}\`[][]
 
 #### Defined in
 
@@ -94,7 +94,7 @@ ___
 
 ### tetradic
 
-• **tetradic**: \`#${string}\`[][]
+• **tetradic**: \`#$\{string}\`[][]
 
 #### Defined in
 
@@ -104,7 +104,7 @@ ___
 
 ### triadic
 
-• **triadic**: \`#${string}\`[][]
+• **triadic**: \`#$\{string}\`[][]
 
 #### Defined in
 

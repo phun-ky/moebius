@@ -6,7 +6,7 @@
 
 ### complement
 
-▸ **complement**(`color`, `options?`): \`#${string}\`[]
+▸ **complement**(`color`, `options?`): \`#$\{string}\`[]
 
 Generate a complement color palette based on the input color.
 
@@ -15,11 +15,11 @@ Generate a complement color palette based on the input color.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`MoebiusChromaColorInputType`](types.md#moebiuschromacolorinputtype) | The base color for generating the complement palette. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the complement palette.
 
@@ -33,4 +33,4 @@ console.log(complementPalette); // ['#3498db', '#db3434', '#75db34', '#dbd134', 
 
 #### Defined in
 
-[features/complement.ts:27](https://github.com/phun-ky/moebius/blob/main/src/features/complement.ts#L27)
+[features/complement.ts:28](https://github.com/phun-ky/moebius/blob/main/src/features/complement.ts#L28)

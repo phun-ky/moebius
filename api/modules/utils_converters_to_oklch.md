@@ -31,4 +31,4 @@ console.log(oklchColor); // Output: { l: 52.12, c: 126.62, h: 232.53 }
 
 #### Defined in
 
-[utils/converters/to-oklch.ts:17](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-oklch.ts#L17)
+[utils/converters/to-oklch.ts:18](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-oklch.ts#L18)

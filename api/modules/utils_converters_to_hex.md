@@ -6,7 +6,7 @@
 
 ### toHEX
 
-▸ **toHEX**(`color`): \`#${string}\`
+▸ **toHEX**(`color`): \`#$\{string}\`
 
 Converts a color to its corresponding HEX representation.
 
@@ -18,7 +18,7 @@ Converts a color to its corresponding HEX representation.
 
 #### Returns
 
-\`#${string}\`
+\`#$\{string}\`
 
 The HEX representation of the color.
 
@@ -31,4 +31,4 @@ console.log(hexColor); // Output: '#3498db'
 
 #### Defined in
 
-[utils/converters/to-hex.ts:19](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-hex.ts#L19)
+[utils/converters/to-hex.ts:20](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-hex.ts#L20)

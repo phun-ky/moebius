@@ -6,7 +6,7 @@
 
 ### monochromatic
 
-▸ **monochromatic**(`color`, `options?`): \`#${string}\`[]
+▸ **monochromatic**(`color`, `options?`): \`#$\{string}\`[]
 
 Generates a monochromatic color palette based on the given color.
 
@@ -15,11 +15,11 @@ Generates a monochromatic color palette based on the given color.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`MoebiusChromaColorInputType`](types.md#moebiuschromacolorinputtype) | The base color for the palette. |
-| `options` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `options` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - An array of hex color values in the palette.
 
@@ -43,4 +43,4 @@ console.log(monochromaticPalette);
 
 #### Defined in
 
-[features/monochromatic.ts:34](https://github.com/phun-ky/moebius/blob/main/src/features/monochromatic.ts#L34)
+[features/monochromatic.ts:33](https://github.com/phun-ky/moebius/blob/main/src/features/monochromatic.ts#L33)

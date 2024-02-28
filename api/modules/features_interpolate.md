@@ -6,7 +6,7 @@
 
 ### interpolate
 
-▸ **interpolate**(`primaryColor`, `secondaryColor`, `options?`): \`#${string}\`[]
+▸ **interpolate**(`primaryColor`, `secondaryColor`, `options?`): \`#$\{string}\`[]
 
 Interpolate between two colors and generate a color palette.
 
@@ -16,11 +16,11 @@ Interpolate between two colors and generate a color palette.
 | :------ | :------ | :------ |
 | `primaryColor` | [`MoebiusChromaColorInputType`](types.md#moebiuschromacolorinputtype) | The starting color for interpolation. |
 | `secondaryColor` | [`MoebiusChromaColorInputType`](types.md#moebiuschromacolorinputtype) | The ending color for interpolation. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the interpolated palette.
 

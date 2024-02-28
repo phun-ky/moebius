@@ -34,7 +34,7 @@ ___
 
 ### hex
 
-• **hex**: \`#${string}\`
+• **hex**: \`#$\{string}\`
 
 #### Defined in
 
@@ -144,7 +144,7 @@ ___
 
 ### rgb
 
-• **rgb**: \`rgb(${number}, ${number}, ${number})\`
+• **rgb**: \`rgb($\{number}, $\{number}, $\{number})\`
 
 #### Defined in
 

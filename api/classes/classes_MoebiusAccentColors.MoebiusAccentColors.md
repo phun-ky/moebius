@@ -48,7 +48,7 @@ const accentColors = new MoebiusAccentColors(colors, options);
 
 ### analogous
 
-• **analogous**: \`#${string}\`[][]
+• **analogous**: \`#$\{string}\`[][]
 
 #### Implementation of
 
@@ -62,7 +62,7 @@ ___
 
 ### complement
 
-• **complement**: \`#${string}\`[][]
+• **complement**: \`#$\{string}\`[][]
 
 #### Implementation of
 
@@ -76,7 +76,7 @@ ___
 
 ### hexadic
 
-• **hexadic**: \`#${string}\`[][]
+• **hexadic**: \`#$\{string}\`[][]
 
 #### Implementation of
 
@@ -90,7 +90,7 @@ ___
 
 ### interpolate
 
-• **interpolate**: \`#${string}\`[][]
+• **interpolate**: \`#$\{string}\`[][]
 
 #### Implementation of
 
@@ -104,7 +104,7 @@ ___
 
 ### luminanceShift
 
-• **luminanceShift**: \`#${string}\`[][]
+• **luminanceShift**: \`#$\{string}\`[][]
 
 #### Implementation of
 
@@ -118,7 +118,7 @@ ___
 
 ### monochromatic
 
-• **monochromatic**: \`#${string}\`[][]
+• **monochromatic**: \`#$\{string}\`[][]
 
 #### Implementation of
 
@@ -132,7 +132,7 @@ ___
 
 ### pentadic
 
-• **pentadic**: \`#${string}\`[][]
+• **pentadic**: \`#$\{string}\`[][]
 
 #### Implementation of
 
@@ -146,7 +146,7 @@ ___
 
 ### split
 
-• **split**: \`#${string}\`[][]
+• **split**: \`#$\{string}\`[][]
 
 #### Implementation of
 
@@ -160,7 +160,7 @@ ___
 
 ### tetradic
 
-• **tetradic**: \`#${string}\`[][]
+• **tetradic**: \`#$\{string}\`[][]
 
 #### Implementation of
 
@@ -174,7 +174,7 @@ ___
 
 ### triadic
 
-• **triadic**: \`#${string}\`[][]
+• **triadic**: \`#$\{string}\`[][]
 
 #### Implementation of
 
@@ -188,13 +188,13 @@ ___
 
 ### toArray
 
-▸ **toArray**(): \`#${string}\`[]
+▸ **toArray**(): \`#$\{string}\`[]
 
 Converts the accent palettes to a flat array.
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values.
 

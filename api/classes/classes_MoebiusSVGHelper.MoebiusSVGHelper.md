@@ -38,7 +38,7 @@ Gets SVG paths for colored pie slices based on the provided colors.
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `colors` | \`#${string}\`[][] | `undefined` | Array of color groups. |
+| `colors` | \`#$\{string}\`[][] | `undefined` | Array of color groups. |
 | `size?` | `number` | `256` | Size of the SVG. |
 
 #### Returns

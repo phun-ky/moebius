@@ -14,8 +14,8 @@ Generates a color scale using Chroma.js.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `colors` | \`#${string}\`[] | The input colors for the color scale. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Options for generating the color scale. |
+| `colors` | \`#$\{string}\`[] | The input colors for the color scale. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Options for generating the color scale. |
 
 #### Returns
 
@@ -34,4 +34,4 @@ console.log(scaleColors);
 
 #### Defined in
 
-[utils/get-chroma-scale-colors.ts:20](https://github.com/phun-ky/moebius/blob/main/src/utils/get-chroma-scale-colors.ts#L20)
+[utils/get-chroma-scale-colors.ts:21](https://github.com/phun-ky/moebius/blob/main/src/utils/get-chroma-scale-colors.ts#L21)

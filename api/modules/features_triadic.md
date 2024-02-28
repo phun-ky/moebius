@@ -6,7 +6,7 @@
 
 ### triadic
 
-▸ **triadic**(`color`, `options?`): \`#${string}\`[]
+▸ **triadic**(`color`, `options?`): \`#$\{string}\`[]
 
 Generates a triadic color palette based on the input color.
 
@@ -15,11 +15,11 @@ Generates a triadic color palette based on the input color.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`MoebiusChromaColorInputType`](types.md#moebiuschromacolorinputtype) | The input color in various formats (HEX, RGB, HSL, etc.). |
-| `options` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Additional options for palette generation. |
+| `options` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Additional options for palette generation. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 An array of HEX values representing the triadic color palette.
 
@@ -33,4 +33,4 @@ console.log(triadicPalette);
 
 #### Defined in
 
-[features/triadic.ts:27](https://github.com/phun-ky/moebius/blob/main/src/features/triadic.ts#L27)
+[features/triadic.ts:28](https://github.com/phun-ky/moebius/blob/main/src/features/triadic.ts#L28)

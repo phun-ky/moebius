@@ -6,7 +6,7 @@
 
 ### darkmode
 
-▸ **darkmode**(`baseColor`, `secondaryColor`, `options?`): `Record`<`string`, \`#${string}\`[]\>
+▸ **darkmode**(`baseColor`, `secondaryColor`, `options?`): `Record`\<`string`, \`#$\{string}\`[]\>
 
 Generates a dark mode color palette based on the provided base and secondary colors.
 
@@ -16,11 +16,11 @@ Generates a dark mode color palette based on the provided base and secondary col
 | :------ | :------ | :------ |
 | `baseColor` | [`MoebiusChromaColorInputType`](types.md#moebiuschromacolorinputtype) | The base color for the palette. |
 | `secondaryColor` | [`MoebiusChromaColorInputType`](types.md#moebiuschromacolorinputtype) | The secondary color for the palette. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Palette options. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Palette options. |
 
 #### Returns
 
-`Record`<`string`, \`#${string}\`[]\>
+`Record`\<`string`, \`#$\{string}\`[]\>
 
 - The generated dark mode color palette.
 
@@ -36,4 +36,4 @@ console.log(palette);
 
 #### Defined in
 
-[features/darkmode.ts:30](https://github.com/phun-ky/moebius/blob/main/src/features/darkmode.ts#L30)
+[features/darkmode.ts:31](https://github.com/phun-ky/moebius/blob/main/src/features/darkmode.ts#L31)

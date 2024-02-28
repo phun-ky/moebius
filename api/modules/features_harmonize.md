@@ -6,7 +6,7 @@
 
 ### harmonize
 
-▸ **harmonize**(`color`, `start`, `end`, `interval`, `options?`): \`#${string}\`[]
+▸ **harmonize**(`color`, `start`, `end`, `interval`, `options?`): \`#$\{string}\`[]
 
 Generate a harmonized color palette based on the input color.
 
@@ -18,11 +18,11 @@ Generate a harmonized color palette based on the input color.
 | `start` | `number` | The starting angle for generating harmonized colors (degrees). |
 | `end` | `number` | The ending angle for generating harmonized colors (degrees). |
 | `interval` | `number` | The interval between harmonized colors (degrees). |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the harmonized palette.
 

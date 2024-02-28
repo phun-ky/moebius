@@ -31,4 +31,4 @@ console.log(cmykColor); // { c: 40, m: 0, y: 100, k: 0 }
 
 #### Defined in
 
-[utils/converters/to-cmyk.ts:18](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-cmyk.ts#L18)
+[utils/converters/to-cmyk.ts:19](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-cmyk.ts#L19)

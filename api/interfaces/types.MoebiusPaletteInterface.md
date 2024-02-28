@@ -22,7 +22,7 @@ ___
 
 ### all
 
-• **all**: \`#${string}\`[]
+• **all**: \`#$\{string}\`[]
 
 #### Defined in
 
@@ -42,7 +42,7 @@ ___
 
 ### colors
 
-• **colors**: `Record`<`string`, `unknown`\> \| [`MoebiusPaletteColorsInterface`](types.MoebiusPaletteColorsInterface.md)
+• **colors**: `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteColorsInterface`](types.MoebiusPaletteColorsInterface.md)
 
 #### Defined in
 
@@ -82,7 +82,7 @@ ___
 
 ### themes
 
-• **themes**: `Record`<`string`, `unknown`\> \| [`MoebiusThemeColorsInterface`](types.MoebiusThemeColorsInterface.md)
+• **themes**: `Record`\<`string`, `unknown`\> \| [`MoebiusThemeColorsInterface`](types.MoebiusThemeColorsInterface.md)
 
 #### Defined in
 

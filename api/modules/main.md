@@ -150,7 +150,7 @@ Re-exports [NearestColorColorSpecInterface](../interfaces/types.NearestColorColo
 
 ### MoebiusReturnType
 
-Ƭ **MoebiusReturnType**: `Promise`<{ `MoebiusColor`: typeof [`MoebiusColor`](../classes/classes_MoebiusColor.MoebiusColor.md) ; `MoebiusPalettes`: typeof [`MoebiusPalettes`](../classes/classes_MoebiusPalettes.MoebiusPalettes.md) ; `MoebiusSVGHelper`: typeof [`MoebiusSVGHelper`](../classes/classes_MoebiusSVGHelper.MoebiusSVGHelper.md)  }\>
+Ƭ **MoebiusReturnType**: `Promise`\<\{ `MoebiusColor`: typeof [`MoebiusColor`](../classes/classes_MoebiusColor.MoebiusColor.md) ; `MoebiusPalettes`: typeof [`MoebiusPalettes`](../classes/classes_MoebiusPalettes.MoebiusPalettes.md) ; `MoebiusSVGHelper`: typeof [`MoebiusSVGHelper`](../classes/classes_MoebiusSVGHelper.MoebiusSVGHelper.md)  }\>
 
 #### Defined in
 

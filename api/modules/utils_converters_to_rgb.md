@@ -6,7 +6,7 @@
 
 ### toRGB
 
-▸ **toRGB**(`color`): \`rgb(${number}, ${number}, ${number})\`
+▸ **toRGB**(`color`): \`rgb($\{number}, $\{number}, $\{number})\`
 
 Converts a color to its RGB representation.
 
@@ -18,7 +18,7 @@ Converts a color to its RGB representation.
 
 #### Returns
 
-\`rgb(${number}, ${number}, ${number})\`
+\`rgb($\{number}, $\{number}, $\{number})\`
 
 The RGB representation of the input color.
 
@@ -31,4 +31,4 @@ console.log(rgbColor); // Output: 'rgb(52, 152, 219)'
 
 #### Defined in
 
-[utils/converters/to-rgb.ts:19](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-rgb.ts#L19)
+[utils/converters/to-rgb.ts:20](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-rgb.ts#L20)

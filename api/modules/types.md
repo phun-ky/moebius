@@ -47,7 +47,7 @@ ___
 
 ### MoebiusColorValueHexType
 
-Ƭ **MoebiusColorValueHexType**: \`#${string}\`
+Ƭ **MoebiusColorValueHexType**: \`#$\{string}\`
 
 Represents a color value in hexadecimal format.
 
@@ -59,7 +59,7 @@ ___
 
 ### MoebiusColorValueHslType
 
-Ƭ **MoebiusColorValueHslType**: \`hsl(${number}, ${string}, ${string})\`
+Ƭ **MoebiusColorValueHslType**: \`hsl($\{number}, $\{string}, $\{string})\`
 
 Represents a color value in HSL format.
 
@@ -71,7 +71,7 @@ ___
 
 ### MoebiusColorValueHslaType
 
-Ƭ **MoebiusColorValueHslaType**: \`hsl(${number}, ${string}, ${string}, ${number})\`
+Ƭ **MoebiusColorValueHslaType**: \`hsl($\{number}, $\{string}, $\{string}, $\{number})\`
 
 Represents a color value in HSLA format.
 
@@ -83,7 +83,7 @@ ___
 
 ### MoebiusColorValueRgbType
 
-Ƭ **MoebiusColorValueRgbType**: \`rgb(${number}, ${number}, ${number})\`
+Ƭ **MoebiusColorValueRgbType**: \`rgb($\{number}, $\{number}, $\{number})\`
 
 Represents a color value in RGB format.
 
@@ -95,7 +95,7 @@ ___
 
 ### MoebiusColorValueRgbaType
 
-Ƭ **MoebiusColorValueRgbaType**: \`rgb(${number}, ${number}, ${number}, ${number})\`
+Ƭ **MoebiusColorValueRgbaType**: \`rgb($\{number}, $\{number}, $\{number}, $\{number})\`
 
 Represents a color value in RGBA format.
 

@@ -4,9 +4,9 @@
 
 ## Functions
 
-### unitHSL
+### UnitHSL
 
-▸ **unitHSL**(`this`, `«destructured»`): `void`
+▸ **UnitHSL**(`this`, `«destructured»`): `void`
 
 Represents an HSL (Hue, Saturation, Lightness) color unit.
 
@@ -27,9 +27,9 @@ Represents an HSL (Hue, Saturation, Lightness) color unit.
 
 ___
 
-### unitHSLFloat
+### UnitHSLFloat
 
-▸ **unitHSLFloat**(`this`, `«destructured»`): `void`
+▸ **UnitHSLFloat**(`this`, `«destructured»`): `void`
 
 Represents an HSL (Hue, Saturation, Lightness) color unit with floating-point values.
 

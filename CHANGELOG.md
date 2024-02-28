@@ -1,5 +1,32 @@
 # Changelog
 
+## [1.0.0](https://github.com/phun-ky/moebius/compare/0.2.4...1.0.0) (2024-02-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* 🧨 Exported functions `unitHSL` and `unitHSLFloat` are renamed to `UnitHSL`
+and `UnitHSLFloat` to reflect the current nomenclature standard
+
+### Tasks
+
+* 🤖 Remove config file for postCSS ([976c269](https://github.com/phun-ky/moebius/commit/976c2698fa2a49d30c24764bb67083a0518e6bc9))
+* 🤖 Update configuration files ([041902e](https://github.com/phun-ky/moebius/commit/041902e56528a2b51e2adf4caf203adda85d25ff))
+* 🤖 Update dependencies and build to a more modern setup ([0adbf78](https://github.com/phun-ky/moebius/commit/0adbf7860ea229ec17576af807f11344ea3c3243))
+* 🤖 Update workflows ([5586c46](https://github.com/phun-ky/moebius/commit/5586c465aaea7a4ef97ee8a41c009d1f86fc0320))
+
+
+### Documentation
+
+* ✏️ Fix typo ([03c774a](https://github.com/phun-ky/moebius/commit/03c774a1fd78b725d7dda0bc589e5455ff766887))
+* ✏️ Update `README.md` and add community files ([213ee96](https://github.com/phun-ky/moebius/commit/213ee964db788a8012333d73c9c9587982d1f372))
+
+
+### Refactoring
+
+* 💡 Add try catch to return empty array ([6197a7d](https://github.com/phun-ky/moebius/commit/6197a7de2e9fc33ead4307754c4d873a5397d8dc))
+* 💡 Rename `unitHSL` and `unitHSLFloat` ([de874d6](https://github.com/phun-ky/moebius/commit/de874d691b6967af87717c5ec581a01e6a6a8391))
+
 ## [0.2.4](https://github.com/phun-ky/moebius/compare/0.2.3...0.2.4) (2023-12-08)
 
 

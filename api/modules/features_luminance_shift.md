@@ -6,7 +6,7 @@
 
 ### luminanceShift
 
-▸ **luminanceShift**(`colors`, `divergingColors?`, `options?`): \`#${string}\`[]
+▸ **luminanceShift**(`colors`, `divergingColors?`, `options?`): \`#$\{string}\`[]
 
 Generate a luminance shift palette based on an array of colors, with optional diverging colors.
 
@@ -16,11 +16,11 @@ Generate a luminance shift palette based on an array of colors, with optional di
 | :------ | :------ | :------ | :------ |
 | `colors` | [`MoebiusChromaColorInputType`](types.md#moebiuschromacolorinputtype)[] | `undefined` | Array of base colors for generating the luminance shift palette. |
 | `divergingColors?` | [`MoebiusChromaColorInputType`](types.md#moebiuschromacolorinputtype)[] | `[]` | Array of diverging colors. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | `{}` | Options for generating the palette. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | `{}` | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the luminance shift palette.
 
@@ -35,4 +35,4 @@ console.log(luminanceShiftPalette); // ['#3498db', '#99db34', '#dbd134', '#db343
 
 #### Defined in
 
-[features/luminance-shift.ts:120](https://github.com/phun-ky/moebius/blob/main/src/features/luminance-shift.ts#L120)
+[features/luminance-shift.ts:121](https://github.com/phun-ky/moebius/blob/main/src/features/luminance-shift.ts#L121)

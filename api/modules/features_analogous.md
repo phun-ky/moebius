@@ -6,7 +6,7 @@
 
 ### analogous
 
-▸ **analogous**(`color`, `options?`): \`#${string}\`[]
+▸ **analogous**(`color`, `options?`): \`#$\{string}\`[]
 
 Generate an analogous color palette based on the input color.
 
@@ -15,11 +15,11 @@ Generate an analogous color palette based on the input color.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`MoebiusChromaColorInputType`](types.md#moebiuschromacolorinputtype) | The base color for generating the analogous palette. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the analogous palette.
 
@@ -33,4 +33,4 @@ console.log(analogousPalette); // ['#3498db', '#75db34', '#dbd134', '#db7434', '
 
 #### Defined in
 
-[features/analogous.ts:27](https://github.com/phun-ky/moebius/blob/main/src/features/analogous.ts#L27)
+[features/analogous.ts:28](https://github.com/phun-ky/moebius/blob/main/src/features/analogous.ts#L28)

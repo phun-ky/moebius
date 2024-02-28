@@ -39,4 +39,4 @@ console.log(rgbFloatColor.toString()); // 0, 1, 0
 
 #### Defined in
 
-[utils/converters/to-float.ts:26](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-float.ts#L26)
+[utils/converters/to-float.ts:27](https://github.com/phun-ky/moebius/blob/main/src/utils/converters/to-float.ts#L27)

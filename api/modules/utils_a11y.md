@@ -14,10 +14,10 @@ Calculates accessible text color based on background color and specified contras
 
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
-| `backgroundColor` | \`#${string}\` | `undefined` | The background color. |
+| `backgroundColor` | \`#$\{string}\` | `undefined` | The background color. |
 | `ratio` | `number` | `5` | The desired contrast ratio. Default is 5. |
-| `lightForegroundColor` | \`#${string}\` | `'#ffffff'` | The text color when the background is light. Default is '#ffffff'. |
-| `darkForegroundColor` | \`#${string}\` | `'#000000'` | The text color when the background is dark. Default is '#000000'. |
+| `lightForegroundColor` | \`#$\{string}\` | `'#ffffff'` | The text color when the background is light. Default is '#ffffff'. |
+| `darkForegroundColor` | \`#$\{string}\` | `'#000000'` | The text color when the background is dark. Default is '#000000'. |
 
 #### Returns
 
@@ -27,4 +27,4 @@ Calculates accessible text color based on background color and specified contras
 
 #### Defined in
 
-[utils/a11y.ts:13](https://github.com/phun-ky/moebius/blob/main/src/utils/a11y.ts#L13)
+[utils/a11y.ts:14](https://github.com/phun-ky/moebius/blob/main/src/utils/a11y.ts#L14)

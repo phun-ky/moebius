@@ -6,13 +6,13 @@
 
 ### getRandomColorHex
 
-▸ **getRandomColorHex**(): \`#${string}\`
+▸ **getRandomColorHex**(): \`#$\{string}\`
 
 Generates a random hexadecimal color.
 
 #### Returns
 
-\`#${string}\`
+\`#$\{string}\`
 
 - The randomly generated color in hexadecimal format.
 

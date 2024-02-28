@@ -16,6 +16,18 @@ Re-exports [UnitHSI](utils_color_objects_hsi.md#unithsi)
 
 ___
 
+### UnitHSL
+
+Re-exports [UnitHSL](utils_color_objects_hsl.md#unithsl)
+
+___
+
+### UnitHSLFloat
+
+Re-exports [UnitHSLFloat](utils_color_objects_hsl.md#unithslfloat)
+
+___
+
 ### UnitHSV
 
 Re-exports [UnitHSV](utils_color_objects_hsv.md#unithsv)
@@ -73,15 +85,3 @@ ___
 ### toObject
 
 Re-exports [toObject](utils_converters_to_object.md#toobject)
-
-___
-
-### unitHSL
-
-Re-exports [unitHSL](utils_color_objects_hsl.md#unithsl)
-
-___
-
-### unitHSLFloat
-
-Re-exports [unitHSLFloat](utils_color_objects_hsl.md#unithslfloat)

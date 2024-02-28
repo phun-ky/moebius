@@ -6,7 +6,7 @@
 
 ### tetradic
 
-▸ **tetradic**(`color`, `options?`): \`#${string}\`[]
+▸ **tetradic**(`color`, `options?`): \`#$\{string}\`[]
 
 Generate a tetradic color palette based on the input color.
 
@@ -15,11 +15,11 @@ Generate a tetradic color palette based on the input color.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`MoebiusChromaColorInputType`](types.md#moebiuschromacolorinputtype) | The base color for generating the tetradic palette. |
-| `options?` | `Record`<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
+| `options?` | `Record`\<`string`, `unknown`\> \| [`MoebiusPaletteOptionsType`](types.md#moebiuspaletteoptionstype) | Options for generating the palette. |
 
 #### Returns
 
-\`#${string}\`[]
+\`#$\{string}\`[]
 
 - Array of hex color values representing the tetradic palette.
 
@@ -33,4 +33,4 @@ console.log(tetradicPalette); // ['#3498db', '#db3434', '#34db99', '#dbd134', '#
 
 #### Defined in
 
-[features/tetradic.ts:26](https://github.com/phun-ky/moebius/blob/main/src/features/tetradic.ts#L26)
+[features/tetradic.ts:28](https://github.com/phun-ky/moebius/blob/main/src/features/tetradic.ts#L28)
