@@ -74,7 +74,7 @@ const defaultOptions = {
   noDuplicates: true,
   colorScaleMode: 'lch',
   reverseDirection: false,
-  divergentColor: '#f5f5f5',
+  divergentColor: '#f5f5f5'
 };
 ```
 
@@ -88,7 +88,7 @@ const { MoebiusPalette, MoebiusColor } = await Moebius();
 const palettes = new MoebiusPalettes({
   baseColor: new MoebiusColor('#003f5c'),
   secondaryColor: new MoebiusColor('#ff9900'),
-  ...options,
+  ...options
 });
 ```
 
@@ -409,7 +409,7 @@ Types can be found in `@phun-ky/moebius/moebius.d.ts`.
 
 ## Contributing
 
-If you want to contribute, please read the [CONTRIBUTING.md](https://github.com/phun-ky/speccer/blob/main/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/phun-ky/speccer/blob/main/CODE_OF_CONDUCT.md)
+If you want to contribute, please read the [CONTRIBUTING.md](https://github.com/phun-ky/moebius/blob/main/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/phun-ky/moebius/blob/main/CODE_OF_CONDUCT.md)
 
 ## Sponsor me
 
