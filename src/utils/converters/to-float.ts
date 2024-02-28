@@ -1,17 +1,18 @@
 import chroma from 'chroma-js';
-import { unitHSLFloat } from '../color-objects/hsl';
-import { UnitRGBFloat } from '../color-objects/rgb';
+
 import {
   MoebiusChromaColorInputType,
   MoebiusHSLObjectType,
   MoebiusRGBObjectType
 } from '../../types';
+import { UnitHSLFloat } from '../color-objects/hsl';
+import { UnitRGBFloat } from '../color-objects/rgb';
 
 /**
  * Converts a color to its float representation.
  * @param {MoebiusChromaColorInputType} color - The input color in hex, rgb, or rgba format.
  * @param {string} [type] - The color type ('hsl' for HSL, undefined for RGB).
- * @returns {unitHSLFloat | UnitRGBFloat} - The float representation of the color.
+ * @returns {UnitHSLFloat | UnitRGBFloat} - The float representation of the color.
  * @example
  * ```ts
  * const hslFloatColor = toFloat('#00ff00', 'hsl');
@@ -29,7 +30,7 @@ export const toFloat = (
 ): MoebiusHSLObjectType | MoebiusRGBObjectType => {
   if (type === 'hsl') {
     // Convert the color to HSL and create a new HSL float unit
-    return new unitHSLFloat(chroma(color).hsl());
+    return new UnitHSLFloat(chroma(color).hsl());
   }
 
   // Convert the color to RGB and create a new RGB float unit

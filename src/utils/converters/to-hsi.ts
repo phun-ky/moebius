@@ -1,6 +1,7 @@
 import chroma from 'chroma-js';
-import { UnitHSI } from '../color-objects';
+
 import { MoebiusChromaColorInputType, MoebiusHSIObjectType } from '../../types';
+import { UnitHSI } from '../color-objects';
 
 /**
  * Converts a color to its corresponding HSI object representation.

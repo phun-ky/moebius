@@ -8,9 +8,22 @@ on:
     types: [closed]
     branches: [ "main" ]
     paths:
+      - '.github/**'
       - 'src/**'
       - 'api/**'
       - 'public/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'rollup.config.js'
+      - 'tsconfig.json'
+      - '.npmrc'
+      - '.release-it.json'
+      - 'README.md'
+      - 'CONTRIBUTING.md'
+      - 'CODE_OF_CONDUCT.md'
+      - 'SECURITY.md'
+      - '.postcssrc.cjs'
+      - '.browserlistrc'
   workflow_dispatch:
 jobs:
   publish:
@@ -28,7 +41,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: '>=20.11.1'
       - name: Install dependencies
         run: | # Install and link dependencies
           npm i
@@ -43,10 +56,10 @@ jobs:
   notify:
     name: Notify failed build
     needs: publish
-    if: failure() && github.event.pull_request == null
+    if: failure()
     runs-on: ubuntu-latest
     steps:
-      - uses: jayqi/failed-build-issue-action@v1
+      - uses: jayqi/failed-build-issue-action@v1.2
         with:
           github-token: ${{ secrets.GH_TOKEN }}
 

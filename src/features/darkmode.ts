@@ -5,9 +5,10 @@ import {
   MoebiusColorValueHexType,
   MoebiusPaletteOptionsType
 } from '../types';
+import { getChromaBezierScaleColors } from '../utils/get-chroma-bezier-scale-colors';
+import { getChromaScaleColors } from '../utils/get-chroma-scale-colors';
+
 import { monochromatic } from './monochromatic';
-import { getChromaBezierScaleColors } from 'utils/get-chroma-bezier-scale-colors';
-import { getChromaScaleColors } from 'utils/get-chroma-scale-colors';
 
 /**
  * Generates a dark mode color palette based on the provided base and secondary colors.

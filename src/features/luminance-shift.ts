@@ -5,8 +5,9 @@ import {
   MoebiusPaletteOptionsType,
   MoebiusChromaColorInputType
 } from '../types';
-import { harmonize } from './harmonize';
 import { range } from '../utils/range';
+
+import { harmonize } from './harmonize';
 
 /**
  * Generate a luminance shift palette based on the input color.

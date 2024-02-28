@@ -1,13 +1,12 @@
 import chroma from 'chroma-js';
 
-import { random } from '../utils/random';
-
 import {
   MoebiusChromaColorInputType,
   MoebiusColorValueHexType,
   MoebiusColorValueHslType,
   MoebiusPaletteOptionsType
 } from '../types';
+import { random } from '../utils/random';
 
 /**
  * Generates a monochromatic color palette based on the given color.

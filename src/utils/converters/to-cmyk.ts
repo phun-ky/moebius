@@ -1,4 +1,5 @@
 import chroma from 'chroma-js';
+
 import {
   MoebiusCMYKObjectType,
   MoebiusChromaColorInputType

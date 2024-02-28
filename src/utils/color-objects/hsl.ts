@@ -8,7 +8,7 @@ import { MoebiusHSLObjectType } from '../../types';
  * @property {number} s - Saturation component.
  * @property {number} l - Lightness component.
  */
-export const unitHSL = function (this: MoebiusHSLObjectType, [h, s, l]) {
+export const UnitHSL = function (this: MoebiusHSLObjectType, [h, s, l]) {
   // Ensure the values are within valid ranges and convert them to numbers.
   this.h = Number(!isNaN(h) ? h.toFixed(0) : 0);
   this.s = Number((s * 100).toFixed());
@@ -21,11 +21,11 @@ export const unitHSL = function (this: MoebiusHSLObjectType, [h, s, l]) {
  * @returns {string} - The string representation of the HSL unit.
  * @example
  * ```ts
- * const hslUnit = new unitHSL([30, 0.5, 0.8]);
+ * const hslUnit = new UnitHSL([30, 0.5, 0.8]);
  * const hslString = hslUnit.toString(); // "hsl(30, 50%, 80%)"
  * ```
  */
-unitHSL.prototype.toString = function (): string {
+UnitHSL.prototype.toString = function (): string {
   return `hsl(${Object.keys(this)
     .map((a, i) => `${this[a]}${i !== 0 ? '%' : ''}`)
     .join(', ')})`;
@@ -39,7 +39,7 @@ unitHSL.prototype.toString = function (): string {
  * @property {number} s - Saturation component.
  * @property {number} l - Lightness component.
  */
-export const unitHSLFloat = function (this: MoebiusHSLObjectType, [h, s, l]) {
+export const UnitHSLFloat = function (this: MoebiusHSLObjectType, [h, s, l]) {
   // Ensure the values are within valid ranges and convert them to numbers.
   this.h = Number(!isNaN(h) ? h.toFixed(0) : 0);
   this.s = Number(s.toFixed(2));
@@ -52,11 +52,11 @@ export const unitHSLFloat = function (this: MoebiusHSLObjectType, [h, s, l]) {
  * @returns {string} - The string representation of the HSL unit with floating-point values.
  * @example
  * ```ts
- * const hslFloatUnit = new unitHSLFloat([30, 0.5, 0.8]);
+ * const hslFloatUnit = new UnitHSLFloat([30, 0.5, 0.8]);
  * const hslFloatString = hslFloatUnit.toString(); // "30, 0.50, 0.80"
  * ```
  */
-unitHSLFloat.prototype.toString = function (): string {
+UnitHSLFloat.prototype.toString = function (): string {
   return Object.keys(this)
     .map((a) => `${this[a]}`)
     .join(', ');

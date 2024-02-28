@@ -13,7 +13,6 @@ import {
   MoebiusXYZObjectType,
   MoebiusChromaColorInputType
 } from '../types';
-
 import * as CONVERTERS from '../utils/converters';
 
 /**

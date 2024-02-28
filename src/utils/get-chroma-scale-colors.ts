@@ -1,5 +1,6 @@
 import chroma from 'chroma-js';
-import { MoebiusColorValueHexType, MoebiusPaletteOptionsType } from 'types';
+
+import { MoebiusColorValueHexType, MoebiusPaletteOptionsType } from '../types';
 
 /**
  * Generates a color scale using Chroma.js.
@@ -27,9 +28,13 @@ export const getChromaScaleColors = (
     correctLightness = true
   } = options as MoebiusPaletteOptionsType;
 
-  return chroma
-    .scale(colors)
-    .mode(colorScaleMode)
-    .correctLightness(correctLightness)
-    .colors(numberOfColors);
+  try {
+    return chroma
+      .scale(colors)
+      .mode(colorScaleMode)
+      .correctLightness(correctLightness)
+      .colors(numberOfColors);
+  } catch {
+    return [];
+  }
 };
