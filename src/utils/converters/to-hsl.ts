@@ -1,7 +1,7 @@
 import chroma from 'chroma-js';
 
 import { MoebiusChromaColorInputType, MoebiusHSLObjectType } from '../../types';
-import { unitHSL } from '../color-objects';
+import { UnitHSL } from '../color-objects';
 
 /**
  * Converts a color to its corresponding HSL object representation.
@@ -18,5 +18,5 @@ import { unitHSL } from '../color-objects';
 export const toHSL = (
   color: MoebiusChromaColorInputType
 ): MoebiusHSLObjectType => {
-  return new unitHSL(chroma(color).hsl());
+  return new UnitHSL(chroma(color).hsl());
 };
