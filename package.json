@@ -2,26 +2,33 @@
   "name": "@phun-ky/moebius",
   "version": "0.2.3",
   "description": "Automatically generate color palettes!",
-  "main": "moebius.js",
-  "types": "moebius.d.ts",
+  "main": "dist/moebius.js",
+  "types": "dist/moebius.d.ts",
+  "type": "module",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
+    "test": "glob -c \"node --import tsx --import global-jsdom/register --test --no-warnings\" \"./src/**/__tests__/**/*.[jt]s\"",
+    "pretest-ci": "rm -rf coverage && mkdir -p coverage",
+    "test-ci": "glob -c \"node --import tsx --import global-jsdom/register --test --no-warnings --experimental-test-coverage --test-reporter=cobertura --test-reporter-destination=coverage/cobertura-coverage.xml --test-reporter=spec --test-reporter-destination=stdout\" \"./src/**/__tests__/**/*.[jt]s\"",
     "rollup": "rollup -c",
     "prerollup:dev": "npm run clean",
     "rollup:dev": "rollup -c -w",
-    "clean": "rm -rf dist/ dts/ ./moebius.js",
+    "clean": "rm -rf dist dts",
     "build": "npm run clean && npm run rollup",
-    "dev": "npx browser-sync start --server --files \"dev/*.html\" \"*.css\" --index \"dev/index.html\" --serveStatic \"/dev/*.html\"",
+    "dev": "npx browser-sync start --server 'dev' --files 'dist' --ss 'dist'",
     "docs:gen": "node ./node_modules/.bin/typedoc --entryPoints src --entryPointStrategy expand --gitRevision main --githubPages false --plugin typedoc-plugin-markdown --tsconfig tsconfig.json --hideInPageTOC --out api --readme none",
+    "style:lint": "./node_modules/.bin/eslint -c ./.eslintrc --max-warnings=0 src --ignore-path .gitignore ",
+    "style:format": "prettier-eslint --config .prettierrc --eslint-config-path $PWD/.eslintrc --list-different --write \"./src/**/*.ts\"",
+    "style:code": "npx putout src",
     "commit": "npx git-cz",
     "release": "release-it"
   },
   "files": [
-    "/moebius.js",
-    "/moebius.js.map",
-    "/moebius.d.ts"
+    "/dist/moebius.js",
+    "/dist/moebius.js.map",
+    "/dist/moebius.d.ts"
   ],
   "repository": {
     "type": "git",
@@ -62,43 +69,59 @@
   "homepage": "https://github.com/phun-ky/moebius#readme",
   "devDependencies": {
     "@release-it/conventional-changelog": "^8.0.1",
-    "@rollup/plugin-commonjs": "^17.1.0",
-    "@rollup/plugin-node-resolve": "^11.2.0",
-    "@typescript-eslint/eslint-plugin": "^5.7.0",
-    "@typescript-eslint/parser": "^5.7.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-compat": "^3.13.0",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "git-cz": "^4.9.0",
-    "prettier": "^2.4.1",
-    "prettier-eslint": "^13.0.0",
-    "release-it": "^17.0.0",
-    "rollup": "^2.39.0",
-    "rollup-plugin-dts": "^4.0.1",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
-    "rollup-plugin-typescript2": "^0.35.0",
+    "@testing-library/dom": "^9.3.4",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.0.1",
+    "cobertura": "^1.0.1",
+    "cssnano": "^6.0.3",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "3.6.1",
+    "eslint-plugin-compat": "^4.2.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "git-cz": "^4.9.0",
+    "glob": "^10.3.10",
+    "global-jsdom": "^24.0.0",
+    "jsdom": "^24.0.0",
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1",
+    "prettier": "^3.2.5",
+    "prettier-eslint": "^16.3.0",
+    "prettier-eslint-cli": "^8.0.1",
+    "putout": "^35.1.0",
+    "quibble": "^0.9.1",
+    "release-it": "^17.1.1",
+    "rollup": "^4.12.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "stylus": "^0.62.0",
     "ts-node": "^10.9.1",
     "tslib": "^2.3.1",
-    "typedoc": "^0.25.2",
+    "tsx": "^4.7.1",
+    "typedoc": "^0.25.8",
     "typedoc-plugin-frontmatter": "^0.0.2",
-    "typedoc-plugin-markdown": "^3.15.3",
-    "typedoc-plugin-mdn-links": "^3.0.3",
+    "typedoc-plugin-markdown": "^3.17.1",
+    "typedoc-plugin-mdn-links": "^3.1.16",
     "typedoc-plugin-no-inherit": "^1.4.0",
-    "typedoc-plugin-rename-defaults": "^0.6.5",
-    "typescript": "^4.5.4"
+    "typedoc-plugin-rename-defaults": "^0.7.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "chroma-js": "^2.4.2",
+    "nearest-color": "^0.4.4"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/git-cz"
     }
   },
-  "dependencies": {
-    "chroma-js": "^2.4.2",
-    "nearest-color": "^0.4.4"
+  "engines": {
+    "node": ">=20.11.1",
+    "npm": ">=10.2.4"
   }
 }
