@@ -7,10 +7,25 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
+    paths:
+      - '.github/**'
+      - 'src/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'rollup.config.js'
+      - 'tsconfig.json'
+      - '.npmrc'
   pull_request:
     branches: [ "main" ]
     types: [opened, synchronize] # Workflow triggering events
-
+    paths:
+      - '.github/**'
+      - 'src/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'rollup.config.js'
+      - 'tsconfig.json'
+      - '.npmrc'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,19 +47,26 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: '>=20.11.1'
       - name: Install dependencies
         run: | # Install and link dependencies
           npm i
       - name: Build # Build all packages
         run: npm run build
+      - name: Test
+        run: npm run test-ci
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: phun-ky/speccer
   notify:
     name: Notify failed check
     needs: check
-    if: failure() && github.event.pull_request == null
+    if: failure()
     runs-on: ubuntu-latest
     steps:
-      - uses: jayqi/failed-build-issue-action@v1
+      - uses: jayqi/failed-build-issue-action@v1.2
         with:
           github-token: ${{ secrets.GH_TOKEN }}
 
