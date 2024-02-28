@@ -4,7 +4,7 @@
 
 > Automatically generate color palettes!
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](http://makeapullrequest.com) [![SemVer 2.0](https://img.shields.io/badge/SemVer-2.0-green.svg)](http://semver.org/spec/v2.0.0.html) ![npm version](https://img.shields.io/npm/v/@phun-ky/moebius) ![issues](https://img.shields.io/github/issues/phun-ky/moebius) ![license](https://img.shields.io/npm/l/@phun-ky/moebius) ![size](https://img.shields.io/bundlephobia/min/@phun-ky/moebius) ![npm](https://img.shields.io/npm/dm/%40phun-ky/moebius) ![GitHub Repo stars](https://img.shields.io/github/stars/phun-ky/moebius)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](http://makeapullrequest.com) [![SemVer 2.0](https://img.shields.io/badge/SemVer-2.0-green.svg)](http://semver.org/spec/v2.0.0.html) ![npm version](https://img.shields.io/npm/v/@phun-ky/moebius) ![issues](https://img.shields.io/github/issues/phun-ky/moebius) ![license](https://img.shields.io/npm/l/@phun-ky/moebius) ![size](https://img.shields.io/bundlephobia/min/@phun-ky/moebius) ![npm](https://img.shields.io/npm/dm/%40phun-ky/moebius) ![GitHub Repo stars](https://img.shields.io/github/stars/phun-ky/moebius) [![codecov](https://codecov.io/gh/phun-ky/moebius/graph/badge.svg?token=VA91DL7ZLZ)](https://codecov.io/gh/phun-ky/moebius)
 
 - [@phun-ky/moebius `möbius`](#phun-kymoebius-möbius)
   - [About](#about)
@@ -28,6 +28,7 @@
       - [toObject](#toobject)
       - [toFloat](#tofloat)
     - [Types](#types)
+  - [Contributing](#contributing)
   - [Sponsor me](#sponsor-me)
 
 ## About
@@ -405,6 +406,10 @@ console.log(color.toFloat(); // "0, 0.25, 0.36"
 ### Types
 
 Types can be found in `@phun-ky/moebius/moebius.d.ts`.
+
+## Contributing
+
+If you want to contribute, please read the [CONTRIBUTING.md](https://github.com/phun-ky/speccer/blob/main/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/phun-ky/speccer/blob/main/CODE_OF_CONDUCT.md)
 
 ## Sponsor me
 
