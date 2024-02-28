@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/phun-ky/moebius/compare/1.0.0...1.0.1) (2024-02-28)
+
+
+### Tasks
+
+* 🤖 Remove references to speccer ([e74ccf8](https://github.com/phun-ky/moebius/commit/e74ccf8e1cc666365f3c51a36644eae357da26d7))
+
 ## [1.0.0](https://github.com/phun-ky/moebius/compare/0.2.4...1.0.0) (2024-02-28)
 
 
