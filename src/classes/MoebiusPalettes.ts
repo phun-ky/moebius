@@ -86,7 +86,7 @@ export class MoebiusPalettes implements MoebiusPaletteInterface {
    * Generate a complement color palette based on the input color.
    *
    * @param {MoebiusChromaColorInputType} color - The base color for generating the complement palette.
-   * @param {MoebiusPaletteOptionsType} [options={}] - Options for generating the palette.
+   * @param {MoebiusPaletteOptionsType} [options={}] - Options for generating the palette.<
    *   @param {number} [options.numberOfColors=8] - The number of colors in the complement palette.
    *   @param {string} [options.colorScaleMode] - The color scale mode for chroma-js.
    *   @param {boolean} [options.correctLightness=true] - Whether to correct lightness in the generated palette.
