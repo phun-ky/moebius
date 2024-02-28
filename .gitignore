@@ -130,6 +130,3 @@ dist
 .pnp.*
 
 dts
-moebius.d.ts
-moebius.js
-moebius.js.map
