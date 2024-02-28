@@ -74,7 +74,7 @@ const defaultOptions = {
   noDuplicates: true,
   colorScaleMode: 'lch',
   reverseDirection: false,
-  divergentColor: '#f5f5f5',
+  divergentColor: '#f5f5f5'
 };
 ```
 
@@ -88,7 +88,7 @@ const { MoebiusPalette, MoebiusColor } = await Moebius();
 const palettes = new MoebiusPalettes({
   baseColor: new MoebiusColor('#003f5c'),
   secondaryColor: new MoebiusColor('#ff9900'),
-  ...options,
+  ...options
 });
 ```
 
