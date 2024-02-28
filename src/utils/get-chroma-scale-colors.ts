@@ -28,13 +28,13 @@ export const getChromaScaleColors = (
     correctLightness = true
   } = options as MoebiusPaletteOptionsType;
 
-  try{
+  try {
     return chroma
       .scale(colors)
       .mode(colorScaleMode)
       .correctLightness(correctLightness)
       .colors(numberOfColors);
-  } catch{
+  } catch {
     return [];
   }
 };

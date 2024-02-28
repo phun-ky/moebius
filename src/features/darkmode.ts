@@ -8,7 +8,6 @@ import {
 import { getChromaBezierScaleColors } from '../utils/get-chroma-bezier-scale-colors';
 import { getChromaScaleColors } from '../utils/get-chroma-scale-colors';
 
-
 import { monochromatic } from './monochromatic';
 
 /**

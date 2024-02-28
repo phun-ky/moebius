@@ -28,7 +28,7 @@ export const getChromaBezierScaleColors = (
     correctLightness = true
   } = options as MoebiusPaletteOptionsType;
 
-  try{
+  try {
     return chroma
       .bezier(colors)
       .scale()

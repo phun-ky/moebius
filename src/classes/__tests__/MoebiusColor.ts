@@ -161,7 +161,9 @@ describe('MoebiusColor', () => {
     const hexColor = '#ff9900';
     const colorName = 'Orange';
     const mColor = new MoebiusColor(hexColor, colorName);
-    const rgbFloatRepresentation = mColor.toFloat('rgb') as MoebiusRGBObjectType;
+    const rgbFloatRepresentation = mColor.toFloat(
+      'rgb'
+    ) as MoebiusRGBObjectType;
 
     assert.strictEqual(typeof rgbFloatRepresentation, 'object');
     assert.strictEqual(Object.keys(rgbFloatRepresentation).length, 3);

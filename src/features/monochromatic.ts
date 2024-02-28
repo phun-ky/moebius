@@ -8,7 +8,6 @@ import {
 } from '../types';
 import { random } from '../utils/random';
 
-
 /**
  * Generates a monochromatic color palette based on the given color.
  * @param {MoebiusChromaColorInputType} color - The base color for the palette.

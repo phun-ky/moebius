@@ -23,7 +23,7 @@ describe('analogous', () => {
     const analogousPalette = analogous(baseColor);
 
     assert.strictEqual(Array.isArray(analogousPalette), true);
-    assert.strictEqual(analogousPalette.length, 8);  // Default number of colors
+    assert.strictEqual(analogousPalette.length, 8); // Default number of colors
 
     analogousPalette.forEach((color) => {
       assert.strictEqual(typeof color, 'string');

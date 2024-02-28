@@ -10,7 +10,6 @@ import {
   NearestColorColorMatchInterface
 } from './types';
 
-
 export * from './types';
 
 export type MoebiusReturnType = Promise<{

@@ -23,7 +23,7 @@ describe('complement', () => {
     const complementPalette = complement(baseColor);
 
     assert.strictEqual(Array.isArray(complementPalette), true);
-    assert.strictEqual(complementPalette.length, 8);  // Default number of colors
+    assert.strictEqual(complementPalette.length, 8); // Default number of colors
 
     complementPalette.forEach((color) => {
       assert.strictEqual(typeof color, 'string');

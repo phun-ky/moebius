@@ -8,7 +8,10 @@ describe('darkmode', () => {
   it('should generate a dark mode color palette', () => {
     const baseColor = '#3498db';
     const secondaryColor = '#2ecc71';
-    const options = { bezier: true, colorScaleMode: 'lch' } as MoebiusPaletteOptionsType;
+    const options = {
+      bezier: true,
+      colorScaleMode: 'lch'
+    } as MoebiusPaletteOptionsType;
     const palette = darkmode(baseColor, secondaryColor, options);
 
     assert.strictEqual(typeof palette, 'object');

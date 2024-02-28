@@ -12,7 +12,10 @@ describe('pieSlice', () => {
     const result = pieSlice(start, interval, radius, size);
 
     assert.strictEqual(typeof result, 'string');
-    assert.match(result, /^M \d+(\.\d+)? \d+(\.\d+)? A \d+(\.\d+)? \d+(\.\d+)? 0 [01] 0 \d+(\.\d+)? \d+(\.\d+)? L \d+(\.\d+)? \d+(\.\d+)? Z$/i);
+    assert.match(
+      result,
+      /^M \d+(\.\d+)? \d+(\.\d+)? A \d+(\.\d+)? \d+(\.\d+)? 0 [01] 0 \d+(\.\d+)? \d+(\.\d+)? L \d+(\.\d+)? \d+(\.\d+)? Z$/i
+    );
   });
 
   it('should handle a larger start angle than stop angle and generate a valid SVG path', () => {
@@ -23,7 +26,10 @@ describe('pieSlice', () => {
     const result = pieSlice(start, interval, radius, size);
 
     assert.strictEqual(typeof result, 'string');
-    assert.match(result, /^M \d+(\.\d+)? \d+(\.\d+)? A \d+(\.\d+)? \d+(\.\d+)? 0 [01] 0 \d+(\.\d+)? \d+(\.\d+)? L \d+(\.\d+)? \d+(\.\d+)? Z$/i);
+    assert.match(
+      result,
+      /^M \d+(\.\d+)? \d+(\.\d+)? A \d+(\.\d+)? \d+(\.\d+)? 0 [01] 0 \d+(\.\d+)? \d+(\.\d+)? L \d+(\.\d+)? \d+(\.\d+)? Z$/i
+    );
   });
 
   it('should handle a size parameter other than the default (256) and generate a valid SVG path', () => {
@@ -34,7 +40,10 @@ describe('pieSlice', () => {
     const result = pieSlice(start, interval, radius, size);
 
     assert.strictEqual(typeof result, 'string');
-    assert.match(result, /^M \d+(\.\d+)? \d+(\.\d+)? A \d+(\.\d+)? \d+(\.\d+)? 0 [01] 0 \d+(\.\d+)? \d+(\.\d+)? L \d+(\.\d+)? \d+(\.\d+)? Z$/i);
+    assert.match(
+      result,
+      /^M \d+(\.\d+)? \d+(\.\d+)? A \d+(\.\d+)? \d+(\.\d+)? 0 [01] 0 \d+(\.\d+)? \d+(\.\d+)? L \d+(\.\d+)? \d+(\.\d+)? Z$/i
+    );
   });
 
   it('should handle a default size parameter (256) when not provided and generate a valid SVG path', () => {
@@ -44,6 +53,9 @@ describe('pieSlice', () => {
     const result = pieSlice(start, interval, radius);
 
     assert.strictEqual(typeof result, 'string');
-    assert.match(result, /^M \d+(\.\d+)? \d+(\.\d+)? A \d+(\.\d+)? \d+(\.\d+)? 0 [01] 0 \d+(\.\d+)? \d+(\.\d+)? L \d+(\.\d+)? \d+(\.\d+)? Z$/i);
+    assert.match(
+      result,
+      /^M \d+(\.\d+)? \d+(\.\d+)? A \d+(\.\d+)? \d+(\.\d+)? 0 [01] 0 \d+(\.\d+)? \d+(\.\d+)? L \d+(\.\d+)? \d+(\.\d+)? Z$/i
+    );
   });
 });

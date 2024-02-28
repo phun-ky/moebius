@@ -9,7 +9,10 @@ describe('harmonize', () => {
     const start = 30;
     const end = 210;
     const interval = 30;
-    const harmonizedPalette = harmonize(baseColor, start, end, interval, { noDuplicates: true, numberOfColors: 8 });
+    const harmonizedPalette = harmonize(baseColor, start, end, interval, {
+      noDuplicates: true,
+      numberOfColors: 8
+    });
 
     assert.strictEqual(Array.isArray(harmonizedPalette), true);
 
@@ -26,7 +29,9 @@ describe('harmonize', () => {
     const start = 30;
     const end = 210;
     const interval = 30;
-    const harmonizedPalette = harmonize(baseColor, start, end, interval, { noDuplicates: true });
+    const harmonizedPalette = harmonize(baseColor, start, end, interval, {
+      noDuplicates: true
+    });
     const uniqueColors = [...new Set(harmonizedPalette)];
 
     assert.deepStrictEqual(harmonizedPalette, uniqueColors);
@@ -37,7 +42,9 @@ describe('harmonize', () => {
     const start = 30;
     const end = 210;
     const interval = 30;
-    const harmonizedPalette = harmonize(baseColor, start, end, interval, { noDuplicates: false });
+    const harmonizedPalette = harmonize(baseColor, start, end, interval, {
+      noDuplicates: false
+    });
     const uniqueColors = [...new Set(harmonizedPalette)];
 
     assert.notDeepStrictEqual(harmonizedPalette, uniqueColors);

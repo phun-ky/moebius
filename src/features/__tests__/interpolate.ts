@@ -7,7 +7,9 @@ describe('interpolate', () => {
   it('should interpolate between two colors and generate a color palette', () => {
     const startColor = '#3498db';
     const endColor = '#db3434';
-    const interpolatedPalette = interpolate(startColor, endColor, { numberOfColors: 5 });
+    const interpolatedPalette = interpolate(startColor, endColor, {
+      numberOfColors: 5
+    });
 
     assert.strictEqual(Array.isArray(interpolatedPalette), true);
     assert.strictEqual(interpolatedPalette.length, 5);

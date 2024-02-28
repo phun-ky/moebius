@@ -9,7 +9,12 @@ describe('getA11yTextColor', () => {
     const ratio = 5;
     const lightForegroundColor = '#ffffff';
     const darkForegroundColor = '#000000';
-    const result = getA11yTextColor(backgroundColor, ratio, lightForegroundColor, darkForegroundColor);
+    const result = getA11yTextColor(
+      backgroundColor,
+      ratio,
+      lightForegroundColor,
+      darkForegroundColor
+    );
 
     assert.strictEqual(typeof result, 'string');
     assert.match(result, /^#[0-9a-f]{6}$/i);
@@ -19,7 +24,12 @@ describe('getA11yTextColor', () => {
     const backgroundColor = '#3498db';
     const lightForegroundColor = '#ffffff';
     const darkForegroundColor = '#000000';
-    const result = getA11yTextColor(backgroundColor, undefined, lightForegroundColor, darkForegroundColor);
+    const result = getA11yTextColor(
+      backgroundColor,
+      undefined,
+      lightForegroundColor,
+      darkForegroundColor
+    );
 
     assert.strictEqual(typeof result, 'string');
     assert.match(result, /^#[0-9a-f]{6}$/i);
@@ -29,7 +39,12 @@ describe('getA11yTextColor', () => {
     const backgroundColor = '#3498db';
     const ratio = 5;
     const darkForegroundColor = '#000000';
-    const result = getA11yTextColor(backgroundColor, ratio, undefined, darkForegroundColor);
+    const result = getA11yTextColor(
+      backgroundColor,
+      ratio,
+      undefined,
+      darkForegroundColor
+    );
 
     assert.strictEqual(typeof result, 'string');
     assert.match(result, /^#[0-9a-f]{6}$/i);
@@ -39,7 +54,11 @@ describe('getA11yTextColor', () => {
     const backgroundColor = '#3498db';
     const ratio = 5;
     const lightForegroundColor = '#ffffff';
-    const result = getA11yTextColor(backgroundColor, ratio, lightForegroundColor);
+    const result = getA11yTextColor(
+      backgroundColor,
+      ratio,
+      lightForegroundColor
+    );
 
     assert.strictEqual(typeof result, 'string');
     assert.match(result, /^#[0-9a-f]{6}$/i);

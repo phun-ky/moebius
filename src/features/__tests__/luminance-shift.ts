@@ -7,7 +7,9 @@ describe('luminanceShift', () => {
   it('should generate a luminance shift palette', () => {
     const baseColors = ['#3498db', '#99db34'];
     const divergingColors = ['#db3434'];
-    const luminanceShiftPalette = luminanceShift(baseColors, divergingColors, { numberOfColors: 5 });
+    const luminanceShiftPalette = luminanceShift(baseColors, divergingColors, {
+      numberOfColors: 5
+    });
 
     assert.strictEqual(Array.isArray(luminanceShiftPalette), true);
     assert.strictEqual(luminanceShiftPalette.length, 5);

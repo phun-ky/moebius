@@ -4,7 +4,6 @@ import { describe, it } from 'node:test';
 import { MoebiusRGBObjectType } from '../../../types';
 import { toFloat } from '../to-float';
 
-
 describe('toFloat', () => {
   it('should convert a color to its float representation (RGB)', () => {
     const result = toFloat('#00ff00') as MoebiusRGBObjectType;

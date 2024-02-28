@@ -3,7 +3,6 @@ import { describe, it } from 'node:test';
 
 import { toHEX } from '../to-hex';
 
-
 describe('toHEX', () => {
   it('should convert a color to its HEX representation', () => {
     const result = toHEX('#3498db');

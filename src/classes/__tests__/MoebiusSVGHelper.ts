@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {describe, it } from 'node:test';
+import { describe, it } from 'node:test';
 
 import { MoebiusColorValueHexType } from '../../types';
 import { MoebiusSVGHelper } from '../MoebiusSVGHelper';
@@ -7,7 +7,10 @@ import { MoebiusSVGHelper } from '../MoebiusSVGHelper';
 describe('MoebiusSVGHelper', () => {
   it('should generate SVG paths for colored pie slices', () => {
     const svgHelper = new MoebiusSVGHelper();
-    const colors = [['#ff0000', '#00ff00'], ['#0000ff']] as MoebiusColorValueHexType[][];
+    const colors = [
+      ['#ff0000', '#00ff00'],
+      ['#0000ff']
+    ] as MoebiusColorValueHexType[][];
     const size = 256;
     const svgFragment = svgHelper.getColorPiePaths(colors, size);
 
@@ -32,7 +35,10 @@ describe('MoebiusSVGHelper', () => {
 
   it('should generate SVG paths with default size', () => {
     const svgHelper = new MoebiusSVGHelper();
-    const colors = [['#ff0000', '#00ff00'], ['#0000ff']] as MoebiusColorValueHexType[][];
+    const colors = [
+      ['#ff0000', '#00ff00'],
+      ['#0000ff']
+    ] as MoebiusColorValueHexType[][];
     const svgFragment = svgHelper.getColorPiePaths(colors);
 
     assert.strictEqual(svgFragment instanceof DocumentFragment, true);

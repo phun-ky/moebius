@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
-import { normalizeRGBInput, normalizeLABInput} from '../normalize-color-units';
+import { normalizeRGBInput, normalizeLABInput } from '../normalize-color-units';
 
 describe('normalizeRGBInput', () => {
   it('should normalize an RGB input value below or equal to 0.04045', () => {
@@ -10,7 +10,7 @@ describe('normalizeRGBInput', () => {
     const diff = result - desired;
 
     assert.strictEqual(typeof result, 'number');
-    assert.ok(diff < 0.002 );
+    assert.ok(diff < 0.002);
   });
 
   it('should normalize an RGB input value above 0.04045', () => {
@@ -19,7 +19,7 @@ describe('normalizeRGBInput', () => {
     const diff = result - desired;
 
     assert.strictEqual(typeof result, 'number');
-    assert.ok(diff < 0.002 );
+    assert.ok(diff < 0.002);
   });
 });
 
