@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/phun-ky/moebius/compare/1.0.1...1.0.2) (2024-03-13)
+
+
+### Tasks
+
+* 🤖 bump stylus from 0.62.0 to 0.63.0 ([f79141a](https://github.com/phun-ky/moebius/commit/f79141aeefeb24ec90f69d82cca313d335d218d3))
+
 ## [1.0.1](https://github.com/phun-ky/moebius/compare/1.0.0...1.0.1) (2024-02-28)
 
 
