@@ -1,5 +1,47 @@
 # Changelog
 
+## [1.0.6](https://github.com/phun-ky/moebius/compare/1.0.5...1.0.6) (2024-03-19)
+
+
+### Tasks
+
+* 🤖 bump postcss from 8.4.35 to 8.4.36 ([b57e16b](https://github.com/phun-ky/moebius/commit/b57e16bb647afc0649d5109ea4c7c925ae3bebb4))
+
+## [1.0.5](https://github.com/phun-ky/moebius/compare/1.0.4...1.0.5) (2024-03-19)
+
+
+### Tasks
+
+* 🤖 bump putout from 35.5.1 to 35.7.5 ([59a716e](https://github.com/phun-ky/moebius/commit/59a716efa6d8cf562d98809923b9c2e6fb109a09))
+
+## [1.0.4](https://github.com/phun-ky/moebius/compare/1.0.3...1.0.4) (2024-03-19)
+
+
+### Tasks
+
+* 🤖 bump typedoc-plugin-mdn-links from 3.1.17 to 3.1.18 ([39eec96](https://github.com/phun-ky/moebius/commit/39eec96a6554a3eef1371746b78b19904ffb48e2))
+
+## [1.0.3](https://github.com/phun-ky/moebius/compare/1.0.2...1.0.3) (2024-03-19)
+
+
+### Tasks
+
+* 🤖 bump typedoc from 0.25.9 to 0.25.12 ([fb7b657](https://github.com/phun-ky/moebius/commit/fb7b6573780143066cb1b8d177939d0def1f3476))
+
+## [1.0.2](https://github.com/phun-ky/moebius/compare/1.0.1...1.0.2) (2024-03-13)
+
+
+### Tasks
+
+* 🤖 bump stylus from 0.62.0 to 0.63.0 ([f79141a](https://github.com/phun-ky/moebius/commit/f79141aeefeb24ec90f69d82cca313d335d218d3))
+
+## [1.0.1](https://github.com/phun-ky/moebius/compare/1.0.0...1.0.1) (2024-02-28)
+
+
+### Tasks
+
+* 🤖 Remove references to speccer ([e74ccf8](https://github.com/phun-ky/moebius/commit/e74ccf8e1cc666365f3c51a36644eae357da26d7))
+
 ## [1.0.0](https://github.com/phun-ky/moebius/compare/0.2.4...1.0.0) (2024-02-28)
 
 

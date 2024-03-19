@@ -409,7 +409,7 @@ Types can be found in `@phun-ky/moebius/moebius.d.ts`.
 
 ## Contributing
 
-If you want to contribute, please read the [CONTRIBUTING.md](https://github.com/phun-ky/speccer/blob/main/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/phun-ky/speccer/blob/main/CODE_OF_CONDUCT.md)
+If you want to contribute, please read the [CONTRIBUTING.md](https://github.com/phun-ky/moebius/blob/main/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/phun-ky/moebius/blob/main/CODE_OF_CONDUCT.md)
 
 ## Sponsor me
 
