@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/phun-ky/moebius/compare/1.0.5...1.0.6) (2024-03-19)
+
+
+### Tasks
+
+* 🤖 bump postcss from 8.4.35 to 8.4.36 ([b57e16b](https://github.com/phun-ky/moebius/commit/b57e16bb647afc0649d5109ea4c7c925ae3bebb4))
+
 ## [1.0.5](https://github.com/phun-ky/moebius/compare/1.0.4...1.0.5) (2024-03-19)
 
 
