@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/phun-ky/moebius/compare/1.0.2...1.0.3) (2024-03-19)
+
+
+### Tasks
+
+* 🤖 bump typedoc from 0.25.9 to 0.25.12 ([fb7b657](https://github.com/phun-ky/moebius/commit/fb7b6573780143066cb1b8d177939d0def1f3476))
+
 ## [1.0.2](https://github.com/phun-ky/moebius/compare/1.0.1...1.0.2) (2024-03-13)
 
 
