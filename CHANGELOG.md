@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/phun-ky/moebius/compare/1.0.4...1.0.5) (2024-03-19)
+
+
+### Tasks
+
+* 🤖 bump putout from 35.5.1 to 35.7.5 ([59a716e](https://github.com/phun-ky/moebius/commit/59a716efa6d8cf562d98809923b9c2e6fb109a09))
+
 ## [1.0.4](https://github.com/phun-ky/moebius/compare/1.0.3...1.0.4) (2024-03-19)
 
 
