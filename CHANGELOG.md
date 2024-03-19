@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/phun-ky/moebius/compare/1.0.3...1.0.4) (2024-03-19)
+
+
+### Tasks
+
+* 🤖 bump typedoc-plugin-mdn-links from 3.1.17 to 3.1.18 ([39eec96](https://github.com/phun-ky/moebius/commit/39eec96a6554a3eef1371746b78b19904ffb48e2))
+
 ## [1.0.3](https://github.com/phun-ky/moebius/compare/1.0.2...1.0.3) (2024-03-19)
 
 
