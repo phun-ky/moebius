@@ -6,7 +6,7 @@ name: Checks
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: ['main']
     paths:
       - '.github/**'
       - 'src/**'
@@ -16,7 +16,7 @@ on:
       - 'tsconfig.json'
       - '.npmrc'
   pull_request:
-    branches: [ "main" ]
+    branches: ['main']
     types: [opened, synchronize] # Workflow triggering events
     paths:
       - '.github/**'
@@ -47,16 +47,16 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4
         with:
-          node-version: '>=20.11.1'
+          node-version: '>=22.0.0'
       - name: Install dependencies
         run: | # Install and link dependencies
           npm i
       - name: Build # Build all packages
         run: npm run build
       - name: Test
-        run: npm run test-ci
+        run: npm run test:ci
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4.0.1
+        uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: phun-ky/moebius
@@ -69,5 +69,4 @@ jobs:
       - uses: jayqi/failed-build-issue-action@v1.2
         with:
           github-token: ${{ secrets.GH_TOKEN }}
-
-
+          label-name: 'problems: build failed'

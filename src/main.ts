@@ -19,7 +19,6 @@ export type MoebiusReturnType = Promise<{
 }>;
 
 const initializeColorNames = async (): Promise<
-  // eslint-disable-next-line no-unused-vars
   (color: string) => NearestColorColorMatchInterface | string
 > => {
   const response = await fetch('https://color-names.herokuapp.com/v1/');

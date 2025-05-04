@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unused-modules */
 /**
  * Represents a color object with various color representations.
  */
@@ -51,7 +52,7 @@ export interface MoebiusPaletteColorsInterface {
  * Represents a palette of colors with different themes.
  */
 export interface MoebiusThemeColorsInterface {
-  darkmode: Record<string, MoebiusColorValueHexType[]>;
+  darkMode: Record<string, MoebiusColorValueHexType[]>;
 }
 
 /**

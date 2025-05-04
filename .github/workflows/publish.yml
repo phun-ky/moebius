@@ -6,7 +6,7 @@ name: Publish
 on:
   pull_request:
     types: [closed]
-    branches: [ "main" ]
+    branches: ['main']
     paths:
       - '.github/**'
       - 'src/**'
@@ -41,11 +41,11 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4
         with:
-          node-version: '>=20.11.1'
+          node-version: '>=22.0.0'
       - name: Install dependencies
         run: | # Install and link dependencies
           npm i
-      - name: "Release" # Interesting step
+      - name: 'Release' # Interesting step
         run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
@@ -62,4 +62,4 @@ jobs:
       - uses: jayqi/failed-build-issue-action@v1.2
         with:
           github-token: ${{ secrets.GH_TOKEN }}
-
+          label-name: 'problems: build failed'
