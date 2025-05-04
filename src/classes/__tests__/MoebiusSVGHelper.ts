@@ -5,7 +5,7 @@ import { MoebiusColorValueHexType } from '../../types';
 import { MoebiusSVGHelper } from '../MoebiusSVGHelper';
 
 describe('MoebiusSVGHelper', () => {
-  it('should generate SVG paths for colored pie slices', () => {
+  it('should generate SVG paths for coloured pie slices', () => {
     const svgHelper = new MoebiusSVGHelper();
     const colors = [
       ['#ff0000', '#00ff00'],

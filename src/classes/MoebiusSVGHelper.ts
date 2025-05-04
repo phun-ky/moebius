@@ -10,7 +10,7 @@ export class MoebiusSVGHelper {
   xlmns = 'http://www.w3.org/2000/svg';
 
   /**
-   * Gets SVG paths for colored pie slices based on the provided colors.
+   * Gets SVG paths for coloured pie slices based on the provided colors.
    * @param {MoebiusColorValueHexType[][]} colors - Array of color groups.
    * @param {number} [size=256] - Size of the SVG.
    * @returns {DocumentFragment} - Document fragment containing the SVG paths.

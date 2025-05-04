@@ -2,9 +2,9 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
 import { MoebiusPaletteOptionsType } from '../../types';
-import { darkmode } from '../darkmode';
+import { darkMode } from '../dark-mode';
 
-describe('darkmode', () => {
+describe('dark-mode', () => {
   it('should generate a dark mode color palette', () => {
     const baseColor = '#3498db';
     const secondaryColor = '#2ecc71';
@@ -12,7 +12,7 @@ describe('darkmode', () => {
       bezier: true,
       colorScaleMode: 'lch'
     } as MoebiusPaletteOptionsType;
-    const palette = darkmode(baseColor, secondaryColor, options);
+    const palette = darkMode(baseColor, secondaryColor, options);
 
     assert.strictEqual(typeof palette, 'object');
     assert.strictEqual(Array.isArray(palette.primary), true);

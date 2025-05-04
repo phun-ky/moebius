@@ -24,11 +24,11 @@ import { monochromatic } from './monochromatic';
  * const baseColor = '#3498db';
  * const secondaryColor = '#2ecc71';
  * const options = { bezier: true, colorScaleMode: 'lch' };
- * const palette = darkmode(baseColor, secondaryColor, options);
+ * const palette = darkMode(baseColor, secondaryColor, options);
  * console.log(palette);
  * ```
  */
-export const darkmode = (
+export const darkMode = (
   baseColor: MoebiusChromaColorInputType,
   secondaryColor: MoebiusChromaColorInputType,
   options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
