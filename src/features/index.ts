@@ -20,4 +20,4 @@ export * from './split';
 
 export * from './complement';
 
-export * from './darkmode';
+export * from './dark-mode';

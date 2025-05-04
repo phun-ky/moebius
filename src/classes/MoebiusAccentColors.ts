@@ -1,3 +1,4 @@
+/* eslint-disable @stylistic/indent */
 import { monochromatic } from '../features';
 import {
   MoebiusColorValueHexType,
@@ -10,7 +11,7 @@ import {
  * Class representing a set of accent colors in various palettes.
  */
 export class MoebiusAccentColors
-implements MoebiusPaletteAccentColorsInterface
+  implements MoebiusPaletteAccentColorsInterface
 {
   interpolate: MoebiusColorValueHexType[][];
   luminanceShift: MoebiusColorValueHexType[][];

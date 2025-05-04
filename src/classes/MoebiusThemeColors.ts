@@ -7,7 +7,7 @@ import {
  * Class representing a set of colors in various themes.
  */
 export class MoebiusThemeColors implements MoebiusThemeColorsInterface {
-  darkmode: Record<string, MoebiusColorValueHexType[]>;
+  darkMode: Record<string, MoebiusColorValueHexType[]>;
 
   /**
    * Creates an instance of MoebiusThemeColors.

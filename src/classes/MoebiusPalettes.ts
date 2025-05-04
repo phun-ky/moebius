@@ -42,7 +42,7 @@ export class MoebiusPalettes implements MoebiusPaletteInterface {
     this.baseColor = this.options.baseColor;
     this.secondaryColor = this.options.secondaryColor;
     this.themes = new MoebiusThemeColors({
-      darkmode: this.darkmode(this.baseColor.hex, this.secondaryColor.hex, {
+      darkMode: this.darkMode(this.baseColor.hex, this.secondaryColor.hex, {
         ...this.options,
         reverseDirection: !this.options.reverseDirection
       })
@@ -122,18 +122,18 @@ export class MoebiusPalettes implements MoebiusPaletteInterface {
    * const baseColor = '#3498db';
    * const secondaryColor = '#2ecc71';
    * const options = { bezier: true, colorScaleMode: 'lch' };
-   * const palette = darkmode(baseColor, secondaryColor, options);
+   * const palette = darkMode(baseColor, secondaryColor, options);
    * console.log(palette);
    * ```
    */
-  darkmode(
+  darkMode(
     baseColor: MoebiusChromaColorInputType,
     secondaryColor: MoebiusChromaColorInputType,
     options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
   ): Record<string, MoebiusColorValueHexType[]> {
     const currentOptions = { ...this.options, ...options };
 
-    return FEATURES.darkmode(baseColor, secondaryColor, currentOptions);
+    return FEATURES.darkMode(baseColor, secondaryColor, currentOptions);
   }
 
   /**

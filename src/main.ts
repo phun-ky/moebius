@@ -1,4 +1,5 @@
 /* eslint-disable import/no-unused-modules */
+import { isString } from '@phun-ky/typeof';
 import chroma from 'chroma-js';
 import nearestColor from 'nearest-color';
 
@@ -19,7 +20,6 @@ export type MoebiusReturnType = Promise<{
 }>;
 
 const initializeColorNames = async (): Promise<
-  // eslint-disable-next-line no-unused-vars
   (color: string) => NearestColorColorMatchInterface | string
 > => {
   const response = await fetch('https://color-names.herokuapp.com/v1/');
@@ -47,7 +47,7 @@ async function Moebius(): MoebiusReturnType {
     constructor(color: MoebiusColorValueHexType) {
       super(
         chroma(color).hex(),
-        typeof colorNames(color) === 'string'
+        isString(colorNames(color))
           ? (colorNames(color) as string)
           : (colorNames(color) as NearestColorColorMatchInterface).name
       );

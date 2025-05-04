@@ -29,7 +29,7 @@ const generateLuminanceShiftPalette = (
   color: MoebiusChromaColorInputType,
   options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
 ) => {
-  if (!color) throw new Error('MoebiusPalettes: missing input `color`');
+  if (!color) throw Error('MoebiusPalettes: missing input `color`');
 
   const { diverging = false, numberOfColors = 7 } =
     options as MoebiusPaletteOptionsType;
@@ -148,9 +148,9 @@ export const luminanceShift = (
     colors.length !== 1
       ? colors
       : luminanceShiftAutoColors(colors[0], {
-        numberOfColors: numberOfColorsLeft,
-        divergentColor
-      });
+          numberOfColors: numberOfColorsLeft,
+          divergentColor
+        });
 
   let generatedDivergentColors: string[] = [];
 
@@ -159,50 +159,50 @@ export const luminanceShift = (
       divergingColors.length !== 1
         ? divergingColors
         : luminanceShiftAutoColors(divergingColors[0], {
-          numberOfColors: numberOfColorsRight,
-          divergentColor,
-          reverse: false,
-          diverging
-        });
+            numberOfColors: numberOfColorsRight,
+            divergentColor,
+            reverse: false,
+            diverging
+          });
   }
 
   let stepsLeft = colors.length
     ? chroma
-      .scale(generatedColors)
-      .mode(colorScaleMode)
-      .correctLightness(correctLightness)
-      .colors(numberOfColorsLeft)
+        .scale(generatedColors)
+        .mode(colorScaleMode)
+        .correctLightness(correctLightness)
+        .colors(numberOfColorsLeft)
     : [];
 
   if (bezier) {
     stepsLeft = colors.length
       ? chroma
-        .bezier(generatedColors)
-        .scale()
-        .mode(colorScaleMode)
-        .correctLightness(correctLightness)
-        .colors(numberOfColorsLeft)
+          .bezier(generatedColors)
+          .scale()
+          .mode(colorScaleMode)
+          .correctLightness(correctLightness)
+          .colors(numberOfColorsLeft)
       : [];
   }
 
   let stepsRight =
     diverging && divergingColors.length
       ? chroma
-        .scale(generatedDivergentColors)
-        .mode(colorScaleMode)
-        .correctLightness(correctLightness)
-        .colors(numberOfColorsRight)
+          .scale(generatedDivergentColors)
+          .mode(colorScaleMode)
+          .correctLightness(correctLightness)
+          .colors(numberOfColorsRight)
       : [];
 
   if (bezier) {
     stepsRight =
       diverging && divergingColors.length
         ? chroma
-          .bezier(generatedDivergentColors)
-          .scale()
-          .mode(colorScaleMode)
-          .correctLightness(correctLightness)
-          .colors(numberOfColorsRight)
+            .bezier(generatedDivergentColors)
+            .scale()
+            .mode(colorScaleMode)
+            .correctLightness(correctLightness)
+            .colors(numberOfColorsRight)
         : [];
   }
 
@@ -211,9 +211,9 @@ export const luminanceShift = (
   steps = (
     diverging
       ? stepsLeft.slice(
-        0,
-        stepsLeft.length - (numberOfColorsLeft % 2 !== 0 ? 0 : 1)
-      )
+          0,
+          stepsLeft.length - (numberOfColorsLeft % 2 !== 0 ? 0 : 1)
+        )
       : stepsLeft
   )
     //).concat(stepsRight.slice(1).reverse());
