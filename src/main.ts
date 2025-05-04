@@ -1,4 +1,5 @@
 /* eslint-disable import/no-unused-modules */
+import { isString } from '@phun-ky/typeof';
 import chroma from 'chroma-js';
 import nearestColor from 'nearest-color';
 
@@ -46,7 +47,7 @@ async function Moebius(): MoebiusReturnType {
     constructor(color: MoebiusColorValueHexType) {
       super(
         chroma(color).hex(),
-        typeof colorNames(color) === 'string'
+        isString(colorNames(color))
           ? (colorNames(color) as string)
           : (colorNames(color) as NearestColorColorMatchInterface).name
       );

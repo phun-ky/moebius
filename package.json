@@ -106,6 +106,7 @@
     "unified-prettier": "^2.0.1"
   },
   "dependencies": {
+    "@phun-ky/typeof": "^1.2.10",
     "chroma-js": "^2.4.2",
     "nearest-color": "^0.4.4"
   },
