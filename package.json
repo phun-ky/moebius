@@ -70,9 +70,9 @@
   "homepage": "https://github.com/phun-ky/moebius#readme",
   "devDependencies": {
     "@phun-ky/eslint-config": "^0.1.6",
-    "@release-it/conventional-changelog": "^8.0.1",
+    "@release-it/conventional-changelog": "^10.0.1",
     "@rollup/plugin-commonjs": "^28.0.3",
-    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-terser": "^0.4.4",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.4.2",
@@ -82,12 +82,12 @@
     "eslint-config-prettier": "^10.1.2",
     "git-cz": "^4.9.0",
     "glob": "^11.0.2",
-    "global-jsdom": "^24.0.0",
-    "jsdom": "^24.0.0",
+    "global-jsdom": "^26.0.0",
+    "jsdom": "^26.1.0",
     "prettier": "3.5.3",
-    "putout": "^35.1.0",
+    "putout": "^40.0.22",
     "quibble": "^0.9.1",
-    "release-it": "^17.1.1",
+    "release-it": "^19.0.2",
     "remark-gfm": "^4.0.1",
     "remark-github": "^12.0.0",
     "remark-insert-headings": "^0.0.0",
@@ -110,7 +110,7 @@
   },
   "dependencies": {
     "@phun-ky/typeof": "^1.2.10",
-    "chroma-js": "^2.4.2",
+    "chroma-js": "^3.1.2",
     "nearest-color": "^0.4.4"
   },
   "config": {
