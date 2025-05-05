@@ -1,63 +1,69 @@
-import { MoebiusHSLObjectType } from '../../types';
-
 /**
  * Represents an HSL (Hue, Saturation, Lightness) color unit.
- * @constructor
- * @param {MoebiusHSLObjectType} params - The HSL parameters.
- * @property {number} h - Hue component.
- * @property {number} s - Saturation component.
- * @property {number} l - Lightness component.
  */
-export const UnitHSL = function (this: MoebiusHSLObjectType, [h, s, l]) {
-  // Ensure the values are within valid ranges and convert them to numbers.
-  this.h = Number(!isNaN(h) ? h.toFixed(0) : 0);
-  this.s = Number((s * 100).toFixed());
-  this.l = Number((l * 100).toFixed());
-};
+export class UnitHSL {
+  /** Hue component (0–360) */
+  h: number;
+  /** Saturation component (0–100%) */
+  s: number;
+  /** Lightness component (0–100%) */
+  l: number;
+
+  /**
+   * Create a new UnitHSL instance.
+   * @param {[number, number, number]} components - The HSL components: [h, s, l]
+   */
+  constructor([h, s, l]: [number, number, number]) {
+    this.h = Number(!isNaN(h) ? h.toFixed(0) : '0');
+    this.s = Number((s * 100).toFixed(0));
+    this.l = Number((l * 100).toFixed(0));
+  }
+
+  /**
+   * Converts the HSL unit to a CSS string representation.
+   * @returns {string} - A string like "hsl(30, 50%, 80%)"
+   * @example
+   * ```ts
+   * const hslUnit = new UnitHSL([30, 0.5, 0.8]);
+   * const hslString = hslUnit.toString(); // "hsl(30, 50%, 80%)"
+   * ```
+   */
+  toString(): string {
+    return `hsl(${this.h}, ${this.s}%, ${this.l}%)`;
+  }
+}
 
 /**
- * Converts the HSL unit to a string representation.
- * @method
- * @returns {string} - The string representation of the HSL unit.
- * @example
- * ```ts
- * const hslUnit = new UnitHSL([30, 0.5, 0.8]);
- * const hslString = hslUnit.toString(); // "hsl(30, 50%, 80%)"
- * ```
+ * Represents an HSL (Hue, Saturation, Lightness) color unit with float values.
  */
-UnitHSL.prototype.toString = function (): string {
-  return `hsl(${Object.keys(this)
-    .map((a, i) => `${this[a]}${i !== 0 ? '%' : ''}`)
-    .join(', ')})`;
-};
+export class UnitHSLFloat {
+  /** Hue component */
+  h: number;
+  /** Saturation component */
+  s: number;
+  /** Lightness component */
+  l: number;
 
-/**
- * Represents an HSL (Hue, Saturation, Lightness) color unit with floating-point values.
- * @constructor
- * @param {MoebiusHSLObjectType} params - The HSL parameters.
- * @property {number} h - Hue component.
- * @property {number} s - Saturation component.
- * @property {number} l - Lightness component.
- */
-export const UnitHSLFloat = function (this: MoebiusHSLObjectType, [h, s, l]) {
-  // Ensure the values are within valid ranges and convert them to numbers.
-  this.h = Number(!isNaN(h) ? h.toFixed(0) : 0);
-  this.s = Number(s.toFixed(2));
-  this.l = Number(l.toFixed(2));
-};
+  /**
+   * Create a new UnitHSLFloat instance.
+   * @param {[number, number, number]} components - The HSL components: [h, s, l]
+   */
+  constructor([h, s, l]: [number, number, number]) {
+    this.h = Number(!isNaN(h) ? h.toFixed(0) : '0');
+    this.s = Number(s.toFixed(2));
+    this.l = Number(l.toFixed(2));
+  }
 
-/**
- * Converts the HSL unit with floating-point values to a string representation.
- * @method
- * @returns {string} - The string representation of the HSL unit with floating-point values.
- * @example
- * ```ts
- * const hslFloatUnit = new UnitHSLFloat([30, 0.5, 0.8]);
- * const hslFloatString = hslFloatUnit.toString(); // "30, 0.50, 0.80"
- * ```
- */
-UnitHSLFloat.prototype.toString = function (): string {
-  return Object.keys(this)
-    .map((a) => `${this[a]}`)
-    .join(', ');
-};
+  /**
+   * Converts the HSL float unit to a string.
+   * @returns {string} - A string like "30, 0.50, 0.80"
+   * @example
+   * ```ts
+   * const hslFloatUnit = new UnitHSLFloat([30, 0.5, 0.8]);
+   * const hslFloatString = hslFloatUnit.toString(); // "30, 0.50, 0.80"
+   * ```
+   */
+  toString(): string {
+    return `${this.h}, ${this.s}, ${this.l}`;
+  }
+}

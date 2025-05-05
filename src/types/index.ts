@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unused-modules */
 /**
  * Represents a color object with various color representations.
  */

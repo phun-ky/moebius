@@ -17,7 +17,7 @@ import * as CONVERTERS from '../utils/converters';
 
 /**
  * MoebiusColor class representing a color with various formats and conversions.
- * @class
+ *
  * @example
  * ```ts
  * const mColor = new MoebiusColor('#ff9900')
@@ -43,9 +43,9 @@ export class MoebiusColor implements MoebiusColorInterface {
 
   /**
    * Creates an instance of MoebiusColor.
-   * @param {MoebiusChromaColorInputType} value - The hex value of the color.
+   * @param {MoebiusChromaColorInputType} color - The hex value of the color.
    * @param {string} name - The name of the color
-   * @constructor
+   *
    * @throws Will throw an error if init has not been run before creating an instance.
    */
   constructor(color: MoebiusChromaColorInputType, name: string) {

@@ -18,7 +18,7 @@ import { MoebiusThemeColors } from './MoebiusThemeColors';
 
 /**
  * MoebiusPalettes class representing a set of color palettes and their variations.
- * @class
+ *
  */
 export class MoebiusPalettes implements MoebiusPaletteInterface {
   baseColor: MoebiusColorInterface;

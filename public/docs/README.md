@@ -1,3 +1,3 @@
-# @phun-ky/moebius API Documentation
+# @phun-ky/moebius `möbius` API Documentation
 
 ---

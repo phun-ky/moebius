@@ -8,6 +8,12 @@
     "./custom-typedoc-plugin.js"
   ],
   "out": "./api",
+  "exclude": [
+    "**/__tests__/**/*",
+    "**/__test_utils__/**/*",
+    "**/__fixtures__/**/*",
+    "**/testsuite/**/*"
+  ],
   "tsconfig": "tsconfig.json",
   "outputFileStrategy": "modules",
   "interfacePropertiesFormat": "table",
@@ -27,6 +33,8 @@
   "expandObjects": true,
   "remarkPlugins": [
     "unified-prettier",
+    "remark-gfm",
+    "remark-insert-headings",
     ["remark-github", { "repository": "https://github.com/phun-ky/moebius" }],
     ["remark-toc", { "heading": "Table of Contents", "maxDepth": 3 }]
   ]

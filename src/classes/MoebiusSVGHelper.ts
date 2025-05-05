@@ -22,7 +22,10 @@ export class MoebiusSVGHelper {
    * document.body.appendChild(svgFragment);
    * ```
    */
-  getColorPiePaths(colors: MoebiusColorValueHexType[][], size = 256) {
+  getColorPiePaths(
+    colors: MoebiusColorValueHexType[][],
+    size: number = 256
+  ): DocumentFragment {
     const df = document.createDocumentFragment();
     const defsElement = document.createElementNS(this.xlmns, 'defs');
     const maskElement = document.createElementNS(this.xlmns, 'mask');

@@ -1,67 +1,97 @@
-@phun-ky/moebius
+# [**@phun-ky/moebius**](https://github.com/phun-ky/moebius) `möbius` API Documentation
 
-# @phun-ky/moebius
+---
+
+> Last updated 2025-05-05T07:59:18.991Z
+
+##
 
 ## Modules
 
-- [classes/MoebiusAccentColors](modules/classes_MoebiusAccentColors.md)
-- [classes/MoebiusColor](modules/classes_MoebiusColor.md)
-- [classes/MoebiusPaletteColors](modules/classes_MoebiusPaletteColors.md)
-- [classes/MoebiusPalettes](modules/classes_MoebiusPalettes.md)
-- [classes/MoebiusSVGHelper](modules/classes_MoebiusSVGHelper.md)
-- [classes/MoebiusThemeColors](modules/classes_MoebiusThemeColors.md)
-- [constants](modules/constants.md)
-- [features](modules/features.md)
-- [features/analogous](modules/features_analogous.md)
-- [features/complement](modules/features_complement.md)
-- [features/darkmode](modules/features_darkmode.md)
-- [features/harmonize](modules/features_harmonize.md)
-- [features/hexadic](modules/features_hexadic.md)
-- [features/interpolate](modules/features_interpolate.md)
-- [features/luminance-shift](modules/features_luminance_shift.md)
-- [features/monochromatic](modules/features_monochromatic.md)
-- [features/pentadic](modules/features_pentadic.md)
-- [features/split](modules/features_split.md)
-- [features/tetradic](modules/features_tetradic.md)
-- [features/triadic](modules/features_triadic.md)
-- [main](modules/main.md)
-- [types](modules/types.md)
-- [utils/a11y](modules/utils_a11y.md)
-- [utils/array-shuffle](modules/utils_array_shuffle.md)
-- [utils/camel-case](modules/utils_camel_case.md)
-- [utils/color-objects](modules/utils_color_objects.md)
-- [utils/color-objects/cmyk](modules/utils_color_objects_cmyk.md)
-- [utils/color-objects/hsi](modules/utils_color_objects_hsi.md)
-- [utils/color-objects/hsl](modules/utils_color_objects_hsl.md)
-- [utils/color-objects/hsv](modules/utils_color_objects_hsv.md)
-- [utils/color-objects/hwb](modules/utils_color_objects_hwb.md)
-- [utils/color-objects/lab](modules/utils_color_objects_lab.md)
-- [utils/color-objects/lch](modules/utils_color_objects_lch.md)
-- [utils/color-objects/oklab](modules/utils_color_objects_oklab.md)
-- [utils/color-objects/oklch](modules/utils_color_objects_oklch.md)
-- [utils/color-objects/rgb](modules/utils_color_objects_rgb.md)
-- [utils/color-objects/xyz](modules/utils_color_objects_xyz.md)
-- [utils/converters](modules/utils_converters.md)
-- [utils/converters/to-cmyk](modules/utils_converters_to_cmyk.md)
-- [utils/converters/to-float](modules/utils_converters_to_float.md)
-- [utils/converters/to-hex](modules/utils_converters_to_hex.md)
-- [utils/converters/to-hsi](modules/utils_converters_to_hsi.md)
-- [utils/converters/to-hsl](modules/utils_converters_to_hsl.md)
-- [utils/converters/to-hsv](modules/utils_converters_to_hsv.md)
-- [utils/converters/to-hwb](modules/utils_converters_to_hwb.md)
-- [utils/converters/to-lab](modules/utils_converters_to_lab.md)
-- [utils/converters/to-lch](modules/utils_converters_to_lch.md)
-- [utils/converters/to-object](modules/utils_converters_to_object.md)
-- [utils/converters/to-oklab](modules/utils_converters_to_oklab.md)
-- [utils/converters/to-oklch](modules/utils_converters_to_oklch.md)
-- [utils/converters/to-rgb](modules/utils_converters_to_rgb.md)
-- [utils/converters/to-xyz](modules/utils_converters_to_xyz.md)
-- [utils/get-chroma-bezier-scale-colors](modules/utils_get_chroma_bezier_scale_colors.md)
-- [utils/get-chroma-scale-colors](modules/utils_get_chroma_scale_colors.md)
-- [utils/get-random-color-hex](modules/utils_get_random_color_hex.md)
-- [utils/normalize-color-units](modules/utils_normalize_color_units.md)
-- [utils/random](modules/utils_random.md)
-- [utils/range](modules/utils_range.md)
-- [utils/svg/get-start-mask-degree](modules/utils_svg_get_start_mask_degree.md)
-- [utils/svg/pie-slice](modules/utils_svg_pie_slice.md)
-- [utils/unique-id](modules/utils_unique_id.md)
+- [classes/MoebiusAccentColors](classes/MoebiusAccentColors.md)
+- [classes/MoebiusColor](classes/MoebiusColor.md)
+- [classes/MoebiusPaletteColors](classes/MoebiusPaletteColors.md)
+- [classes/MoebiusPalettes](classes/MoebiusPalettes.md)
+- [classes/MoebiusSVGHelper](classes/MoebiusSVGHelper.md)
+- [classes/MoebiusThemeColors](classes/MoebiusThemeColors.md)
+- [constants](constants.md)
+- [features](features.md)
+- [features/analogous](features/analogous.md)
+- [features/complement](features/complement.md)
+- [features/dark-mode](features/dark-mode.md)
+- [features/harmonize](features/harmonize.md)
+- [features/hexadic](features/hexadic.md)
+- [features/interpolate](features/interpolate.md)
+- [features/luminance-shift](features/luminance-shift.md)
+- [features/monochromatic](features/monochromatic.md)
+- [features/pentadic](features/pentadic.md)
+- [features/split](features/split.md)
+- [features/tetradic](features/tetradic.md)
+- [features/triadic](features/triadic.md)
+- [main](main.md)
+- [types](types.md)
+- [utils/a11y](utils/a11y.md)
+- [utils/array-shuffle](utils/array-shuffle.md)
+- [utils/camel-case](utils/camel-case.md)
+- [utils/color-objects](utils/color-objects.md)
+- [utils/color-objects/cmyk](utils/color-objects/cmyk.md)
+- [utils/color-objects/hsi](utils/color-objects/hsi.md)
+- [utils/color-objects/hsl](utils/color-objects/hsl.md)
+- [utils/color-objects/hsv](utils/color-objects/hsv.md)
+- [utils/color-objects/hwb](utils/color-objects/hwb.md)
+- [utils/color-objects/lab](utils/color-objects/lab.md)
+- [utils/color-objects/lch](utils/color-objects/lch.md)
+- [utils/color-objects/oklab](utils/color-objects/oklab.md)
+- [utils/color-objects/oklch](utils/color-objects/oklch.md)
+- [utils/color-objects/rgb](utils/color-objects/rgb.md)
+- [utils/color-objects/xyz](utils/color-objects/xyz.md)
+- [utils/converters](utils/converters.md)
+- [utils/converters/to-cmyk](utils/converters/to-cmyk.md)
+- [utils/converters/to-float](utils/converters/to-float.md)
+- [utils/converters/to-hex](utils/converters/to-hex.md)
+- [utils/converters/to-hsi](utils/converters/to-hsi.md)
+- [utils/converters/to-hsl](utils/converters/to-hsl.md)
+- [utils/converters/to-hsv](utils/converters/to-hsv.md)
+- [utils/converters/to-hwb](utils/converters/to-hwb.md)
+- [utils/converters/to-lab](utils/converters/to-lab.md)
+- [utils/converters/to-lch](utils/converters/to-lch.md)
+- [utils/converters/to-object](utils/converters/to-object.md)
+- [utils/converters/to-oklab](utils/converters/to-oklab.md)
+- [utils/converters/to-oklch](utils/converters/to-oklch.md)
+- [utils/converters/to-rgb](utils/converters/to-rgb.md)
+- [utils/converters/to-xyz](utils/converters/to-xyz.md)
+- [utils/get-chroma-bezier-scale-colors](utils/get-chroma-bezier-scale-colors.md)
+- [utils/get-chroma-scale-colors](utils/get-chroma-scale-colors.md)
+- [utils/get-random-color-hex](utils/get-random-color-hex.md)
+- [utils/normalize-color-units](utils/normalize-color-units.md)
+- [utils/random](utils/random.md)
+- [utils/range](utils/range.md)
+- [utils/svg/get-start-mask-degree](utils/svg/get-start-mask-degree.md)
+- [utils/svg/pie-slice](utils/svg/pie-slice.md)
+- [utils/unique-id](utils/unique-id.md)
+
+---
+
+## Contributing
+
+Want to contribute? Please read the [CONTRIBUTING.md](https://github.com/phun-ky/moebius/blob/main/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/phun-ky/moebius/blob/main/CODE_OF_CONDUCT.md)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/phun-ky/moebius/blob/main/LICENSE) file for details.
+
+## Changelog
+
+See the [CHANGELOG.md](https://github.com/phun-ky/moebius/blob/main/CHANGELOG.md) for details on the latest updates.
+
+## Sponsor me
+
+I'm an Open Source evangelist, creating stuff that does not exist yet to help get rid of secondary activities and to enhance systems already in place, be it documentation or web sites.
+
+The sponsorship is an unique opportunity to alleviate more hours for me to maintain my projects, create new ones and contribute to the large community we're all part of :)
+
+[Support me on GitHub Sponsors](https://github.com/sponsors/phun-ky).
+
+![logo](https://github.com/phun-ky/moebius/blob/main/public/images/logo/logo-ring.png?raw=true)
+
+p.s. **Ukraine is still under brutal Russian invasion. A lot of Ukrainian people are hurt, without shelter and need help**. You can help in various ways, for instance, directly helping refugees, spreading awareness, putting pressure on your local government or companies. You can also support Ukraine by donating e.g. to [Red Cross](https://www.icrc.org/en/donate/ukraine), [Ukraine humanitarian organisation](https://savelife.in.ua/en/donate-en/#donate-army-card-weekly) or [donate Ambulances for Ukraine](https://www.gofundme.com/f/help-to-save-the-lives-of-civilians-in-a-war-zone).

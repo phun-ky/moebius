@@ -11,8 +11,8 @@ export const pieSlice = (
   start: number,
   interval: number,
   radius: number,
-  size = 256
-) => {
+  size: number = 256
+): string => {
   const centerX = size / 2; // X-coordinate of the circle's center
   const centerY = centerX; // Y-coordinate of the circle's center
 
