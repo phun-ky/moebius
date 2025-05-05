@@ -13,6 +13,7 @@
   - [API](#api)
   - [Usage](#usage)
     - [Creating paletts](#creating-paletts)
+      - [Default options](#default-options)
       - [Interpolate](#interpolate)
       - [Luminance shift](#luminance-shift)
       - [Monochromatic](#monochromatic)
@@ -65,7 +66,7 @@ const { MoebiusColor, MoebiusPalettes } = await Moebius();
 
 The main feature is the ability to create palettes with a given primary color and a secondary color (used for diverging palettes). You can also give the color to diverge to/from.
 
-**Default options**
+#### Default options
 
 ```ts
 const defaultOptions = {
@@ -428,5 +429,7 @@ I'm an Open Source evangelist, creating stuff that does not exist yet to help ge
 The sponsorship is an unique opportunity to alleviate more hours for me to maintain my projects, create new ones and contribute to the large community we're all part of :)
 
 [Support me on GitHub Sponsors](https://github.com/sponsors/phun-ky).
+
+![logo](./public/images/logo/logo-ring.png)
 
 p.s. **Ukraine is still under brutal Russian invasion. A lot of Ukrainian people are hurt, without shelter and need help**. You can help in various ways, for instance, directly helping refugees, spreading awareness, putting pressure on your local government or companies. You can also support Ukraine by donating e.g. to [Red Cross](https://www.icrc.org/en/donate/ukraine), [Ukraine humanitarian organisation](https://savelife.in.ua/en/donate-en/#donate-army-card-weekly) or [donate Ambulances for Ukraine](https://www.gofundme.com/f/help-to-save-the-lives-of-civilians-in-a-war-zone).
