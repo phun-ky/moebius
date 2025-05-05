@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/phun-ky/moebius/compare/2.0.0...2.0.1) (2025-05-05)
+
+### Tasks
+
+* 🤖 bump the major-updates group across 1 directory with 7 updates ([4cecb98](https://github.com/phun-ky/moebius/commit/4cecb985636cacbecb0bed07a8dc7a5eadfe7849))
+* 🤖 Reinstall ([293c6f2](https://github.com/phun-ky/moebius/commit/293c6f25870ec1846bd019034ad6a7614f301678))
+
 ## [2.0.0](https://github.com/phun-ky/moebius/compare/1.0.6...2.0.0) (2025-05-05)
 
 

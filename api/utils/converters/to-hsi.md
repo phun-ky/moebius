@@ -2,7 +2,7 @@
 
 # utils/converters/to-hsi
 
-> Last updated 2025-05-05T08:10:25.872Z
+> Last updated 2025-05-05T09:02:28.767Z
 
 ##
 
