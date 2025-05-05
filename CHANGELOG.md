@@ -1,5 +1,32 @@
 # Changelog
 
+## [2.0.0](https://github.com/phun-ky/moebius/compare/1.0.6...2.0.0) (2025-05-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* 🧨 Forgot this in a previous change, but `darkmode` is now renamed to
+`darkMode`
+
+### Tasks
+
+* 🤖 bump postcss from 8.4.36 to 8.4.38 ([da4d54d](https://github.com/phun-ky/moebius/commit/da4d54d7d35671f0904f7329397807d1e34003a3))
+* 🤖 bump prettier from 3.5.1 to 3.5.3 in the minor-and-patch group ([712ffbe](https://github.com/phun-ky/moebius/commit/712ffbe75ebbb883801b65baaf32bab0bc2915ad))
+* 🤖 Disabled rules for markdown files ([94e6567](https://github.com/phun-ky/moebius/commit/94e65674c3d98e16c6feeb0ff093d5826c5d7a87))
+* 🤖 Updated permissions for labeler ([7af2cd2](https://github.com/phun-ky/moebius/commit/7af2cd20ab7d5f599a6cc84c5907c5330ea9d940))
+
+
+### Documentation
+
+* ✏️ Update `README.md` ([3ad0785](https://github.com/phun-ky/moebius/commit/3ad0785afb08e803585aef754cda848f16a648e1))
+* ✏️ Update documentation generation ([425849d](https://github.com/phun-ky/moebius/commit/425849d55ea7472cf757eae42fe2f2755e462da4))
+
+
+### Refactoring
+
+* 💡 First commit with new tooling ([0bdf9ad](https://github.com/phun-ky/moebius/commit/0bdf9ad1bb513c7684c245fe4b16fbdb42300f41))
+* 💡 Use dep for type checking ([1a2cf39](https://github.com/phun-ky/moebius/commit/1a2cf393315e6071f498dbc159571017d26aa4f3))
+
 ## [1.0.6](https://github.com/phun-ky/moebius/compare/1.0.5...1.0.6) (2024-03-19)
 
 

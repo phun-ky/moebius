@@ -1,6 +1,6 @@
 {
   "name": "@phun-ky/moebius",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "Automatically generate color palettes!",
   "main": "dist/moebius.js",
   "types": "dist/moebius.d.ts",
