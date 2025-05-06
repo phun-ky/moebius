@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.2](https://github.com/phun-ky/moebius/compare/2.0.1...2.0.2) (2025-05-06)
+
+### Tasks
+
+* 🤖 Use new dep for eslint config ([60fc739](https://github.com/phun-ky/moebius/commit/60fc739ab0b53a5c88140bd756cbae4b3067e789))
+
 ## [2.0.1](https://github.com/phun-ky/moebius/compare/2.0.0...2.0.1) (2025-05-05)
 
 ### Tasks
