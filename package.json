@@ -2,39 +2,6 @@
   "name": "@phun-ky/moebius",
   "version": "2.0.0",
   "description": "Automatically generate color palettes!",
-  "main": "dist/moebius.js",
-  "types": "dist/moebius.d.ts",
-  "type": "module",
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "build": "npm run clean && npm run rollup",
-    "clean": "rm -rf dist dts",
-    "commit": "npx git-cz",
-    "dev": "npx browser-sync start --server 'dev' --files 'dist' --ss 'dist'",
-    "docs:gen": "node ./node_modules/.bin/typedoc",
-    "release": "release-it",
-    "rollup": "rollup -c",
-    "prerollup:dev": "npm run clean",
-    "rollup:dev": "rollup -c -w",
-    "style:code": "npx putout src",
-    "style:format": "./node_modules/.bin/eslint -c ./eslint.config.mjs src  --fix && ./node_modules/.bin/prettier --write ./eslint.config.mjs src",
-    "style:lint": "./node_modules/.bin/eslint -c ./eslint.config.mjs src && ./node_modules/.bin/prettier --check src",
-    "test": "npm run test:unit",
-    "pretest:ci": "rm -rf coverage && mkdir -p coverage",
-    "test:ci": "glob -c \"node --import tsx --import global-jsdom/register --test --no-warnings --experimental-test-coverage --test-reporter=cobertura --test-reporter-destination=coverage/cobertura-coverage.xml --test-reporter=spec --test-reporter-destination=stdout\" \"./src/**/__tests__/**/*.[jt]s\"",
-    "test:unit": "glob -c \"node --import tsx --import global-jsdom/register --test --no-warnings\" \"./src/**/__tests__/**/*.[jt]s\""
-  },
-  "files": [
-    "/dist/moebius.js",
-    "/dist/moebius.js.map",
-    "/dist/moebius.d.ts"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/phun-ky/moebius.git"
-  },
   "keywords": [
     "css",
     "design",
@@ -62,14 +29,53 @@
     "chromatic",
     "analogous"
   ],
-  "author": "Alexander Vassbotn Røyne-Helgesen <alexander+github.com@phun-ky.net>",
-  "license": "MIT",
+  "homepage": "https://github.com/phun-ky/moebius#readme",
   "bugs": {
     "url": "https://github.com/phun-ky/moebius/issues"
   },
-  "homepage": "https://github.com/phun-ky/moebius#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/phun-ky/moebius.git"
+  },
+  "license": "MIT",
+  "author": "Alexander Vassbotn Røyne-Helgesen <alexander+github.com@phun-ky.net>",
+  "type": "module",
+  "main": "dist/moebius.js",
+  "types": "dist/moebius.d.ts",
+  "files": [
+    "/dist/moebius.js",
+    "/dist/moebius.js.map",
+    "/dist/moebius.d.ts"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run rollup",
+    "clean": "rm -rf dist dts",
+    "commit": "npx git-cz",
+    "dev": "npx browser-sync start --server 'dev' --files 'dist' --ss 'dist'",
+    "docs:gen": "node ./node_modules/.bin/typedoc",
+    "release": "release-it",
+    "rollup": "rollup -c",
+    "prerollup:dev": "npm run clean",
+    "rollup:dev": "rollup -c -w",
+    "style:code": "npx putout src",
+    "style:format": "./node_modules/.bin/eslint -c ./eslint.config.mjs src  --fix && ./node_modules/.bin/prettier --write ./eslint.config.mjs src",
+    "style:lint": "./node_modules/.bin/eslint -c ./eslint.config.mjs src && ./node_modules/.bin/prettier --check src",
+    "test": "npm run test:unit",
+    "pretest:ci": "rm -rf coverage && mkdir -p coverage",
+    "test:ci": "glob -c \"node --import tsx --import global-jsdom/register --test --no-warnings --experimental-test-coverage --test-reporter=cobertura --test-reporter-destination=coverage/cobertura-coverage.xml --test-reporter=spec --test-reporter-destination=stdout\" \"./src/**/__tests__/**/*.[jt]s\"",
+    "test:unit": "glob -c \"node --import tsx --import global-jsdom/register --test --no-warnings\" \"./src/**/__tests__/**/*.[jt]s\""
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/git-cz"
+    }
+  },
+  "dependencies": {
+    "@phun-ky/typeof": "^1.2.10",
+    "chroma-js": "^3.1.2",
+    "nearest-color": "^0.4.4"
+  },
   "devDependencies": {
-    "@phun-ky/eslint-config": "^0.1.6",
     "@release-it/conventional-changelog": "^10.0.1",
     "@rollup/plugin-commonjs": "^28.0.3",
     "@rollup/plugin-node-resolve": "^16.0.1",
@@ -79,14 +85,13 @@
     "@types/node": "^22.15.3",
     "cobertura": "^1.0.1",
     "eslint": "^9.20.0",
-    "eslint-config-prettier": "^10.1.2",
+    "eslint-config-phun-ky": "^1.0.0",
     "git-cz": "^4.9.0",
     "glob": "^11.0.2",
     "global-jsdom": "^26.0.0",
     "jsdom": "^26.1.0",
     "prettier": "3.5.3",
     "putout": "^40.0.22",
-    "quibble": "^0.9.1",
     "release-it": "^19.0.2",
     "remark-gfm": "^4.0.1",
     "remark-github": "^12.0.0",
@@ -108,18 +113,11 @@
     "typescript": "^5.7.3",
     "unified-prettier": "^2.0.1"
   },
-  "dependencies": {
-    "@phun-ky/typeof": "^1.2.10",
-    "chroma-js": "^3.1.2",
-    "nearest-color": "^0.4.4"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/git-cz"
-    }
-  },
   "engines": {
     "node": ">=22.9.0",
     "npm": ">=11.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
