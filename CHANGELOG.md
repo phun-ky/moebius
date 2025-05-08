@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.0.3](https://github.com/phun-ky/moebius/compare/2.0.2...2.0.3) (2025-05-08)
+
+### Tasks
+
+* 🤖 Adjust labels from workflows ([7c3952d](https://github.com/phun-ky/moebius/commit/7c3952dfb71412b3c38ee3195947221df7c2c43e))
+
+### Documentation
+
+* ✏️ Add site link ([f7909f0](https://github.com/phun-ky/moebius/commit/f7909f052eac3d693b7732ab6b1379632cd0988e))
+
 ## [2.0.2](https://github.com/phun-ky/moebius/compare/2.0.1...2.0.2) (2025-05-06)
 
 ### Tasks
