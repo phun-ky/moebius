@@ -40,7 +40,7 @@
 
 ## Demo
 
-You can check out a working codepen where you can [adjust settings and colors here](https://codepen.io/phun-ky/full/LYqQMqL).
+You can check out a working CodePen where you can [adjust settings and colors here](https://codepen.io/phun-ky/full/LYqQMqL), or the website [moebius.wtf](https://moebius.wtf/).
 
 ## Install
 
