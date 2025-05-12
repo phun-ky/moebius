@@ -2,7 +2,7 @@
 
 # utils/color-objects/cmyk
 
-> Last updated 2025-05-12T08:42:50.359Z
+> Last updated 2025-05-12T08:46:27.559Z
 
 ##
 
