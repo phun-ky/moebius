@@ -2,7 +2,7 @@
 
 # utils/color-objects/hsi
 
-> Last updated 2025-05-08T08:47:20.270Z
+> Last updated 2025-05-12T08:42:50.389Z
 
 ##
 
