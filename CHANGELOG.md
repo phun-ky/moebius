@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.4](https://github.com/phun-ky/moebius/compare/2.0.3...2.0.4) (2025-05-12)
+
+### Bug
+
+* 🐛 Stringify the labels ([d66cfea](https://github.com/phun-ky/moebius/commit/d66cfeae7eab9ee298d065ae27f1b0299ec5e77b))
+
 ## [2.0.3](https://github.com/phun-ky/moebius/compare/2.0.2...2.0.3) (2025-05-08)
 
 ### Tasks
