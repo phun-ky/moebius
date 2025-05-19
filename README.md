@@ -2,17 +2,18 @@
 
 ![logo](./public/images/logo/logo-ring.png)
 
-> Automatically generate color palettes!
+> Generate harmonious, customizable color palettes from a single base color - instantly and programmatically.
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](http://makeapullrequest.com) [![SemVer 2.0](https://img.shields.io/badge/SemVer-2.0-green.svg)](http://semver.org/spec/v2.0.0.html) ![npm version](https://img.shields.io/npm/v/@phun-ky/moebius) ![issues](https://img.shields.io/github/issues/phun-ky/moebius) ![license](https://img.shields.io/npm/l/@phun-ky/moebius) ![size](https://img.shields.io/bundlephobia/min/@phun-ky/moebius) ![npm](https://img.shields.io/npm/dm/%40phun-ky/moebius) ![GitHub Repo stars](https://img.shields.io/github/stars/phun-ky/moebius) [![codecov](https://codecov.io/gh/phun-ky/moebius/graph/badge.svg?token=VA91DL7ZLZ)](https://codecov.io/gh/phun-ky/moebius) [![build](https://github.com/phun-ky/moebius/actions/workflows/check.yml/badge.svg)](https://github.com/phun-ky/moebius/actions/workflows/check.yml)
 
 - [@phun-ky/moebius `möbius`](#phun-kymoebius-möbius)
   - [About](#about)
+  - [Features](#features)
   - [Demo](#demo)
   - [Install](#install)
-  - [API](#api)
+  - [Full API-reference](#full-api-reference)
   - [Usage](#usage)
-    - [Creating paletts](#creating-paletts)
+    - [Creating palettes](#creating-palettes)
       - [Default options](#default-options)
       - [Interpolate](#interpolate)
       - [Luminance shift](#luminance-shift)
@@ -36,7 +37,18 @@
 
 ## About
 
-@phun-ky/moebius (Möbius) was created to fit a need I had regarding color palette generation, and as a little challenge to myself. I was never happy with the current online palette generators, and I did not want a "set up" palette, I wanted something that was generated, ready to use, and something that I could use as inspiration on colors to choose from in my projects.
+Möbius is a color palette generation tool designed for developers and designers who need quick, consistent, and attractive color schemes. It supports a wide variety of palette types and exports color data in multiple formats — RGB, HSL, LAB, CMYK, and more - making it ideal for both web design and data visualization.
+
+## Features
+
+- Generate palettes using:
+  - Interpolation
+  - Luminance shifts
+  - Monochromatic, Complementary, Analogous, Triadic, Tetradic, etc.
+- Output in multiple color spaces: RGB, HSL, LCH, CMYK, etc.
+- Randomized or lightness-corrected options
+- Diverging palette support
+- TypeScript-friendly API
 
 ## Demo
 
@@ -48,9 +60,9 @@ You can check out a working CodePen where you can [adjust settings and colors he
 npm i -S @phun-ky/moebius
 ```
 
-## API
+## Full API-reference
 
-Go [here](https://github.com/phun-ky/moebius/blob/main/api/README.md) to read the full API documentation.
+You can find the full API documentation [here](https://github.com/phun-ky/moebius/blob/main/api/README.md).
 
 ## Usage
 
@@ -60,9 +72,15 @@ Import and run the required function:
 import Moebius from '@phun-ky/moebius';
 
 const { MoebiusColor, MoebiusPalettes } = await Moebius();
+
+const palette = new MoebiusPalettes({
+  baseColor: new MoebiusColor('#1e90ff')
+});
+
+console.log(palette.colors.interpolate); // ['#1e90ff', '#3298d8', ...]
 ```
 
-### Creating paletts
+### Creating palettes
 
 The main feature is the ability to create palettes with a given primary color and a secondary color (used for diverging palettes). You can also give the color to diverge to/from.
 
