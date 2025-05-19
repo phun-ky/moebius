@@ -2,7 +2,7 @@
 
 # types
 
-> Last updated 2025-05-19T10:12:42.019Z
+> Last updated 2025-05-19T11:07:28.721Z
 
 ##
 
@@ -10,7 +10,7 @@
 
 ### MoebiusColorInterface
 
-Defined in: [types/index.ts:4](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L4)
+Defined in: [types/index.ts:8](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L8)
 
 Represents a color object with various color representations.
 
@@ -18,28 +18,28 @@ Represents a color object with various color representations.
 
 | Property                         | Type                                                          | Defined in                                                                               |
 | -------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| <a id="cmyk"></a> `cmyk`         | [`MoebiusCMYKObjectType`](#moebiuscmykobjecttype)             | [types/index.ts:20](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L20) |
-| <a id="color"></a> `color`       | [`MoebiusChromaColorInputType`](#moebiuschromacolorinputtype) | [types/index.ts:5](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L5)   |
-| <a id="hex"></a> `hex`           | `` `#${string}` ``                                            | [types/index.ts:7](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L7)   |
-| <a id="hsi"></a> `hsi`           | [`MoebiusHSIObjectType`](#moebiushsiobjecttype)               | [types/index.ts:18](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L18) |
-| <a id="hsl"></a> `hsl`           | [`MoebiusHSLObjectType`](#moebiushslobjecttype)               | [types/index.ts:9](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L9)   |
-| <a id="hslfloat"></a> `hslFloat` | [`MoebiusHSLObjectType`](#moebiushslobjecttype)               | [types/index.ts:10](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L10) |
-| <a id="hsv"></a> `hsv`           | [`MoebiusHSVObjectType`](#moebiushsvobjecttype)               | [types/index.ts:13](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L13) |
-| <a id="hwb"></a> `hwb`           | [`MoebiusHWBObjectType`](#moebiushwbobjecttype)               | [types/index.ts:12](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L12) |
-| <a id="lab"></a> `lab`           | [`MoebiusLABObjectType`](#moebiuslabobjecttype)               | [types/index.ts:14](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L14) |
-| <a id="lch"></a> `lch`           | [`MoebiusLCHObjectType`](#moebiuslchobjecttype)               | [types/index.ts:16](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L16) |
-| <a id="name"></a> `name`         | `string`                                                      | [types/index.ts:6](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L6)   |
-| <a id="oklab"></a> `oklab`       | [`MoebiusLABObjectType`](#moebiuslabobjecttype)               | [types/index.ts:19](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L19) |
-| <a id="oklch"></a> `oklch`       | [`MoebiusLCHObjectType`](#moebiuslchobjecttype)               | [types/index.ts:17](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L17) |
-| <a id="rgb"></a> `rgb`           | `` `rgb(${number}, ${number}, ${number})` ``                  | [types/index.ts:8](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L8)   |
-| <a id="rgbfloat"></a> `rgbFloat` | [`MoebiusRGBObjectType`](#moebiusrgbobjecttype)               | [types/index.ts:11](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L11) |
-| <a id="xyz"></a> `xyz`           | [`MoebiusXYZObjectType`](#moebiusxyzobjecttype)               | [types/index.ts:15](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L15) |
+| <a id="cmyk"></a> `cmyk`         | [`MoebiusCMYKObjectType`](#moebiuscmykobjecttype)             | [types/index.ts:24](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L24) |
+| <a id="color"></a> `color`       | [`MoebiusChromaColorInputType`](#moebiuschromacolorinputtype) | [types/index.ts:9](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L9)   |
+| <a id="hex"></a> `hex`           | `` `#${string}` ``                                            | [types/index.ts:11](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L11) |
+| <a id="hsi"></a> `hsi`           | [`MoebiusHSIObjectType`](#moebiushsiobjecttype)               | [types/index.ts:22](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L22) |
+| <a id="hsl"></a> `hsl`           | [`MoebiusHSLObjectType`](#moebiushslobjecttype)               | [types/index.ts:13](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L13) |
+| <a id="hslfloat"></a> `hslFloat` | [`MoebiusHSLObjectType`](#moebiushslobjecttype)               | [types/index.ts:14](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L14) |
+| <a id="hsv"></a> `hsv`           | [`MoebiusHSVObjectType`](#moebiushsvobjecttype)               | [types/index.ts:17](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L17) |
+| <a id="hwb"></a> `hwb`           | [`MoebiusHWBObjectType`](#moebiushwbobjecttype)               | [types/index.ts:16](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L16) |
+| <a id="lab"></a> `lab`           | [`MoebiusLABObjectType`](#moebiuslabobjecttype)               | [types/index.ts:18](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L18) |
+| <a id="lch"></a> `lch`           | [`MoebiusLCHObjectType`](#moebiuslchobjecttype)               | [types/index.ts:20](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L20) |
+| <a id="name"></a> `name`         | `string`                                                      | [types/index.ts:10](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L10) |
+| <a id="oklab"></a> `oklab`       | [`MoebiusLABObjectType`](#moebiuslabobjecttype)               | [types/index.ts:23](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L23) |
+| <a id="oklch"></a> `oklch`       | [`MoebiusLCHObjectType`](#moebiuslchobjecttype)               | [types/index.ts:21](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L21) |
+| <a id="rgb"></a> `rgb`           | `` `rgb(${number}, ${number}, ${number})` ``                  | [types/index.ts:12](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L12) |
+| <a id="rgbfloat"></a> `rgbFloat` | [`MoebiusRGBObjectType`](#moebiusrgbobjecttype)               | [types/index.ts:15](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L15) |
+| <a id="xyz"></a> `xyz`           | [`MoebiusXYZObjectType`](#moebiusxyzobjecttype)               | [types/index.ts:19](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L19) |
 
 ---
 
 ### MoebiusPaletteAccentColorsInterface
 
-Defined in: [types/index.ts:60](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L60)
+Defined in: [types/index.ts:76](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L76)
 
 Represents a palette of accent colors with different schemes.
 
@@ -47,64 +47,66 @@ Represents a palette of accent colors with different schemes.
 
 | Property                                     | Type                     | Defined in                                                                               |
 | -------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------- |
-| <a id="analogous"></a> `analogous`           | `` `#${string}` ``\[]\[] | [types/index.ts:70](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L70) |
-| <a id="complement"></a> `complement`         | `` `#${string}` ``\[]\[] | [types/index.ts:64](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L64) |
-| <a id="hexadic"></a> `hexadic`               | `` `#${string}` ``\[]\[] | [types/index.ts:69](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L69) |
-| <a id="interpolate"></a> `interpolate`       | `` `#${string}` ``\[]\[] | [types/index.ts:61](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L61) |
-| <a id="luminanceshift"></a> `luminanceShift` | `` `#${string}` ``\[]\[] | [types/index.ts:62](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L62) |
-| <a id="monochromatic"></a> `monochromatic`   | `` `#${string}` ``\[]\[] | [types/index.ts:63](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L63) |
-| <a id="pentadic"></a> `pentadic`             | `` `#${string}` ``\[]\[] | [types/index.ts:68](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L68) |
-| <a id="split"></a> `split`                   | `` `#${string}` ``\[]\[] | [types/index.ts:65](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L65) |
-| <a id="tetradic"></a> `tetradic`             | `` `#${string}` ``\[]\[] | [types/index.ts:67](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L67) |
-| <a id="triadic"></a> `triadic`               | `` `#${string}` ``\[]\[] | [types/index.ts:66](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L66) |
+| <a id="analogous"></a> `analogous`           | `` `#${string}` ``\[]\[] | [types/index.ts:86](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L86) |
+| <a id="complement"></a> `complement`         | `` `#${string}` ``\[]\[] | [types/index.ts:80](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L80) |
+| <a id="hexadic"></a> `hexadic`               | `` `#${string}` ``\[]\[] | [types/index.ts:85](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L85) |
+| <a id="interpolate"></a> `interpolate`       | `` `#${string}` ``\[]\[] | [types/index.ts:77](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L77) |
+| <a id="luminanceshift"></a> `luminanceShift` | `` `#${string}` ``\[]\[] | [types/index.ts:78](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L78) |
+| <a id="monochromatic"></a> `monochromatic`   | `` `#${string}` ``\[]\[] | [types/index.ts:79](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L79) |
+| <a id="pentadic"></a> `pentadic`             | `` `#${string}` ``\[]\[] | [types/index.ts:84](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L84) |
+| <a id="split"></a> `split`                   | `` `#${string}` ``\[]\[] | [types/index.ts:81](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L81) |
+| <a id="tetradic"></a> `tetradic`             | `` `#${string}` ``\[]\[] | [types/index.ts:83](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L83) |
+| <a id="triadic"></a> `triadic`               | `` `#${string}` ``\[]\[] | [types/index.ts:82](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L82) |
 
 ---
 
 ### MoebiusPaletteColorsInterface
 
-Defined in: [types/index.ts:37](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L37)
+Defined in: [types/index.ts:53](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L53)
 
-Represents a palette of colors with different schemes.
+Defines generated palette schemes (e.g., split, triadic).
 
 #### Properties
 
 | Property                                       | Type                  | Defined in                                                                               |
 | ---------------------------------------------- | --------------------- | ---------------------------------------------------------------------------------------- |
-| <a id="analogous-1"></a> `analogous`           | `` `#${string}` ``\[] | [types/index.ts:47](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L47) |
-| <a id="complement-1"></a> `complement`         | `` `#${string}` ``\[] | [types/index.ts:41](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L41) |
-| <a id="hexadic-1"></a> `hexadic`               | `` `#${string}` ``\[] | [types/index.ts:46](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L46) |
-| <a id="interpolate-1"></a> `interpolate`       | `` `#${string}` ``\[] | [types/index.ts:38](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L38) |
-| <a id="luminanceshift-1"></a> `luminanceShift` | `` `#${string}` ``\[] | [types/index.ts:39](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L39) |
-| <a id="monochromatic-1"></a> `monochromatic`   | `` `#${string}` ``\[] | [types/index.ts:40](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L40) |
-| <a id="pentadic-1"></a> `pentadic`             | `` `#${string}` ``\[] | [types/index.ts:45](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L45) |
-| <a id="split-1"></a> `split`                   | `` `#${string}` ``\[] | [types/index.ts:42](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L42) |
-| <a id="tetradic-1"></a> `tetradic`             | `` `#${string}` ``\[] | [types/index.ts:44](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L44) |
-| <a id="triadic-1"></a> `triadic`               | `` `#${string}` ``\[] | [types/index.ts:43](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L43) |
+| <a id="analogous-1"></a> `analogous`           | `` `#${string}` ``\[] | [types/index.ts:63](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L63) |
+| <a id="complement-1"></a> `complement`         | `` `#${string}` ``\[] | [types/index.ts:57](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L57) |
+| <a id="hexadic-1"></a> `hexadic`               | `` `#${string}` ``\[] | [types/index.ts:62](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L62) |
+| <a id="interpolate-1"></a> `interpolate`       | `` `#${string}` ``\[] | [types/index.ts:54](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L54) |
+| <a id="luminanceshift-1"></a> `luminanceShift` | `` `#${string}` ``\[] | [types/index.ts:55](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L55) |
+| <a id="monochromatic-1"></a> `monochromatic`   | `` `#${string}` ``\[] | [types/index.ts:56](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L56) |
+| <a id="pentadic-1"></a> `pentadic`             | `` `#${string}` ``\[] | [types/index.ts:61](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L61) |
+| <a id="split-1"></a> `split`                   | `` `#${string}` ``\[] | [types/index.ts:58](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L58) |
+| <a id="tetradic-1"></a> `tetradic`             | `` `#${string}` ``\[] | [types/index.ts:60](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L60) |
+| <a id="triadic-1"></a> `triadic`               | `` `#${string}` ``\[] | [types/index.ts:59](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L59) |
 
 ---
 
 ### MoebiusPaletteInterface
 
-Defined in: [types/index.ts:23](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L23)
+Defined in: [types/index.ts:39](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L39)
+
+Represents a full palette generated from a base/secondary color combination.
 
 #### Properties
 
 | Property                                     | Type                                                                                                                                                                                     | Defined in                                                                               |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| <a id="accents"></a> `accents`               | [`MoebiusPaletteAccentColorsInterface`](#moebiuspaletteaccentcolorsinterface)                                                                                                            | [types/index.ts:31](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L31) |
-| <a id="all"></a> `all`                       | `` `#${string}` ``\[]                                                                                                                                                                    | [types/index.ts:30](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L30) |
-| <a id="basecolor"></a> `baseColor`           | [`MoebiusColorInterface`](#moebiuscolorinterface)                                                                                                                                        | [types/index.ts:24](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L24) |
-| <a id="colors"></a> `colors`                 | \| [`Record`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)<`string`, `unknown`> \| [`MoebiusPaletteColorsInterface`](#moebiuspalettecolorsinterface) | [types/index.ts:26](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L26) |
-| <a id="defaultoptions"></a> `defaultOptions` | [`MoebiusPaletteDefaultOptionsType`](#moebiuspalettedefaultoptionstype)                                                                                                                  | [types/index.ts:28](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L28) |
-| <a id="options"></a> `options`               | [`MoebiusPaletteOptionsType`](#moebiuspaletteoptionstype)                                                                                                                                | [types/index.ts:29](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L29) |
-| <a id="secondarycolor"></a> `secondaryColor` | [`MoebiusColorInterface`](#moebiuscolorinterface)                                                                                                                                        | [types/index.ts:25](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L25) |
-| <a id="themes"></a> `themes`                 | \| [`Record`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)<`string`, `unknown`> \| [`MoebiusThemeColorsInterface`](#moebiusthemecolorsinterface)     | [types/index.ts:27](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L27) |
+| <a id="accents"></a> `accents`               | [`MoebiusPaletteAccentColorsInterface`](#moebiuspaletteaccentcolorsinterface)                                                                                                            | [types/index.ts:47](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L47) |
+| <a id="all"></a> `all`                       | `` `#${string}` ``\[]                                                                                                                                                                    | [types/index.ts:46](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L46) |
+| <a id="basecolor"></a> `baseColor`           | [`MoebiusColorInterface`](#moebiuscolorinterface)                                                                                                                                        | [types/index.ts:40](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L40) |
+| <a id="colors"></a> `colors`                 | \| [`Record`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)<`string`, `unknown`> \| [`MoebiusPaletteColorsInterface`](#moebiuspalettecolorsinterface) | [types/index.ts:42](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L42) |
+| <a id="defaultoptions"></a> `defaultOptions` | [`MoebiusPaletteDefaultOptionsType`](#moebiuspalettedefaultoptionstype)                                                                                                                  | [types/index.ts:44](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L44) |
+| <a id="options"></a> `options`               | [`MoebiusPaletteOptionsType`](#moebiuspaletteoptionstype)                                                                                                                                | [types/index.ts:45](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L45) |
+| <a id="secondarycolor"></a> `secondaryColor` | [`MoebiusColorInterface`](#moebiuscolorinterface)                                                                                                                                        | [types/index.ts:41](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L41) |
+| <a id="themes"></a> `themes`                 | \| [`Record`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)<`string`, `unknown`> \| [`MoebiusThemeColorsInterface`](#moebiusthemecolorsinterface)     | [types/index.ts:43](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L43) |
 
 ---
 
 ### MoebiusThemeColorsInterface
 
-Defined in: [types/index.ts:53](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L53)
+Defined in: [types/index.ts:69](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L69)
 
 Represents a palette of colors with different themes.
 
@@ -112,39 +114,39 @@ Represents a palette of colors with different themes.
 
 | Property                         | Type                                                                                                                         | Defined in                                                                               |
 | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| <a id="darkmode"></a> `darkMode` | [`Record`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)<`string`, `` `#${string}` ``\[]> | [types/index.ts:54](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L54) |
+| <a id="darkmode"></a> `darkMode` | [`Record`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)<`string`, `` `#${string}` ``\[]> | [types/index.ts:70](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L70) |
 
 ---
 
 ### NearestColorColorMatchInterface
 
-Defined in: [types/index.ts:195](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L195)
+Defined in: [types/index.ts:211](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L211)
 
-Represents a color match for nearest color matching.
+A matched color name and its RGB/hex representation.
 
 #### Properties
 
 | Property                   | Type                                            | Defined in                                                                                 |
 | -------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| <a id="name-1"></a> `name` | `string`                                        | [types/index.ts:196](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L196) |
-| <a id="rgb-1"></a> `rgb`   | [`MoebiusRGBObjectType`](#moebiusrgbobjecttype) | [types/index.ts:198](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L198) |
-| <a id="value"></a> `value` | `string`                                        | [types/index.ts:197](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L197) |
+| <a id="name-1"></a> `name` | `string`                                        | [types/index.ts:212](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L212) |
+| <a id="rgb-1"></a> `rgb`   | [`MoebiusRGBObjectType`](#moebiusrgbobjecttype) | [types/index.ts:214](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L214) |
+| <a id="value"></a> `value` | `string`                                        | [types/index.ts:213](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L213) |
 
 ---
 
 ### NearestColorColorSpecInterface
 
-Defined in: [types/index.ts:186](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L186)
+Defined in: [types/index.ts:202](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L202)
 
-Represents a color specification for nearest color matching.
+A named color + metadata for nearest-color matching source.
 
 #### Properties
 
 | Property                     | Type                                            | Defined in                                                                                 |
 | ---------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| <a id="name-2"></a> `name`   | `string`                                        | [types/index.ts:187](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L187) |
-| <a id="rgb-2"></a> `rgb`     | [`MoebiusRGBObjectType`](#moebiusrgbobjecttype) | [types/index.ts:189](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L189) |
-| <a id="source"></a> `source` | `string`                                        | [types/index.ts:188](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L188) |
+| <a id="name-2"></a> `name`   | `string`                                        | [types/index.ts:203](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L203) |
+| <a id="rgb-2"></a> `rgb`     | [`MoebiusRGBObjectType`](#moebiusrgbobjecttype) | [types/index.ts:205](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L205) |
+| <a id="source"></a> `source` | `string`                                        | [types/index.ts:204](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L204) |
 
 ## Type Aliases
 
@@ -159,7 +161,9 @@ type MoebiusChromaColorInputType =
   | string;
 ```
 
-Defined in: [types/index.ts:201](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L201)
+Defined in: [types/index.ts:220](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L220)
+
+Input types accepted by Chroma or Moebius logic.
 
 ---
 
@@ -174,9 +178,9 @@ type MoebiusCMYKObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:176](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L176)
+Defined in: [types/index.ts:192](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L192)
 
-Represents a CMYK color object.
+CMYK color object.
 
 #### Properties
 
@@ -186,7 +190,7 @@ Represents a CMYK color object.
 c: number;
 ```
 
-Defined in: [types/index.ts:177](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L177)
+Defined in: [types/index.ts:193](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L193)
 
 ##### k
 
@@ -194,7 +198,7 @@ Defined in: [types/index.ts:177](https://github.com/phun-ky/moebius/blob/main/sr
 k: number;
 ```
 
-Defined in: [types/index.ts:180](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L180)
+Defined in: [types/index.ts:196](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L196)
 
 ##### m
 
@@ -202,7 +206,7 @@ Defined in: [types/index.ts:180](https://github.com/phun-ky/moebius/blob/main/sr
 m: number;
 ```
 
-Defined in: [types/index.ts:178](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L178)
+Defined in: [types/index.ts:194](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L194)
 
 ##### y
 
@@ -210,7 +214,7 @@ Defined in: [types/index.ts:178](https://github.com/phun-ky/moebius/blob/main/sr
 y: number;
 ```
 
-Defined in: [types/index.ts:179](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L179)
+Defined in: [types/index.ts:195](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L195)
 
 ---
 
@@ -220,9 +224,9 @@ Defined in: [types/index.ts:179](https://github.com/phun-ky/moebius/blob/main/sr
 type MoebiusColorValueHexType = `#${string}`;
 ```
 
-Defined in: [types/index.ts:109](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L109)
+Defined in: [types/index.ts:125](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L125)
 
-Represents a color value in hexadecimal format.
+A hex-based color string, e.g., '#ffcc00'.
 
 ---
 
@@ -233,9 +237,9 @@ type MoebiusColorValueHslaType =
   `hsl(${number}, ${string}, ${string}, ${number})`;
 ```
 
-Defined in: [types/index.ts:119](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L119)
+Defined in: [types/index.ts:135](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L135)
 
-Represents a color value in HSLA format.
+HSLA color value string, e.g., 'hsl(240, 100%, 50%, 0.5)'.
 
 ---
 
@@ -245,9 +249,9 @@ Represents a color value in HSLA format.
 type MoebiusColorValueHslType = `hsl(${number}, ${string}, ${string})`;
 ```
 
-Defined in: [types/index.ts:114](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L114)
+Defined in: [types/index.ts:130](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L130)
 
-Represents a color value in HSL format.
+HSL color value string, e.g., 'hsl(240, 100%, 50%)'.
 
 ---
 
@@ -258,9 +262,9 @@ type MoebiusColorValueRgbaType =
   `rgb(${number}, ${number}, ${number}, ${number})`;
 ```
 
-Defined in: [types/index.ts:130](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L130)
+Defined in: [types/index.ts:146](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L146)
 
-Represents a color value in RGBA format.
+RGBA color value string, e.g., 'rgb(255, 0, 0, 0.75)'.
 
 ---
 
@@ -270,9 +274,9 @@ Represents a color value in RGBA format.
 type MoebiusColorValueRgbType = `rgb(${number}, ${number}, ${number})`;
 ```
 
-Defined in: [types/index.ts:125](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L125)
+Defined in: [types/index.ts:141](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L141)
 
-Represents a color value in RGB format.
+RGB color value string, e.g., 'rgb(255, 0, 0)'.
 
 ---
 
@@ -286,9 +290,9 @@ type MoebiusHSIObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:156](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L156)
+Defined in: [types/index.ts:167](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L167)
 
-Represents an HSI color object.
+HSI color object.
 
 #### Properties
 
@@ -298,7 +302,7 @@ Represents an HSI color object.
 h: number;
 ```
 
-Defined in: [types/index.ts:156](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L156)
+Defined in: [types/index.ts:167](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L167)
 
 ##### i
 
@@ -306,7 +310,7 @@ Defined in: [types/index.ts:156](https://github.com/phun-ky/moebius/blob/main/sr
 i: number;
 ```
 
-Defined in: [types/index.ts:156](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L156)
+Defined in: [types/index.ts:167](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L167)
 
 ##### s
 
@@ -314,7 +318,7 @@ Defined in: [types/index.ts:156](https://github.com/phun-ky/moebius/blob/main/sr
 s: number;
 ```
 
-Defined in: [types/index.ts:156](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L156)
+Defined in: [types/index.ts:167](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L167)
 
 ---
 
@@ -328,9 +332,9 @@ type MoebiusHSLObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:141](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L141)
+Defined in: [types/index.ts:157](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L157)
 
-Represents an HSL color object.
+HSL color object.
 
 #### Properties
 
@@ -340,7 +344,7 @@ Represents an HSL color object.
 h: number;
 ```
 
-Defined in: [types/index.ts:141](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L141)
+Defined in: [types/index.ts:157](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L157)
 
 ##### l
 
@@ -348,7 +352,7 @@ Defined in: [types/index.ts:141](https://github.com/phun-ky/moebius/blob/main/sr
 l: number;
 ```
 
-Defined in: [types/index.ts:141](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L141)
+Defined in: [types/index.ts:157](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L157)
 
 ##### s
 
@@ -356,7 +360,7 @@ Defined in: [types/index.ts:141](https://github.com/phun-ky/moebius/blob/main/sr
 s: number;
 ```
 
-Defined in: [types/index.ts:141](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L141)
+Defined in: [types/index.ts:157](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L157)
 
 ---
 
@@ -370,9 +374,9 @@ type MoebiusHSVObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:146](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L146)
+Defined in: [types/index.ts:162](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L162)
 
-Represents an HSV color object.
+HSV color object.
 
 #### Properties
 
@@ -382,7 +386,7 @@ Represents an HSV color object.
 h: number;
 ```
 
-Defined in: [types/index.ts:146](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L146)
+Defined in: [types/index.ts:162](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L162)
 
 ##### s
 
@@ -390,7 +394,7 @@ Defined in: [types/index.ts:146](https://github.com/phun-ky/moebius/blob/main/sr
 s: number;
 ```
 
-Defined in: [types/index.ts:146](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L146)
+Defined in: [types/index.ts:162](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L162)
 
 ##### v
 
@@ -398,7 +402,7 @@ Defined in: [types/index.ts:146](https://github.com/phun-ky/moebius/blob/main/sr
 v: number;
 ```
 
-Defined in: [types/index.ts:146](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L146)
+Defined in: [types/index.ts:162](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L162)
 
 ---
 
@@ -412,9 +416,9 @@ type MoebiusHWBObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:166](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L166)
+Defined in: [types/index.ts:172](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L172)
 
-Represents an HWB color object.
+HWB color object.
 
 #### Properties
 
@@ -424,7 +428,7 @@ Represents an HWB color object.
 b: number;
 ```
 
-Defined in: [types/index.ts:166](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L166)
+Defined in: [types/index.ts:172](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L172)
 
 ##### h
 
@@ -432,7 +436,7 @@ Defined in: [types/index.ts:166](https://github.com/phun-ky/moebius/blob/main/sr
 h: number;
 ```
 
-Defined in: [types/index.ts:166](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L166)
+Defined in: [types/index.ts:172](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L172)
 
 ##### w
 
@@ -440,7 +444,7 @@ Defined in: [types/index.ts:166](https://github.com/phun-ky/moebius/blob/main/sr
 w: number;
 ```
 
-Defined in: [types/index.ts:166](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L166)
+Defined in: [types/index.ts:172](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L172)
 
 ---
 
@@ -454,9 +458,9 @@ type MoebiusLABObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:171](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L171)
+Defined in: [types/index.ts:177](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L177)
 
-Represents a LAB color object.
+LAB color object.
 
 #### Properties
 
@@ -466,7 +470,7 @@ Represents a LAB color object.
 a: number;
 ```
 
-Defined in: [types/index.ts:171](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L171)
+Defined in: [types/index.ts:177](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L177)
 
 ##### b
 
@@ -474,7 +478,7 @@ Defined in: [types/index.ts:171](https://github.com/phun-ky/moebius/blob/main/sr
 b: number;
 ```
 
-Defined in: [types/index.ts:171](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L171)
+Defined in: [types/index.ts:177](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L177)
 
 ##### l
 
@@ -482,7 +486,7 @@ Defined in: [types/index.ts:171](https://github.com/phun-ky/moebius/blob/main/sr
 l: number;
 ```
 
-Defined in: [types/index.ts:171](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L171)
+Defined in: [types/index.ts:177](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L177)
 
 ---
 
@@ -496,9 +500,9 @@ type MoebiusLCHObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:151](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L151)
+Defined in: [types/index.ts:182](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L182)
 
-Represents an LCH color object.
+LCH color object.
 
 #### Properties
 
@@ -508,7 +512,7 @@ Represents an LCH color object.
 c: number;
 ```
 
-Defined in: [types/index.ts:151](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L151)
+Defined in: [types/index.ts:182](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L182)
 
 ##### h
 
@@ -516,7 +520,7 @@ Defined in: [types/index.ts:151](https://github.com/phun-ky/moebius/blob/main/sr
 h: number;
 ```
 
-Defined in: [types/index.ts:151](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L151)
+Defined in: [types/index.ts:182](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L182)
 
 ##### l
 
@@ -524,7 +528,7 @@ Defined in: [types/index.ts:151](https://github.com/phun-ky/moebius/blob/main/sr
 l: number;
 ```
 
-Defined in: [types/index.ts:151](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L151)
+Defined in: [types/index.ts:182](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L182)
 
 ---
 
@@ -544,7 +548,7 @@ type MoebiusPaletteDefaultOptionsType = {
 };
 ```
 
-Defined in: [types/index.ts:94](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L94)
+Defined in: [types/index.ts:110](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L110)
 
 Represents default options for generating a color palette.
 
@@ -556,7 +560,7 @@ Represents default options for generating a color palette.
 bezier: boolean;
 ```
 
-Defined in: [types/index.ts:97](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L97)
+Defined in: [types/index.ts:113](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L113)
 
 ##### colorScaleMode
 
@@ -564,7 +568,7 @@ Defined in: [types/index.ts:97](https://github.com/phun-ky/moebius/blob/main/src
 colorScaleMode: string;
 ```
 
-Defined in: [types/index.ts:101](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L101)
+Defined in: [types/index.ts:117](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L117)
 
 ##### correctLightness
 
@@ -572,7 +576,7 @@ Defined in: [types/index.ts:101](https://github.com/phun-ky/moebius/blob/main/sr
 correctLightness: boolean;
 ```
 
-Defined in: [types/index.ts:99](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L99)
+Defined in: [types/index.ts:115](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L115)
 
 ##### divergentColor?
 
@@ -580,7 +584,7 @@ Defined in: [types/index.ts:99](https://github.com/phun-ky/moebius/blob/main/src
 optional divergentColor: MoebiusColorValueHexType;
 ```
 
-Defined in: [types/index.ts:95](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L95)
+Defined in: [types/index.ts:111](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L111)
 
 ##### diverging
 
@@ -588,7 +592,7 @@ Defined in: [types/index.ts:95](https://github.com/phun-ky/moebius/blob/main/src
 diverging: boolean;
 ```
 
-Defined in: [types/index.ts:96](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L96)
+Defined in: [types/index.ts:112](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L112)
 
 ##### noDuplicates
 
@@ -596,7 +600,7 @@ Defined in: [types/index.ts:96](https://github.com/phun-ky/moebius/blob/main/src
 noDuplicates: boolean;
 ```
 
-Defined in: [types/index.ts:100](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L100)
+Defined in: [types/index.ts:116](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L116)
 
 ##### numberOfColors?
 
@@ -604,7 +608,7 @@ Defined in: [types/index.ts:100](https://github.com/phun-ky/moebius/blob/main/sr
 optional numberOfColors: number;
 ```
 
-Defined in: [types/index.ts:103](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L103)
+Defined in: [types/index.ts:119](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L119)
 
 ##### randomOffset
 
@@ -612,7 +616,7 @@ Defined in: [types/index.ts:103](https://github.com/phun-ky/moebius/blob/main/sr
 randomOffset: boolean;
 ```
 
-Defined in: [types/index.ts:98](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L98)
+Defined in: [types/index.ts:114](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L114)
 
 ##### reverseDirection
 
@@ -620,7 +624,7 @@ Defined in: [types/index.ts:98](https://github.com/phun-ky/moebius/blob/main/src
 reverseDirection: boolean;
 ```
 
-Defined in: [types/index.ts:102](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L102)
+Defined in: [types/index.ts:118](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L118)
 
 ---
 
@@ -643,7 +647,7 @@ type MoebiusPaletteOptionsType = {
 };
 ```
 
-Defined in: [types/index.ts:76](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L76)
+Defined in: [types/index.ts:92](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L92)
 
 Represents options for generating a color palette.
 
@@ -655,7 +659,7 @@ Represents options for generating a color palette.
 baseColor: MoebiusColorInterface;
 ```
 
-Defined in: [types/index.ts:77](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L77)
+Defined in: [types/index.ts:93](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L93)
 
 ##### bezier?
 
@@ -663,7 +667,7 @@ Defined in: [types/index.ts:77](https://github.com/phun-ky/moebius/blob/main/src
 optional bezier: boolean;
 ```
 
-Defined in: [types/index.ts:81](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L81)
+Defined in: [types/index.ts:97](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L97)
 
 ##### colorScaleMode?
 
@@ -671,7 +675,7 @@ Defined in: [types/index.ts:81](https://github.com/phun-ky/moebius/blob/main/src
 optional colorScaleMode: string;
 ```
 
-Defined in: [types/index.ts:85](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L85)
+Defined in: [types/index.ts:101](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L101)
 
 ##### correctLightness?
 
@@ -679,7 +683,7 @@ Defined in: [types/index.ts:85](https://github.com/phun-ky/moebius/blob/main/src
 optional correctLightness: boolean;
 ```
 
-Defined in: [types/index.ts:83](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L83)
+Defined in: [types/index.ts:99](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L99)
 
 ##### divergentColor?
 
@@ -687,7 +691,7 @@ Defined in: [types/index.ts:83](https://github.com/phun-ky/moebius/blob/main/src
 optional divergentColor: MoebiusColorValueHexType;
 ```
 
-Defined in: [types/index.ts:79](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L79)
+Defined in: [types/index.ts:95](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L95)
 
 ##### diverging?
 
@@ -695,7 +699,7 @@ Defined in: [types/index.ts:79](https://github.com/phun-ky/moebius/blob/main/src
 optional diverging: boolean;
 ```
 
-Defined in: [types/index.ts:80](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L80)
+Defined in: [types/index.ts:96](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L96)
 
 ##### divergingColor?
 
@@ -703,7 +707,7 @@ Defined in: [types/index.ts:80](https://github.com/phun-ky/moebius/blob/main/src
 optional divergingColor: string;
 ```
 
-Defined in: [types/index.ts:86](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L86)
+Defined in: [types/index.ts:102](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L102)
 
 ##### noDuplicates?
 
@@ -711,7 +715,7 @@ Defined in: [types/index.ts:86](https://github.com/phun-ky/moebius/blob/main/src
 optional noDuplicates: boolean;
 ```
 
-Defined in: [types/index.ts:84](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L84)
+Defined in: [types/index.ts:100](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L100)
 
 ##### numberOfColors?
 
@@ -719,7 +723,7 @@ Defined in: [types/index.ts:84](https://github.com/phun-ky/moebius/blob/main/src
 optional numberOfColors: number;
 ```
 
-Defined in: [types/index.ts:88](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L88)
+Defined in: [types/index.ts:104](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L104)
 
 ##### randomOffset?
 
@@ -727,7 +731,7 @@ Defined in: [types/index.ts:88](https://github.com/phun-ky/moebius/blob/main/src
 optional randomOffset: boolean;
 ```
 
-Defined in: [types/index.ts:82](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L82)
+Defined in: [types/index.ts:98](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L98)
 
 ##### reverseDirection?
 
@@ -735,7 +739,7 @@ Defined in: [types/index.ts:82](https://github.com/phun-ky/moebius/blob/main/src
 optional reverseDirection: boolean;
 ```
 
-Defined in: [types/index.ts:87](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L87)
+Defined in: [types/index.ts:103](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L103)
 
 ##### secondaryColor
 
@@ -743,7 +747,23 @@ Defined in: [types/index.ts:87](https://github.com/phun-ky/moebius/blob/main/src
 secondaryColor: MoebiusColorInterface;
 ```
 
-Defined in: [types/index.ts:78](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L78)
+Defined in: [types/index.ts:94](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L94)
+
+---
+
+### MoebiusReturnType
+
+```ts
+type MoebiusReturnType = Promise<{
+  MoebiusColor: typeof MoebiusColor;
+  MoebiusPalettes: typeof MoebiusPalettes;
+  MoebiusSVGHelper: typeof MoebiusSVGHelper;
+}>;
+```
+
+Defined in: [types/index.ts:30](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L30)
+
+Describes a color with multiple representations and metadata.
 
 ---
 
@@ -757,9 +777,9 @@ type MoebiusRGBObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:136](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L136)
+Defined in: [types/index.ts:152](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L152)
 
-Represents an RGB color object.
+RGB color object.
 
 #### Properties
 
@@ -769,7 +789,7 @@ Represents an RGB color object.
 b: number;
 ```
 
-Defined in: [types/index.ts:136](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L136)
+Defined in: [types/index.ts:152](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L152)
 
 ##### g
 
@@ -777,7 +797,7 @@ Defined in: [types/index.ts:136](https://github.com/phun-ky/moebius/blob/main/sr
 g: number;
 ```
 
-Defined in: [types/index.ts:136](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L136)
+Defined in: [types/index.ts:152](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L152)
 
 ##### r
 
@@ -785,7 +805,7 @@ Defined in: [types/index.ts:136](https://github.com/phun-ky/moebius/blob/main/sr
 r: number;
 ```
 
-Defined in: [types/index.ts:136](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L136)
+Defined in: [types/index.ts:152](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L152)
 
 ---
 
@@ -799,9 +819,9 @@ type MoebiusXYZObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:161](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L161)
+Defined in: [types/index.ts:187](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L187)
 
-Represents an XYZ color object.
+XYZ color object.
 
 #### Properties
 
@@ -811,7 +831,7 @@ Represents an XYZ color object.
 x: number;
 ```
 
-Defined in: [types/index.ts:161](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L161)
+Defined in: [types/index.ts:187](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L187)
 
 ##### y
 
@@ -819,7 +839,7 @@ Defined in: [types/index.ts:161](https://github.com/phun-ky/moebius/blob/main/sr
 y: number;
 ```
 
-Defined in: [types/index.ts:161](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L161)
+Defined in: [types/index.ts:187](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L187)
 
 ##### z
 
@@ -827,7 +847,7 @@ Defined in: [types/index.ts:161](https://github.com/phun-ky/moebius/blob/main/sr
 z: number;
 ```
 
-Defined in: [types/index.ts:161](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L161)
+Defined in: [types/index.ts:187](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L187)
 
 ---
 

@@ -8,17 +8,29 @@ import { MoebiusPalettes } from './classes/MoebiusPalettes';
 import { MoebiusSVGHelper } from './classes/MoebiusSVGHelper';
 import {
   MoebiusColorValueHexType,
+  MoebiusReturnType,
   NearestColorColorMatchInterface
 } from './types';
 
 export * from './types';
 
-export type MoebiusReturnType = Promise<{
-  MoebiusColor: typeof MoebiusColor;
-  MoebiusPalettes: typeof MoebiusPalettes;
-  MoebiusSVGHelper: typeof MoebiusSVGHelper;
-}>;
-
+/**
+ * Initializes a color name mapping using an external API.
+ * The resulting function takes a color (hex or keyword) and returns either:
+ * - The matched color name (as a string)
+ * - An object with `name`, `value`, and other nearest match metadata
+ *
+ * @async
+ * @function initializeColorNames
+ * @returns A function that maps color strings to the nearest known color
+ *
+ * @example
+ * ```ts
+ * const getColorName = await initializeColorNames();
+ * const match = getColorName('#ffcc00');
+ * console.log(match); // { name: 'gold', value: '#ffd700', distance: 3.2, ... }
+ * ```
+ */
 const initializeColorNames = async (): Promise<
   (color: string) => NearestColorColorMatchInterface | string
 > => {
@@ -35,14 +47,31 @@ const initializeColorNames = async (): Promise<
 };
 
 /**
- * Asynchronous function to initialize Moebius with required data
- * @function
- * @returns {MoebiusReturnType} An object with Moebius classes
+ * Initializes and returns Moebius utilities with dynamic color naming support.
  *
+ * This includes:
+ * - A subclass of `MoebiusColor` with nearest color name mapping
+ * - `MoebiusPalettes` for generating color palettes
+ * - `MoebiusSVGHelper` for generating SVG paths for colored pie slices.
+ *
+ * @function
+ * @async
+ * @returns {Promise<MoebiusReturnType>} An object containing Moebius utility classes
+ *
+ * @example
+ * ```ts
+ * const moebius = await Moebius();
+ * const color = new moebius.MoebiusColor('#abc123');
+ * console.log(color.name); // Closest color name, e.g., 'Avocado'
+ * ```
  */
 async function Moebius(): MoebiusReturnType {
   const colorNames = await initializeColorNames();
 
+  /**
+   * Extended version of `MoebiusColor` that assigns a nearest color name
+   * using the initialized color name map.
+   */
   class MoebiusColorAbstract extends MoebiusColor {
     constructor(color: MoebiusColorValueHexType) {
       super(
