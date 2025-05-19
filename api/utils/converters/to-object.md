@@ -2,7 +2,7 @@
 
 # utils/converters/to-object
 
-> Last updated 2025-05-19T10:52:46.963Z
+> Last updated 2025-05-19T11:07:29.143Z
 
 ##
 

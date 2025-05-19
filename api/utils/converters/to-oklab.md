@@ -2,7 +2,7 @@
 
 # utils/converters/to-oklab
 
-> Last updated 2025-05-19T10:52:46.973Z
+> Last updated 2025-05-19T11:07:29.153Z
 
 ##
 

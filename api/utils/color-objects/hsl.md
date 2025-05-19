@@ -2,7 +2,7 @@
 
 # utils/color-objects/hsl
 
-> Last updated 2025-05-19T10:52:46.746Z
+> Last updated 2025-05-19T11:07:28.915Z
 
 ##
 
