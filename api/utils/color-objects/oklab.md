@@ -2,7 +2,7 @@
 
 # utils/color-objects/oklab
 
-> Last updated 2025-05-19T11:07:28.991Z
+> Last updated 2025-05-19T11:11:33.654Z
 
 ##
 

@@ -2,7 +2,7 @@
 
 # utils/converters/to-cmyk
 
-> Last updated 2025-05-19T11:07:29.053Z
+> Last updated 2025-05-19T11:11:33.748Z
 
 ##
 

@@ -2,7 +2,7 @@
 
 # classes/MoebiusColor
 
-> Last updated 2025-05-19T11:07:28.327Z
+> Last updated 2025-05-19T11:11:32.558Z
 
 ##
 

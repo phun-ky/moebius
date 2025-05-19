@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.7](https://github.com/phun-ky/moebius/compare/2.0.6...2.0.7) (2025-05-19)
+
+### Documentation
+
+* ✏️ Improve docs ([7f380ca](https://github.com/phun-ky/moebius/commit/7f380cacb8f9c10f1e02c0fefb9aa4cc58fa5a35))
+* ✏️ Regenerate ([a02105e](https://github.com/phun-ky/moebius/commit/a02105e96d49eb00f978fbb5af57d91d8ee1af17))
+* ✏️ Update `README.md` and `package.json` ([5593c83](https://github.com/phun-ky/moebius/commit/5593c83b2ae43e766d5cfb7242ce650f44222a87))
+
 ## [2.0.6](https://github.com/phun-ky/moebius/compare/2.0.5...2.0.6) (2025-05-19)
 
 ### Tasks
