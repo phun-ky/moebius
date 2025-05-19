@@ -2,7 +2,7 @@
 
 # utils/svg/get-start-mask-degree
 
-> Last updated 2025-05-19T10:12:42.779Z
+> Last updated 2025-05-19T10:52:47.060Z
 
 ##
 

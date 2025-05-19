@@ -2,23 +2,9 @@
 
 # main
 
-> Last updated 2025-05-19T10:12:41.992Z
+> Last updated 2025-05-19T10:52:46.551Z
 
 ##
-
-## Type Aliases
-
-### MoebiusReturnType
-
-```ts
-type MoebiusReturnType = Promise<{
-  MoebiusColor: typeof MoebiusColor;
-  MoebiusPalettes: typeof MoebiusPalettes;
-  MoebiusSVGHelper: typeof MoebiusSVGHelper;
-}>;
-```
-
-Defined in: [main.ts:16](https://github.com/phun-ky/moebius/blob/main/src/main.ts#L16)
 
 ## Functions
 
@@ -28,17 +14,33 @@ Defined in: [main.ts:16](https://github.com/phun-ky/moebius/blob/main/src/main.t
 function Moebius(): MoebiusReturnType;
 ```
 
-Defined in: [main.ts:43](https://github.com/phun-ky/moebius/blob/main/src/main.ts#L43)
+Defined in: [main.ts:68](https://github.com/phun-ky/moebius/blob/main/src/main.ts#L68)
 
 **`Function`**
 
-Asynchronous function to initialize Moebius with required data
+Initializes and returns Moebius utilities with dynamic color naming support.
+
+This includes:
+
+- A subclass of `MoebiusColor` with nearest color name mapping
+- `MoebiusPalettes` for generating color palettes
+- `MoebiusSVGHelper` for generating SVG paths for colored pie slices.
 
 #### Returns
 
-[`MoebiusReturnType`](#moebiusreturntype)
+[`MoebiusReturnType`](types.md#moebiusreturntype)
 
-An object with Moebius classes
+An object containing Moebius utility classes
+
+#### Async
+
+#### Example
+
+```ts
+const moebius = await Moebius();
+const color = new moebius.MoebiusColor('#abc123');
+console.log(color.name); // Closest color name, e.g., 'Avocado'
+```
 
 ## References
 
@@ -153,6 +155,12 @@ Re-exports [MoebiusPaletteInterface](types.md#moebiuspaletteinterface)
 ### MoebiusPaletteOptionsType
 
 Re-exports [MoebiusPaletteOptionsType](types.md#moebiuspaletteoptionstype)
+
+---
+
+### MoebiusReturnType
+
+Re-exports [MoebiusReturnType](types.md#moebiusreturntype)
 
 ---
 

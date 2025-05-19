@@ -2,7 +2,7 @@
 
 # utils/color-objects/hwb
 
-> Last updated 2025-05-19T10:12:42.365Z
+> Last updated 2025-05-19T10:52:46.783Z
 
 ##
 

@@ -1,3 +1,7 @@
+import { MoebiusColor } from '../classes/MoebiusColor';
+import { MoebiusPalettes } from '../classes/MoebiusPalettes';
+import { MoebiusSVGHelper } from '../classes/MoebiusSVGHelper';
+
 /**
  * Represents a color object with various color representations.
  */
@@ -20,6 +24,18 @@ export interface MoebiusColorInterface {
   cmyk: MoebiusCMYKObjectType;
 }
 
+/**
+ * Describes a color with multiple representations and metadata.
+ */
+export type MoebiusReturnType = Promise<{
+  MoebiusColor: typeof MoebiusColor;
+  MoebiusPalettes: typeof MoebiusPalettes;
+  MoebiusSVGHelper: typeof MoebiusSVGHelper;
+}>;
+
+/**
+ * Represents a full palette generated from a base/secondary color combination.
+ */
 export interface MoebiusPaletteInterface {
   baseColor: MoebiusColorInterface;
   secondaryColor: MoebiusColorInterface;
@@ -32,7 +48,7 @@ export interface MoebiusPaletteInterface {
 }
 
 /**
- * Represents a palette of colors with different schemes.
+ * Defines generated palette schemes (e.g., split, triadic).
  */
 export interface MoebiusPaletteColorsInterface {
   interpolate: MoebiusColorValueHexType[];
@@ -104,74 +120,74 @@ export type MoebiusPaletteDefaultOptionsType = {
 };
 
 /**
- * Represents a color value in hexadecimal format.
+ * A hex-based color string, e.g., '#ffcc00'.
  */
 export type MoebiusColorValueHexType = `#${string}`;
 
 /**
- * Represents a color value in HSL format.
+ * HSL color value string, e.g., 'hsl(240, 100%, 50%)'.
  */
 export type MoebiusColorValueHslType = `hsl(${number}, ${string}, ${string})`;
 
 /**
- * Represents a color value in HSLA format.
+ * HSLA color value string, e.g., 'hsl(240, 100%, 50%, 0.5)'.
  */
 export type MoebiusColorValueHslaType =
   `hsl(${number}, ${string}, ${string}, ${number})`;
 
 /**
- * Represents a color value in RGB format.
+ * RGB color value string, e.g., 'rgb(255, 0, 0)'.
  */
 export type MoebiusColorValueRgbType = `rgb(${number}, ${number}, ${number})`;
 
 /**
- * Represents a color value in RGBA format.
+ * RGBA color value string, e.g., 'rgb(255, 0, 0, 0.75)'.
  */
 export type MoebiusColorValueRgbaType =
   `rgb(${number}, ${number}, ${number}, ${number})`;
 
 /**
- * Represents an RGB color object.
+ * RGB color object.
  */
 export type MoebiusRGBObjectType = { r: number; g: number; b: number };
 
 /**
- * Represents an HSL color object.
+ * HSL color object.
  */
 export type MoebiusHSLObjectType = { h: number; s: number; l: number };
 
 /**
- * Represents an HSV color object.
+ * HSV color object.
  */
 export type MoebiusHSVObjectType = { h: number; s: number; v: number };
 
 /**
- * Represents an LCH color object.
- */
-export type MoebiusLCHObjectType = { l: number; c: number; h: number };
-
-/**
- * Represents an HSI color object.
+ * HSI color object.
  */
 export type MoebiusHSIObjectType = { h: number; s: number; i: number };
 
 /**
- * Represents an XYZ color object.
- */
-export type MoebiusXYZObjectType = { x: number; y: number; z: number };
-
-/**
- * Represents an HWB color object.
+ * HWB color object.
  */
 export type MoebiusHWBObjectType = { h: number; w: number; b: number };
 
 /**
- * Represents a LAB color object.
+ * LAB color object.
  */
 export type MoebiusLABObjectType = { l: number; a: number; b: number };
 
 /**
- * Represents a CMYK color object.
+ * LCH color object.
+ */
+export type MoebiusLCHObjectType = { l: number; c: number; h: number };
+
+/**
+ * XYZ color object.
+ */
+export type MoebiusXYZObjectType = { x: number; y: number; z: number };
+
+/**
+ * CMYK color object.
  */
 export type MoebiusCMYKObjectType = {
   c: number;
@@ -181,23 +197,26 @@ export type MoebiusCMYKObjectType = {
 };
 
 /**
- * Represents a color specification for nearest color matching.
+ * A named color + metadata for nearest-color matching source.
  */
 export interface NearestColorColorSpecInterface {
-  name: string; //  A name for the color, e.g., 'red'
-  source: string; // The hex-based color string, e.g., '#FF0'
-  rgb: MoebiusRGBObjectType; //  The NearestColorRGB color values
+  name: string;
+  source: string;
+  rgb: MoebiusRGBObjectType;
 }
 
 /**
- * Represents a color match for nearest color matching.
+ * A matched color name and its RGB/hex representation.
  */
 export interface NearestColorColorMatchInterface {
-  name: string; //The name of the matched color, e.g., 'red'
-  value: string; // The hex-based color string, e.g., '#FF0'
-  rgb: MoebiusRGBObjectType; //  The NearestColorRGB color values
+  name: string;
+  value: string;
+  rgb: MoebiusRGBObjectType;
 }
 
+/**
+ * Input types accepted by Chroma or Moebius logic.
+ */
 export type MoebiusChromaColorInputType =
   | MoebiusCMYKObjectType
   | MoebiusLCHObjectType
