@@ -2,7 +2,7 @@
 
 # utils/converters/to-lab
 
-> Last updated 2025-05-19T11:11:33.841Z
+> Last updated 2025-05-26T06:50:15.210Z
 
 ##
 
