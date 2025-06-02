@@ -2,7 +2,7 @@
 
 # classes/MoebiusPalettes
 
-> Last updated 2025-05-26T06:50:14.120Z
+> Last updated 2025-06-02T07:07:11.110Z
 
 ##
 
@@ -123,7 +123,7 @@ console.log(complementPalette); // ['#3498db', '#db3434', '#75db34', '#dbd134', 
 darkMode(
    baseColor,
    secondaryColor,
-options?): Record<string, `#${string}`[]>;
+options?): Record<string, MoebiusColorValueHexType[]>;
 ```
 
 Defined in: [classes/MoebiusPalettes.ts:129](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusPalettes.ts#L129)
@@ -140,7 +140,7 @@ Generates a dark mode color palette based on the provided base and secondary col
 
 ###### Returns
 
-[`Record`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)<`string`, `` `#${string}` ``\[]>
+[`Record`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)<`string`, [`MoebiusColorValueHexType`](../types.md#moebiuscolorvaluehextype)\[]>
 
 - The generated dark mode color palette.
 

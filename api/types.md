@@ -2,7 +2,7 @@
 
 # types
 
-> Last updated 2025-05-26T06:50:14.607Z
+> Last updated 2025-06-02T07:07:11.608Z
 
 ##
 
@@ -112,9 +112,9 @@ Represents a palette of colors with different themes.
 
 #### Properties
 
-| Property                         | Type                                                                                                                         | Defined in                                                                               |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| <a id="darkmode"></a> `darkMode` | [`Record`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)<`string`, `` `#${string}` ``\[]> | [types/index.ts:70](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L70) |
+| Property                         | Type                                                                                                                                                              | Defined in                                                                               |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| <a id="darkmode"></a> `darkMode` | [`Record`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)<`string`, [`MoebiusColorValueHexType`](#moebiuscolorvaluehextype)\[]> | [types/index.ts:70](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L70) |
 
 ---
 

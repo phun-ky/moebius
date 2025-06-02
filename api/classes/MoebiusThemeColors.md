@@ -2,7 +2,7 @@
 
 # classes/MoebiusThemeColors
 
-> Last updated 2025-05-26T06:50:14.304Z
+> Last updated 2025-06-02T07:07:11.292Z
 
 ##
 
@@ -52,9 +52,9 @@ const theme = new MoebiusThemeColors(colors);
 
 #### Properties
 
-| Property                         | Type                                                                                                                         | Defined in                                                                                                             |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| <a id="darkmode"></a> `darkMode` | [`Record`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)<`string`, `` `#${string}` ``\[]> | [classes/MoebiusThemeColors.ts:10](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusThemeColors.ts#L10) |
+| Property                         | Type                                                                                                                                                                         | Defined in                                                                                                             |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| <a id="darkmode"></a> `darkMode` | [`Record`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)<`string`, [`MoebiusColorValueHexType`](../types.md#moebiuscolorvaluehextype)\[]> | [classes/MoebiusThemeColors.ts:10](https://github.com/phun-ky/moebius/blob/main/src/classes/MoebiusThemeColors.ts#L10) |
 
 ---
 
