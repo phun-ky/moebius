@@ -2,7 +2,7 @@
 
 # utils/color-objects/rgb
 
-> Last updated 2025-06-02T07:07:12.062Z
+> Last updated 2025-06-09T10:16:43.867Z
 
 ##
 

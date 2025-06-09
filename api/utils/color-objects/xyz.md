@@ -2,7 +2,7 @@
 
 # utils/color-objects/xyz
 
-> Last updated 2025-06-02T07:07:12.086Z
+> Last updated 2025-06-09T10:16:43.888Z
 
 ##
 
