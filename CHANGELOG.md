@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.11](https://github.com/phun-ky/moebius/compare/2.0.10...2.0.11) (2025-06-16)
+
+### Tasks
+
+* 🤖 bump @types/node in the major-updates group ([09e0e2d](https://github.com/phun-ky/moebius/commit/09e0e2dcf037f0b391906e07128f73cf865932d7))
+
 ## [2.0.10](https://github.com/phun-ky/moebius/compare/2.0.9...2.0.10) (2025-06-09)
 
 ### Tasks

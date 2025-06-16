@@ -2,7 +2,7 @@
 
 # classes/MoebiusPaletteColors
 
-> Last updated 2025-06-09T10:16:42.880Z
+> Last updated 2025-06-16T14:49:21.312Z
 
 ##
 
