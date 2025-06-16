@@ -2,7 +2,7 @@
 
 # utils/converters/to-hex
 
-> Last updated 2025-06-16T14:49:22.429Z
+> Last updated 2025-06-16T18:18:01.119Z
 
 ##
 
