@@ -2,7 +2,7 @@
 
 # utils/color-objects/lab
 
-> Last updated 2025-06-16T18:18:00.955Z
+> Last updated 2025-06-23T06:10:08.193Z
 
 ##
 
