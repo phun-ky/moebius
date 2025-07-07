@@ -2,7 +2,7 @@
 
 # features/triadic
 
-> Last updated 2025-06-23T06:10:07.740Z
+> Last updated 2025-07-07T13:14:45.275Z
 
 ##
 
