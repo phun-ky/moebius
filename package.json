@@ -1,6 +1,6 @@
 {
   "name": "@phun-ky/moebius",
-  "version": "2.0.14",
+  "version": "2.0.15",
   "description": "@phun-ky/moebius is a versatile JavaScript library that automatically generates visually pleasing and customizable color palettes from a given base color. Whether you're building data visualizations, UIs, or design systems, Möbius offers various harmony modes (analogous, complementary, triadic, and more), smooth interpolation, luminance shifts, and diverging palette generation - all with extensive color format support and intuitive API design.",
   "keywords": [
     "color",
