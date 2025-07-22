@@ -2,7 +2,7 @@
 
 # utils/color-objects/lch
 
-> Last updated 2025-07-20T09:07:23.804Z
+> Last updated 2025-07-22T17:47:06.831Z
 
 ##
 

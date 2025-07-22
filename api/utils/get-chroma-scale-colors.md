@@ -2,7 +2,7 @@
 
 # utils/get-chroma-scale-colors
 
-> Last updated 2025-07-20T09:07:24.123Z
+> Last updated 2025-07-22T17:47:07.342Z
 
 ##
 
