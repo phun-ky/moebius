@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.17](https://github.com/phun-ky/moebius/compare/2.0.16...2.0.17) (2025-07-28)
+
+### Tasks
+
+* 🤖 bump the minor-and-patch group with 10 updates ([3663ebf](https://github.com/phun-ky/moebius/commit/3663ebf0d0ea0f01af9f2b6c25f64cf7ecc7be9c))
+
 ## [2.0.16](https://github.com/phun-ky/moebius/compare/2.0.15...2.0.16) (2025-07-22)
 
 ### Tasks
