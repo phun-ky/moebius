@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.23](https://github.com/phun-ky/moebius/compare/2.0.22...2.0.23) (2025-09-08)
+
+### Tasks
+
+* 🤖 bump the minor-and-patch group with 5 updates ([a2f1fbf](https://github.com/phun-ky/moebius/commit/a2f1fbf2b6f847359074c6522b4069aaeb917c54))
+
 ## [2.0.22](https://github.com/phun-ky/moebius/compare/2.0.21...2.0.22) (2025-09-01)
 
 ### Tasks
