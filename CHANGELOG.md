@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.24](https://github.com/phun-ky/moebius/compare/2.0.23...2.0.24) (2025-09-09)
+
+### Tasks
+
+* 🤖 bump @phun-ky/typeof in the major-updates group ([32eb58f](https://github.com/phun-ky/moebius/commit/32eb58fde062b60ceb66aaf796aa5640e1c4ca1c))
+
 ## [2.0.23](https://github.com/phun-ky/moebius/compare/2.0.22...2.0.23) (2025-09-08)
 
 ### Tasks

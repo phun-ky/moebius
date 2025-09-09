@@ -2,7 +2,7 @@
 
 # utils/get-chroma-bezier-scale-colors
 
-> Last updated 2025-09-08T05:21:12.453Z
+> Last updated 2025-09-09T07:55:10.041Z
 
 ##
 

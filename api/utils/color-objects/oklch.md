@@ -2,7 +2,7 @@
 
 # utils/color-objects/oklch
 
-> Last updated 2025-09-08T05:21:12.143Z
+> Last updated 2025-09-09T07:55:09.757Z
 
 ##
 
