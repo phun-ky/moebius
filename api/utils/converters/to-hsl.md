@@ -2,7 +2,7 @@
 
 # utils/converters/to-hsl
 
-> Last updated 2025-09-23T05:22:13.690Z
+> Last updated 2025-09-29T08:40:48.509Z
 
 ##
 
