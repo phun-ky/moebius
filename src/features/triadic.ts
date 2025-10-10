@@ -27,18 +27,18 @@ import { harmonize } from './harmonize';
  */
 export const triadic = (
   color: MoebiusChromaColorInputType,
-  options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+  options?: MoebiusPaletteOptionsType
 ): MoebiusColorValueHexType[] => {
   const {
     numberOfColors = 8,
-    colorScaleMode,
+    colorScaleMode = 'rgb',
     correctLightness = true
-  } = options;
+  } = options || {};
   const colors = harmonize(color, 120, 240, 120);
 
   return chroma
     .scale(colors)
     .mode(colorScaleMode)
     .correctLightness(correctLightness)
-    .colors(numberOfColors);
+    .colors(numberOfColors) as MoebiusColorValueHexType[];
 };

@@ -20,20 +20,20 @@ import { MoebiusColorValueHexType, MoebiusPaletteOptionsType } from '../types';
  */
 export const getChromaScaleColors = (
   colors: MoebiusColorValueHexType[],
-  options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+  options?: MoebiusPaletteOptionsType
 ) => {
   const {
     numberOfColors = 8,
-    colorScaleMode,
+    colorScaleMode = 'rgb',
     correctLightness = true
-  } = options as MoebiusPaletteOptionsType;
+  } = options || {};
 
   try {
     return chroma
       .scale(colors)
       .mode(colorScaleMode)
       .correctLightness(correctLightness)
-      .colors(numberOfColors);
+      .colors(numberOfColors) as MoebiusColorValueHexType[];
   } catch {
     return [];
   }

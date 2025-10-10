@@ -52,7 +52,9 @@ const generateLuminanceShiftPalette = (
     }
   }
 
-  return colorRange.map((l) => chroma.lab([l + offset, a, b]).hex());
+  return colorRange.map((l) =>
+    chroma.lab(l + offset, a, b).hex()
+  ) as MoebiusColorValueHexType[];
 };
 /**
  * Generate an array of auto colors for luminance shift based on the input color.
@@ -73,15 +75,15 @@ const generateLuminanceShiftPalette = (
  * ```
  */
 const luminanceShiftAutoColors = (
-  color: MoebiusChromaColorInputType,
-  options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+  color: MoebiusColorValueHexType,
+  options?: Partial<MoebiusPaletteOptionsType>
 ) => {
   const {
-    numberOfColors,
+    numberOfColors = 7,
     reverseDirection = false,
     diverging = false,
-    divergentColor
-  } = options;
+    divergentColor = '#f5f5f5'
+  } = options || {};
 
   if (diverging) {
     const colors = generateLuminanceShiftPalette(chroma(color).hex(), {
@@ -119,18 +121,18 @@ const luminanceShiftAutoColors = (
  * ```
  */
 export const luminanceShift = (
-  colors: MoebiusChromaColorInputType[],
-  divergingColors: MoebiusChromaColorInputType[] = [],
-  options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+  colors: MoebiusColorValueHexType[],
+  divergingColors: MoebiusColorValueHexType[] = [],
+  options?: MoebiusPaletteOptionsType
 ): MoebiusColorValueHexType[] => {
   const {
     numberOfColors = 8,
     diverging = false,
-    colorScaleMode,
+    colorScaleMode = 'rgb',
     bezier = false,
     divergentColor = '#f5f5f5',
     correctLightness = true
-  } = options as MoebiusPaletteOptionsType;
+  } = options || {};
 
   divergingColors =
     divergingColors.length === 0
@@ -152,7 +154,7 @@ export const luminanceShift = (
           divergentColor
         });
 
-  let generatedDivergentColors: string[] = [];
+  let generatedDivergentColors: MoebiusColorValueHexType[] = [];
 
   if (diverging) {
     generatedDivergentColors =
@@ -161,48 +163,48 @@ export const luminanceShift = (
         : luminanceShiftAutoColors(divergingColors[0], {
             numberOfColors: numberOfColorsRight,
             divergentColor,
-            reverse: false,
+            reverseDirection: false,
             diverging
           });
   }
 
   let stepsLeft = colors.length
-    ? chroma
+    ? (chroma
         .scale(generatedColors)
         .mode(colorScaleMode)
         .correctLightness(correctLightness)
-        .colors(numberOfColorsLeft)
+        .colors(numberOfColorsLeft) as MoebiusColorValueHexType[])
     : [];
 
   if (bezier) {
     stepsLeft = colors.length
-      ? chroma
+      ? (chroma
           .bezier(generatedColors)
           .scale()
           .mode(colorScaleMode)
           .correctLightness(correctLightness)
-          .colors(numberOfColorsLeft)
+          .colors(numberOfColorsLeft) as MoebiusColorValueHexType[])
       : [];
   }
 
   let stepsRight =
     diverging && divergingColors.length
-      ? chroma
+      ? (chroma
           .scale(generatedDivergentColors)
           .mode(colorScaleMode)
           .correctLightness(correctLightness)
-          .colors(numberOfColorsRight)
+          .colors(numberOfColorsRight) as MoebiusColorValueHexType[])
       : [];
 
   if (bezier) {
     stepsRight =
       diverging && divergingColors.length
-        ? chroma
+        ? (chroma
             .bezier(generatedDivergentColors)
             .scale()
             .mode(colorScaleMode)
             .correctLightness(correctLightness)
-            .colors(numberOfColorsRight)
+            .colors(numberOfColorsRight) as MoebiusColorValueHexType[])
         : [];
   }
 

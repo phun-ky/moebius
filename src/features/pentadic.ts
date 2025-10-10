@@ -27,13 +27,13 @@ import { harmonize } from './harmonize';
  */
 export const pentadic = (
   color: MoebiusChromaColorInputType,
-  options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+  options?: MoebiusPaletteOptionsType
 ): MoebiusColorValueHexType[] => {
   const {
     numberOfColors = 8,
-    colorScaleMode,
+    colorScaleMode = 'rgb',
     correctLightness = true
-  } = options;
+  } = options || {};
   // Generate a pentadic color scheme.
   const colors = harmonize(color, 144, 360, 72);
 
@@ -42,5 +42,5 @@ export const pentadic = (
     .scale(colors)
     .mode(colorScaleMode)
     .correctLightness(correctLightness)
-    .colors(numberOfColors);
+    .colors(numberOfColors) as MoebiusColorValueHexType[];
 };

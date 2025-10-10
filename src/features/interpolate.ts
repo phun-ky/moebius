@@ -1,16 +1,12 @@
 import chroma from 'chroma-js';
 
-import {
-  MoebiusChromaColorInputType,
-  MoebiusColorValueHexType,
-  MoebiusPaletteOptionsType
-} from '../types';
+import { MoebiusColorValueHexType, MoebiusPaletteOptionsType } from '../types';
 
 /**
  * Interpolate between two colors and generate a color palette.
  *
- * @param {MoebiusChromaColorInputType} primaryColor - The starting color for interpolation.
- * @param {MoebiusChromaColorInputType} secondaryColor - The ending color for interpolation.
+ * @param {MoebiusColorValueHexType} primaryColor - The starting color for interpolation.
+ * @param {MoebiusColorValueHexType} secondaryColor - The ending color for interpolation.
  * @param {MoebiusPaletteOptionsType} [options={}] - Options for generating the palette.
  *   @param {number} [options.numberOfColors=8] - The number of colors in the interpolated palette.
  *   @param {string} [options.colorScaleMode] - The color scale mode for chroma-js.
@@ -27,22 +23,22 @@ import {
  * ```
  */
 export const interpolate = (
-  primaryColor: MoebiusChromaColorInputType,
-  secondaryColor: MoebiusChromaColorInputType,
-  options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+  primaryColor: MoebiusColorValueHexType,
+  secondaryColor: MoebiusColorValueHexType,
+  options?: MoebiusPaletteOptionsType
 ): MoebiusColorValueHexType[] => {
   const {
     numberOfColors = 8,
-    colorScaleMode,
+    colorScaleMode = 'rgb',
     bezier = false,
     correctLightness = true
-  } = options as MoebiusPaletteOptionsType;
+  } = options || {};
 
   let colors = chroma
     .scale([primaryColor, secondaryColor])
     .mode(colorScaleMode)
     .correctLightness(correctLightness)
-    .colors(numberOfColors);
+    .colors(numberOfColors) as MoebiusColorValueHexType[];
 
   if (bezier) {
     colors = chroma
@@ -50,7 +46,7 @@ export const interpolate = (
       .scale()
       .mode(colorScaleMode)
       .correctLightness(correctLightness)
-      .colors(numberOfColors);
+      .colors(numberOfColors) as MoebiusColorValueHexType[];
   }
 
   return colors;

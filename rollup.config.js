@@ -60,6 +60,30 @@ export default [
       terser()
     ]
   },
+  // {
+  //   input: 'src/generator/main.ts',
+  //   output: {
+  //     name: 'moebius-generator',
+  //     file: './dist/moebius-generator.js',
+  //     format: 'esm',
+  //     sourcemap: true,
+  //     banner,
+  //     exports: 'named',
+  //     assetFileNames: '[name][extname]'
+  //   },
+  //   plugins: [
+  //     commonjs({
+  //       requireReturnsDefault: true
+  //     }),
+  //     nodeResolve(),
+  //     ts({
+  //       useTsconfigDeclarationDir: true,
+  //       sourceMap: false,
+  //       typescript
+  //     }),
+  //     terser()
+  //   ]
+  // },
   {
     input: './dts/main.d.ts',
     output: [{ file: './dist/moebius.d.ts', format: 'es' }],

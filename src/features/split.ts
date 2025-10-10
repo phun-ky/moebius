@@ -27,13 +27,13 @@ import { harmonize } from './harmonize';
  */
 export const split = (
   color: MoebiusChromaColorInputType,
-  options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+  options?: MoebiusPaletteOptionsType
 ): MoebiusColorValueHexType[] => {
   const {
     numberOfColors = 8,
-    colorScaleMode,
+    colorScaleMode = 'rgb',
     correctLightness = true
-  } = options;
+  } = options || {};
   // Generate a split color scheme.
   const colors = harmonize(color, 150, 210, 60);
 
@@ -42,5 +42,5 @@ export const split = (
     .scale(colors)
     .mode(colorScaleMode)
     .correctLightness(correctLightness)
-    .colors(numberOfColors);
+    .colors(numberOfColors) as MoebiusColorValueHexType[];
 };
