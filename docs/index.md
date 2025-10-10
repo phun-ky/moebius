@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Online generator
-      link: https://moebiues.wtf
+      link: https://moebius.wtf
     - theme: brand
       text: Get started
       link: /guide/introduction/

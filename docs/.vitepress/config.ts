@@ -20,7 +20,10 @@ export default defineConfig({
   lang: 'en-GB',
   base: '/moebius/',
   head: [
-    ['meta', { property: 'og:url', content: 'https://moebius.dev' }],
+    [
+      'meta',
+      { property: 'og:url', content: 'https://https://phun-ky.net/moebius/' }
+    ],
     ['meta', { property: 'og:type', content: 'website' }],
     [
       'meta',
@@ -61,7 +64,7 @@ export default defineConfig({
       'meta',
       {
         property: 'twitter:url',
-        content: 'https://moebius.dev'
+        content: 'https://https://phun-ky.net/moebius/'
       }
     ],
     [
