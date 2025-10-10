@@ -27,13 +27,13 @@ import { harmonize } from './harmonize';
  */
 export const hexadic = (
   color: MoebiusChromaColorInputType,
-  options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+  options?: MoebiusPaletteOptionsType
 ): MoebiusColorValueHexType[] => {
   const {
     numberOfColors = 8,
-    colorScaleMode,
+    colorScaleMode = 'rgb',
     correctLightness = true
-  } = options;
+  } = options || {};
   // Generate a hexadic color scheme.
   const colors = harmonize(color, 120, 360, 60);
 
@@ -42,5 +42,5 @@ export const hexadic = (
     .scale(colors)
     .mode(colorScaleMode)
     .correctLightness(correctLightness)
-    .colors(numberOfColors);
+    .colors(numberOfColors) as MoebiusColorValueHexType[];
 };

@@ -31,13 +31,13 @@ import { monochromatic } from './monochromatic';
 export const darkMode = (
   baseColor: MoebiusChromaColorInputType,
   secondaryColor: MoebiusChromaColorInputType,
-  options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+  options?: MoebiusPaletteOptionsType
 ): Record<string, MoebiusColorValueHexType[]> => {
   const {
     bezier = false,
-    colorScaleMode,
+    colorScaleMode = 'rgb',
     noDuplicates = true
-  } = options as MoebiusPaletteOptionsType;
+  } = options || {};
   const ratio = 0.99;
   const ratioMultiplier = 0.02;
   const primaryAccents = monochromatic(baseColor, options);
@@ -50,7 +50,7 @@ export const darkMode = (
         ratio - index * ratioMultiplier,
         colorScaleMode
       )
-      .hex();
+      .hex() as unknown as MoebiusColorValueHexType;
   });
   const palette = {
     primary: primaryAccents,

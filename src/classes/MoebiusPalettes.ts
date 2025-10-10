@@ -23,8 +23,8 @@ import { MoebiusThemeColors } from './MoebiusThemeColors';
 export class MoebiusPalettes implements MoebiusPaletteInterface {
   baseColor: MoebiusColorInterface;
   secondaryColor: MoebiusColorInterface;
-  colors: Record<string, unknown> | MoebiusPaletteColorsInterface = {};
-  themes: Record<string, unknown> | MoebiusThemeColorsInterface = {};
+  colors: MoebiusPaletteColorsInterface;
+  themes: MoebiusThemeColorsInterface;
   defaultOptions: MoebiusPaletteDefaultOptionsType = {
     ...MOEBIUS_PALETTE_DEFAULT_OPTIONS,
     divergentColor: '#f5f5f5'
@@ -315,9 +315,9 @@ export class MoebiusPalettes implements MoebiusPaletteInterface {
   interpolate(
     primaryColor: MoebiusColorValueHexType,
     secondaryColor: MoebiusColorValueHexType,
-    options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+    options?: MoebiusPaletteOptionsType
   ): MoebiusColorValueHexType[] {
-    const currentOptions = { ...this.options, ...options };
+    const currentOptions = { ...this.options, ...(options || {}) };
 
     return FEATURES.interpolate(primaryColor, secondaryColor, currentOptions);
   }
@@ -347,9 +347,9 @@ export class MoebiusPalettes implements MoebiusPaletteInterface {
     colors: MoebiusColorValueHexType[],
     divergingColors: MoebiusColorValueHexType[] = [],
 
-    options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+    options?: MoebiusPaletteOptionsType
   ): MoebiusColorValueHexType[] {
-    const currentOptions = { ...this.options, ...options };
+    const currentOptions = { ...this.options, ...(options || {}) };
 
     return FEATURES.luminanceShift(colors, divergingColors, currentOptions);
   }

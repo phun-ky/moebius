@@ -32,17 +32,17 @@ import { random } from '../utils/random';
  */
 export const monochromatic = (
   color: MoebiusChromaColorInputType,
-  options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+  options?: MoebiusPaletteOptionsType
 ): MoebiusColorValueHexType[] => {
   const {
     numberOfColors = 8,
     bezier = false,
     randomOffset = false,
-    colorScaleMode,
+    colorScaleMode = 'rgb',
     noDuplicates = true,
     reverseDirection = false,
     correctLightness = true
-  } = options as MoebiusPaletteOptionsType;
+  } = options || {};
 
   let [h, s, l] = chroma(color).hsl();
 
@@ -56,7 +56,11 @@ export const monochromatic = (
 
   const hslColors: MoebiusColorValueHslType[] = [];
 
-  hslColors.push(chroma(`hsl(${h}, ${s}%, ${l < 0 ? 0 : l}%)`).hex());
+  hslColors.push(
+    chroma(
+      `hsl(${h}, ${s}%, ${l < 0 ? 0 : l}%)`
+    ) as unknown as MoebiusColorValueHslType
+  );
 
   if (randomOffset) {
     // because we've already added the original color, we start counting from 1
@@ -73,7 +77,11 @@ export const monochromatic = (
 
       if (h < 0) h = 0;
 
-      hslColors.push(chroma(`hsl(${h}, ${s}%, ${l < 0 ? 0 : l}%)`).hex());
+      hslColors.push(
+        chroma(
+          `hsl(${h}, ${s}%, ${l < 0 ? 0 : l}%)`
+        ) as unknown as MoebiusColorValueHslType
+      );
     }
   } else {
     for (let i = 1; i < numberOfColors; i++) {
@@ -89,11 +97,17 @@ export const monochromatic = (
 
       if (h < 0) h = 0;
 
-      hslColors.push(chroma(`hsl(${h}, ${s}%, ${l < 0 ? 0 : l}%)`).hex());
+      hslColors.push(
+        chroma(
+          `hsl(${h}, ${s}%, ${l < 0 ? 0 : l}%)`
+        ) as unknown as MoebiusColorValueHslType
+      );
     }
   }
 
-  let colors = hslColors.map((color) => chroma(color).hex());
+  let colors = hslColors.map((color) =>
+    chroma(color).hex()
+  ) as MoebiusColorValueHexType[];
 
   if (noDuplicates) {
     colors = [...new Set(colors)];
@@ -106,13 +120,13 @@ export const monochromatic = (
         .scale()
         .mode(colorScaleMode)
         .correctLightness(correctLightness)
-        .colors(numberOfColors);
+        .colors(numberOfColors) as MoebiusColorValueHexType[];
     } else {
       colors = chroma
         .scale(colors)
         .mode(colorScaleMode)
         .correctLightness(correctLightness)
-        .colors(numberOfColors);
+        .colors(numberOfColors) as MoebiusColorValueHexType[];
     }
   }
 

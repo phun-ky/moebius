@@ -1,6 +1,15 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "types": ["@testing-library/dom"]
-  }
+    "composite": true,
+    "noEmit": true,
+    "moduleResolution": "nodenext",
+    "baseUrl": ".",
+    "paths": {
+      "@phun-ky/moebius": ["../../src/main"],
+      "@phun-ky/moebius/*": ["../../src/*"]
+    },
+    "types": ["vite/client"]
+  },
+  "include": ["./**/*"]
 }

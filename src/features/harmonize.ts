@@ -29,11 +29,11 @@ export const harmonize = (
   start: number,
   end: number,
   interval: number,
-  options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+  options?: MoebiusPaletteOptionsType
 ): MoebiusColorValueHexType[] => {
-  const { noDuplicates = true } = options;
+  const { noDuplicates = true } = options || {};
   // Initialize the array with the base color.
-  const colors = [chroma(color).hex()];
+  const colors = [chroma(color).hex() as MoebiusColorValueHexType];
 
   // Convert the HSL color to an object for easy manipulation.
   let [h, s, l] = chroma(color).hsl();
@@ -51,7 +51,9 @@ export const harmonize = (
     const h1 = Number(((h + i) % 360).toFixed());
 
     // Create the harmonized color in HSL format and add it to the array.
-    colors.push(chroma(`hsl(${h1}, ${s}%, ${l}%)`).hex());
+    colors.push(
+      chroma(`hsl(${h1}, ${s}%, ${l}%)`).hex() as MoebiusColorValueHexType
+    );
   }
 
   let uniqueColors = colors;

@@ -27,13 +27,13 @@ import { harmonize } from './harmonize';
  */
 export const analogous = (
   color: MoebiusChromaColorInputType,
-  options: Record<string, unknown> | MoebiusPaletteOptionsType = {}
+  options?: MoebiusPaletteOptionsType
 ): MoebiusColorValueHexType[] => {
   const {
     numberOfColors = 8,
-    colorScaleMode,
+    colorScaleMode = 'rgb',
     correctLightness = true
-  } = options;
+  } = options || {};
   // Generate an analogous color scheme.
   const colors = harmonize(color, 30, 90, 30);
 
@@ -42,5 +42,5 @@ export const analogous = (
     .scale(colors)
     .mode(colorScaleMode)
     .correctLightness(correctLightness)
-    .colors(numberOfColors);
+    .colors(numberOfColors) as MoebiusColorValueHexType[];
 };

@@ -20,5 +20,5 @@ import {
 export const toHEX = (
   color: MoebiusChromaColorInputType
 ): MoebiusColorValueHexType => {
-  return chroma(color).hex();
+  return chroma(color).hex() as MoebiusColorValueHexType;
 };

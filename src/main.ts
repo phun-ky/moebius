@@ -12,7 +12,7 @@ import {
   NearestColorColorMatchInterface
 } from './types';
 
-export * from './types';
+export type * from './types';
 
 /**
  * Initializes a color name mapping using an external API.

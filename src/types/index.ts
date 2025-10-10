@@ -2,6 +2,28 @@ import { MoebiusColor } from '../classes/MoebiusColor';
 import { MoebiusPalettes } from '../classes/MoebiusPalettes';
 import { MoebiusSVGHelper } from '../classes/MoebiusSVGHelper';
 
+export type MoebiusInterpolationMode =
+  | 'hcl'
+  | 'hsi'
+  | 'hsl'
+  | 'hsv'
+  | 'lab'
+  | 'lch'
+  | 'lrgb'
+  | 'oklab'
+  | 'oklch'
+  | 'rgb';
+
+export type MoebiusPaletteType =
+  | 'protanomaly'
+  | 'protanopia'
+  | 'deuteranomaly'
+  | 'deuteranopia'
+  | 'tritanomaly'
+  | 'tritanopia'
+  | 'achromatomaly'
+  | 'achromatopsia';
+
 /**
  * Represents a color object with various color representations.
  */
@@ -39,8 +61,8 @@ export type MoebiusReturnType = Promise<{
 export interface MoebiusPaletteInterface {
   baseColor: MoebiusColorInterface;
   secondaryColor: MoebiusColorInterface;
-  colors: Record<string, unknown> | MoebiusPaletteColorsInterface;
-  themes: Record<string, unknown> | MoebiusThemeColorsInterface;
+  colors?: MoebiusPaletteColorsInterface;
+  themes?: MoebiusThemeColorsInterface;
   defaultOptions: MoebiusPaletteDefaultOptionsType;
   options: MoebiusPaletteOptionsType;
   all: MoebiusColorValueHexType[];
@@ -98,7 +120,7 @@ export type MoebiusPaletteOptionsType = {
   randomOffset?: boolean;
   correctLightness?: boolean;
   noDuplicates?: boolean;
-  colorScaleMode?: string;
+  colorScaleMode?: MoebiusInterpolationMode;
   divergingColor?: string;
   reverseDirection?: boolean;
   numberOfColors?: number;
@@ -114,7 +136,7 @@ export type MoebiusPaletteDefaultOptionsType = {
   randomOffset: boolean;
   correctLightness: boolean;
   noDuplicates: boolean;
-  colorScaleMode: string;
+  colorScaleMode: MoebiusInterpolationMode;
   reverseDirection: boolean;
   numberOfColors?: number;
 };
@@ -223,3 +245,21 @@ export type MoebiusChromaColorInputType =
   | MoebiusHSLObjectType
   | MoebiusColorValueHexType
   | string;
+
+/**
+ * Represents the mouse event object for an element.
+ * @template T - Type of the element used as a target.
+ */
+export type MouseEventType<T> = MouseEvent & {
+  target: T & {
+    files?: FileList | null;
+    id: string;
+    parentElement: Element | null;
+    value?: string | null;
+  };
+  offsetX?: number;
+  offsetY?: number;
+  currentTarget: HTMLElement & {
+    documentElement: HTMLElement;
+  };
+};
