@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.0.29](https://github.com/phun-ky/moebius/compare/2.0.28...2.0.29) (2025-10-10)
+
+### Tasks
+
+* 🤖 Add `.vitepress` to `.gitignore` ([c2b0bf6](https://github.com/phun-ky/moebius/commit/c2b0bf6dcdfee7b7b14be242e8111cc163e3ef82))
+
+### Documentation
+
+* ✏️ Use correct links ([751a1b7](https://github.com/phun-ky/moebius/commit/751a1b772a4101a55cec592ea3f069b11d74094b))
+
 ## [2.0.28](https://github.com/phun-ky/moebius/compare/2.0.27...2.0.28) (2025-10-10)
 
 ### Documentation
