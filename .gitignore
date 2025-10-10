@@ -130,3 +130,7 @@ dist
 .pnp.*
 
 dts
+.vitepress/cache
+.vitepress/dist
+/docs/.vitepress/cache
+/docs/.vitepress/dist
