@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.28](https://github.com/phun-ky/moebius/compare/2.0.27...2.0.28) (2025-10-10)
+
+### Documentation
+
+* ✏️ Add doc site ([ce8d022](https://github.com/phun-ky/moebius/commit/ce8d02258c948173a641a83a16f0ad1f3afcd420))
+
 ## [2.0.27](https://github.com/phun-ky/moebius/compare/2.0.26...2.0.27) (2025-09-29)
 
 ### Tasks
