@@ -12,7 +12,7 @@ This could be seen as an extension of [chroma.js](https://gka.github.io/chroma.j
 
 ## They came first
 
-All honours to the creators of [chroma.js](https://gka.github.io/chroma.js/) for making this possible, and [David Aerne's project `color-names`](https://github.com/meodai/color-names), for having a useable directory of (more or less) accurate color names.
+All honours to the creators of [chroma.js](https://gka.github.io/chroma.js/) for making this possible, and [David Aerne's project `color-names`](https://github.com/meodai/color-names), for having a usable directory of (more or less) accurate color names.
 
 ## Developer Experience
 
