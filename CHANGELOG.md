@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.31](https://github.com/phun-ky/moebius/compare/2.0.30...2.0.31) (2025-10-11)
+
+### Tasks
+
+* 🤖 bump the major-updates group with 2 updates ([d097ac3](https://github.com/phun-ky/moebius/commit/d097ac3381cfa790a3fdd1575d17beea1b85aff8))
+
 ## [2.0.30](https://github.com/phun-ky/moebius/compare/2.0.29...2.0.30) (2025-10-11)
 
 ### Tasks
