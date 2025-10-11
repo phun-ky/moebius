@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.0.30](https://github.com/phun-ky/moebius/compare/2.0.29...2.0.30) (2025-10-11)
+
+### Tasks
+
+* 🤖 Add missing triggers for workflow ([a162e79](https://github.com/phun-ky/moebius/commit/a162e7948c21fefa9de7597810ecefcef386ca56))
+
+### Bug
+
+* 🐛 Use correct link to domain ([aff5411](https://github.com/phun-ky/moebius/commit/aff541160d2662beff04e3e6bd7b4830bcc9b12a))
+
 ## [2.0.29](https://github.com/phun-ky/moebius/compare/2.0.28...2.0.29) (2025-10-10)
 
 ### Tasks
