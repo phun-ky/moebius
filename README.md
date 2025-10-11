@@ -33,7 +33,7 @@ Möbius is a color palette generation tool designed for developers and designers
 
 ## Documentation
 
-Checkout the documentation at [https://phun-ky.net/moebius/](https://https://phun-ky.net/moebius/).
+Checkout the documentation at [https://möbius.dev](https://möbius.dev).
 
 ## Try it online
 

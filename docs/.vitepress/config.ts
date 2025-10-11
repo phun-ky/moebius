@@ -18,12 +18,8 @@ const root = path.resolve(here, '../../..');
 
 export default defineConfig({
   lang: 'en-GB',
-  base: '/moebius/',
   head: [
-    [
-      'meta',
-      { property: 'og:url', content: 'https://https://phun-ky.net/moebius/' }
-    ],
+    ['meta', { property: 'og:url', content: 'https://möbius.dev' }],
     ['meta', { property: 'og:type', content: 'website' }],
     [
       'meta',
@@ -64,7 +60,7 @@ export default defineConfig({
       'meta',
       {
         property: 'twitter:url',
-        content: 'https://https://phun-ky.net/moebius/'
+        content: 'https://möbius.dev'
       }
     ],
     [
