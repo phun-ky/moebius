@@ -10,7 +10,7 @@ on:
     paths:
       - '.github/**'
       - 'src/**'
-      - 'api/**'
+      - 'docs/**'
       - 'public/**'
       - 'package.json'
       - 'package-lock.json'
