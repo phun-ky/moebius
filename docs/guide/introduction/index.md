@@ -13,7 +13,7 @@ Check out the online generator version of **Möbius** at [https://moebius.wtf](h
 
 ::: info
 
-**Möbius** is both an ESM package
+**Möbius** is an ESM package
 
 :::
 
