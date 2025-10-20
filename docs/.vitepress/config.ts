@@ -55,7 +55,7 @@ export default defineConfig({
       }
     ],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { property: 'twitter:domain', content: 'moebius.wtf' }],
+    ['meta', { property: 'twitter:domain', content: 'möbius.dev' }],
     [
       'meta',
       {
