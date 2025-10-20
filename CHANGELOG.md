@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.0.33](https://github.com/phun-ky/moebius/compare/2.0.32...2.0.33) (2025-10-20)
+
+### Tasks
+
+* 🤖 bump the minor-and-patch group with 8 updates ([75379aa](https://github.com/phun-ky/moebius/commit/75379aaa48ea5258737fee4be9f4c5f2aec743b7))
+* 🤖 Reinstall with clean `package-lock.json` ([0ec554b](https://github.com/phun-ky/moebius/commit/0ec554b4cfdb4216bc53e1fe592457b81de9acf3))
+
+### Documentation
+
+* ✏️ Update links ([b9a39f1](https://github.com/phun-ky/moebius/commit/b9a39f178b7ac7528bf945128caca7781cbc5fa4))
+
+### Bug
+
+* 🐛 Typo ([1912d4a](https://github.com/phun-ky/moebius/commit/1912d4ad9bc006f61d692d8ef77abc02c6350385))
+
 ## [2.0.32](https://github.com/phun-ky/moebius/compare/2.0.31...2.0.32) (2025-10-13)
 
 ### Tasks
