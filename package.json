@@ -92,22 +92,22 @@
     }
   },
   "dependencies": {
-    "@phun-ky/typeof": "^2.0.4",
+    "@phun-ky/typeof": "^2.0.8",
     "chroma-js": "^3.1.2",
     "nearest-color": "^0.4.4"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^10.0.1",
-    "@rollup/plugin-commonjs": "^28.0.8",
+    "@rollup/plugin-commonjs": "^28.0.9",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
     "@types/chroma-js": "^3.1.1",
-    "@types/node": "^24.8.1",
+    "@types/node": "^24.9.1",
     "cobertura": "^1.0.1",
     "eslint": "^9.38.0",
-    "eslint-config-phun-ky": "^1.0.21",
+    "eslint-config-phun-ky": "^1.0.22",
     "git-cz": "^4.9.0",
     "glob": "^11.0.3",
     "global-jsdom": "^27.0.0",
@@ -134,7 +134,7 @@
     "typescript": "^5.9.2",
     "unified-prettier": "^2.0.1",
     "vitepress": "^1.6.4",
-    "vitepress-plugin-group-icons": "^1.6.4"
+    "vitepress-plugin-group-icons": "^1.6.5"
   },
   "engines": {
     "node": ">=22.9.0",
