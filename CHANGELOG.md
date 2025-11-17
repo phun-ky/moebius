@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.0.35](https://github.com/phun-ky/moebius/compare/2.0.34...2.0.35) (2025-11-17)
+
+### Tasks
+
+* 🤖 bump @rollup/plugin-commonjs in the major-updates group ([01c5f4f](https://github.com/phun-ky/moebius/commit/01c5f4fe95d22c77ea64b550275979908a9f52f4))
+* 🤖 bump the minor-and-patch group with 7 updates ([df155a2](https://github.com/phun-ky/moebius/commit/df155a23841bcf0d0e1be9d0b71e100bbdc38da9))
+* 🤖 clean directory ([9ef4ada](https://github.com/phun-ky/moebius/commit/9ef4ada301e36d645066d028e6c0b6a19922191d))
+* 🤖 reinstall ([51b331a](https://github.com/phun-ky/moebius/commit/51b331a38bf43b08022df9cec720f31e7bafccd7))
+
 ## [2.0.34](https://github.com/phun-ky/moebius/compare/2.0.33...2.0.34) (2025-10-27)
 
 ### Tasks
