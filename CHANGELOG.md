@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.37](https://github.com/phun-ky/moebius/compare/2.0.36...2.0.37) (2026-02-12)
+
+### Tasks
+
+* 🤖 bump the major-updates group across 1 directory with 5 updates ([e0b79fe](https://github.com/phun-ky/moebius/commit/e0b79fe21727c993a1ce09789ba14c148e96d15d))
+* 🤖 bump the major-updates group across 1 directory with 6 updates ([db45830](https://github.com/phun-ky/moebius/commit/db45830ce561acff040a9d316d8851520733a1a7))
+
+### Refactoring
+
+* 💡 Fix publish ([78af1e7](https://github.com/phun-ky/moebius/commit/78af1e74dbbdc2a68c74cc2b25a0712a8d6ea02a))
+* 💡 Prepare for trusted publishing, replace glob ([c49fa26](https://github.com/phun-ky/moebius/commit/c49fa269aa2b32cc09b184b938c4e883110f90c5))
+
 ## [2.0.36](///compare/2.0.35...2.0.36) (2025-11-24)
 
 ## [2.0.35](https://github.com/phun-ky/moebius/compare/2.0.34...2.0.35) (2025-11-17)
