@@ -83,8 +83,8 @@
     "style:lint": "./node_modules/.bin/eslint -c ./eslint.config.mjs src && ./node_modules/.bin/prettier --check src",
     "test": "npm run test:unit",
     "pretest:ci": "rm -rf coverage && mkdir -p coverage",
-    "test:ci": "glob -c \"node --import tsx --import global-jsdom/register --test --no-warnings --experimental-test-coverage --test-reporter=cobertura --test-reporter-destination=coverage/cobertura-coverage.xml --test-reporter=spec --test-reporter-destination=stdout\" \"./src/**/__tests__/**/*.[jt]s\"",
-    "test:unit": "glob -c \"node --import tsx --import global-jsdom/register --test --no-warnings\" \"./src/**/__tests__/**/*.[jt]s\""
+    "test:ci": "glob-bin -c \"node --import tsx --import global-jsdom/register --test --no-warnings --experimental-test-coverage --test-reporter=cobertura --test-reporter-destination=coverage/cobertura-coverage.xml --test-reporter=spec --test-reporter-destination=stdout\" \"./src/**/__tests__/**/*.[jt]s\"",
+    "test:unit": "glob-bin -c \"node --import tsx --import global-jsdom/register --test --no-warnings\" \"./src/**/__tests__/**/*.[jt]s\""
   },
   "config": {
     "commitizen": {
@@ -106,14 +106,14 @@
     "@types/chroma-js": "^3.1.2",
     "@types/node": "^25.2.3",
     "cobertura": "^1.0.1",
-    "eslint": "^9.39.1",
+    "eslint": "^9.20.0",
     "eslint-config-phun-ky": "^1.0.26",
     "git-cz": "^4.9.0",
-    "glob": "^13.0.2",
+    "glob-bin": "^1.0.0",
     "global-jsdom": "^28.0.0",
     "jsdom": "^28.0.0",
     "prettier": "3.6.2",
-    "putout": "^41.20.1",
+    "putout": "^41.20.0",
     "release-it": "^19.0.6",
     "remark-github": "^12.0.0",
     "remark-toc": "^9.0.0",

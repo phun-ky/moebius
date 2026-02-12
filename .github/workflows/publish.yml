@@ -29,6 +29,9 @@ jobs:
   publish:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # For git operations
+      id-token: write # < REQUIRED FOR OIDC
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
