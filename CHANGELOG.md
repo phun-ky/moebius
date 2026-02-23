@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.39](https://github.com/phun-ky/moebius/compare/2.0.38...2.0.39) (2026-02-23)
+
+### Tasks
+
+* 🤖 bump putout from 41.25.1 to 42.0.13 in the major-updates group ([404a761](https://github.com/phun-ky/moebius/commit/404a761be8460e2ff0d573e4d1db8fbef06b4c2c))
+
 ## [2.0.38](https://github.com/phun-ky/moebius/compare/2.0.37...2.0.38) (2026-02-17)
 
 ### Tasks
