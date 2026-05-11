@@ -4,25 +4,25 @@ import {
   MoebiusColorValueHexType,
   MoebiusPaletteAccentColorsInterface,
   MoebiusPaletteColorsInterface,
-  MoebiusPaletteOptionsType
+  MoebiusPaletteKey,
+  MoebiusPaletteOptionsType,
+  paletteKeys
 } from '../types';
 
 /**
  * Class representing a set of accent colors in various palettes.
  */
-export class MoebiusAccentColors
-  implements MoebiusPaletteAccentColorsInterface
-{
-  interpolate: MoebiusColorValueHexType[][];
-  luminanceShift: MoebiusColorValueHexType[][];
-  monochromatic: MoebiusColorValueHexType[][];
-  complement: MoebiusColorValueHexType[][];
-  split: MoebiusColorValueHexType[][];
-  triadic: MoebiusColorValueHexType[][];
-  tetradic: MoebiusColorValueHexType[][];
-  pentadic: MoebiusColorValueHexType[][];
-  hexadic: MoebiusColorValueHexType[][];
-  analogous: MoebiusColorValueHexType[][];
+export class MoebiusAccentColors implements MoebiusPaletteAccentColorsInterface {
+  interpolate: MoebiusColorValueHexType[][] = [];
+  luminanceShift: MoebiusColorValueHexType[][] = [];
+  monochromatic: MoebiusColorValueHexType[][] = [];
+  complement: MoebiusColorValueHexType[][] = [];
+  split: MoebiusColorValueHexType[][] = [];
+  triadic: MoebiusColorValueHexType[][] = [];
+  tetradic: MoebiusColorValueHexType[][] = [];
+  pentadic: MoebiusColorValueHexType[][] = [];
+  hexadic: MoebiusColorValueHexType[][] = [];
+  analogous: MoebiusColorValueHexType[][] = [];
 
   /**
    * Creates an instance of MoebiusAccentColors.
@@ -42,7 +42,7 @@ export class MoebiusAccentColors
     colors: MoebiusPaletteColorsInterface,
     options: MoebiusPaletteOptionsType
   ) {
-    Object.keys(colors).forEach((palette) => {
+    paletteKeys.forEach((palette: MoebiusPaletteKey) => {
       this[palette] = colors[palette].map((color: MoebiusColorValueHexType) =>
         monochromatic(color, { ...options, numberOfColors: 9 })
       );
@@ -59,17 +59,6 @@ export class MoebiusAccentColors
    * ```
    */
   toArray(): MoebiusColorValueHexType[] {
-    return [
-      ...this.interpolate,
-      ...this.luminanceShift,
-      ...this.monochromatic,
-      ...this.complement,
-      ...this.split,
-      ...this.triadic,
-      ...this.tetradic,
-      ...this.pentadic,
-      ...this.hexadic,
-      ...this.analogous
-    ].flat();
+    return paletteKeys.flatMap((palette) => this[palette]).flat();
   }
 }

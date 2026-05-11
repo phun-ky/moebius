@@ -59,7 +59,7 @@ export class MoebiusSVGHelper {
 
     let start = 0;
 
-    colors.forEach((group: string[]) => {
+    colors.forEach((group: MoebiusColorValueHexType[]) => {
       const inwardInterval = size / 2 / group.length;
 
       start += interval;

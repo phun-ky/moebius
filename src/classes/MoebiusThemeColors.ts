@@ -7,7 +7,8 @@ import {
  * Class representing a set of colors in various themes.
  */
 export class MoebiusThemeColors implements MoebiusThemeColorsInterface {
-  darkMode: Record<string, MoebiusColorValueHexType[]>;
+  darkMode: Record<string, MoebiusColorValueHexType[]> = {};
+  [theme: string]: Record<string, MoebiusColorValueHexType[]>;
 
   /**
    * Creates an instance of MoebiusThemeColors.
@@ -22,8 +23,8 @@ export class MoebiusThemeColors implements MoebiusThemeColorsInterface {
    * ```
    */
   constructor(colors: MoebiusThemeColorsInterface) {
-    Object.keys(colors).forEach((theme) => {
-      this[theme] = colors[theme];
+    Object.entries(colors).forEach(([theme, values]) => {
+      this[theme] = values;
     });
   }
 }
