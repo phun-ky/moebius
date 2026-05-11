@@ -263,3 +263,20 @@ export type MouseEventType<T> = MouseEvent & {
     documentElement: HTMLElement;
   };
 };
+
+
+
+export const paletteKeys = [
+  'interpolate',
+  'luminanceShift',
+  'monochromatic',
+  'complement',
+  'split',
+  'triadic',
+  'tetradic',
+  'pentadic',
+  'hexadic',
+  'analogous'
+] as const satisfies readonly (keyof MoebiusPaletteColorsInterface)[];
+
+export type MoebiusPaletteKey = (typeof paletteKeys)[number];
