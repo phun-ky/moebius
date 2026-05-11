@@ -27,12 +27,17 @@
 - [MoebiusLABObjectType](type-aliases/MoebiusLABObjectType.md)
 - [MoebiusLCHObjectType](type-aliases/MoebiusLCHObjectType.md)
 - [MoebiusPaletteDefaultOptionsType](type-aliases/MoebiusPaletteDefaultOptionsType.md)
+- [MoebiusPaletteKey](type-aliases/MoebiusPaletteKey.md)
 - [MoebiusPaletteOptionsType](type-aliases/MoebiusPaletteOptionsType.md)
 - [MoebiusPaletteType](type-aliases/MoebiusPaletteType.md)
 - [MoebiusReturnType](type-aliases/MoebiusReturnType.md)
 - [MoebiusRGBObjectType](type-aliases/MoebiusRGBObjectType.md)
 - [MoebiusXYZObjectType](type-aliases/MoebiusXYZObjectType.md)
 - [MouseEventType](type-aliases/MouseEventType.md)
+
+## Variables
+
+- [paletteKeys](variables/paletteKeys.md)
 
 ## Functions
 

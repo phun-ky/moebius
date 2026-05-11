@@ -55,7 +55,7 @@ Defined in: [types/index.ts:137](https://github.com/phun-ky/moebius/blob/main/sr
 ### divergentColor?
 
 ```ts
-optional divergentColor: MoebiusColorValueHexType;
+optional divergentColor?: MoebiusColorValueHexType;
 ```
 
 Defined in: [types/index.ts:133](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L133)
@@ -85,7 +85,7 @@ Defined in: [types/index.ts:138](https://github.com/phun-ky/moebius/blob/main/sr
 ### numberOfColors?
 
 ```ts
-optional numberOfColors: number;
+optional numberOfColors?: number;
 ```
 
 Defined in: [types/index.ts:141](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L141)

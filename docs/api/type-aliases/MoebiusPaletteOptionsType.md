@@ -38,7 +38,7 @@ Defined in: [types/index.ts:115](https://github.com/phun-ky/moebius/blob/main/sr
 ### bezier?
 
 ```ts
-optional bezier: boolean;
+optional bezier?: boolean;
 ```
 
 Defined in: [types/index.ts:119](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L119)
@@ -48,7 +48,7 @@ Defined in: [types/index.ts:119](https://github.com/phun-ky/moebius/blob/main/sr
 ### colorScaleMode?
 
 ```ts
-optional colorScaleMode: MoebiusInterpolationMode;
+optional colorScaleMode?: MoebiusInterpolationMode;
 ```
 
 Defined in: [types/index.ts:123](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L123)
@@ -58,7 +58,7 @@ Defined in: [types/index.ts:123](https://github.com/phun-ky/moebius/blob/main/sr
 ### correctLightness?
 
 ```ts
-optional correctLightness: boolean;
+optional correctLightness?: boolean;
 ```
 
 Defined in: [types/index.ts:121](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L121)
@@ -68,7 +68,7 @@ Defined in: [types/index.ts:121](https://github.com/phun-ky/moebius/blob/main/sr
 ### divergentColor?
 
 ```ts
-optional divergentColor: MoebiusColorValueHexType;
+optional divergentColor?: MoebiusColorValueHexType;
 ```
 
 Defined in: [types/index.ts:117](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L117)
@@ -78,7 +78,7 @@ Defined in: [types/index.ts:117](https://github.com/phun-ky/moebius/blob/main/sr
 ### diverging?
 
 ```ts
-optional diverging: boolean;
+optional diverging?: boolean;
 ```
 
 Defined in: [types/index.ts:118](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L118)
@@ -88,7 +88,7 @@ Defined in: [types/index.ts:118](https://github.com/phun-ky/moebius/blob/main/sr
 ### divergingColor?
 
 ```ts
-optional divergingColor: string;
+optional divergingColor?: string;
 ```
 
 Defined in: [types/index.ts:124](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L124)
@@ -98,7 +98,7 @@ Defined in: [types/index.ts:124](https://github.com/phun-ky/moebius/blob/main/sr
 ### noDuplicates?
 
 ```ts
-optional noDuplicates: boolean;
+optional noDuplicates?: boolean;
 ```
 
 Defined in: [types/index.ts:122](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L122)
@@ -108,7 +108,7 @@ Defined in: [types/index.ts:122](https://github.com/phun-ky/moebius/blob/main/sr
 ### numberOfColors?
 
 ```ts
-optional numberOfColors: number;
+optional numberOfColors?: number;
 ```
 
 Defined in: [types/index.ts:126](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L126)
@@ -118,7 +118,7 @@ Defined in: [types/index.ts:126](https://github.com/phun-ky/moebius/blob/main/sr
 ### randomOffset?
 
 ```ts
-optional randomOffset: boolean;
+optional randomOffset?: boolean;
 ```
 
 Defined in: [types/index.ts:120](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L120)
@@ -128,7 +128,7 @@ Defined in: [types/index.ts:120](https://github.com/phun-ky/moebius/blob/main/sr
 ### reverseDirection?
 
 ```ts
-optional reverseDirection: boolean;
+optional reverseDirection?: boolean;
 ```
 
 Defined in: [types/index.ts:125](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L125)

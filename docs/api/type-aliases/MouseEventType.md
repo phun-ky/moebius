@@ -43,13 +43,13 @@ documentElement: HTMLElement;
 ### offsetX?
 
 ```ts
-optional offsetX: number;
+optional offsetX?: number;
 ```
 
 ### offsetY?
 
 ```ts
-optional offsetY: number;
+optional offsetY?: number;
 ```
 
 ### target
@@ -69,7 +69,7 @@ target: T & {
 ##### files?
 
 ```ts
-optional files:
+optional files?:
   | FileList
   | null;
 ```
@@ -89,7 +89,7 @@ parentElement: Element | null;
 ##### value?
 
 ```ts
-optional value: string | null;
+optional value?: string | null;
 ```
 
 ## Type Parameters

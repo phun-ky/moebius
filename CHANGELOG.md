@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.43](https://github.com/phun-ky/moebius/compare/2.0.42...2.0.43) (2026-05-11)
+
+### Tasks
+
+* 🤖 bump the major-updates group across 1 directory with 6 updates ([f5075f8](https://github.com/phun-ky/moebius/commit/f5075f8ff398e62c2e73f21652031c4772dfd6c0))
+
+### Bug
+
+* 🐛 Satisfy strict class property initialization ([1626a3a](https://github.com/phun-ky/moebius/commit/1626a3a23f93f1bb23638a0c667516efd0160992))
+* 🐛 Use correct tsconfig and update dep ([5fe634c](https://github.com/phun-ky/moebius/commit/5fe634c7d0412b880bdaaed23ec4621b49e79490))
+
 ## [2.0.42](https://github.com/phun-ky/moebius/compare/2.0.41...2.0.42) (2026-03-17)
 
 ### Tasks

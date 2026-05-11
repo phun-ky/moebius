@@ -41,7 +41,7 @@ Defined in: [types/index.ts:62](https://github.com/phun-ky/moebius/blob/main/src
 ### colors?
 
 ```ts
-optional colors: MoebiusPaletteColorsInterface;
+optional colors?: MoebiusPaletteColorsInterface;
 ```
 
 Defined in: [types/index.ts:64](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L64)
@@ -81,7 +81,7 @@ Defined in: [types/index.ts:63](https://github.com/phun-ky/moebius/blob/main/src
 ### themes?
 
 ```ts
-optional themes: MoebiusThemeColorsInterface;
+optional themes?: MoebiusThemeColorsInterface;
 ```
 
 Defined in: [types/index.ts:65](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L65)
