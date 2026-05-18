@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.45](https://github.com/phun-ky/moebius/compare/2.0.44...2.0.45) (2026-05-18)
+
+### Tasks
+
+* 🤖 bump the major-updates group with 2 updates ([b692e44](https://github.com/phun-ky/moebius/commit/b692e44a3bbc8d9f1fbdcb7638aff4827f190c4b))
+* 🤖 Update tooling chain ([b7237b6](https://github.com/phun-ky/moebius/commit/b7237b6adedf169ca3dd6c729bf7a50d8dcc0984))
+
 ## [2.0.44](https://github.com/phun-ky/moebius/compare/2.0.43...2.0.44) (2026-05-18)
 
 ### Tasks
