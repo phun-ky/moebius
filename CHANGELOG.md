@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.0](https://github.com/phun-ky/moebius/compare/2.0.48...2.1.0) (2026-10-21)
+
+### Feature
+
+* 🎸 let Moebius() take color names or a URL ([247e738](https://github.com/phun-ky/moebius/commit/247e738f963df1536e5afeaf5a5669c349f14407)), closes [#146](https://github.com/phun-ky/moebius/issues/146)
+
 ## [2.0.48](https://github.com/phun-ky/moebius/compare/2.0.47...2.0.48) (2026-08-10)
 
 ### Tasks

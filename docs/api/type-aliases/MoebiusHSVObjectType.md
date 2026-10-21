@@ -10,7 +10,7 @@ type MoebiusHSVObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:184](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L184)
+Defined in: [types/index.ts:214](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L214)
 
 HSV color object.
 
@@ -22,7 +22,7 @@ HSV color object.
 h: number;
 ```
 
-Defined in: [types/index.ts:184](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L184)
+Defined in: [types/index.ts:214](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L214)
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: [types/index.ts:184](https://github.com/phun-ky/moebius/blob/main/sr
 s: number;
 ```
 
-Defined in: [types/index.ts:184](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L184)
+Defined in: [types/index.ts:214](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L214)
 
 ---
 
@@ -42,4 +42,4 @@ Defined in: [types/index.ts:184](https://github.com/phun-ky/moebius/blob/main/sr
 v: number;
 ```
 
-Defined in: [types/index.ts:184](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L184)
+Defined in: [types/index.ts:214](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L214)

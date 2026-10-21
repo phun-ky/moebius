@@ -2,7 +2,7 @@
 
 # Interface: MoebiusPaletteInterface
 
-Defined in: [types/index.ts:61](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L61)
+Defined in: [types/index.ts:91](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L91)
 
 Represents a full palette generated from a base/secondary color combination.
 
@@ -14,7 +14,7 @@ Represents a full palette generated from a base/secondary color combination.
 accents: MoebiusPaletteAccentColorsInterface;
 ```
 
-Defined in: [types/index.ts:69](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L69)
+Defined in: [types/index.ts:99](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L99)
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: [types/index.ts:69](https://github.com/phun-ky/moebius/blob/main/src
 all: `#${string}`[];
 ```
 
-Defined in: [types/index.ts:68](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L68)
+Defined in: [types/index.ts:98](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L98)
 
 ---
 
@@ -34,7 +34,7 @@ Defined in: [types/index.ts:68](https://github.com/phun-ky/moebius/blob/main/src
 baseColor: MoebiusColorInterface;
 ```
 
-Defined in: [types/index.ts:62](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L62)
+Defined in: [types/index.ts:92](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L92)
 
 ---
 
@@ -44,7 +44,7 @@ Defined in: [types/index.ts:62](https://github.com/phun-ky/moebius/blob/main/src
 optional colors?: MoebiusPaletteColorsInterface;
 ```
 
-Defined in: [types/index.ts:64](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L64)
+Defined in: [types/index.ts:94](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L94)
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: [types/index.ts:64](https://github.com/phun-ky/moebius/blob/main/src
 defaultOptions: MoebiusPaletteDefaultOptionsType;
 ```
 
-Defined in: [types/index.ts:66](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L66)
+Defined in: [types/index.ts:96](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L96)
 
 ---
 
@@ -64,7 +64,7 @@ Defined in: [types/index.ts:66](https://github.com/phun-ky/moebius/blob/main/src
 options: MoebiusPaletteOptionsType;
 ```
 
-Defined in: [types/index.ts:67](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L67)
+Defined in: [types/index.ts:97](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L97)
 
 ---
 
@@ -74,7 +74,7 @@ Defined in: [types/index.ts:67](https://github.com/phun-ky/moebius/blob/main/src
 secondaryColor: MoebiusColorInterface;
 ```
 
-Defined in: [types/index.ts:63](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L63)
+Defined in: [types/index.ts:93](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L93)
 
 ---
 
@@ -84,4 +84,4 @@ Defined in: [types/index.ts:63](https://github.com/phun-ky/moebius/blob/main/src
 optional themes?: MoebiusThemeColorsInterface;
 ```
 
-Defined in: [types/index.ts:65](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L65)
+Defined in: [types/index.ts:95](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L95)

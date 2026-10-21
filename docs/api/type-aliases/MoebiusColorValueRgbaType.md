@@ -7,6 +7,6 @@ type MoebiusColorValueRgbaType =
   `rgb(${number}, ${number}, ${number}, ${number})`;
 ```
 
-Defined in: [types/index.ts:168](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L168)
+Defined in: [types/index.ts:198](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L198)
 
 RGBA color value string, e.g., 'rgb(255, 0, 0, 0.75)'.

@@ -10,7 +10,7 @@ type MoebiusLCHObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:204](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L204)
+Defined in: [types/index.ts:234](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L234)
 
 LCH color object.
 
@@ -22,7 +22,7 @@ LCH color object.
 c: number;
 ```
 
-Defined in: [types/index.ts:204](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L204)
+Defined in: [types/index.ts:234](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L234)
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: [types/index.ts:204](https://github.com/phun-ky/moebius/blob/main/sr
 h: number;
 ```
 
-Defined in: [types/index.ts:204](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L204)
+Defined in: [types/index.ts:234](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L234)
 
 ---
 
@@ -42,4 +42,4 @@ Defined in: [types/index.ts:204](https://github.com/phun-ky/moebius/blob/main/sr
 l: number;
 ```
 
-Defined in: [types/index.ts:204](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L204)
+Defined in: [types/index.ts:234](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L234)

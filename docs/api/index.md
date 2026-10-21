@@ -14,6 +14,8 @@
 
 - [MoebiusChromaColorInputType](type-aliases/MoebiusChromaColorInputType.md)
 - [MoebiusCMYKObjectType](type-aliases/MoebiusCMYKObjectType.md)
+- [MoebiusColorNameEntryType](type-aliases/MoebiusColorNameEntryType.md)
+- [MoebiusColorNamesType](type-aliases/MoebiusColorNamesType.md)
 - [MoebiusColorValueHexType](type-aliases/MoebiusColorValueHexType.md)
 - [MoebiusColorValueHslaType](type-aliases/MoebiusColorValueHslaType.md)
 - [MoebiusColorValueHslType](type-aliases/MoebiusColorValueHslType.md)
@@ -26,6 +28,7 @@
 - [MoebiusInterpolationMode](type-aliases/MoebiusInterpolationMode.md)
 - [MoebiusLABObjectType](type-aliases/MoebiusLABObjectType.md)
 - [MoebiusLCHObjectType](type-aliases/MoebiusLCHObjectType.md)
+- [MoebiusOptionsType](type-aliases/MoebiusOptionsType.md)
 - [MoebiusPaletteDefaultOptionsType](type-aliases/MoebiusPaletteDefaultOptionsType.md)
 - [MoebiusPaletteKey](type-aliases/MoebiusPaletteKey.md)
 - [MoebiusPaletteOptionsType](type-aliases/MoebiusPaletteOptionsType.md)

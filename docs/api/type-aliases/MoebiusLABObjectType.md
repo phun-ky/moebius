@@ -10,7 +10,7 @@ type MoebiusLABObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:199](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L199)
+Defined in: [types/index.ts:229](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L229)
 
 LAB color object.
 
@@ -22,7 +22,7 @@ LAB color object.
 a: number;
 ```
 
-Defined in: [types/index.ts:199](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L199)
+Defined in: [types/index.ts:229](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L229)
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: [types/index.ts:199](https://github.com/phun-ky/moebius/blob/main/sr
 b: number;
 ```
 
-Defined in: [types/index.ts:199](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L199)
+Defined in: [types/index.ts:229](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L229)
 
 ---
 
@@ -42,4 +42,4 @@ Defined in: [types/index.ts:199](https://github.com/phun-ky/moebius/blob/main/sr
 l: number;
 ```
 
-Defined in: [types/index.ts:199](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L199)
+Defined in: [types/index.ts:229](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L229)

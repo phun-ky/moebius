@@ -10,7 +10,7 @@ type MoebiusHWBObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:194](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L194)
+Defined in: [types/index.ts:224](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L224)
 
 HWB color object.
 
@@ -22,7 +22,7 @@ HWB color object.
 b: number;
 ```
 
-Defined in: [types/index.ts:194](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L194)
+Defined in: [types/index.ts:224](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L224)
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: [types/index.ts:194](https://github.com/phun-ky/moebius/blob/main/sr
 h: number;
 ```
 
-Defined in: [types/index.ts:194](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L194)
+Defined in: [types/index.ts:224](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L224)
 
 ---
 
@@ -42,4 +42,4 @@ Defined in: [types/index.ts:194](https://github.com/phun-ky/moebius/blob/main/sr
 w: number;
 ```
 
-Defined in: [types/index.ts:194](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L194)
+Defined in: [types/index.ts:224](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L224)
