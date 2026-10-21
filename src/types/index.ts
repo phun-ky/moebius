@@ -47,6 +47,36 @@ export interface MoebiusColorInterface {
 }
 
 /**
+ * A color name and its hex value, as in the arrays `colorNames` accepts.
+ */
+export type MoebiusColorNameEntryType = {
+  name: string;
+  hex: string;
+};
+
+/**
+ * Where `Moebius()` gets color names from:
+ * - a map of name to hex, used as is
+ * - an array of `{ name, hex }` entries, used as is
+ * - a URL (string or `URL`) to JSON in either of those shapes, or
+ *   `{ colors: [{ name, hex }] }` as the color-names API returns
+ */
+export type MoebiusColorNamesType =
+  Record<string, string> | MoebiusColorNameEntryType[] | string | URL;
+
+/**
+ * Options for `Moebius()`.
+ */
+export type MoebiusOptionsType = {
+  /**
+   * Color names to match colors against. Without it, `Moebius()` fetches
+   * names from https://color-names.herokuapp.com/v1/, which is deprecated and
+   * will stop being the default in 3.0.
+   */
+  colorNames?: MoebiusColorNamesType;
+};
+
+/**
  * Describes a color with multiple representations and metadata.
  */
 export type MoebiusReturnType = Promise<{
@@ -263,8 +293,6 @@ export type MouseEventType<T> = MouseEvent & {
     documentElement: HTMLElement;
   };
 };
-
-
 
 export const paletteKeys = [
   'interpolate',

@@ -35,6 +35,48 @@ const palettes = new MoebiusPalettes({
 
 And then you can enjoy your palettes!
 
+## Color names
+
+Every `MoebiusColor` gets the name of the nearest known color. Tell `Moebius()`
+where the names come from with `colorNames`:
+
+```ts
+import Moebius from '@phun-ky/moebius';
+
+// A map of name to hex
+const { MoebiusColor } = await Moebius({
+  colorNames: { Orange: '#ff9900', 'Deep Sea': '#003f5c' }
+});
+
+console.log(new MoebiusColor('#fe9a01').name); // Orange
+```
+
+`colorNames` accepts:
+
+- a map of name to hex: `{ Orange: '#ff9900' }`
+- an array of entries: `[{ name: 'Orange', hex: '#ff9900' }]`
+- a URL, as a string or a `URL`, to JSON in either shape, or
+  `{ colors: [{ name, hex }] }`. A relative URL works in the browser, so an
+  app can serve its own list:
+
+```ts
+const { MoebiusColor } = await Moebius({ colorNames: '/colornames.json' });
+```
+
+Invalid data throws a `TypeError`, and a URL that responds with an error status
+throws an `Error`.
+
+::: warning Deprecated default
+
+Without `colorNames`, `Moebius()` fetches about 32,000 names (2.3 MB) from
+`https://color-names.herokuapp.com/v1/` on every call, and logs a warning once.
+That default is deprecated, and 3.0 will stop fetching by default. Pass
+`colorNames`, for example the
+[color-name-list](https://github.com/meodai/color-names) data converted to
+name and hex.
+
+:::
+
 ## Palettes
 
 ### Interpolate

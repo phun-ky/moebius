@@ -46,3 +46,6 @@ const palette = new MoebiusPalettes({
 
 console.log(palette.colors.interpolate); // ['#1e90ff', '#3298d8', ...]
 ```
+
+Pass `colorNames` to choose where color names come from; see
+[Color names](../usage/#color-names).
