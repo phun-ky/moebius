@@ -1,4 +1,5 @@
 import { isObjectPlain, isString } from '@phun-ky/typeof';
+import chroma from 'chroma-js';
 
 import { MoebiusColorNamesType } from '../types';
 
@@ -142,4 +143,34 @@ export const loadColorNames = async (
   }
 
   return toColorNameMap(colorNames);
+};
+
+/**
+ * Wrap a nearest-color matcher so each distinct color is looked up once.
+ *
+ * Finding the nearest name searches every name, and apps construct the same
+ * colors many times (moebius.wtf: 3,025 colors, 285 distinct), so the
+ * result is cached by the color's six-digit hex.
+ *
+ * @param match - A matcher from `nearest-color`'s `from()`.
+ * @returns A function from any color to the nearest name.
+ */
+export const createNameLookup = (
+  match: (color: string) => { name: string } | string | null
+): ((color: string) => string) => {
+  const cache = new Map<string, string>();
+
+  return (color) => {
+    const hex = chroma(color).hex('rgb');
+    let name = cache.get(hex);
+
+    if (name === undefined) {
+      const result = match(hex);
+
+      name = isString(result) ? result : (result?.name ?? '');
+      cache.set(hex, name);
+    }
+
+    return name;
+  };
 };

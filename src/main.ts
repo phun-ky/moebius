@@ -1,5 +1,5 @@
 /* eslint-disable import/no-unused-modules */
-import { isObjectPlain, isString } from '@phun-ky/typeof';
+import { isObjectPlain } from '@phun-ky/typeof';
 import chroma from 'chroma-js';
 import nearestColor from 'nearest-color';
 
@@ -9,10 +9,9 @@ import { MoebiusSVGHelper } from './classes/MoebiusSVGHelper';
 import {
   MoebiusColorValueHexType,
   MoebiusOptionsType,
-  MoebiusReturnType,
-  NearestColorColorMatchInterface
+  MoebiusReturnType
 } from './types';
-import { loadColorNames } from './utils/color-names';
+import { createNameLookup, loadColorNames } from './utils/color-names';
 
 export type * from './types';
 
@@ -22,20 +21,22 @@ export type * from './types';
  * @async
  * @function initializeColorNames
  * @param colorNames - See `MoebiusOptionsType.colorNames`.
- * @returns A function that maps a color to the nearest known color, either as
- *   a name or as an object with `name`, `value` and other match metadata
+ * @returns A function from a color to the nearest known color's name, or
+ *   `''` when `colorNames` is `false`
  *
  * @example
  * ```ts
  * const getColorName = await initializeColorNames({ Gold: '#ffd700' });
- * const match = getColorName('#ffcc00');
- * console.log(match); // { name: 'Gold', value: '#ffd700', distance: 3.2, ... }
+ * console.log(getColorName('#ffcc00')); // 'Gold'
  * ```
  */
 const initializeColorNames = async (
   colorNames?: MoebiusOptionsType['colorNames']
-): Promise<(color: string) => NearestColorColorMatchInterface | string> =>
-  nearestColor.from(await loadColorNames(colorNames));
+): Promise<(color: string) => string> => {
+  if (colorNames === false) return () => '';
+
+  return createNameLookup(nearestColor.from(await loadColorNames(colorNames)));
+};
 
 /**
  * Initializes and returns Moebius utilities with dynamic color naming support.
@@ -75,14 +76,7 @@ async function Moebius(options?: MoebiusOptionsType): MoebiusReturnType {
    */
   class MoebiusColorAbstract extends MoebiusColor {
     constructor(color: MoebiusColorValueHexType) {
-      const match = colorNames(color);
-
-      super(
-        chroma(color).hex(),
-        isString(match)
-          ? match
-          : (match as NearestColorColorMatchInterface).name
-      );
+      super(chroma(color).hex(), colorNames(color));
     }
   }
 
