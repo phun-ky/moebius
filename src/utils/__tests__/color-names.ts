@@ -5,7 +5,11 @@ import { after, before, describe, it, mock } from 'node:test';
 
 import fc from 'fast-check';
 
-import { loadColorNames, toColorNameMap } from '../color-names';
+import {
+  createNameLookup,
+  loadColorNames,
+  toColorNameMap
+} from '../color-names';
 
 const MAP = { Orange: '#ff9900', 'Deep Sea': '#003f5c' };
 const ARRAY = [
@@ -184,3 +188,48 @@ describe('loadColorNames', () => {
 
 // Keep the global mock registry clean for other files run in the same process
 after(() => mock.restoreAll());
+
+describe('createNameLookup', () => {
+  it('searches once per distinct color, whatever its notation', () => {
+    const match = mock.fn((hex: string) => ({ name: `name of ${hex}` }));
+    const lookup = createNameLookup(match);
+
+    assert.equal(lookup('#ff9900'), 'name of #ff9900');
+    assert.equal(lookup('#FF9900'), 'name of #ff9900');
+    assert.equal(lookup('rgb(255, 153, 0)'), 'name of #ff9900');
+    assert.equal(lookup('#f90'), 'name of #ff9900');
+    assert.equal(match.mock.callCount(), 1);
+
+    lookup('#003f5c');
+    assert.equal(match.mock.callCount(), 2);
+  });
+
+  it('accepts string matches and treats no match as no name', () => {
+    assert.equal(createNameLookup(() => 'Orange')('#ff9900'), 'Orange');
+    assert.equal(createNameLookup(() => null)('#ff9900'), '');
+  });
+
+  it('gives the same names as an uncached search, for any colors', async () => {
+    const nearestColor = (await import('nearest-color')).default;
+    const names = {
+      Orange: '#ff9900',
+      'Deep Sea': '#003f5c',
+      White: '#ffffff',
+      Black: '#000000',
+      Teal: '#008080'
+    };
+    const match = nearestColor.from(names);
+    const lookup = createNameLookup(match);
+
+    fc.assert(
+      fc.property(
+        fc.array(fc.stringMatching(/^#[0-9a-f]{6}$/), { minLength: 1 }),
+        (colors) => {
+          for (const color of [...colors, ...colors]) {
+            assert.equal(lookup(color), match(color).name);
+          }
+        }
+      )
+    );
+  });
+});

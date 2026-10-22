@@ -18,6 +18,17 @@ describe('Moebius', () => {
     assert.equal(fetchSpy.mock.callCount(), 0);
   });
 
+  it('gives empty names and makes no request with colorNames: false', async (t) => {
+    const fetchSpy = t.mock.method(globalThis, 'fetch');
+    const warn = t.mock.method(console, 'warn', () => {});
+    const { MoebiusColor } = await Moebius({ colorNames: false });
+
+    assert.equal(new MoebiusColor('#ff9900').name, '');
+    assert.equal(new MoebiusColor('#ff9900').hex, '#ff9900');
+    assert.equal(fetchSpy.mock.callCount(), 0);
+    assert.equal(warn.mock.callCount(), 0);
+  });
+
   it('throws TypeError for options that are not an object', async () => {
     for (const options of [null, 'names.json', 1, [NAMES]]) {
       await assert.rejects(

@@ -69,11 +69,12 @@ export type MoebiusColorNamesType =
  */
 export type MoebiusOptionsType = {
   /**
-   * Color names to match colors against. Without it, `Moebius()` fetches
-   * names from https://color-names.herokuapp.com/v1/, which is deprecated and
-   * will stop being the default in 3.0.
+   * Color names to match colors against, or `false` for no names: no list
+   * is loaded and every color's `name` is `''`. Without it, `Moebius()`
+   * fetches names from https://color-names.herokuapp.com/v1/, which is
+   * deprecated and will stop being the default in 3.0.
    */
-  colorNames?: MoebiusColorNamesType;
+  colorNames?: MoebiusColorNamesType | false;
 };
 
 /**
