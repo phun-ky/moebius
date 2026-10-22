@@ -18,7 +18,7 @@ type MouseEventType<T> = MouseEvent & {
 };
 ```
 
-Defined in: [types/index.ts:283](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L283)
+Defined in: [types/index.ts:284](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L284)
 
 Represents the mouse event object for an element.
 

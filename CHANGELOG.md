@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.2.0](https://github.com/phun-ky/moebius/compare/2.1.0...2.2.0) (2026-10-22)
+
+### Feature
+
+* 🎸 cache nearest color names, and allow colorNames: false ([d80df67](https://github.com/phun-ky/moebius/commit/d80df67e7b8f574e01fa75d80c3ffb5b33c2b56d)), closes [#149](https://github.com/phun-ky/moebius/issues/149)
+
 ## [2.1.0](https://github.com/phun-ky/moebius/compare/2.0.48...2.1.0) (2026-10-21)
 
 ### Feature

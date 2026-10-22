@@ -10,6 +10,6 @@ type MoebiusReturnType = Promise<{
 }>;
 ```
 
-Defined in: [types/index.ts:82](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L82)
+Defined in: [types/index.ts:83](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L83)
 
 Describes a color with multiple representations and metadata.

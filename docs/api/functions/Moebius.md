@@ -6,7 +6,7 @@
 function Moebius(options?: MoebiusOptionsType): MoebiusReturnType;
 ```
 
-Defined in: [main.ts:65](https://github.com/phun-ky/moebius/blob/main/src/main.ts#L65)
+Defined in: [main.ts:66](https://github.com/phun-ky/moebius/blob/main/src/main.ts#L66)
 
 **`Function`**
 
