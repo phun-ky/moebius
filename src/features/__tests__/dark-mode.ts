@@ -26,4 +26,20 @@ describe('dark-mode', () => {
       });
     });
   });
+
+  it('should not throw when the base color has fewer unique accents than the secondary color', () => {
+    // Darkening #003f5c reaches #000000 after a few steps, and noDuplicates
+    // drops the repeats, so its accent list is shorter than #ff9900's
+    const options = {
+      reverseDirection: false,
+      noDuplicates: true
+    } as MoebiusPaletteOptionsType;
+    const palette = darkMode('#003f5c', '#ff9900', options);
+
+    assert.ok(palette.mixed.length > 0);
+    assert.ok(palette.mixed.length <= palette.primary.length);
+    palette.mixed.forEach((color) => {
+      assert.match(color, /^#[0-9a-f]{6}$/);
+    });
+  });
 });

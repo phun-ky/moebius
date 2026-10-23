@@ -70,4 +70,49 @@ describe('Moebius', () => {
       { numRuns: 200 }
     );
   });
+
+  it('creates palettes with reverseDirection: true and the default noDuplicates', async () => {
+    const { MoebiusColor, MoebiusPalettes } = await Moebius({
+      colorNames: false
+    });
+    const palettes = new MoebiusPalettes({
+      baseColor: new MoebiusColor('#003f5c'),
+      secondaryColor: new MoebiusColor('#ff9900'),
+      divergentColor: '#f5f5f5',
+      reverseDirection: true
+    });
+
+    assert.ok(palettes.themes.darkMode.mixed.length > 0);
+  });
+
+  it('creates palettes for any colors and options without throwing', async () => {
+    const { MoebiusColor, MoebiusPalettes } = await Moebius({
+      colorNames: false
+    });
+
+    fc.assert(
+      fc.property(
+        fc.stringMatching(/^#[0-9a-f]{6}$/),
+        fc.stringMatching(/^#[0-9a-f]{6}$/),
+        fc.boolean(),
+        fc.boolean(),
+        fc.boolean(),
+        (base, secondary, reverseDirection, noDuplicates, diverging) => {
+          const palettes = new MoebiusPalettes({
+            baseColor: new MoebiusColor(base),
+            secondaryColor: new MoebiusColor(secondary),
+            divergentColor: '#f5f5f5',
+            reverseDirection,
+            noDuplicates,
+            diverging
+          });
+
+          for (const hex of palettes.themes.darkMode.mixed) {
+            assert.match(hex, /^#[0-9a-f]{6}$/);
+          }
+        }
+      ),
+      { numRuns: 100 }
+    );
+  });
 });

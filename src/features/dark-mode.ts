@@ -42,16 +42,21 @@ export const darkMode = (
   const ratioMultiplier = 0.02;
   const primaryAccents = monochromatic(baseColor, options);
   const surfaceAccents = monochromatic(secondaryColor, options);
-  const mixedAccents = surfaceAccents.map((hex, index) => {
-    return chroma
-      .mix(
-        primaryAccents[index],
-        hex,
-        ratio - index * ratioMultiplier,
-        colorScaleMode
-      )
-      .hex() as unknown as MoebiusColorValueHexType;
-  });
+  // With noDuplicates, the lists can differ in length (repeated black or white
+  // is dropped), so mix only as many colors as both have
+  const mixedLength = Math.min(primaryAccents.length, surfaceAccents.length);
+  const mixedAccents = surfaceAccents
+    .slice(0, mixedLength)
+    .map((hex, index) => {
+      return chroma
+        .mix(
+          primaryAccents[index],
+          hex,
+          ratio - index * ratioMultiplier,
+          colorScaleMode
+        )
+        .hex() as unknown as MoebiusColorValueHexType;
+    });
   const palette = {
     primary: primaryAccents,
     surface: surfaceAccents,
