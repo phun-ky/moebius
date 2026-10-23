@@ -130,6 +130,7 @@ export const loadColorNames = async (
   if (colorNames === undefined) {
     if (!hasWarnedAboutDefault) {
       hasWarnedAboutDefault = true;
+      // eslint-disable-next-line no-console -- deprecation notice for consumers
       console.warn(
         `@phun-ky/moebius: fetching color names from ${DEFAULT_COLOR_NAMES_URL} is deprecated and stops being the default in 3.0. Pass colorNames to Moebius().`
       );
@@ -162,6 +163,7 @@ export const createNameLookup = (
 
   return (color) => {
     const hex = chroma(color).hex('rgb');
+
     let name = cache.get(hex);
 
     if (name === undefined) {

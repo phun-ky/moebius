@@ -4,17 +4,14 @@ import {
   groupIconMdPlugin,
   groupIconVitePlugin
 } from 'vitepress-plugin-group-icons';
+
+import { fileURLToPath } from 'node:url';
+
 import pkg from '../../package.json' with { type: 'json' };
 import typedocSidebar from '../api/typedoc-sidebar.json';
 
 import darkTheme from './shiki/accessible-aa-dark-shiki.json' with { type: 'json' };
 import lightTheme from './shiki/accessible-aa-light-shiki.json' with { type: 'json' };
-import { fileURLToPath } from 'node:url';
-
-import path from 'node:path';
-
-const here = fileURLToPath(new URL('.', import.meta.url));
-const root = path.resolve(here, '../../..');
 
 export default defineConfig({
   lang: 'en-GB',

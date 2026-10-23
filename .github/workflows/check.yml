@@ -16,6 +16,9 @@ on:
       - 'rollup.config.js'
       - 'tsconfig.json'
       - '.npmrc'
+      - 'eslint.config.mjs'
+      - '.prettierrc'
+      - '**/*.md'
   pull_request:
     branches: ['main']
     types: [opened, synchronize] # Workflow triggering events
@@ -28,6 +31,9 @@ on:
       - 'rollup.config.js'
       - 'tsconfig.json'
       - '.npmrc'
+      - 'eslint.config.mjs'
+      - '.prettierrc'
+      - '**/*.md'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -53,6 +59,8 @@ jobs:
       - name: Install dependencies
         run: | # Install and link dependencies
           npm i
+      - name: Lint
+        run: npm run style:lint
       - name: Build # Build all packages
         run: npm run build
       - name: Test

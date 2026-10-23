@@ -208,9 +208,7 @@ export const luminanceShift = (
         : [];
   }
 
-  let steps = stepsLeft;
-
-  steps = (
+  const steps = (
     diverging
       ? stepsLeft.slice(
           0,
