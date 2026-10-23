@@ -86,7 +86,7 @@
     "test": "npm run test:unit",
     "typecheck": "tsc --noEmit",
     "pretest:ci": "rm -rf coverage && mkdir -p coverage",
-    "test:ci": "glob-bin -c \"node --import tsx --import global-jsdom/register --test --no-warnings --experimental-test-coverage --test-reporter=cobertura --test-reporter-destination=coverage/cobertura-coverage.xml --test-reporter=spec --test-reporter-destination=stdout\" \"./src/**/__tests__/**/*.[jt]s\"",
+    "test:ci": "glob-bin -c \"node --import tsx --import global-jsdom/register --enable-source-maps --test --no-warnings --experimental-test-coverage --test-coverage-exclude='src/**/__tests__/**' --test-coverage-exclude='src/types/**' --test-coverage-exclude='node_modules/**' --test-coverage-lines=94 --test-coverage-branches=92 --test-coverage-functions=99 --test-reporter=cobertura --test-reporter-destination=coverage/cobertura-coverage.xml --test-reporter=spec --test-reporter-destination=stdout\" \"./src/**/__tests__/**/*.[jt]s\"",
     "test:unit": "glob-bin -c \"node --import tsx --import global-jsdom/register --test --no-warnings\" \"./src/**/__tests__/**/*.[jt]s\""
   },
   "config": {
