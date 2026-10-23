@@ -59,17 +59,17 @@
   "author": "Alexander Vassbotn Røyne-Helgesen <alexander+github.com@phun-ky.net>",
   "type": "module",
   "main": "dist/moebius.js",
-  "types": "dist/moebius.d.ts",
+  "types": "dist/types/main.d.ts",
   "files": [
     "/dist/moebius.js",
     "/dist/moebius.js.map",
-    "/dist/moebius.d.ts",
+    "/dist/types",
     "/dist/THIRD_PARTY_LICENSES.txt",
     "/CHANGELOG.md"
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "npm run clean && npm run rollup && node scripts/third-party-licenses.mjs",
+    "build": "npm run clean && npm run rollup && node scripts/fix-declaration-imports.mjs && node scripts/third-party-licenses.mjs",
     "check:pack": "node scripts/check-pack.mjs",
     "clean": "rm -rf dist dts",
     "commit": "npx git-cz",
@@ -125,7 +125,6 @@
     "remark-github": "^12.0.0",
     "remark-toc": "^9.0.0",
     "rollup": "^4.64.3",
-    "rollup-plugin-dts": "^6.5.1",
     "rollup-plugin-typescript2": "^0.37.0",
     "tsx": "^4.23.15",
     "typedoc": "^0.28.20",
