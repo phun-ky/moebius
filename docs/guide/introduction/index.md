@@ -41,10 +41,11 @@ import Moebius from '@phun-ky/moebius';
 const { MoebiusColor, MoebiusPalettes } = await Moebius();
 
 const palette = new MoebiusPalettes({
-  baseColor: new MoebiusColor('#1e90ff')
+  baseColor: new MoebiusColor('#1e90ff'),
+  secondaryColor: new MoebiusColor('#ff9900')
 });
 
-console.log(palette.colors.interpolate); // ['#1e90ff', '#3298d8', ...]
+console.log(palette.colors.interpolate); // ['#1e90ff', '#9284fb', ...]
 ```
 
 Pass `colorNames` to choose where color names come from; see

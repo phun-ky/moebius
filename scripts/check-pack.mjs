@@ -194,7 +194,10 @@ try {
     // types that don't match the docs fail here
     writeFileSync(
       join(app, 'consumer.ts'),
-      `import Moebius from ${JSON.stringify(pkg.name)};
+      `import Moebius, {
+  type MoebiusColor as MoebiusColorType,
+  type MoebiusPalettes as MoebiusPalettesType
+} from ${JSON.stringify(pkg.name)};
 
 const { MoebiusColor, MoebiusPalettes } = await Moebius({ colorNames: false });
 const baseColor = new MoebiusColor('#003f5c');
@@ -214,7 +217,12 @@ const red: number = baseColor.toObject('rgb').r + baseColor.toObject().g;
 const lightness: number = baseColor.toFloat('hsl').l;
 const blue: number = baseColor.toFloat().b;
 
+// The class types are exported for typing instances
+const typed: MoebiusColorType = baseColor;
+const typedPalettes: MoebiusPalettesType = palettes;
+
 console.log(name, colors, legacy.hex, fromObject.hex, hue, red, lightness, blue);
+console.log(typed.hex, typedPalettes.colors.interpolate);
 `
     );
 

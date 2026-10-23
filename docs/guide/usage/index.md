@@ -27,17 +27,17 @@ const defaultOptions = {
 darker and, with `diverging: true`, reverses the luminance shift palette so it
 starts from the secondary color.
 
-You initiate `MoebiusPalette` like this:
+You initiate `MoebiusPalettes` like this:
 
 ```ts
 import Moebius from '@phun-ky/moebius';
 
-const { MoebiusPalette, MoebiusColor } = await Moebius();
+const { MoebiusPalettes, MoebiusColor } = await Moebius();
 
 const palettes = new MoebiusPalettes({
   baseColor: new MoebiusColor('#003f5c'),
-  secondaryColor: new MoebiusColor('#ff9900'),
-  ...options
+  secondaryColor: new MoebiusColor('#ff9900')
+  // and any of the options above, for example diverging: true
 });
 ```
 
@@ -94,11 +94,12 @@ console.log(palettes.colors.interpolate);
 /*
 [
   "#003f5c",
-  "#2b4e4d",
-  "#555d3d",
-  "#806c2e",
-  "#aa7b1f",
-  "#d58a0f",
+  "#2c4a7b",
+  "#624f90",
+  "#9b4e95",
+  "#ce4c87",
+  "#f4556b",
+  "#ff7144",
   "#ff9900"
 ]
 */
@@ -114,13 +115,14 @@ Gives you an array of hex-colors.
 console.log(palettes.colors.luminanceShift);
 /*
 [
+  "#002540",
   "#003f5c",
-  "#5f8bac",
-  "#b3dff2",
-  "#f5f5f5",
-  "#fcb852",
-  "#d17300",
-  "#762800"
+  "#2b5a79",
+  "#4b7798",
+  "#6a96b7",
+  "#8ab5d8",
+  "#aad6fa",
+  "#cbf7ff"
 ]
 */
 ```
@@ -156,11 +158,12 @@ console.log(palettes.colors.complement);
 /*
 [
   "#003f5c",
-  "#0f394d",
-  "#1f343d",
-  "#2e2e2e",
-  "#3d281f",
-  "#4d230f",
+  "#1e3a60",
+  "#37335d",
+  "#4b2a54",
+  "#5b1f45",
+  "#631732",
+  "#63161c",
   "#5c1d00"
 ]
 */
@@ -176,11 +179,12 @@ console.log(palettes.colors.split);
 /*
 [
   "#003f5c",
-  "#1f2a43",
-  "#3d152a",
-  "#5c0011",
-  "#5c190b",
-  "#5c3206",
+  "#2d325d",
+  "#4f1e4b",
+  "#5e0227",
+  "#5f0f0b",
+  "#622600",
+  "#613a00",
   "#5c4b00"
 ]
 */
@@ -196,11 +200,12 @@ console.log(palettes.colors.triadic);
 /*
 [
   "#003f5c",
-  "#1f2a52",
-  "#3d1549",
-  "#5c003f",
-  "#521f2a",
-  "#493d15",
+  "#1a3761",
+  "#3a295d",
+  "#53144c",
+  "#6a0030",
+  "#71220f",
+  "#614200",
   "#3f5c00"
 ]
 */
@@ -216,11 +221,12 @@ console.log(palettes.colors.tetradic);
 /*
 [
   "#003f5c",
-  "#26205c",
-  "#4b005c",
-  "#540f2e",
-  "#5c1d00",
-  "#363d00",
+  "#013269",
+  "#3c1764",
+  "#63003e",
+  "#660018",
+  "#5b2700",
+  "#4a4300",
   "#115c00"
 ]
 */
@@ -236,11 +242,12 @@ console.log(palettes.colors.pentadic);
 /*
 [
   "#003f5c",
-  "#2e203b",
-  "#5c001a",
-  "#5c2a0d",
-  "#5c5400",
-  "#2e5806",
+  "#3c2b58",
+  "#5c062d",
+  "#641c0d",
+  "#643f00",
+  "#555500",
+  "#395900",
   "#005c0b"
 ]
 */
@@ -256,11 +263,12 @@ console.log(palettes.colors.hexadic);
 /*
 [
   "#003f5c",
-  "#3d1549",
-  "#5c0a2a",
-  "#5c1d00",
-  "#494700",
-  "#2a5c0a",
+  "#3a295d",
+  "#600036",
+  "#620f14",
+  "#5c3000",
+  "#485400",
+  "#2c5c0d",
   "#005c1d"
 ]
 */
@@ -272,15 +280,16 @@ Gives you an array of hex-colors.
 ### Analogous
 
 ```ts
-console.log(palettes.colors.interpolate);
+console.log(palettes.colors.analogous);
 /*
 [
   "#003f5c",
-  "#00285c",
-  "#00115c",
-  "#0f085c",
-  "#1d005c",
-  "#34005c",
+  "#002f62",
+  "#001b5f",
+  "#090d5c",
+  "#16065c",
+  "#26005c",
+  "#3b005c",
   "#4b005c"
 ]
 */
@@ -371,7 +380,7 @@ For the non-CSS units, the color object also exposes a `toString` method pr unit
 ```ts
 const color = new MoebiusColor('#003f5c');
 
-console.log(color.hsl.toString()); // "199, 100, 18"
+console.log(color.hsl.toString()); // "hsl(199, 100%, 18%)"
 ```
 
 ### toObject
@@ -381,8 +390,8 @@ The color object exposes a `toObject` method, that allows to objectify from any 
 ```ts
 const color = new MoebiusColor('#003f5c');
 
-console.log(color.toObject('hsl')); // "199, 100, 18"
-console.log(color.toObject(); // "0, 63, 92"
+console.log(color.toObject('hsl')); // { h: 199, s: 100, l: 18 }
+console.log(color.toObject()); // { r: 0, g: 63, b: 92 }
 ```
 
 ### toFloat
@@ -392,8 +401,8 @@ The color object exposes a `toFloat` method, that allows to objectify to float v
 ```ts
 const color = new MoebiusColor('#003f5c');
 
-console.log(color.toFloat('hsl')); // "199, 1, 0.18"
-console.log(color.toFloat(); // "0, 0.25, 0.36"
+console.log(color.toFloat('hsl')); // { h: 199, s: 1, l: 0.18 }
+console.log(color.toFloat()); // { r: 0, g: 0.25, b: 0.36 }
 ```
 
 ## Types

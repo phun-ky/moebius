@@ -76,6 +76,7 @@
     "docs:gen": "node ./node_modules/.bin/typedoc",
     "predocs:dev": "npm run docs:gen",
     "docs:dev": "vitepress dev docs",
+    "docs:check": "typedoc --emit none --treatWarningsAsErrors && node scripts/check-docs-examples.mjs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "release": "release-it",
