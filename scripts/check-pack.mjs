@@ -3,6 +3,14 @@
 // with publint and @arethetypeswrong/cli, then install the tarball in an empty
 // project, check every source map resolves, and import it. Run after
 // `npm run build`.
+import {
+  createProgram,
+  getPreEmitDiagnostics,
+  ModuleKind,
+  ModuleResolutionKind,
+  ScriptTarget
+} from 'typescript';
+
 import { execFileSync } from 'node:child_process';
 import {
   existsSync,
@@ -233,6 +241,77 @@ console.log(name, colors, legacy.hex, fromObject.hex, hue, red, lightness, blue)
       );
     } else {
       console.log('the documented usage compiles against the published types');
+    }
+
+    // Every value the declarations export must exist at runtime. List what
+    // the declarations export, then use each name as a value: type-only exports
+    // and types fail to compile (fine), so a name that compiles but isn't a
+    // runtime export would crash a consumer that imports it
+    const runtimeExports = JSON.parse(
+      execFileSync(
+        'node',
+        [
+          '--input-type=module',
+          '-e',
+          `console.log(JSON.stringify(Object.keys(await import(${JSON.stringify(pkg.name)}))))`
+        ],
+        { cwd: app, encoding: 'utf8' }
+      )
+    );
+    const compilerOptions = {
+      noEmit: true,
+      strict: true,
+      target: ScriptTarget.ES2022,
+      module: ModuleKind.ESNext,
+      moduleResolution: ModuleResolutionKind.Bundler,
+      skipLibCheck: true
+    };
+    const listFile = join(app, 'list-exports.ts');
+
+    writeFileSync(listFile, `export * from ${JSON.stringify(pkg.name)};\n`);
+
+    const listProgram = createProgram([listFile], compilerOptions);
+    const checker = listProgram.getTypeChecker();
+    const moduleSymbol = checker.getSymbolAtLocation(
+      listProgram.getSourceFile(listFile).statements[0].moduleSpecifier
+    );
+    const declared = checker
+      .getExportsOfModule(moduleSymbol)
+      .map((symbol) => symbol.name)
+      .filter((name) => !runtimeExports.includes(name));
+    const probeFile = join(app, 'value-exports.ts');
+
+    // A named import, as consumers write it: TypeScript rejects a type-only
+    // export used as a value this way, but not through a namespace import
+    writeFileSync(
+      probeFile,
+      `${declared
+        .map(
+          (name, index) =>
+            `import { ${name} as value${index} } from ${JSON.stringify(pkg.name)}; console.log(value${index});`
+        )
+        .join('\n')}\n`
+    );
+
+    const probe = createProgram([probeFile], compilerOptions);
+    const failingLines = new Set(
+      getPreEmitDiagnostics(probe)
+        .filter((diagnostic) => diagnostic.file?.fileName === probeFile)
+        .map(
+          (diagnostic) =>
+            diagnostic.file.getLineAndCharacterOfPosition(diagnostic.start).line
+        )
+    );
+    const phantom = declared.filter((name, index) => !failingLines.has(index));
+
+    if (phantom.length > 0) {
+      problems.push(
+        `the published types declare values the module doesn't export: ${phantom.join(', ')} (runtime exports: ${runtimeExports.join(', ')})`
+      );
+    } else {
+      console.log(
+        `every value the types export exists at runtime (${runtimeExports.join(', ')}; ${declared.length} type-only exports)`
+      );
     }
   }
 } finally {

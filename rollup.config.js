@@ -1,7 +1,6 @@
 import commonjs from '@rollup/plugin-commonjs';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
-import dts from 'rollup-plugin-dts';
 import ts from 'rollup-plugin-typescript2';
 import typescript from 'typescript';
 
@@ -61,7 +60,7 @@ export default [
       }),
       terser()
     ]
-  },
+  }
   // {
   //   input: 'src/generator/main.ts',
   //   output: {
@@ -85,10 +84,5 @@ export default [
   //     }),
   //     terser()
   //   ]
-  // },
-  {
-    input: './dts/main.d.ts',
-    output: [{ file: './dist/moebius.d.ts', format: 'es' }],
-    plugins: [dts()]
-  }
+  // }
 ];
