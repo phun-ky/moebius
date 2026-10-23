@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.2.5](https://github.com/phun-ky/moebius/compare/2.2.4...2.2.5) (2026-10-23)
+
+### Bug
+
+* 🐛 publish TypeScript's own declarations ([388f9cb](https://github.com/phun-ky/moebius/commit/388f9cb820a1d5178df5ba2ccd651bc6d96a695f)), closes [#206](https://github.com/phun-ky/moebius/issues/206)
+
 ## [2.2.4](https://github.com/phun-ky/moebius/compare/2.2.3...2.2.4) (2026-10-23)
 
 ### Bug
