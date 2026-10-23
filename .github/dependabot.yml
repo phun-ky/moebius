@@ -10,8 +10,17 @@ updates:
         update-types:
           - 'minor'
           - 'patch'
+    ignore:
+      # TypeScript 7 drops the compiler API that typedoc, typescript-eslint and
+      # rollup-plugin-typescript2 use. Remove this once they support it.
+      - dependency-name: 'typescript'
+        versions: ['>=7']
     schedule:
       interval: 'weekly'
+    # Only propose versions that have been out for at least 2 weeks, so broken
+    # or compromised releases are found first. Security updates are not delayed.
+    cooldown:
+      default-days: 14
     commit-message:
       prefix: 'chore: 🤖 '
     open-pull-requests-limit: 5
