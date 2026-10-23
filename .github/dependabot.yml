@@ -43,10 +43,13 @@ updates:
   # comments up to date
   - package-ecosystem: 'github-actions'
     directory: '/'
+    # Minor and patch updates are grouped; each major gets its own PR, so one
+    # blocked major doesn't hold back the rest
     groups:
       actions:
-        patterns:
-          - '*'
+        update-types:
+          - 'minor'
+          - 'patch'
     schedule:
       interval: 'weekly'
     labels:

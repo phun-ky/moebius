@@ -23,19 +23,8 @@ on:
   pull_request:
     branches: ['main']
     types: [opened, synchronize] # Workflow triggering events
-    paths:
-      - '.github/**'
-      - 'src/**'
-      - 'docs/**'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'rollup.config.js'
-      - 'tsconfig*.json'
-      - 'typedoc.json'
-      - 'scripts/**'
-      - 'eslint.config.mjs'
-      - '.prettierrc'
-      - '**/*.md'
+    # No paths filter: check is a required status, so it must run on every PR,
+    # or a PR touching only unlisted files could never merge
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
