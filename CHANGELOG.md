@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/phun-ky/moebius/compare/2.2.0...2.2.1) (2026-10-23)
+
+### Bug
+
+* 🐛 don't throw in dark mode when accent lists differ in length ([3728e32](https://github.com/phun-ky/moebius/commit/3728e32d5f1328efca1fa0b4039e8490dfba3459)), closes [#151](https://github.com/phun-ky/moebius/issues/151)
+* 🐛 reverse a diverging luminance shift with reverseDirection ([35c75d6](https://github.com/phun-ky/moebius/commit/35c75d65f154d3c66bdd8b86ad06f6e9d43741c3)), closes [#152](https://github.com/phun-ky/moebius/issues/152)
+
 ## [2.2.0](https://github.com/phun-ky/moebius/compare/2.1.0...2.2.0) (2026-10-22)
 
 ### Feature
