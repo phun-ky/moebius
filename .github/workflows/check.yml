@@ -66,6 +66,8 @@ jobs:
           npm ci
       - name: Lint
         run: npm run style:lint
+      - name: Typecheck
+        run: npm run typecheck
       - name: Build # Build all packages
         run: npm run build
       - name: Check the package

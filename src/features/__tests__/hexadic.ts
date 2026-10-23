@@ -1,12 +1,15 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
+import { MoebiusPaletteOptionsType } from '../../types';
 import { hexadic } from '../hexadic';
 
 describe('hexadic', () => {
   it('should generate a hexadic palette', () => {
     const baseColor = '#3498db';
-    const hexadicPalette = hexadic(baseColor, { numberOfColors: 5 });
+    const hexadicPalette = hexadic(baseColor, {
+      numberOfColors: 5
+    } as MoebiusPaletteOptionsType);
 
     assert.strictEqual(Array.isArray(hexadicPalette), true);
     assert.strictEqual(hexadicPalette.length, 5);

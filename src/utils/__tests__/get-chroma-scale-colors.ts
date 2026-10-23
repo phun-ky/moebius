@@ -1,7 +1,10 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
-import { MoebiusColorValueHexType } from '../../types';
+import {
+  MoebiusColorValueHexType,
+  MoebiusPaletteOptionsType
+} from '../../types';
 import { getChromaScaleColors } from '../get-chroma-scale-colors';
 
 describe('getChromaScaleColors', () => {
@@ -18,7 +21,7 @@ describe('getChromaScaleColors', () => {
 
   it('should generate a color scale with specified numberOfColors', () => {
     const inputColors = ['#3498db', '#2ecc71', '#e74c3c'];
-    const options = { numberOfColors: 5 };
+    const options = { numberOfColors: 5 } as MoebiusPaletteOptionsType;
     const result = getChromaScaleColors(
       inputColors as MoebiusColorValueHexType[],
       options
@@ -31,7 +34,7 @@ describe('getChromaScaleColors', () => {
 
   it('should generate a color scale with specified colorScaleMode', () => {
     const inputColors = ['#3498db', '#2ecc71', '#e74c3c'];
-    const options = { colorScaleMode: 'lch' };
+    const options = { colorScaleMode: 'lch' } as MoebiusPaletteOptionsType;
     const result = getChromaScaleColors(
       inputColors as MoebiusColorValueHexType[],
       options
@@ -44,7 +47,7 @@ describe('getChromaScaleColors', () => {
 
   it('should generate a color scale with correct lightness when correctLightness is true', () => {
     const inputColors = ['#3498db', '#2ecc71', '#e74c3c'];
-    const options = { correctLightness: true };
+    const options = { correctLightness: true } as MoebiusPaletteOptionsType;
     const result = getChromaScaleColors(
       inputColors as MoebiusColorValueHexType[],
       options
@@ -57,7 +60,7 @@ describe('getChromaScaleColors', () => {
 
   it('should generate a color scale without correcting lightness when correctLightness is false', () => {
     const inputColors = ['#3498db', '#2ecc71', '#e74c3c'];
-    const options = { correctLightness: false };
+    const options = { correctLightness: false } as MoebiusPaletteOptionsType;
     const result = getChromaScaleColors(
       inputColors as MoebiusColorValueHexType[],
       options

@@ -1,12 +1,13 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
+import { MoebiusPaletteOptionsType } from '../../types';
 import { complement } from '../complement';
 
 describe('complement', () => {
   it('should generate a complement color palette', () => {
     const baseColor = '#3498db';
-    const options = { numberOfColors: 5 };
+    const options = { numberOfColors: 5 } as MoebiusPaletteOptionsType;
     const complementPalette = complement(baseColor, options);
 
     assert.strictEqual(Array.isArray(complementPalette), true);

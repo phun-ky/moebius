@@ -1,12 +1,15 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
+import { MoebiusPaletteOptionsType } from '../../types';
 import { pentadic } from '../pentadic';
 
 describe('pentadic', () => {
   it('should generate a pentadic color palette', () => {
     const baseColor = '#3498db';
-    const pentadicPalette = pentadic(baseColor, { numberOfColors: 5 });
+    const pentadicPalette = pentadic(baseColor, {
+      numberOfColors: 5
+    } as MoebiusPaletteOptionsType);
 
     assert.strictEqual(Array.isArray(pentadicPalette), true);
     assert.strictEqual(pentadicPalette.length, 5);

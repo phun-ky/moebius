@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
+import { MoebiusPaletteOptionsType } from '../../types';
 import { tetradic } from '../tetradic';
 
 describe('tetradic', () => {
@@ -19,7 +20,7 @@ describe('tetradic', () => {
       numberOfColors: 5,
       colorScaleMode: 'lch',
       correctLightness: false
-    };
+    } as MoebiusPaletteOptionsType;
     const tetradicPalette = tetradic(baseColor, options);
 
     assert(Array.isArray(tetradicPalette));

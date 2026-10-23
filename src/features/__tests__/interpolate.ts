@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
+import { MoebiusPaletteOptionsType } from '../../types';
 import { interpolate } from '../interpolate';
 
 describe('interpolate', () => {
@@ -9,7 +10,7 @@ describe('interpolate', () => {
     const endColor = '#db3434';
     const interpolatedPalette = interpolate(startColor, endColor, {
       numberOfColors: 5
-    });
+    } as MoebiusPaletteOptionsType);
 
     assert.strictEqual(Array.isArray(interpolatedPalette), true);
     assert.strictEqual(interpolatedPalette.length, 5);

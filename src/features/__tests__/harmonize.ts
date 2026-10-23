@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
+import { MoebiusPaletteOptionsType } from '../../types';
 import { harmonize } from '../harmonize';
 
 describe('harmonize', () => {
@@ -12,7 +13,7 @@ describe('harmonize', () => {
     const harmonizedPalette = harmonize(baseColor, start, end, interval, {
       noDuplicates: true,
       numberOfColors: 8
-    });
+    } as MoebiusPaletteOptionsType);
 
     assert.strictEqual(Array.isArray(harmonizedPalette), true);
 
@@ -31,7 +32,7 @@ describe('harmonize', () => {
     const interval = 30;
     const harmonizedPalette = harmonize(baseColor, start, end, interval, {
       noDuplicates: true
-    });
+    } as MoebiusPaletteOptionsType);
     const uniqueColors = [...new Set(harmonizedPalette)];
 
     assert.deepStrictEqual(harmonizedPalette, uniqueColors);
@@ -44,7 +45,7 @@ describe('harmonize', () => {
     const interval = 30;
     const harmonizedPalette = harmonize(baseColor, start, end, interval, {
       noDuplicates: false
-    });
+    } as MoebiusPaletteOptionsType);
     const uniqueColors = [...new Set(harmonizedPalette)];
 
     assert.notDeepStrictEqual(harmonizedPalette, uniqueColors);
