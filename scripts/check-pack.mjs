@@ -20,10 +20,10 @@ import { fileURLToPath } from 'node:url';
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const BIN = join(ROOT, 'node_modules', '.bin');
 /** Run a linter; return its output if it fails. */
-const lint = (command, args) => {
+const lint = (command, args, cwd = ROOT) => {
   try {
     execFileSync(join(BIN, command), args, {
-      cwd: ROOT,
+      cwd,
       encoding: 'utf8',
       stdio: 'pipe'
     });
@@ -157,6 +157,54 @@ try {
       });
     } catch {
       problems.push('the installed tarball could not be imported or used');
+    }
+
+    // Compile the documented usage against the published declarations, so
+    // types that don't match the docs fail here
+    writeFileSync(
+      join(app, 'consumer.ts'),
+      `import Moebius from ${JSON.stringify(pkg.name)};
+
+const { MoebiusColor, MoebiusPalettes } = await Moebius({ colorNames: false });
+const baseColor = new MoebiusColor('#003f5c');
+const palettes = new MoebiusPalettes({
+  baseColor,
+  secondaryColor: new MoebiusColor('#ff9900'),
+  divergentColor: '#f5f5f5'
+});
+const name: string = baseColor.name;
+const colors: string[] = palettes.colors.luminanceShift;
+// Code written against older types passes a name, which is ignored
+const legacy = new MoebiusColor('#f5f5f5', '');
+const fromObject = new MoebiusColor({ h: 36, s: 1, l: 0.5 });
+
+console.log(name, colors, legacy.hex, fromObject.hex);
+`
+    );
+
+    const typecheck = lint(
+      'tsc',
+      [
+        '--noEmit',
+        '--strict',
+        '--target',
+        'es2022',
+        '--module',
+        'esnext',
+        '--moduleResolution',
+        'bundler',
+        '--skipLibCheck',
+        'consumer.ts'
+      ],
+      app
+    );
+
+    if (typecheck) {
+      problems.push(
+        `the documented usage doesn't compile against the published types:\n${typecheck}`
+      );
+    } else {
+      console.log('the documented usage compiles against the published types');
     }
   }
 } finally {

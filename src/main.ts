@@ -6,7 +6,7 @@ import { MoebiusColor } from './classes/MoebiusColor';
 import { MoebiusPalettes } from './classes/MoebiusPalettes';
 import { MoebiusSVGHelper } from './classes/MoebiusSVGHelper';
 import {
-  MoebiusColorValueHexType,
+  MoebiusChromaColorInputType,
   MoebiusOptionsType,
   MoebiusReturnType
 } from './types';
@@ -74,13 +74,15 @@ async function Moebius(options?: MoebiusOptionsType): MoebiusReturnType {
    * using the initialized color name map.
    */
   class MoebiusColorAbstract extends MoebiusColor {
-    constructor(color: MoebiusColorValueHexType) {
-      super(chroma(color).hex(), colorNames(color));
+    constructor(color: MoebiusChromaColorInputType) {
+      const hex = chroma(color).hex();
+
+      super(hex, colorNames(hex));
     }
   }
 
   return {
-    MoebiusColor: MoebiusColorAbstract as typeof MoebiusColor,
+    MoebiusColor: MoebiusColorAbstract,
     MoebiusPalettes,
     MoebiusSVGHelper
   };
