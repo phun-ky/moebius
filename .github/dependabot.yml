@@ -21,6 +21,9 @@ updates:
         update-types: ['version-update:semver-major']
       - dependency-name: 'global-jsdom'
         update-types: ['version-update:semver-major']
+      # Keep @types/node on the Node major CI runs (24)
+      - dependency-name: '@types/node'
+        update-types: ['version-update:semver-major']
     schedule:
       interval: 'weekly'
     labels:
@@ -35,3 +38,20 @@ updates:
     allow:
       - dependency-type: direct
       - dependency-type: production
+
+  # Actions are pinned to commit SHAs; this keeps the pins and their version
+  # comments up to date
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    groups:
+      actions:
+        patterns:
+          - '*'
+    schedule:
+      interval: 'weekly'
+    labels:
+      - 'mindless: 📦 dependencies'
+    cooldown:
+      default-days: 14
+    commit-message:
+      prefix: 'ci: 🎡 '
