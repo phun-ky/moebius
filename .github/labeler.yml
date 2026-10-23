@@ -24,6 +24,7 @@
               - '.release-it.json'
               - 'tsconfig*.json'
               - 'typedoc.json'
+              - 'scripts/**'
 'context: github':
   - any:
       - changed-files:
