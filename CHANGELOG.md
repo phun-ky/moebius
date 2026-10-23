@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.2.3](https://github.com/phun-ky/moebius/compare/2.2.2...2.2.3) (2026-10-23)
+
+### Tasks
+
+* 🤖 publish the changelog and mark the package side-effect free ([edc9589](https://github.com/phun-ky/moebius/commit/edc95890254cd0d128bf4a6e7e137ac0313bb84e)), closes [#177](https://github.com/phun-ky/moebius/issues/177)
+
+### Bug
+
+* 🐛 stop installing the bundled libraries for consumers ([cdbff5d](https://github.com/phun-ky/moebius/commit/cdbff5dece0d395a075ddcf7ec514dbe6a3db7fe)), closes [#178](https://github.com/phun-ky/moebius/issues/178)
+
 ## [2.2.2](https://github.com/phun-ky/moebius/compare/2.2.1...2.2.2) (2026-10-23)
 
 ### Tasks
