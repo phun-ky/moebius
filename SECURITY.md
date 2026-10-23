@@ -1,6 +1,6 @@
 # Security Policy
 
-I strive to keep this as secure as possible, but since this is an app that has zero dependencies, most (if not all) updates are directed to the dev dependencies.
+I strive to keep this as secure as possible. Until 3.0, `dist/moebius.js` bundles three runtime libraries: `chroma-js`, `nearest-color` and `@phun-ky/typeof`. They aren't installed separately, so your `npm audit` can't see them; fixes to them reach you through a moebius release. Each release attaches an SBOM listing them, and their licences are in `dist/THIRD_PARTY_LICENSES.txt`. From 3.0 they're regular dependencies instead (#204).
 
 ## Supported Versions
 
