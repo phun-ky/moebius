@@ -1,4 +1,4 @@
-@import 'https://phun-ky.net/css/ph.css';
+@import './ph/ph.css';
 
 :root {
   --vp-font-family-base: var(--ph-font-family);
