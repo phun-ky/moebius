@@ -14,10 +14,12 @@ import { createNameLookup, loadColorNames } from './utils/color-names';
 
 export type * from './types';
 
+// The classes Moebius() returns, for typing instances
+export type { MoebiusColor, MoebiusPalettes, MoebiusSVGHelper };
+
 /**
  * Load color names and return a function that names the nearest one.
  *
- * @async
  * @function initializeColorNames
  * @param colorNames - See `MoebiusOptionsType.colorNames`.
  * @returns A function from a color to the nearest known color's name, or
@@ -46,7 +48,6 @@ const initializeColorNames = async (
  * - `MoebiusSVGHelper` for generating SVG paths for colored pie slices.
  *
  * @function
- * @async
  * @param {MoebiusOptionsType} [options] - Options; `colorNames` sets where
  *   color names come from. Without it, names are fetched from
  *   https://color-names.herokuapp.com/v1/, which is deprecated.
