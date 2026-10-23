@@ -2,7 +2,11 @@
 
 The main feature is the ability to create palettes with a given primary color and a secondary color (used for diverging palettes). You can also give the color to diverge to/from.
 
+<!-- eslint-disable markdown/no-missing-label-refs -- VitePress table of contents -->
+
 [[toc]]
+
+<!-- eslint-enable markdown/no-missing-label-refs -->
 
 ## Default options
 

@@ -41,6 +41,10 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: npm ci
+      # Generate the API docs from source, so the site doesn't depend on
+      # generated pages being committed
+      - name: Generate API docs
+        run: npm run docs:gen
       - name: Build with VitePress
         run: npm run docs:build
       - name: Upload artifact

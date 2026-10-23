@@ -49,7 +49,11 @@ jobs:
         run: | # Install and link dependencies
           npm i
           git checkout -- package-lock.json
+      - name: Check for changes to release
+        id: guard
+        run: .github/scripts/should-release.sh
       - name: 'Release' # Interesting step
+        if: steps.guard.outputs.release == 'true'
         run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"

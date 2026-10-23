@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unused-modules */
 import { isObjectPlain } from '@phun-ky/typeof';
 import chroma from 'chroma-js';
 import nearestColor from 'nearest-color';
