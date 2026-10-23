@@ -8,15 +8,20 @@
       - changed-files:
           - any-glob-to-any-file:
               - '*'
+'section: tests':
+  - any:
+      - changed-files:
+          - any-glob-to-any-file:
+              - '**/__tests__/**'
 'experience: developer':
   - any:
       - changed-files:
           - any-glob-to-any-file:
               - '.editorconfig'
-              - 'eslint.config.mjs'
               - '.gitignore'
-              - '.release-it.json'
               - '.prettierrc'
+              - 'eslint.config.mjs'
+              - '.release-it.json'
               - 'tsconfig*.json'
               - 'typedoc.json'
 'context: github':
@@ -29,7 +34,6 @@
       - changed-files:
           - any-glob-to-any-file:
               - 'package.json'
-              - 'package-lock.json'
 'context: rollup':
   - any:
       - changed-files:
@@ -41,13 +45,13 @@
       - changed-files:
           - any-glob-to-any-file:
               - '**/*.md'
-'mindless: dependencies':
+'mindless: 📦 dependencies':
   - any:
       - changed-files:
           - any-glob-to-any-file:
               - 'package-lock.json'
 
-# Add '✨ feature' label to any PR where the head branch name starts with `feat` or has a `feat` section in the name
+# Labels from the branch name: feat/..., fix/..., chore/..., improvements/...
 '✨ feature':
   - head-branch: ['^feat', 'feat']
 'problems: 🐛 bug':
@@ -56,7 +60,3 @@
   - head-branch: ['^chore', 'chore']
 'improvements: 💡 enhancement':
   - head-branch: ['^improvements', 'improvements']
-
-# Add 'release' label to any PR that is opened against the `main` branch
-release:
-  - base-branch: 'main'
