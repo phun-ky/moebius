@@ -1,0 +1,28 @@
+name: Dependency Review
+
+# Check every pull request's dependency changes against the GitHub Advisory
+# Database, and fail on a high or critical vulnerability. Policy: SECURITY.md
+on:
+  pull_request:
+    branches: ['main']
+
+# Read-only: the action compares dependencies through the API, no checkout
+permissions:
+  contents: read
+
+jobs:
+  dependency-review:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Review dependency changes
+        uses: actions/dependency-review-action@a1d282b36b6f3519aa1f3fc636f609c47dddb294 # v5.0.0
+        with:
+          fail-on-severity: high
+          fail-on-scopes: runtime, development
+          # Accepted exceptions, each explained in SECURITY.md under
+          # "Accepted exceptions". Remove an entry once a fix is reachable.
+          # GHSA-vfj7-8cjw-p6xm: braces, development only (putout > fast-glob >
+          # micromatch); every version is affected, no fix exists
+          # GHSA-fx2h-pf6j-xcff, GHSA-587h-7wmj-h5pm: vite, development only
+          # (vitepress 1.6.4, the latest stable, pins vite 5); Windows dev server
+          allow-ghsas: GHSA-vfj7-8cjw-p6xm, GHSA-fx2h-pf6j-xcff, GHSA-587h-7wmj-h5pm
