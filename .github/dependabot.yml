@@ -15,6 +15,12 @@ updates:
       # rollup-plugin-typescript2 use. Remove this once they support it.
       - dependency-name: 'typescript'
         versions: ['>=7']
+      # jsdom and global-jsdom majors only install together, and the tests are
+      # fine on jsdom 29. Stay on 29 until there's a reason to move.
+      - dependency-name: 'jsdom'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'global-jsdom'
+        update-types: ['version-update:semver-major']
     schedule:
       interval: 'weekly'
     # Only propose versions that have been out for at least 2 weeks, so broken
