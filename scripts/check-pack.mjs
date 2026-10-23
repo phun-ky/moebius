@@ -71,8 +71,13 @@ try {
   const packed = Array.isArray(output) ? output[0] : Object.values(output)[0];
   const files = new Set(packed.files.map((file) => file.path));
 
-  // npm adds LICENSE and README.md on its own, if the package has them
-  for (const path of [...entryPoints(pkg), 'LICENSE', 'README.md']) {
+  // npm adds LICENSE and README.md on its own; CHANGELOG.md is in files
+  for (const path of [
+    ...entryPoints(pkg),
+    'LICENSE',
+    'README.md',
+    'CHANGELOG.md'
+  ]) {
     if (!files.has(path)) problems.push(`${path} is not in the tarball`);
   }
 
