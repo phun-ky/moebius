@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.3.0](https://github.com/phun-ky/moebius/compare/2.2.5...2.3.0) (2026-10-23)
+
+### Documentation
+
+* ✏️ fix the guide examples ([859d32c](https://github.com/phun-ky/moebius/commit/859d32cc7350fb0cd10ed48c5e844c75ee79baa6)), references [#179](https://github.com/phun-ky/moebius/issues/179)
+* ✏️ say in SECURITY.md that runtime libraries are bundled ([45c02b4](https://github.com/phun-ky/moebius/commit/45c02b40f05117e20f28a53b4a619d24e741c420)), references [#207](https://github.com/phun-ky/moebius/issues/207)
+* ✏️ self-host the docs site's stylesheet ([55571f5](https://github.com/phun-ky/moebius/commit/55571f5e9bff747f6bb6ed307a325a13c6914ccc)), closes [#179](https://github.com/phun-ky/moebius/issues/179)
+
+### Feature
+
+* 🎸 export the MoebiusColor, MoebiusPalettes and MoebiusSVGHelper types ([8a28cf7](https://github.com/phun-ky/moebius/commit/8a28cf79e7cc62ae2bce93d4cecc9deae5ff6cbb)), references [#179](https://github.com/phun-ky/moebius/issues/179)
+
 ## [2.2.5](https://github.com/phun-ky/moebius/compare/2.2.4...2.2.5) (2026-10-23)
 
 ### Bug

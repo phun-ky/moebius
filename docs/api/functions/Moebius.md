@@ -6,7 +6,7 @@
 function Moebius(options?: MoebiusOptionsType): MoebiusReturnType;
 ```
 
-Defined in: [main.ts:65](https://github.com/phun-ky/moebius/blob/main/src/main.ts#L65)
+Defined in: [main.ts:66](https://github.com/phun-ky/moebius/blob/main/src/main.ts#L66)
 
 **`Function`**
 
@@ -33,8 +33,6 @@ https://color-names.herokuapp.com/v1/, which is deprecated.
 [`MoebiusReturnType`](../type-aliases/MoebiusReturnType.md)
 
 An object containing Moebius utility classes
-
-## Async
 
 ## Throws
 

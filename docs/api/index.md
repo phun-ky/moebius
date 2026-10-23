@@ -2,10 +2,13 @@
 
 ## Interfaces
 
+- [MoebiusColor](interfaces/MoebiusColor.md)
 - [MoebiusColorInterface](interfaces/MoebiusColorInterface.md)
 - [MoebiusPaletteAccentColorsInterface](interfaces/MoebiusPaletteAccentColorsInterface.md)
 - [MoebiusPaletteColorsInterface](interfaces/MoebiusPaletteColorsInterface.md)
 - [MoebiusPaletteInterface](interfaces/MoebiusPaletteInterface.md)
+- [MoebiusPalettes](interfaces/MoebiusPalettes.md)
+- [MoebiusSVGHelper](interfaces/MoebiusSVGHelper.md)
 - [MoebiusThemeColorsInterface](interfaces/MoebiusThemeColorsInterface.md)
 - [NearestColorColorMatchInterface](interfaces/NearestColorColorMatchInterface.md)
 - [NearestColorColorSpecInterface](interfaces/NearestColorColorSpecInterface.md)
