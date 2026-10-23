@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.2.4](https://github.com/phun-ky/moebius/compare/2.2.3...2.2.4) (2026-10-23)
+
+### Bug
+
+* 🐛 publish the licences of the bundled libraries ([a8e43a6](https://github.com/phun-ky/moebius/commit/a8e43a669dcdca667d7452ca3445ed707df103fb)), closes [#202](https://github.com/phun-ky/moebius/issues/202)
+
 ## [2.2.3](https://github.com/phun-ky/moebius/compare/2.2.2...2.2.3) (2026-10-23)
 
 ### Tasks
