@@ -47,15 +47,32 @@ jobs:
           node-version: 24
       - name: Install dependencies
         run: npm ci
+      - name: Audit runtime dependencies # No release with a known high or critical vulnerability
+        run: npm audit --omit=dev --audit-level=high
       - name: Check for changes to release
         id: guard
         run: .github/scripts/should-release.sh
+      - name: Check the package # Fail before anything is published
+        if: steps.guard.outputs.release == 'true'
+        run: |
+          npm run build
+          npm run check:pack
       - name: 'Release' # Interesting step
         if: steps.guard.outputs.release == 'true'
         run: |
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor}}@users.noreply.github.com"
+          git config user.name "$ACTOR"
+          git config user.email "$ACTOR@users.noreply.github.com"
           npm run release
+        env: # npm authenticates with trusted publishing (id-token: write), no token needed
+          ACTOR: ${{ github.actor }} # via env, never interpolated into the script
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Attach an SBOM to the release # CycloneDX, runtime dependencies only
+        if: steps.guard.outputs.release == 'true'
+        run: |
+          version=$(node -p "require('./package.json').version")
+          file="$RUNNER_TEMP/moebius-$version.cdx.json"
+          npm sbom --sbom-format cyclonedx --omit dev > "$file"
+          gh release upload "$version" "$file" --clobber
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
   notify:
