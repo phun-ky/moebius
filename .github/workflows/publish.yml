@@ -66,12 +66,12 @@ jobs:
         env: # npm authenticates with trusted publishing (id-token: write), no token needed
           ACTOR: ${{ github.actor }} # via env, never interpolated into the script
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      - name: Attach an SBOM to the release # CycloneDX, runtime dependencies only
+      - name: Attach an SBOM to the release # CycloneDX, the libraries bundled into dist
         if: steps.guard.outputs.release == 'true'
         run: |
           version=$(node -p "require('./package.json').version")
           file="$RUNNER_TEMP/moebius-$version.cdx.json"
-          npm sbom --sbom-format cyclonedx --omit dev > "$file"
+          node scripts/sbom.mjs > "$file"
           gh release upload "$version" "$file" --clobber
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
