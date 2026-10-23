@@ -81,7 +81,14 @@ export type MoebiusOptionsType = {
  * Describes a color with multiple representations and metadata.
  */
 export type MoebiusReturnType = Promise<{
-  MoebiusColor: typeof MoebiusColor;
+  /**
+   * `MoebiusColor` with the color name looked up for you: pass only the
+   * color. A second argument is accepted for older code and ignored.
+   */
+  MoebiusColor: new (
+    color: MoebiusChromaColorInputType,
+    name?: string
+  ) => MoebiusColor;
   MoebiusPalettes: typeof MoebiusPalettes;
   MoebiusSVGHelper: typeof MoebiusSVGHelper;
 }>;
