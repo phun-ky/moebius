@@ -1,12 +1,13 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
+import { MoebiusPaletteOptionsType } from '../../types';
 import { analogous } from '../analogous';
 
 describe('analogous', () => {
   it('should generate an analogous color palette', () => {
     const baseColor = '#3498db';
-    const options = { numberOfColors: 5 };
+    const options = { numberOfColors: 5 } as MoebiusPaletteOptionsType;
     const analogousPalette = analogous(baseColor, options);
 
     assert.strictEqual(Array.isArray(analogousPalette), true);

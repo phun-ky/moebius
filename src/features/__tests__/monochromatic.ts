@@ -1,12 +1,17 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
+import { MoebiusPaletteOptionsType } from '../../types';
 import { monochromatic } from '../monochromatic';
 
 describe('monochromatic', () => {
   it('should generate a monochromatic color palette', () => {
     const baseColor = '#003f5c';
-    const options = { numberOfColors: 5, bezier: true, randomOffset: false };
+    const options = {
+      numberOfColors: 5,
+      bezier: true,
+      randomOffset: false
+    } as MoebiusPaletteOptionsType;
     const monochromaticPalette = monochromatic(baseColor, options);
 
     assert.strictEqual(Array.isArray(monochromaticPalette), true);

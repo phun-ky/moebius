@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
+import { MoebiusPaletteOptionsType } from '../../types';
 import { split } from '../split';
 
 describe('split', () => {
@@ -19,7 +20,7 @@ describe('split', () => {
       numberOfColors: 5,
       colorScaleMode: 'lch',
       correctLightness: false
-    };
+    } as MoebiusPaletteOptionsType;
     const splitPalette = split(baseColor, options);
 
     assert(Array.isArray(splitPalette));

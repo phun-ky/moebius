@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
+import { MoebiusPaletteOptionsType } from '../../types';
 import { triadic } from '../triadic';
 
 describe('triadic', () => {
@@ -19,7 +20,7 @@ describe('triadic', () => {
       numberOfColors: 5,
       colorScaleMode: 'lch',
       correctLightness: false
-    };
+    } as MoebiusPaletteOptionsType;
     const triadicPalette = triadic(baseColor, options);
 
     assert(Array.isArray(triadicPalette));

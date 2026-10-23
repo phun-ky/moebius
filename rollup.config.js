@@ -52,6 +52,7 @@ export default [
       }),
       nodeResolve(),
       ts({
+        tsconfig: 'tsconfig.build.json',
         useTsconfigDeclarationDir: true,
         sourceMap: false,
         typescript
