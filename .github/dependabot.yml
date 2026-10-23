@@ -23,6 +23,8 @@ updates:
         update-types: ['version-update:semver-major']
     schedule:
       interval: 'weekly'
+    labels:
+      - 'mindless: 📦 dependencies'
     # Only propose versions that have been out for at least 2 weeks, so broken
     # or compromised releases are found first. Security updates are not delayed.
     cooldown:
