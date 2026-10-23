@@ -177,8 +177,13 @@ const colors: string[] = palettes.colors.luminanceShift;
 // Code written against older types passes a name, which is ignored
 const legacy = new MoebiusColor('#f5f5f5', '');
 const fromObject = new MoebiusColor({ h: 36, s: 1, l: 0.5 });
+// toObject() and toFloat() return the shape of the requested color space
+const hue: number = baseColor.toObject('hsl').h;
+const red: number = baseColor.toObject('rgb').r + baseColor.toObject().g;
+const lightness: number = baseColor.toFloat('hsl').l;
+const blue: number = baseColor.toFloat().b;
 
-console.log(name, colors, legacy.hex, fromObject.hex);
+console.log(name, colors, legacy.hex, fromObject.hex, hue, red, lightness, blue);
 `
     );
 

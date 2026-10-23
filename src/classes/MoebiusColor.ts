@@ -75,6 +75,9 @@ export class MoebiusColor implements MoebiusColorInterface {
    * @param {string} type - The color space type (e.g., 'rgb' or 'hsl').
    * @returns {MoebiusRGBObjectType | MoebiusHSLObjectType} The color object in the specified color space.
    */
+  toObject(type: 'hsl'): MoebiusHSLObjectType;
+  toObject(type?: 'rgb'): MoebiusRGBObjectType;
+  toObject(type?: string): MoebiusRGBObjectType | MoebiusHSLObjectType;
   toObject(type?: string): MoebiusRGBObjectType | MoebiusHSLObjectType {
     return CONVERTERS.toObject(this.color, type);
   }
@@ -83,6 +86,9 @@ export class MoebiusColor implements MoebiusColorInterface {
    * @param {string} type - The color space type (e.g., 'rgb' or 'hsl').
    * @returns {MoebiusRGBObjectType | MoebiusHSLObjectType} The floating-point representation of the color in the specified color space.
    */
+  toFloat(type: 'hsl'): MoebiusHSLObjectType;
+  toFloat(type?: 'rgb'): MoebiusRGBObjectType;
+  toFloat(type?: string): MoebiusRGBObjectType | MoebiusHSLObjectType;
   toFloat(type?: string): MoebiusRGBObjectType | MoebiusHSLObjectType {
     return CONVERTERS.toFloat(this.color, type);
   }
