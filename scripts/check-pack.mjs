@@ -17,6 +17,8 @@ import { tmpdir } from 'node:os';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { bundledPackages } from './bundled-packages.mjs';
+
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const BIN = join(ROOT, 'node_modules', '.bin');
 /** Run a linter; return its output if it fails. */
@@ -139,6 +141,22 @@ try {
           );
         }
       });
+    }
+
+    // Every bundled package needs its licence in THIRD_PARTY_LICENSES.txt
+    const licensesFile = join(installed, 'dist', 'THIRD_PARTY_LICENSES.txt');
+    const licenses = existsSync(licensesFile)
+      ? readFileSync(licensesFile, 'utf8')
+      : '';
+
+    for (const { name, version } of bundledPackages()) {
+      const entry = licenses.split(`${name}@${version}\nLicense: `)[1];
+
+      if (!entry || !/copyright|permission/i.test(entry.slice(0, 2000))) {
+        problems.push(
+          `${name}@${version} is bundled, but its licence is not in dist/THIRD_PARTY_LICENSES.txt`
+        );
+      }
     }
 
     // Import the package and build a palette with it
