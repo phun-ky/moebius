@@ -63,8 +63,10 @@
   "files": [
     "/dist/moebius.js",
     "/dist/moebius.js.map",
-    "/dist/moebius.d.ts"
+    "/dist/moebius.d.ts",
+    "/CHANGELOG.md"
   ],
+  "sideEffects": false,
   "scripts": {
     "build": "npm run clean && npm run rollup",
     "check:pack": "node scripts/check-pack.mjs",
