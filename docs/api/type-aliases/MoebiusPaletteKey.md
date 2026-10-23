@@ -6,4 +6,4 @@
 type MoebiusPaletteKey = (typeof paletteKeys)[number];
 ```
 
-Defined in: [types/index.ts:311](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L311)
+Defined in: [types/index.ts:318](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L318)

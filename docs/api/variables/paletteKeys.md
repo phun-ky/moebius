@@ -17,4 +17,4 @@ const paletteKeys: readonly [
 ];
 ```
 
-Defined in: [types/index.ts:298](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L298)
+Defined in: [types/index.ts:305](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L305)

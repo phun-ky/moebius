@@ -10,7 +10,7 @@ type MoebiusRGBObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:205](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L205)
+Defined in: [types/index.ts:212](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L212)
 
 RGB color object.
 
@@ -22,7 +22,7 @@ RGB color object.
 b: number;
 ```
 
-Defined in: [types/index.ts:205](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L205)
+Defined in: [types/index.ts:212](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L212)
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: [types/index.ts:205](https://github.com/phun-ky/moebius/blob/main/sr
 g: number;
 ```
 
-Defined in: [types/index.ts:205](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L205)
+Defined in: [types/index.ts:212](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L212)
 
 ---
 
@@ -42,4 +42,4 @@ Defined in: [types/index.ts:205](https://github.com/phun-ky/moebius/blob/main/sr
 r: number;
 ```
 
-Defined in: [types/index.ts:205](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L205)
+Defined in: [types/index.ts:212](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L212)

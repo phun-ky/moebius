@@ -10,7 +10,7 @@ type MoebiusXYZObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:240](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L240)
+Defined in: [types/index.ts:247](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L247)
 
 XYZ color object.
 
@@ -22,7 +22,7 @@ XYZ color object.
 x: number;
 ```
 
-Defined in: [types/index.ts:240](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L240)
+Defined in: [types/index.ts:247](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L247)
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: [types/index.ts:240](https://github.com/phun-ky/moebius/blob/main/sr
 y: number;
 ```
 
-Defined in: [types/index.ts:240](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L240)
+Defined in: [types/index.ts:247](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L247)
 
 ---
 
@@ -42,4 +42,4 @@ Defined in: [types/index.ts:240](https://github.com/phun-ky/moebius/blob/main/sr
 z: number;
 ```
 
-Defined in: [types/index.ts:240](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L240)
+Defined in: [types/index.ts:247](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L247)

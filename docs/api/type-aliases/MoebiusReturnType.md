@@ -4,7 +4,10 @@
 
 ```ts
 type MoebiusReturnType = Promise<{
-  MoebiusColor: typeof MoebiusColor;
+  MoebiusColor: (
+    color: MoebiusChromaColorInputType,
+    name?: string
+  ) => MoebiusColor;
   MoebiusPalettes: typeof MoebiusPalettes;
   MoebiusSVGHelper: typeof MoebiusSVGHelper;
 }>;

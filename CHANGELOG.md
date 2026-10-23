@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.2.2](https://github.com/phun-ky/moebius/compare/2.2.1...2.2.2) (2026-10-23)
+
+### Tasks
+
+* 🤖 bump the minor-and-patch group across 1 directory with 7 updates ([43b1129](https://github.com/phun-ky/moebius/commit/43b11296a135b3c697015f1845ad4ddc574519d5))
+* 🤖 remove unused devDependencies, delay Dependabot updates ([26c82d3](https://github.com/phun-ky/moebius/commit/26c82d39d68de63da089c83054457a364181980b)), closes [#187](https://github.com/phun-ky/moebius/issues/187)
+* 🤖 stay on jsdom 29 in Dependabot ([14a5a98](https://github.com/phun-ky/moebius/commit/14a5a98f254c9908239b79d5198d02c55f8ff589)), references [#187](https://github.com/phun-ky/moebius/issues/187)
+
+### Bug
+
+* 🐛 type MoebiusColor from Moebius() as taking only the color ([afef776](https://github.com/phun-ky/moebius/commit/afef7769be9a5f1f91e0b38ad9565c85c8be95eb)), closes [#195](https://github.com/phun-ky/moebius/issues/195)
+* 🐛 type toObject() and toFloat() by the requested color space ([7f3c3c5](https://github.com/phun-ky/moebius/commit/7f3c3c572304f55667cc793114fb790903c3873f)), closes [#196](https://github.com/phun-ky/moebius/issues/196)
+
 ## [2.2.1](https://github.com/phun-ky/moebius/compare/2.2.0...2.2.1) (2026-10-23)
 
 ### Bug

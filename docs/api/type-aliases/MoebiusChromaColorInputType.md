@@ -11,6 +11,6 @@ type MoebiusChromaColorInputType =
   | string;
 ```
 
-Defined in: [types/index.ts:273](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L273)
+Defined in: [types/index.ts:280](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L280)
 
 Input types accepted by Chroma or Moebius logic.

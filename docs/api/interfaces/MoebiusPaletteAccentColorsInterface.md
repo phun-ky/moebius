@@ -2,7 +2,7 @@
 
 # Interface: MoebiusPaletteAccentColorsInterface
 
-Defined in: [types/index.ts:129](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L129)
+Defined in: [types/index.ts:136](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L136)
 
 Represents a palette of accent colors with different schemes.
 
@@ -14,7 +14,7 @@ Represents a palette of accent colors with different schemes.
 analogous: `#${string}`[][];
 ```
 
-Defined in: [types/index.ts:139](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L139)
+Defined in: [types/index.ts:146](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L146)
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: [types/index.ts:139](https://github.com/phun-ky/moebius/blob/main/sr
 complement: `#${string}`[][];
 ```
 
-Defined in: [types/index.ts:133](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L133)
+Defined in: [types/index.ts:140](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L140)
 
 ---
 
@@ -34,7 +34,7 @@ Defined in: [types/index.ts:133](https://github.com/phun-ky/moebius/blob/main/sr
 hexadic: `#${string}`[][];
 ```
 
-Defined in: [types/index.ts:138](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L138)
+Defined in: [types/index.ts:145](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L145)
 
 ---
 
@@ -44,7 +44,7 @@ Defined in: [types/index.ts:138](https://github.com/phun-ky/moebius/blob/main/sr
 interpolate: `#${string}`[][];
 ```
 
-Defined in: [types/index.ts:130](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L130)
+Defined in: [types/index.ts:137](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L137)
 
 ---
 
@@ -54,7 +54,7 @@ Defined in: [types/index.ts:130](https://github.com/phun-ky/moebius/blob/main/sr
 luminanceShift: `#${string}`[][];
 ```
 
-Defined in: [types/index.ts:131](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L131)
+Defined in: [types/index.ts:138](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L138)
 
 ---
 
@@ -64,7 +64,7 @@ Defined in: [types/index.ts:131](https://github.com/phun-ky/moebius/blob/main/sr
 monochromatic: `#${string}`[][];
 ```
 
-Defined in: [types/index.ts:132](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L132)
+Defined in: [types/index.ts:139](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L139)
 
 ---
 
@@ -74,7 +74,7 @@ Defined in: [types/index.ts:132](https://github.com/phun-ky/moebius/blob/main/sr
 pentadic: `#${string}`[][];
 ```
 
-Defined in: [types/index.ts:137](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L137)
+Defined in: [types/index.ts:144](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L144)
 
 ---
 
@@ -84,7 +84,7 @@ Defined in: [types/index.ts:137](https://github.com/phun-ky/moebius/blob/main/sr
 split: `#${string}`[][];
 ```
 
-Defined in: [types/index.ts:134](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L134)
+Defined in: [types/index.ts:141](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L141)
 
 ---
 
@@ -94,7 +94,7 @@ Defined in: [types/index.ts:134](https://github.com/phun-ky/moebius/blob/main/sr
 tetradic: `#${string}`[][];
 ```
 
-Defined in: [types/index.ts:136](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L136)
+Defined in: [types/index.ts:143](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L143)
 
 ---
 
@@ -104,4 +104,4 @@ Defined in: [types/index.ts:136](https://github.com/phun-ky/moebius/blob/main/sr
 triadic: `#${string}`[][];
 ```
 
-Defined in: [types/index.ts:135](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L135)
+Defined in: [types/index.ts:142](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L142)

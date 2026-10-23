@@ -2,7 +2,7 @@
 
 # Interface: NearestColorColorSpecInterface
 
-Defined in: [types/index.ts:255](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L255)
+Defined in: [types/index.ts:262](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L262)
 
 A named color + metadata for nearest-color matching source.
 
@@ -14,7 +14,7 @@ A named color + metadata for nearest-color matching source.
 name: string;
 ```
 
-Defined in: [types/index.ts:256](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L256)
+Defined in: [types/index.ts:263](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L263)
 
 ---
 
@@ -24,7 +24,7 @@ Defined in: [types/index.ts:256](https://github.com/phun-ky/moebius/blob/main/sr
 rgb: MoebiusRGBObjectType;
 ```
 
-Defined in: [types/index.ts:258](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L258)
+Defined in: [types/index.ts:265](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L265)
 
 ---
 
@@ -34,4 +34,4 @@ Defined in: [types/index.ts:258](https://github.com/phun-ky/moebius/blob/main/sr
 source: string;
 ```
 
-Defined in: [types/index.ts:257](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L257)
+Defined in: [types/index.ts:264](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L264)

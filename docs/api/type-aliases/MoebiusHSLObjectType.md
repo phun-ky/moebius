@@ -10,7 +10,7 @@ type MoebiusHSLObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:210](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L210)
+Defined in: [types/index.ts:217](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L217)
 
 HSL color object.
 
@@ -22,7 +22,7 @@ HSL color object.
 h: number;
 ```
 
-Defined in: [types/index.ts:210](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L210)
+Defined in: [types/index.ts:217](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L217)
 
 ---
 
@@ -32,7 +32,7 @@ Defined in: [types/index.ts:210](https://github.com/phun-ky/moebius/blob/main/sr
 l: number;
 ```
 
-Defined in: [types/index.ts:210](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L210)
+Defined in: [types/index.ts:217](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L217)
 
 ---
 
@@ -42,4 +42,4 @@ Defined in: [types/index.ts:210](https://github.com/phun-ky/moebius/blob/main/sr
 s: number;
 ```
 
-Defined in: [types/index.ts:210](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L210)
+Defined in: [types/index.ts:217](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L217)

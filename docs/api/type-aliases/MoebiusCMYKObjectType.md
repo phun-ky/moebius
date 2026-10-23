@@ -11,7 +11,7 @@ type MoebiusCMYKObjectType = {
 };
 ```
 
-Defined in: [types/index.ts:245](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L245)
+Defined in: [types/index.ts:252](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L252)
 
 CMYK color object.
 
@@ -23,7 +23,7 @@ CMYK color object.
 c: number;
 ```
 
-Defined in: [types/index.ts:246](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L246)
+Defined in: [types/index.ts:253](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L253)
 
 ---
 
@@ -33,7 +33,7 @@ Defined in: [types/index.ts:246](https://github.com/phun-ky/moebius/blob/main/sr
 k: number;
 ```
 
-Defined in: [types/index.ts:249](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L249)
+Defined in: [types/index.ts:256](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L256)
 
 ---
 
@@ -43,7 +43,7 @@ Defined in: [types/index.ts:249](https://github.com/phun-ky/moebius/blob/main/sr
 m: number;
 ```
 
-Defined in: [types/index.ts:247](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L247)
+Defined in: [types/index.ts:254](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L254)
 
 ---
 
@@ -53,4 +53,4 @@ Defined in: [types/index.ts:247](https://github.com/phun-ky/moebius/blob/main/sr
 y: number;
 ```
 
-Defined in: [types/index.ts:248](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L248)
+Defined in: [types/index.ts:255](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L255)

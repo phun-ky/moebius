@@ -16,7 +16,7 @@ type MoebiusPaletteDefaultOptionsType = {
 };
 ```
 
-Defined in: [types/index.ts:163](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L163)
+Defined in: [types/index.ts:170](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L170)
 
 Represents default options for generating a color palette.
 
@@ -28,7 +28,7 @@ Represents default options for generating a color palette.
 bezier: boolean;
 ```
 
-Defined in: [types/index.ts:166](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L166)
+Defined in: [types/index.ts:173](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L173)
 
 ---
 
@@ -38,7 +38,7 @@ Defined in: [types/index.ts:166](https://github.com/phun-ky/moebius/blob/main/sr
 colorScaleMode: MoebiusInterpolationMode;
 ```
 
-Defined in: [types/index.ts:170](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L170)
+Defined in: [types/index.ts:177](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L177)
 
 ---
 
@@ -48,7 +48,7 @@ Defined in: [types/index.ts:170](https://github.com/phun-ky/moebius/blob/main/sr
 correctLightness: boolean;
 ```
 
-Defined in: [types/index.ts:168](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L168)
+Defined in: [types/index.ts:175](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L175)
 
 ---
 
@@ -58,7 +58,7 @@ Defined in: [types/index.ts:168](https://github.com/phun-ky/moebius/blob/main/sr
 optional divergentColor?: MoebiusColorValueHexType;
 ```
 
-Defined in: [types/index.ts:164](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L164)
+Defined in: [types/index.ts:171](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L171)
 
 ---
 
@@ -68,7 +68,7 @@ Defined in: [types/index.ts:164](https://github.com/phun-ky/moebius/blob/main/sr
 diverging: boolean;
 ```
 
-Defined in: [types/index.ts:165](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L165)
+Defined in: [types/index.ts:172](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L172)
 
 ---
 
@@ -78,7 +78,7 @@ Defined in: [types/index.ts:165](https://github.com/phun-ky/moebius/blob/main/sr
 noDuplicates: boolean;
 ```
 
-Defined in: [types/index.ts:169](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L169)
+Defined in: [types/index.ts:176](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L176)
 
 ---
 
@@ -88,7 +88,7 @@ Defined in: [types/index.ts:169](https://github.com/phun-ky/moebius/blob/main/sr
 optional numberOfColors?: number;
 ```
 
-Defined in: [types/index.ts:172](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L172)
+Defined in: [types/index.ts:179](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L179)
 
 ---
 
@@ -98,7 +98,7 @@ Defined in: [types/index.ts:172](https://github.com/phun-ky/moebius/blob/main/sr
 randomOffset: boolean;
 ```
 
-Defined in: [types/index.ts:167](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L167)
+Defined in: [types/index.ts:174](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L174)
 
 ---
 
@@ -108,4 +108,4 @@ Defined in: [types/index.ts:167](https://github.com/phun-ky/moebius/blob/main/sr
 reverseDirection: boolean;
 ```
 
-Defined in: [types/index.ts:171](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L171)
+Defined in: [types/index.ts:178](https://github.com/phun-ky/moebius/blob/main/src/types/index.ts#L178)
