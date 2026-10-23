@@ -9,6 +9,7 @@
 - [`möbius`](#möbius)
   - [About](#about)
   - [Features](#features)
+  - [Requirements](#requirements)
   - [Documentation](#documentation)
   - [Try it online](#try-it-online)
   - [Contributing](#contributing)
@@ -30,6 +31,10 @@ Möbius is a color palette generation tool designed for developers and designers
 - Randomized or lightness-corrected options
 - Diverging palette support
 - TypeScript-friendly API
+
+## Requirements
+
+Node.js 22.9.0 or newer when used in Node.js.
 
 ## Documentation
 

@@ -14,8 +14,8 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - 'rollup.config.js'
-      - 'tsconfig.json'
-      - '.npmrc'
+      - 'tsconfig*.json'
+      - 'typedoc.json'
       - 'eslint.config.mjs'
       - '.prettierrc'
       - '**/*.md'
@@ -29,8 +29,8 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - 'rollup.config.js'
-      - 'tsconfig.json'
-      - '.npmrc'
+      - 'tsconfig*.json'
+      - 'typedoc.json'
       - 'eslint.config.mjs'
       - '.prettierrc'
       - '**/*.md'
@@ -43,22 +43,22 @@ jobs:
   # This workflow contains a single job called "check"
   check:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0 # Checkout all branches and tags
       - name: Setup Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: '>=22.0.0'
+          node-version: 24
       - name: Install dependencies
         run: | # Install and link dependencies
-          npm i
+          npm ci
       - name: Lint
         run: npm run style:lint
       - name: Build # Build all packages
@@ -66,7 +66,7 @@ jobs:
       - name: Test
         run: npm run test:ci
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v7
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: phun-ky/moebius
@@ -74,9 +74,9 @@ jobs:
     name: Notify failed check
     needs: check
     if: failure()
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: jayqi/failed-build-issue-action@v1.2
+      - uses: drivendataorg/failed-build-issue-action@v1
         with:
           github-token: ${{ secrets.GH_TOKEN }}
           label-name: 'problems: 💔 build failed'

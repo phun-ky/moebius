@@ -6,13 +6,13 @@ on:
     types: [opened]
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       issues: write
       pull-requests: write
     steps:
     - name: 'Auto-assign issue'
-      uses: pozil/auto-assign-issue@v1
+      uses: pozil/auto-assign-issue@v4.1.0
       with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           assignees: phun-ky
