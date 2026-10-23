@@ -5,25 +5,15 @@
 // `npm run build`.
 // Usage: node scripts/sbom.mjs > moebius.cdx.json
 import { execFileSync } from 'node:child_process';
-import { readFileSync } from 'node:fs';
 
-const DIST = new URL('../dist/', import.meta.url);
-const map = JSON.parse(readFileSync(new URL('moebius.js.map', DIST), 'utf8'));
+import { bundledPackages } from './bundled-packages.mjs';
+
 /**
  * The bundled packages as name@version, read from the package each source map
  * entry points into, so a nested copy of the same name isn't counted
  */
 const bundled = new Set(
-  map.sources
-    .map((source) => source.match(/^(.*node_modules\/((?:@[^/]+\/)?[^/]+))\//))
-    .filter(Boolean)
-    .map(([, dir, name]) => {
-      const { version } = JSON.parse(
-        readFileSync(new URL(`${dir}/package.json`, DIST), 'utf8')
-      );
-
-      return `${name}@${version}`;
-    })
+  bundledPackages().map(({ name, version }) => `${name}@${version}`)
 );
 const id = (component) => `${component.name}@${component.version}`;
 

@@ -64,11 +64,12 @@
     "/dist/moebius.js",
     "/dist/moebius.js.map",
     "/dist/moebius.d.ts",
+    "/dist/THIRD_PARTY_LICENSES.txt",
     "/CHANGELOG.md"
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "npm run clean && npm run rollup",
+    "build": "npm run clean && npm run rollup && node scripts/third-party-licenses.mjs",
     "check:pack": "node scripts/check-pack.mjs",
     "clean": "rm -rf dist dts",
     "commit": "npx git-cz",

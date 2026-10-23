@@ -13,6 +13,8 @@ const banner = `/**
 * @author ${pack.author}
 * @version ${pack.version}
 * @license
+* Bundled third-party packages and their licences: THIRD_PARTY_LICENSES.txt
+*
 * Copyright (c) 2023 Alexander Vassbotn Røyne-Helgesen
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
