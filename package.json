@@ -77,6 +77,7 @@
     "docs:preview": "vitepress preview docs",
     "release": "release-it",
     "release:dry-run": ".github/scripts/should-release.sh && release-it --ci --dry-run --github.release=false --no-git.requireCleanWorkingDir --no-git.requireUpstream",
+    "prepare": "git config core.hooksPath .githooks || true",
     "rollup": "rollup -c",
     "prewatch": "npm run clean",
     "watch": "rollup -c -w",

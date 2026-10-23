@@ -24,6 +24,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
     - [Suggesting Enhancements](#suggesting-enhancements)
       - [Before Submitting an Enhancement](#before-submitting-an-enhancement)
       - [How Do I Submit a Good Enhancement Suggestion?](#how-do-i-submit-a-good-enhancement-suggestion)
+    - [Developer Certificate of Origin](#developer-certificate-of-origin)
   - [Attribution](#attribution)
 
 ## Code of Conduct
@@ -66,7 +67,7 @@ Depending on how large the project is, you may want to outsource the questioning
 
 > ### Legal Notice
 >
-> When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project license.
+> When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project license. You confirm this on every commit by signing it off under the [Developer Certificate of Origin](#developer-certificate-of-origin).
 
 ### Reporting Bugs
 
@@ -128,6 +129,20 @@ Enhancement suggestions are tracked as [GitHub issues](https://github.com/phun-k
 - **Explain why this enhancement would be useful** to most @phun-ky/moebius users. You may also want to point out the other projects that solved it better and which could serve as inspiration.
 
 <!-- You might want to create an issue template for enhancement suggestions that can be used as a guide and that defines the structure of the information to be included. If you do so, reference it here in the description. -->
+
+### Developer Certificate of Origin
+
+Every commit must be signed off under the [Developer Certificate of Origin](https://developercertificate.org/) (DCO): a statement that you wrote the change, or otherwise have the right to submit it under the project's license. You agree to it by adding a `Signed-off-by` line with your name and email to the commit message:
+
+```text
+Signed-off-by: Your Name <you@example.com>
+```
+
+- **Per commit:** `git commit -s` adds the line for you.
+- **Always:** `npm install` sets `core.hooksPath` to `.githooks`, and the hook in `.githooks/prepare-commit-msg` adds the line to every commit, including those made by `npm run commit` or your editor.
+- **Forgot?** Sign off every commit on your branch and push again: `git rebase --signoff main`, then `git push --force-with-lease`.
+
+The DCO check on every pull request fails if a commit isn't signed off. Commits by Dependabot are exempt.
 
 ## Attribution
 
