@@ -19,4 +19,25 @@ describe('luminanceShift', () => {
       assert.strictEqual(color.startsWith('#'), true);
     });
   });
+
+  it('should reverse a diverging palette with reverseDirection', () => {
+    const options = { numberOfColors: 7, diverging: true };
+    const palette = luminanceShift(['#003f5c'], ['#ff9900'], options);
+    const reversed = luminanceShift(['#003f5c'], ['#ff9900'], {
+      ...options,
+      reverseDirection: true
+    });
+
+    assert.deepStrictEqual(reversed, [...palette].reverse());
+    assert.strictEqual(reversed[3], '#f5f5f5');
+  });
+
+  it('should not change a non-diverging palette with reverseDirection', () => {
+    const options = { numberOfColors: 7 };
+
+    assert.deepStrictEqual(
+      luminanceShift(['#003f5c'], [], { ...options, reverseDirection: true }),
+      luminanceShift(['#003f5c'], [], options)
+    );
+  });
 });

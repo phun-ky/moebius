@@ -110,6 +110,7 @@ const luminanceShiftAutoColors = (
  *   @param {boolean} [options.bezier=false] - Whether to use bezier interpolation.
  *   @param {string} [options.divergentColor='#f5f5f5'] - The divergent color for a diverging palette.
  *   @param {boolean} [options.correctLightness=true] - Whether to correct lightness in the generated palette.
+ *   @param {boolean} [options.reverseDirection=false] - Whether to reverse a diverging palette, so it starts from the diverging colors.
  * @returns {MoebiusColorValueHexType[]} - Array of hex color values representing the luminance shift palette.
  *
  * @example
@@ -131,7 +132,8 @@ export const luminanceShift = (
     colorScaleMode = 'rgb',
     bezier = false,
     divergentColor = '#f5f5f5',
-    correctLightness = true
+    correctLightness = true,
+    reverseDirection = false
   } = options || {};
 
   divergingColors =
@@ -219,5 +221,5 @@ export const luminanceShift = (
     //).concat(stepsRight.slice(1).reverse());
     .concat(stepsRight.reverse());
 
-  return steps;
+  return diverging && reverseDirection ? steps.reverse() : steps;
 };

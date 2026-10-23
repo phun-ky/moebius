@@ -23,6 +23,10 @@ const defaultOptions = {
 };
 ```
 
+`reverseDirection: true` makes the monochromatic palette go lighter instead of
+darker and, with `diverging: true`, reverses the luminance shift palette so it
+starts from the secondary color.
+
 You initiate `MoebiusPalette` like this:
 
 ```ts
