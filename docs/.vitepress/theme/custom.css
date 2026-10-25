@@ -22,7 +22,15 @@
   --vp-c-bg-soft: var(--ph-color-well-background);
   --vp-button-brand-text: var(--ph-color-text-brand);
   --vp-sidebar-width: 352px;
-  --vp-layout-max-width: 1920px;
+}
+
+/* VitePress lays out the sidebar and content from 1440px on, assuming the
+   viewport is at least as wide as the layout; a wider layout below 1920px
+   squeezes the sidebar to a sliver */
+@media (min-width: 1920px) {
+  :root {
+    --vp-layout-max-width: 1920px;
+  }
 }
 
 :root.theme--light {
