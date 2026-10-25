@@ -79,7 +79,7 @@ repository:
         predicate-uri: https://cyclonedx.org/bom
         location: https://github.com/phun-ky/moebius/releases/tag/{version}
         comment: |
-          A CycloneDX SBOM of the libraries bundled into dist,
+          A CycloneDX SBOM of the runtime dependencies,
           moebius-{version}.cdx.json, is attached to each GitHub release.
   security:
     assessments:
@@ -89,7 +89,7 @@ repository:
         comment: |
           What users can and can't rely on, checked against the code and the
           published package: network access, input checks, dynamic code,
-          randomness and the bundled libraries.
+          randomness and the runtime dependencies.
     tools:
       - name: CodeQL
         type: SAST
@@ -126,9 +126,8 @@ repository:
         results: {}
         comment: |
           Fails pull requests that add a dependency with a known high or
-          critical vulnerability, in runtime and development dependencies,
-          which covers the libraries 2.x bundles. npm audit gates every
-          release on declared runtime dependencies.
+          critical vulnerability, in runtime and development dependencies.
+          npm audit gates every release on the runtime dependencies.
       - name: OpenSSF Scorecard
         type: other
         rulesets:
