@@ -91,8 +91,8 @@
     "test": "npm run test:unit",
     "typecheck": "tsc --noEmit",
     "pretest:ci": "rm -rf coverage && mkdir -p coverage",
-    "test:ci": "glob-bin -c \"node --import tsx --import global-jsdom/register --enable-source-maps --test --no-warnings --experimental-test-coverage --test-coverage-exclude='src/**/__tests__/**' --test-coverage-exclude='src/types/**' --test-coverage-exclude='node_modules/**' --test-coverage-lines=94 --test-coverage-branches=92 --test-coverage-functions=99 --test-reporter=cobertura --test-reporter-destination=coverage/cobertura-coverage.xml --test-reporter=spec --test-reporter-destination=stdout\" \"./src/**/__tests__/**/*.[jt]s\"",
-    "test:unit": "glob-bin -c \"node --import tsx --import global-jsdom/register --test --no-warnings\" \"./src/**/__tests__/**/*.[jt]s\""
+    "test:ci": "node --import tsx --import global-jsdom/register --enable-source-maps --test --no-warnings --experimental-test-coverage --test-coverage-include='src/**' --test-coverage-exclude='src/**/__tests__/**' --test-coverage-exclude='src/types/**' --test-coverage-lines=94 --test-coverage-branches=92 --test-coverage-functions=99 --test-reporter=cobertura --test-reporter-destination=coverage/cobertura-coverage.xml --test-reporter=spec --test-reporter-destination=stdout 'src/**/__tests__/**/*.[jt]s'",
+    "test:unit": "node --import tsx --import global-jsdom/register --test --no-warnings 'src/**/__tests__/**/*.[jt]s'"
   },
   "config": {
     "commitizen": {
@@ -114,7 +114,6 @@
     "eslint-config-phun-ky": "^2.0.10",
     "fast-check": "^4.10.2",
     "git-cz": "^4.9.0",
-    "glob-bin": "^1.0.0",
     "global-jsdom": "^29.0.0",
     "globals": "^17.13.0",
     "jsdom": "^29.1.0",
@@ -145,6 +144,15 @@
   "overrides": {
     "get-uri": {
       "basic-ftp": "^6.2.3"
+    },
+    "micromark-extension-math": {
+      "katex": "^0.18.2"
+    },
+    "release-it": {
+      "undici": "^7.30.1"
+    },
+    "vitepress": {
+      "vite": "^6.4.5"
     }
   },
   "publishConfig": {
