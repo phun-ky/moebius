@@ -218,7 +218,7 @@ The maintainer merges pull requests, and releases follow automatically from GitH
 2. If so, release-it picks the version from the commits, updates the changelog, builds and checks the package, and publishes it to npm with signed provenance.
 3. The release commit and tag go to `main`, and a GitHub release is created with a software bill of materials attached.
 
-Every merge to `main` also rebuilds and deploys the documentation site. `npm run release:dry-run` shows what a merge would release.
+Breaking changes for the next major go into pull requests against its `release/<major>` branch (for example `release/3.0`), which reaches `main` in one merge, so the major is released complete. Every merge to `main` also rebuilds and deploys the documentation site. `npm run release:dry-run` shows what a merge would release.
 
 ## Attribution
 
