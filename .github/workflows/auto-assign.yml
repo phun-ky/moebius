@@ -9,6 +9,8 @@ permissions:
 
 jobs:
   run:
+    # Dependabot's pull_request token is read-only, so it cannot assign
+    if: github.actor != 'dependabot[bot]'
     runs-on: ubuntu-24.04
     permissions:
       issues: write

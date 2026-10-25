@@ -21,9 +21,11 @@ describe('MoebiusPaletteColors', () => {
     const palette = new MoebiusPaletteColors(colors);
 
     assert.strictEqual(palette instanceof MoebiusPaletteColors, true);
-    Object.keys(colors).forEach((paletteType) => {
-      assert.deepStrictEqual(palette[paletteType], colors[paletteType]);
-    });
+    (Object.keys(colors) as (keyof MoebiusPaletteColorsInterface)[]).forEach(
+      (paletteType) => {
+        assert.deepStrictEqual(palette[paletteType], colors[paletteType]);
+      }
+    );
   });
 
   it('should convert palettes to a flat array', () => {

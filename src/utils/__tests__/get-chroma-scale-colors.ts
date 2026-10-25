@@ -72,7 +72,7 @@ describe('getChromaScaleColors', () => {
   });
 
   it('should throw when an empty array of input colors is given', () => {
-    const inputColors = [];
+    const inputColors: MoebiusColorValueHexType[] = [];
     const result = getChromaScaleColors(
       inputColors as MoebiusColorValueHexType[]
     );

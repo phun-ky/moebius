@@ -11,7 +11,8 @@ on:
     paths:
       - 'src/**'
       - 'rollup.config.js'
-      - 'tsconfig.json'
+      - 'tsconfig.build.json'
+      - 'scripts/**'
       - 'package.json'
       - 'package-lock.json'
       - 'README.md'
@@ -47,17 +48,13 @@ jobs:
           node-version: 24
       - name: Install dependencies
         run: npm ci
-      - name: Audit runtime dependencies # No release with a known high or critical vulnerability
-        run: npm audit --omit=dev --audit-level=high
       - name: Check for changes to release
         id: guard
         run: .github/scripts/should-release.sh
-      - name: Check the package # Fail before anything is published
+      - name: Audit runtime dependencies # No release with a known high or critical vulnerability
         if: steps.guard.outputs.release == 'true'
-        run: |
-          npm run build
-          npm run check:pack
-      - name: 'Release' # Interesting step
+        run: npm audit --omit=dev --audit-level=high
+      - name: Release # Builds and runs check:pack after the version bump, then publishes
         if: steps.guard.outputs.release == 'true'
         run: |
           git config user.name "$ACTOR"
@@ -80,10 +77,13 @@ jobs:
     needs: publish
     if: failure()
     runs-on: ubuntu-24.04
+    # GITHUB_TOKEN is enough to open an issue, and unlike GH_TOKEN it isn't
+    # empty on Dependabot PRs
     permissions:
       issues: write
     steps:
       - uses: drivendataorg/failed-build-issue-action@940568ce50eeef3f31a920614cefcc6102d2f930 # v1.3.0
         with:
-          github-token: ${{ secrets.GH_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           label-name: 'problems: 💔 build failed'
+          create-label: false
