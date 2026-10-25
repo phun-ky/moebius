@@ -392,21 +392,6 @@ html.ph body {
   max-width: 50%;
   width: 100%;
 }
-.ph .ph.hero .ph.reel {
-  height: 200px;
-  filter: grayscale(0.9);
-}
-@media screen and (min-width: 1024px) {
-  .ph .ph.hero .ph.reel {
-    height: auto;
-    grid-area: reel;
-  }
-}
-.ph .ph.reel {
-  background-image: url('https://phun-ky.net/img/speccer/speccer-showcase.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 @media (min-width: 768px) {
   .ph .DocSearch.DocSearch-Button {
