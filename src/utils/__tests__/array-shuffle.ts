@@ -25,7 +25,7 @@ describe('arrayShuffle', () => {
   });
 
   it('should handle an empty array and return an empty array', () => {
-    const originalArray = [];
+    const originalArray: number[] = [];
     const shuffledArray = arrayShuffle(originalArray);
 
     assert.ok(Array.isArray(shuffledArray));

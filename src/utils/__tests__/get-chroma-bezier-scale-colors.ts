@@ -72,7 +72,7 @@ describe('getChromaBezierScaleColors', () => {
   });
 
   it('should handle an empty array of input colors and return an empty array', () => {
-    const inputColors = [];
+    const inputColors: MoebiusColorValueHexType[] = [];
     const result = getChromaBezierScaleColors(
       inputColors as MoebiusColorValueHexType[]
     );
