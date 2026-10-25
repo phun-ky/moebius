@@ -11,13 +11,18 @@
 # $GITHUB_OUTPUT.
 set -euo pipefail
 
-# Everything that ends up in the package. dist/ is built from src/ with rollup,
-# which bundles the runtime dependencies, so the lockfile counts too.
+# Everything that ends up in the package. dist/ is built from src/ with rollup
+# and the build scripts. Rollup bundles the runtime dependencies, so the
+# lockfile counts too.
 published_files=(
   src
   ':(exclude,glob)src/**/__tests__/**'
   rollup.config.js
-  tsconfig.json
+  tsconfig.build.json
+  scripts/fix-declaration-imports.mjs
+  scripts/third-party-licenses.mjs
+  scripts/bundled-packages.mjs
+  scripts/licenses
   package.json
   package-lock.json
   README.md
