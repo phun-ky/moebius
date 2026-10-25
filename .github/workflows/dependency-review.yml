@@ -23,6 +23,4 @@ jobs:
           # "Accepted exceptions". Remove an entry once a fix is reachable.
           # GHSA-vfj7-8cjw-p6xm: braces, development only (putout > fast-glob >
           # micromatch); every version is affected, no fix exists
-          # GHSA-fx2h-pf6j-xcff, GHSA-587h-7wmj-h5pm: vite, development only
-          # (vitepress 1.6.4, the latest stable, pins vite 5); Windows dev server
-          allow-ghsas: GHSA-vfj7-8cjw-p6xm, GHSA-fx2h-pf6j-xcff, GHSA-587h-7wmj-h5pm
+          allow-ghsas: GHSA-vfj7-8cjw-p6xm
