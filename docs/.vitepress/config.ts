@@ -16,6 +16,17 @@ import lightTheme from './shiki/accessible-aa-light-shiki.json' with { type: 'js
 export default defineConfig({
   lang: 'en-GB',
   head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo/logo.svg' }],
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/logo/favicon-32.png'
+      }
+    ],
+    ['link', { rel: 'apple-touch-icon', href: '/logo/apple-touch-icon.png' }],
     ['meta', { property: 'og:url', content: 'https://möbius.dev' }],
     ['meta', { property: 'og:type', content: 'website' }],
     [
@@ -47,8 +58,7 @@ export default defineConfig({
       'meta',
       {
         property: 'og:image',
-        content:
-          'https://repository-images.githubusercontent.com/711797916/65ed9057-08fb-4045-bf62-e9595acf19ee'
+        content: 'https://xn--mbius-jua.dev/social.png'
       }
     ],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
@@ -80,13 +90,15 @@ export default defineConfig({
       'meta',
       {
         name: 'twitter:image',
-        content:
-          'https://repository-images.githubusercontent.com/711797916/65ed9057-08fb-4045-bf62-e9595acf19ee'
+        content: 'https://xn--mbius-jua.dev/social.png'
       }
     ]
   ],
 
   lastUpdated: true,
+  sitemap: {
+    hostname: 'https://xn--mbius-jua.dev'
+  },
   cleanUrls: true,
   metaChunk: true,
   description:
