@@ -20,6 +20,8 @@ on:
       - 'eslint.config.mjs'
       - '.prettierrc'
       - '**/*.md'
+      - '.bestpractices.json'
+      - 'security-insights.yml'
   pull_request:
     branches: ['main']
     types: [opened, synchronize] # Workflow triggering events
@@ -63,6 +65,8 @@ jobs:
         run: npm run check:pack
       - name: Check the docs # API docs without warnings, and every guide example runs
         run: npm run docs:check
+      - name: Check the OpenSSF answers # Valid statuses, and every linked file and heading exists
+        run: npm run check:bestpractices
       - name: Build the docs # Dead links fail here instead of in the deploy
         run: |
           npm run docs:gen
