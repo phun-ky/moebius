@@ -126,7 +126,9 @@ repository:
         results: {}
         comment: |
           Fails pull requests that add a dependency with a known high or
-          critical vulnerability. npm audit gates every release the same way.
+          critical vulnerability, in runtime and development dependencies,
+          which covers the libraries 2.x bundles. npm audit gates every
+          release on declared runtime dependencies.
       - name: OpenSSF Scorecard
         type: other
         rulesets:

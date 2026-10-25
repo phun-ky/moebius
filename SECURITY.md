@@ -65,16 +65,16 @@ Each GitHub release also has a software bill of materials attached, in CycloneDX
 
 **Obtaining them.** Packages come only from the npm registry, with exact versions locked in `package-lock.json` and installed with `npm ci` in CI. GitHub Actions are pinned to commit SHAs.
 
-**Tracking them.** Dependabot proposes version updates weekly, two weeks after a version is published, and security updates as soon as an advisory is published. Every pull request runs [dependency review](https://github.com/phun-ky/moebius/blob/main/.github/workflows/dependency-review.yml), and every release runs `npm audit` on runtime dependencies first.
+**Tracking them.** Dependabot proposes version updates weekly, two weeks after a version is published, and security updates as soon as an advisory is published. Every pull request runs [dependency review](https://github.com/phun-ky/moebius/blob/main/.github/workflows/dependency-review.yml), and every release runs `npm audit` on runtime dependencies first. In 2.x the bundled libraries are development dependencies, so dependency review, which checks development dependencies too, is what catches them.
 
 **Fixing known vulnerabilities.** Findings are checked against the GitHub Advisory Database:
 
-| Finding                    | Where                             | What happens                                                                                     |
-| -------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Critical or high           | Runtime or bundled dependency     | Blocks merging (dependency review) and releasing (`npm audit`); fixed and released within 7 days |
-| Critical or high           | Development dependency            | Blocks merging when introduced; an existing one is fixed within 30 days                          |
-| Moderate or low            | Any dependency                    | Fixed with the next update, within 90 days                                                       |
-| Licence outside the policy | New runtime or bundled dependency | Not merged                                                                                       |
+| Finding                    | Where                             | What happens                                                                                                       |
+| -------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Critical or high           | Runtime or bundled dependency     | Blocks merging (dependency review); from 3.0 also blocks releasing (`npm audit`); fixed and released within 7 days |
+| Critical or high           | Development dependency            | Blocks merging when introduced; an existing one is fixed within 30 days                                            |
+| Moderate or low            | Any dependency                    | Fixed with the next update, within 90 days                                                                         |
+| Licence outside the policy | New runtime or bundled dependency | Not merged                                                                                                         |
 
 **Accepted exceptions.** A vulnerability that can't be fixed yet and can't be exploited through this project is allowed in dependency review and listed here. Each one is removed as soon as a fix is reachable. None of them ship in the published package.
 
