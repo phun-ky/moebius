@@ -37,7 +37,6 @@ updates:
     open-pull-requests-limit: 5
     allow:
       - dependency-type: direct
-      - dependency-type: production
 
   # Actions are pinned to commit SHAs; this keeps the pins and their version
   # comments up to date

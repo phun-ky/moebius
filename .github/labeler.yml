@@ -42,7 +42,7 @@
               - 'rollup.config.js'
 'mindless: ✏️ docs':
   - any:
-      - head-branch: ['^docs', 'docs']
+      - head-branch: ['^docs/']
       - changed-files:
           - any-glob-to-any-file:
               - '**/*.md'
@@ -54,10 +54,10 @@
 
 # Labels from the branch name: feat/..., fix/..., chore/..., improvements/...
 '✨ feature':
-  - head-branch: ['^feat', 'feat']
+  - head-branch: ['^feat/']
 'problems: 🐛 bug':
-  - head-branch: ['^fix', 'fix']
+  - head-branch: ['^fix/']
 'mindless: 🤖 chore':
-  - head-branch: ['^chore', 'chore']
+  - head-branch: ['^chore/']
 'improvements: 💡 enhancement':
-  - head-branch: ['^improvements', 'improvements']
+  - head-branch: ['^improvements/']
