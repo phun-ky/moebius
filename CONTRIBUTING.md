@@ -24,13 +24,20 @@ All types of contributions are encouraged and valued. See the [Table of Contents
     - [Suggesting Enhancements](#suggesting-enhancements)
       - [Before Submitting an Enhancement](#before-submitting-an-enhancement)
       - [How Do I Submit a Good Enhancement Suggestion?](#how-do-i-submit-a-good-enhancement-suggestion)
-    - [Developer Certificate of Origin](#developer-certificate-of-origin)
+    - [Contributing Code](#contributing-code)
+      - [Architecture](#architecture)
+      - [Development](#development)
+      - [Coding Style](#coding-style)
+      - [Tests](#tests)
+      - [Developer Certificate of Origin](#developer-certificate-of-origin)
+      - [Commits and Pull Requests](#commits-and-pull-requests)
+      - [Releases](#releases)
   - [Attribution](#attribution)
 
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[@phun-ky/moebius Code of Conduct](https://github.com/phun-ky/moebius/blob/master/CODE_OF_CONDUCT.md).
+[@phun-ky/moebius Code of Conduct](https://github.com/phun-ky/moebius/blob/main/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behaviour
 to <code-of-conduct@phun-ky.net>.
 
@@ -77,7 +84,7 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 
 - Make sure that you are using the latest version.
 - Determine if your bug is really a bug and not an error on your side e.g. using incompatible environment components/versions (Make sure that you have read the [documentation](https://github.com/phun-ky/moebius). If you are looking for support, you might want to check [this section](#i-have-a-question)).
-- To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [bug tracker](https://github.com/phun-ky/moebiusissues?q=label%3Abug).
+- To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [bug tracker](https://github.com/phun-ky/moebius/issues?q=is%3Aissue).
 - Also make sure to search the internet (including Stack Overflow) to see if users outside of the GitHub community have discussed the issue.
 - Collect information about the bug:
   - Stack trace (Traceback)
@@ -88,7 +95,7 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 
 #### How Do I Submit a Good Bug Report?
 
-> You must never report security related issues, vulnerabilities or bugs including sensitive information to the issue tracker, or elsewhere in public. Instead sensitive bugs must be sent by email to <moebius@phun-ky.net>.
+> You must never report security related issues, vulnerabilities or bugs including sensitive information to the issue tracker, or elsewhere in public. Instead, report them privately as described in the [security policy](SECURITY.md#reporting-a-vulnerability).
 
 <!-- You may add a PGP key to allow the messages to be sent encrypted as well. -->
 
@@ -103,7 +110,7 @@ Once it's filed:
 
 - The project team will label the issue accordingly.
 - A team member will try to reproduce the issue with your provided steps. If there are no reproduction steps or no obvious way to reproduce the issue, the team will ask you for those steps and mark the issue as `pending: need repro`. Bugs with the `pending: need repro` tag will not be addressed until they are reproduced.
-- If the team is able to reproduce the issue, it will be marked `🐛 needs fix`, as well as possibly other tags (such as `problems: critical`), and the issue will be left to be implemented by someone.
+- If the team is able to reproduce the issue, it will be marked `🐛 needs fix`, as well as possibly other tags (such as `problems: 🧨 critical`), and the issue will be left to be implemented by someone.
 
 <!-- You might want to create an issue template for bugs and errors that can be used as a guide and that defines the structure of the information to be included. If you do so, reference it here in the description. -->
 
@@ -130,7 +137,59 @@ Enhancement suggestions are tracked as [GitHub issues](https://github.com/phun-k
 
 <!-- You might want to create an issue template for enhancement suggestions that can be used as a guide and that defines the structure of the information to be included. If you do so, reference it here in the description. -->
 
-### Developer Certificate of Origin
+### Contributing Code
+
+Larger changes are best discussed in an issue first, so the work fits the [roadmap](ROADMAP.md).
+
+#### Architecture
+
+- **`src/main.ts`** exports `Moebius()`: it loads color names (from the `colorNames` option, or the deprecated default URL) and returns the classes below, with color naming wired in.
+- **`src/classes`** holds `MoebiusColor` (one color in every color space), `MoebiusPalettes` (every palette for a base color) and `MoebiusSVGHelper` (SVG pie charts of palettes), with the classes they use.
+- **`src/features`** has one module per palette type (analogous, complement, interpolate, luminance shift, and so on), and **`src/utils`** the color conversions, color names and SVG helpers.
+- **`rollup.config.js`** builds `dist/moebius.js`, an ES module that bundles `chroma-js`, `nearest-color` and `@phun-ky/typeof` until 3.0 ([#204](https://github.com/phun-ky/moebius/issues/204)). TypeScript writes the declarations to `dist/types`, `scripts/fix-declaration-imports.mjs` makes their imports work in Node, and `scripts/third-party-licenses.mjs` writes the bundled libraries' licences to `dist/THIRD_PARTY_LICENSES.txt`.
+- **`docs`** is the [documentation site](https://xn--mbius-jua.dev/), built with VitePress: the guide in `docs/guide`, and the API reference that TypeDoc generates into `docs/api` from the source comments.
+
+#### Development
+
+You need Node.js 24 and npm 11.
+
+```sh
+npm ci
+npm run build
+npm test
+npm run check:pack
+```
+
+| Command                   | What it does                                                                                  |
+| ------------------------- | --------------------------------------------------------------------------------------------- |
+| `npm run build`           | Builds `dist` with rollup: the ES module, the types and the third-party licences              |
+| `npm run watch`           | Rebuilds on every change                                                                      |
+| `npm test`                | Runs the tests                                                                                |
+| `npm run test:ci`         | Runs the tests with coverage, as CI does                                                      |
+| `npm run typecheck`       | Type-checks the source and the tests                                                          |
+| `npm run style:lint`      | Lints every file, Markdown included, with ESLint, and checks the source format with Prettier  |
+| `npm run style:format`    | Fixes what `style:lint` can fix                                                               |
+| `npm run check:pack`      | Packs the package, installs it in an empty project, imports it and checks the published types |
+| `npm run docs:check`      | Checks the API documentation with TypeDoc, and compiles and runs every example in the guide   |
+| `npm run docs:dev`        | Generates the API docs and serves the documentation site locally                              |
+| `npm run docs:build`      | Builds the documentation site                                                                 |
+| `npm run release:dry-run` | Shows whether merging would release, and the planned version and changelog                    |
+| `npm run commit`          | Helps write a Conventional Commit message                                                     |
+
+Run `npm run check:pack` and `npm run docs:check` after `npm run build`, and `npm run docs:build` after `npm run docs:gen`.
+
+#### Coding Style
+
+Code follows the project's [ESLint](https://eslint.org/) configuration (`eslint-config-phun-ky`), [Prettier](https://prettier.io/) formatting and TypeScript in strict mode. A contribution must pass `npm run style:lint`, `npm run typecheck` and `npm run docs:check` with no errors. All of them run in CI on every pull request, and a pull request that fails them can't be merged.
+
+#### Tests
+
+- **New functionality must come with tests** in a `__tests__` folder next to the code, run by `npm test` with Node's test runner.
+- **Bug fixes must come with a regression test** that fails without the fix.
+- **Packaging changes** are tested by `npm run check:pack`, and examples in the guide by `npm run docs:check`; both run in CI.
+- **Coverage must not drop.** `npm run test:ci` fails when the source falls below 94% of lines, 99% of functions or 92% of branches. These floors are raised as tests are added, towards 99%, 100% and 95%, and CI uploads a coverage report for every pull request.
+
+#### Developer Certificate of Origin
 
 Every commit must be signed off under the [Developer Certificate of Origin](https://developercertificate.org/) (DCO): a statement that you wrote the change, or otherwise have the right to submit it under the project's license. You agree to it by adding a `Signed-off-by` line with your name and email to the commit message:
 
@@ -139,10 +198,27 @@ Signed-off-by: Your Name <you@example.com>
 ```
 
 - **Per commit:** `git commit -s` adds the line for you.
-- **Always:** `npm install` sets `core.hooksPath` to `.githooks`, and the hook in `.githooks/prepare-commit-msg` adds the line to every commit, including those made by `npm run commit` or your editor.
+- **Always:** `npm ci` sets `core.hooksPath` to `.githooks`, and the hook in `.githooks/prepare-commit-msg` adds the line to every commit, including those made by `npm run commit` or your editor.
 - **Forgot?** Sign off every commit on your branch and push again: `git rebase --signoff main`, then `git push --force-with-lease`.
 
 The DCO check on every pull request fails if a commit isn't signed off. Commits by Dependabot are exempt.
+
+#### Commits and Pull Requests
+
+- Commits follow [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `docs:`, ...). `npm run commit` helps write them. Releases and the changelog are generated from them (see [Releases](#releases)), so pick the type that matches the change. A breaking change needs a `type!:` and a `BREAKING CHANGE:` footer that says what to change.
+- Deprecating an API isn't a breaking change, so it can land in any release. Mark it `@deprecated` with its replacement and the major it will be removed in. It keeps working through one full major: deprecated during 2.x or at 3.0, it can be removed in 4.0 at the earliest.
+- Don't commit regenerated API docs (`docs/api`); each release regenerates them. Run `npm run docs:check` instead.
+- Open a pull request against `main`. The Checks workflow lints, type-checks, builds, packs, checks the docs, builds the documentation site and runs the tests; dependency review, CodeQL and the DCO check also run. All of them must pass.
+
+#### Releases
+
+The maintainer merges pull requests, and releases follow automatically from GitHub Actions:
+
+1. When a merged pull request changes what gets published, the publish workflow checks whether there is anything to release: a `feat`, `fix`, `perf` or `revert` commit, or a breaking change, that touches the published files. Other changes wait for the next release.
+2. If so, release-it picks the version from the commits, updates the changelog, builds and checks the package, and publishes it to npm with signed provenance.
+3. The release commit and tag go to `main`, and a GitHub release is created with a software bill of materials attached.
+
+Every merge to `main` also rebuilds and deploys the documentation site. `npm run release:dry-run` shows what a merge would release.
 
 ## Attribution
 
