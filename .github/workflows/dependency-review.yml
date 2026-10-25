@@ -4,7 +4,7 @@ name: Dependency Review
 # Database, and fail on a high or critical vulnerability. Policy: SECURITY.md
 on:
   pull_request:
-    branches: ['main']
+    branches: ['main', 'release/**']
 
 # Read-only: the action compares dependencies through the API, no checkout
 permissions:

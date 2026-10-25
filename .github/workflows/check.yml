@@ -23,7 +23,8 @@ on:
       - '.bestpractices.json'
       - 'security-insights.yml'
   pull_request:
-    branches: ['main']
+    # release/** collects a major's breaking changes before one merge to main
+    branches: ['main', 'release/**']
     types: [opened, synchronize] # Workflow triggering events
     # No paths filter: check is a required status, so it must run on every PR,
     # or a PR touching only unlisted files could never merge
