@@ -12,19 +12,15 @@
 set -euo pipefail
 
 # Everything that ends up in the package. dist/ is built from src/ with rollup
-# and the build scripts. Rollup bundles the runtime dependencies, so the
-# lockfile counts too.
+# and the build scripts. Runtime dependencies are imported, not bundled, so
+# the lockfile doesn't change what consumers get; package.json does.
 published_files=(
   src
   ':(exclude,glob)src/**/__tests__/**'
   rollup.config.js
   tsconfig.build.json
   scripts/fix-declaration-imports.mjs
-  scripts/third-party-licenses.mjs
-  scripts/bundled-packages.mjs
-  scripts/licenses
   package.json
-  package-lock.json
   README.md
   LICENSE
 )
