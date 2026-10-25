@@ -8,7 +8,7 @@ hero:
   tagline: 'Möbius is a color palette generation tool that is ideal for ui design, web design and data visualization.'
   image:
     src: './logo/logo.svg'
-    alt: 'Hero Image Description'
+    alt: 'The Möbius logo, a ring of overlapping colored circles'
   actions:
     - theme: brand
       text: Online generator
