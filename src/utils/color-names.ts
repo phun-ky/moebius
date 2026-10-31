@@ -147,13 +147,13 @@ export const loadColorNames = async (
 };
 
 /**
- * Wrap a nearest-color matcher so each distinct color is looked up once.
+ * Wrap a nearest color matcher so each distinct color is looked up once.
  *
  * Finding the nearest name searches every name, and apps construct the same
  * colors many times (moebius.wtf: 3,025 colors, 285 distinct), so the
  * result is cached by the color's six-digit hex.
  *
- * @param match - A matcher from `nearest-color`'s `from()`.
+ * @param match - A matcher such as `matchNearestColor()` returns.
  * @returns A function from any color to the nearest name.
  */
 export const createNameLookup = (

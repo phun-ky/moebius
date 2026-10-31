@@ -1,8 +1,8 @@
 // Check what npm would publish: pack the package, check the tarball holds the
 // files package.json points at, its LICENSE and README, and no tests, lint it
 // with publint and @arethetypeswrong/cli, then install the tarball in an empty
-// project, check every source map resolves, and import it. Run after
-// `npm run build`.
+// project, check every source map resolves and that dependencies are imported,
+// not bundled, and import it. Run after `npm run build`.
 import {
   createProgram,
   getPreEmitDiagnostics,
@@ -24,8 +24,6 @@ import {
 import { tmpdir } from 'node:os';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
-
-import { bundledPackages } from './bundled-packages.mjs';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const BIN = join(ROOT, 'node_modules', '.bin');
@@ -151,18 +149,39 @@ try {
       });
     }
 
-    // Every bundled package needs its licence in THIRD_PARTY_LICENSES.txt
-    const licensesFile = join(installed, 'dist', 'THIRD_PARTY_LICENSES.txt');
-    const licenses = existsSync(licensesFile)
-      ? readFileSync(licensesFile, 'utf8')
-      : '';
+    // Runtime dependencies are imported, never bundled: the published code
+    // imports exactly the packages in dependencies, and no source map embeds
+    // code from node_modules
+    const runtimeDependencies = Object.keys(pkg.dependencies ?? {}).sort();
+    const code = readFileSync(join(installed, pkg.main), 'utf8');
+    const packageOf = (specifier) =>
+      specifier
+        .split('/')
+        .slice(0, specifier.startsWith('@') ? 2 : 1)
+        .join('/');
+    const imported = [
+      ...new Set(
+        [...code.matchAll(/\b(?:from|import)\s*\(?\s*["']([^"']+)["']/g)]
+          .map(([, specifier]) => specifier)
+          .filter((specifier) => !/^(\.|\/|node:)/.test(specifier))
+          .map(packageOf)
+      )
+    ].sort();
 
-    for (const { name, version } of bundledPackages()) {
-      const entry = licenses.split(`${name}@${version}\nLicense: `)[1];
+    if (imported.join() !== runtimeDependencies.join()) {
+      problems.push(
+        `${pkg.main} imports [${imported.join(', ')}], but dependencies are [${runtimeDependencies.join(', ')}]`
+      );
+    }
 
-      if (!entry || !/copyright|permission/i.test(entry.slice(0, 2000))) {
+    for (const map of mapsIn(installed)) {
+      const bundled = JSON.parse(readFileSync(map, 'utf8')).sources.filter(
+        (source) => source.includes('node_modules')
+      );
+
+      if (bundled.length > 0) {
         problems.push(
-          `${name}@${version} is bundled, but its licence is not in dist/THIRD_PARTY_LICENSES.txt`
+          `${relative(installed, map)} bundles code from node_modules: ${bundled.slice(0, 3).join(', ')}`
         );
       }
     }

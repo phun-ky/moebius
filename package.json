@@ -64,13 +64,12 @@
     "/dist/moebius.js",
     "/dist/moebius.js.map",
     "/dist/types",
-    "/dist/THIRD_PARTY_LICENSES.txt",
     "/CHANGELOG.md"
   ],
   "sideEffects": false,
   "scripts": {
     "bestpractices:url": "node scripts/bestpractices-url.mjs",
-    "build": "npm run clean && npm run rollup && node scripts/fix-declaration-imports.mjs && node scripts/third-party-licenses.mjs",
+    "build": "npm run clean && npm run rollup && node scripts/fix-declaration-imports.mjs",
     "check:bestpractices": "node scripts/check-bestpractices.mjs",
     "check:pack": "node scripts/check-pack.mjs",
     "clean": "rm -rf dist dts",
@@ -101,16 +100,16 @@
       "path": "./node_modules/git-cz"
     }
   },
+  "dependencies": {
+    "@phun-ky/typeof": "^3.0.8",
+    "chroma-js": "^3.2.0"
+  },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.5",
-    "@phun-ky/typeof": "^3.0.8",
     "@release-it/conventional-changelog": "^12.0.2",
-    "@rollup/plugin-commonjs": "^29.0.3",
-    "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^1.0.0",
     "@types/chroma-js": "^3.1.2",
     "@types/node": "^24.19.2",
-    "chroma-js": "^3.1.2",
     "cobertura": "^1.0.1",
     "eslint": "^10.0.0",
     "eslint-config-phun-ky": "^2.0.10",

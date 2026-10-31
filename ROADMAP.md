@@ -13,7 +13,7 @@ What moebius intends to do, and not do, from October 2026 to October 2027. It's 
 
 The breaking changes are collected in the [3.0 milestone](https://github.com/phun-ky/moebius/milestone/7):
 
-- **Runtime libraries as dependencies:** `chroma-js`, `nearest-color` and `@phun-ky/typeof` installed from npm instead of bundled into `dist`, so `npm audit` and Dependabot see them ([#204](https://github.com/phun-ky/moebius/issues/204)).
+- **Runtime libraries as dependencies:** `chroma-js` and `@phun-ky/typeof` installed from npm instead of bundled into `dist`, so `npm audit` and Dependabot see them, and `nearest-color` replaced by moebius's own code ([#204](https://github.com/phun-ky/moebius/issues/204)).
 - **No default color names service:** `Moebius()` stops fetching names from a deprecated third-party URL ([#184](https://github.com/phun-ky/moebius/issues/184)).
 - **An `exports` map** ([#183](https://github.com/phun-ky/moebius/issues/183)).
 - **Node.js 22.12 or later**, where `require()` of an ES module works ([#209](https://github.com/phun-ky/moebius/issues/209)).
@@ -35,6 +35,6 @@ Ideas that fit the project but have no date. Each would be discussed in an issue
 
 ## Not planned
 
-- **Bundling runtime dependencies after 3.0.** Runtime dependencies are declared and installed from npm; a pre-bundled file for CDNs, if ever added, would be a separate file.
+- **Bundling runtime dependencies after 3.0.** Runtime dependencies are declared and installed from npm. Without a bundler, use an import map or a CDN that resolves bare imports.
 - **Provenance files on GitHub releases.** npm provenance proves where each release came from; OpenSSF Scorecard's Signed-Releases check stays low on purpose.
 - **Collecting data.** The package doesn't collect, store or send data anywhere. Its only network request loads color names; see the [security policy](SECURITY.md#security-expectations).
