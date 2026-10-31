@@ -1,6 +1,5 @@
 import { isObjectPlain } from '@phun-ky/typeof';
 import chroma from 'chroma-js';
-import nearestColor from 'nearest-color';
 
 import { MoebiusColor } from './classes/MoebiusColor';
 import { MoebiusPalettes } from './classes/MoebiusPalettes';
@@ -11,6 +10,7 @@ import {
   MoebiusReturnType
 } from './types';
 import { createNameLookup, loadColorNames } from './utils/color-names';
+import { matchNearestColor } from './utils/nearest-color';
 
 export type * from './types';
 
@@ -36,7 +36,7 @@ const initializeColorNames = async (
 ): Promise<(color: string) => string> => {
   if (colorNames === false) return () => '';
 
-  return createNameLookup(nearestColor.from(await loadColorNames(colorNames)));
+  return createNameLookup(matchNearestColor(await loadColorNames(colorNames)));
 };
 
 /**

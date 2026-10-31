@@ -1,4 +1,5 @@
-// nearest-color ships no types; this covers the part moebius uses
+// nearest-color ships no types; this covers the part the tests use as the
+// reference for matchNearestColor
 declare module 'nearest-color' {
   const nearestColor: {
     /** Match against named colors: each match has the name, hex and RGB */

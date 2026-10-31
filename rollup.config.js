@@ -1,18 +1,21 @@
-import commonjs from '@rollup/plugin-commonjs';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
 import ts from 'rollup-plugin-typescript2';
 import typescript from 'typescript';
 
 import pack from './package.json' with { type: 'json' };
 
+// Runtime dependencies are imported, never bundled: every package in
+// dependencies, and its subpaths, stays an import in dist
+const external = (id) =>
+  Object.keys(pack.dependencies ?? {}).some(
+    (name) => id === name || id.startsWith(`${name}/`)
+  );
 const banner = `/**
 * ${pack.name}
 * ${pack.description}
 * @author ${pack.author}
 * @version ${pack.version}
 * @license
-* Bundled third-party packages and their licences: THIRD_PARTY_LICENSES.txt
 *
 * Copyright (c) 2023 Alexander Vassbotn Røyne-Helgesen
 *
@@ -38,6 +41,7 @@ const banner = `/**
 export default [
   {
     input: 'src/main.ts',
+    external,
     output: {
       name: 'moebius',
       file: './dist/moebius.js',
@@ -48,10 +52,6 @@ export default [
       assetFileNames: '[name][extname]'
     },
     plugins: [
-      commonjs({
-        requireReturnsDefault: true
-      }),
-      nodeResolve(),
       ts({
         tsconfig: 'tsconfig.build.json',
         useTsconfigDeclarationDir: true,

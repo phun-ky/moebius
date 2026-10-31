@@ -146,7 +146,8 @@ Larger changes are best discussed in an issue first, so the work fits the [roadm
 - **`src/main.ts`** exports `Moebius()`: it loads color names (from the `colorNames` option, or the deprecated default URL) and returns the classes below, with color naming wired in.
 - **`src/classes`** holds `MoebiusColor` (one color in every color space), `MoebiusPalettes` (every palette for a base color) and `MoebiusSVGHelper` (SVG pie charts of palettes), with the classes they use.
 - **`src/features`** has one module per palette type (analogous, complement, interpolate, luminance shift, and so on), and **`src/utils`** the color conversions, color names and SVG helpers.
-- **`rollup.config.js`** builds `dist/moebius.js`, an ES module that bundles `chroma-js`, `nearest-color` and `@phun-ky/typeof` until 3.0 ([#204](https://github.com/phun-ky/moebius/issues/204)). TypeScript writes the declarations to `dist/types`, `scripts/fix-declaration-imports.mjs` makes their imports work in Node, and `scripts/third-party-licenses.mjs` writes the bundled libraries' licences to `dist/THIRD_PARTY_LICENSES.txt`.
+- **`rollup.config.js`** builds `dist/moebius.js`, an ES module that imports its runtime dependencies, `chroma-js` and `@phun-ky/typeof`. TypeScript writes the declarations to `dist/types`, and `scripts/fix-declaration-imports.mjs` makes their imports work in Node.
+- **Dependencies are declared, never bundled.** Every package the published code imports goes in `dependencies` with a caret range, and rollup keeps it external; `devDependencies` are only for build, test and docs tooling. `npm run check:pack` fails when `dist` imports anything else or embeds code from `node_modules`.
 - **`docs`** is the [documentation site](https://xn--mbius-jua.dev/), built with VitePress: the guide in `docs/guide`, and the API reference that TypeDoc generates into `docs/api` from the source comments.
 
 #### Development
@@ -160,21 +161,21 @@ npm test
 npm run check:pack
 ```
 
-| Command                   | What it does                                                                                  |
-| ------------------------- | --------------------------------------------------------------------------------------------- |
-| `npm run build`           | Builds `dist` with rollup: the ES module, the types and the third-party licences              |
-| `npm run watch`           | Rebuilds on every change                                                                      |
-| `npm test`                | Runs the tests                                                                                |
-| `npm run test:ci`         | Runs the tests with coverage, as CI does                                                      |
-| `npm run typecheck`       | Type-checks the source and the tests                                                          |
-| `npm run style:lint`      | Lints every file, Markdown included, with ESLint, and checks the source format with Prettier  |
-| `npm run style:format`    | Fixes what `style:lint` can fix                                                               |
-| `npm run check:pack`      | Packs the package, installs it in an empty project, imports it and checks the published types |
-| `npm run docs:check`      | Checks the API documentation with TypeDoc, and compiles and runs every example in the guide   |
-| `npm run docs:dev`        | Generates the API docs and serves the documentation site locally                              |
-| `npm run docs:build`      | Builds the documentation site                                                                 |
-| `npm run release:dry-run` | Shows whether merging would release, and the planned version and changelog                    |
-| `npm run commit`          | Helps write a Conventional Commit message                                                     |
+| Command                   | What it does                                                                                                                        |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `npm run build`           | Builds `dist` with rollup: the ES module and the types                                                                              |
+| `npm run watch`           | Rebuilds on every change                                                                                                            |
+| `npm test`                | Runs the tests                                                                                                                      |
+| `npm run test:ci`         | Runs the tests with coverage, as CI does                                                                                            |
+| `npm run typecheck`       | Type-checks the source and the tests                                                                                                |
+| `npm run style:lint`      | Lints every file, Markdown included, with ESLint, and checks the source format with Prettier                                        |
+| `npm run style:format`    | Fixes what `style:lint` can fix                                                                                                     |
+| `npm run check:pack`      | Packs the package, installs it in an empty project, imports it, and checks the published types and that dependencies aren't bundled |
+| `npm run docs:check`      | Checks the API documentation with TypeDoc, and compiles and runs every example in the guide                                         |
+| `npm run docs:dev`        | Generates the API docs and serves the documentation site locally                                                                    |
+| `npm run docs:build`      | Builds the documentation site                                                                                                       |
+| `npm run release:dry-run` | Shows whether merging would release, and the planned version and changelog                                                          |
+| `npm run commit`          | Helps write a Conventional Commit message                                                                                           |
 
 Run `npm run check:pack` and `npm run docs:check` after `npm run build`, and `npm run docs:build` after `npm run docs:gen`.
 
