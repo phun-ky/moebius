@@ -69,6 +69,7 @@
   ],
   "sideEffects": false,
   "scripts": {
+    "banners": "node scripts/banners/render.mjs",
     "bestpractices:url": "node scripts/bestpractices-url.mjs",
     "build": "npm run clean && npm run rollup && node scripts/fix-declaration-imports.mjs && node scripts/third-party-licenses.mjs",
     "check:bestpractices": "node scripts/check-bestpractices.mjs",
