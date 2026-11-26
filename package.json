@@ -112,7 +112,7 @@
     "@rollup/plugin-terser": "^1.0.2",
     "@types/chroma-js": "^3.1.3",
     "@types/node": "^24.19.2",
-    "chroma-js": "^3.1.2",
+    "chroma-js": "^3.3.0",
     "cobertura": "^1.0.1",
     "eslint": "^10.0.0",
     "eslint-config-phun-ky": "^2.0.10",
@@ -122,13 +122,13 @@
     "globals": "^17.14.0",
     "jsdom": "^29.1.0",
     "nearest-color": "^0.4.4",
-    "prettier": "^3.9.10",
+    "prettier": "^3.10.0",
     "publint": "^0.3.25",
-    "putout": "^42.24.2",
+    "putout": "^42.26.3",
     "release-it": "^21.1.2",
     "remark-github": "^12.0.0",
     "remark-toc": "^9.0.0",
-    "rollup": "^4.67.4",
+    "rollup": "^4.68.2",
     "rollup-plugin-typescript2": "^0.37.0",
     "tsx": "^4.23.15",
     "typedoc": "^0.28.20",
@@ -140,7 +140,7 @@
     "typescript": "^6.0.3",
     "unified-prettier": "^2.0.1",
     "vitepress": "^1.6.4",
-    "vitepress-plugin-group-icons": "^1.7.6"
+    "vitepress-plugin-group-icons": "^1.8.2"
   },
   "engines": {
     "node": ">=22.9.0"
